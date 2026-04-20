@@ -1,0 +1,1605 @@
+[
+  {
+    "territory": "Francia",
+    "status": "review",
+    "flags": [
+      "missing_start_or_end",
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_images",
+      "no_geodata"
+    ],
+    "details": {
+      "territory_qid": "Q28216054",
+      "rulers_count": 62,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "Frankish Kingdom",
+    "status": "review",
+    "flags": [
+      "very_short_reigns",
+      "missing_images",
+      "overlapping_rulers",
+      "ruler_gaps",
+      "missing_start_or_end"
+    ],
+    "details": {
+      "territory_qid": "Q146246",
+      "rulers_count": 45,
+      "epochs": [
+        "world_600",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Francia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "Roman Republic",
+    "status": "broken",
+    "flags": [
+      "missing_start_or_end"
+    ],
+    "broken_reasons": [
+      "1/1 Herrscher ohne Enddatum (100%) — Trennstrich im Parsing wahrscheinlich nicht erkannt"
+    ],
+    "details": {
+      "territory_qid": "Q62832",
+      "rulers_count": 1,
+      "epochs": [
+        "world_bc400",
+        "world_bc300",
+        "world_bc100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Republic",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "East Francia",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "missing_images",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q160853",
+      "rulers_count": 18,
+      "epochs": [
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/East_Francia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "Carolingian Empire",
+    "status": "review",
+    "flags": [
+      "missing_images",
+      "overlapping_rulers",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q31929",
+      "rulers_count": 30,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Carolingian_Empire",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "West Francia",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q46370",
+      "rulers_count": 18,
+      "epochs": [
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/West_Francia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "Welsh",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q161885",
+      "rulers_count": 0,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Wales",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Wessex",
+    "status": "review",
+    "flags": [
+      "uncertain_wikidata_id",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q105313",
+      "rulers_count": 12,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Wessex",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Wessex"
+    }
+  },
+  {
+    "territory": "Essex",
+    "status": "review",
+    "flags": [
+      "overlapping_rulers",
+      "ruler_gaps",
+      "missing_images",
+      "missing_start_or_end"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q105390",
+      "rulers_count": 8,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Essex",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_kings_of_Essex"
+    }
+  },
+  {
+    "territory": "Nothumbria",
+    "status": "broken",
+    "flags": [
+      "ruler_gaps",
+      "parsing_fallback_used",
+      "missing_start_or_end",
+      "name_format_issues",
+      "overlapping_rulers",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q131491",
+      "rulers_count": 40,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Nothumbria",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Northumbria"
+    }
+  },
+  {
+    "territory": "Mercia",
+    "status": "review",
+    "flags": [
+      "missing_start_or_end",
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_images",
+      "very_short_reigns"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q105092",
+      "rulers_count": 28,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mercia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Mercia"
+    }
+  },
+  {
+    "territory": "Byzantine Empire",
+    "status": "broken",
+    "flags": [
+      "epoch_filter_removed_all"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q12557",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine_Empire",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Byzantine_emperors"
+    }
+  },
+  {
+    "territory": "England",
+    "status": "review",
+    "flags": [
+      "very_short_reigns",
+      "overlapping_rulers",
+      "missing_images",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q174193",
+      "rulers_count": 53,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1279",
+        "world_1492",
+        "world_1500",
+        "world_1650",
+        "world_1700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_England",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_English_monarchs"
+    }
+  },
+  {
+    "territory": "Kingdom of France",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used",
+      "no_geodata",
+      "missing_start_or_end"
+    ],
+    "broken_reasons": [
+      "1/1 Herrscher ohne Enddatum (100%) — Trennstrich im Parsing wahrscheinlich nicht erkannt"
+    ],
+    "details": {
+      "territory_qid": "Q70972",
+      "rulers_count": 1,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_France",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_French_monarchs"
+    }
+  },
+  {
+    "territory": "Irlanda",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q22890",
+      "rulers_count": 0,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Ireland_(795%E2%80%931169)",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_High_Kings_of_Ireland"
+    }
+  },
+  {
+    "territory": "Celtic kingdoms",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q849967",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Celtic_Britons",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Scotland",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_start_or_end",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q230791",
+      "rulers_count": 43,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1530",
+        "world_1600"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Scotland",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Scottish_monarchs"
+    }
+  },
+  {
+    "territory": "León",
+    "status": "review",
+    "flags": [
+      "overlapping_rulers",
+      "missing_images",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q134497",
+      "rulers_count": 25,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_León",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Leonese_monarchs"
+    }
+  },
+  {
+    "territory": "Alamans",
+    "status": "review",
+    "flags": [
+      "uncertain_wikidata_id"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q132990",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Alemanni",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Franks",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q203849",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Franks",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Frankish_kings"
+    }
+  },
+  {
+    "territory": "Dumonii",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q7246122",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1",
+        "world_100",
+        "world_200",
+        "world_300",
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Dumnonii",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_legendary_rulers_of_Cornwall"
+    }
+  },
+  {
+    "territory": "Visigothic Kingdom",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q126936",
+      "rulers_count": 0,
+      "epochs": [
+        "world_600",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visigothic_Kingdom",
+      "rulers_url": "https://en.wikipedia.org/wiki/Visigothic_Kingdom#List_of_kings"
+    }
+  },
+  {
+    "territory": "Visigoths",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q23693",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Visigoths",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Saami",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q48199",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1500",
+        "world_bc1000",
+        "world_bc700",
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100",
+        "world_300",
+        "world_400",
+        "world_600",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/S%C3%A1mi_people",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Burgunds",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q150412",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Burgundians",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Swedes",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q956420",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400",
+        "world_600",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Swedes",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Geats",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1496339",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Geats",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Hunnic Empire",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q45813",
+      "rulers_count": 0,
+      "epochs": [
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Huns",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Ostrogoths",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q103122",
+      "rulers_count": 0,
+      "epochs": [
+        "world_600"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ostrogoths",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Kingdom of Poland",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q72499",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Poland",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Polish-Lithuanian Commonwealth",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q25448",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Modern Poland",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q36",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Poland",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "French Revolution & First Empire",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q484048",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/French_First_Republic",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Restoration & Second Empire",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q474716",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Second_French_Empire",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Modern France",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q142",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/France",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Curonians",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q756922",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Curonians",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Milograd culture",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q2446445",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc700",
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Milograd_culture",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Pomeranian culture",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q972472",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pomeranian_culture",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Bell-shaped burials culture",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q470867",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Bell_Beaker_culture",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Blemmyes",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q934374",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100",
+        "world_200",
+        "world_300",
+        "world_400",
+        "world_600",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Blemmyes",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Meroe",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q5780",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100",
+        "world_200",
+        "world_300",
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Meroe",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Hadramaut",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1517159",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100",
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_200",
+        "world_300",
+        "world_400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hadhramaut",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Guanches",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q219995",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1500",
+        "world_bc1000",
+        "world_bc700",
+        "world_bc500",
+        "world_bc400",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100",
+        "world_bc1",
+        "world_100",
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_200",
+        "world_300",
+        "world_400",
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Guanches",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Saba",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q216068",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1500",
+        "world_bc1000",
+        "world_bc700",
+        "world_bc500",
+        "world_bc323",
+        "world_bc300",
+        "world_bc200",
+        "world_bc100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sheba",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Achaemenid Empire",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q389688",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc500",
+        "world_bc400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Armenia",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q208404",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc323",
+        "world_bc300",
+        "world_bc1",
+        "world_100",
+        "world_1000",
+        "world_1200",
+        "world_1914",
+        "world_1994",
+        "world_200",
+        "world_2000",
+        "world_2010",
+        "world_300",
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Armenia_(antiquity)",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Axum",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q139377",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1",
+        "world_100",
+        "world_200",
+        "world_300",
+        "world_400",
+        "world_600",
+        "world_700",
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Seleucid Kingdom",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q93180",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc300",
+        "world_bc200",
+        "world_bc100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seleucid_Kingdom",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Pergamon",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q2022162",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Pergamon",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Assyria",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q41137",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1500",
+        "world_bc1000",
+        "world_bc700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Assyria",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Babylonia",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q47690",
+      "rulers_count": 0,
+      "epochs": [
+        "world_bc1500",
+        "world_bc1000",
+        "world_bc700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Babylonia",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Ancient Egypt",
+    "status": "review",
+    "flags": [
+      "no_geodata"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q11768",
+      "rulers_count": 0,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ancient_Egypt",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Denmark",
+    "status": "review",
+    "flags": [
+      "missing_start_or_end",
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q35",
+      "rulers_count": 54,
+      "epochs": [
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1815",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1945",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Denmark_in_the_Middle_Ages",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Danish_monarchs"
+    }
+  },
+  {
+    "territory": "Umayyad Caliphate",
+    "status": "review",
+    "flags": [
+      "very_short_reigns",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q8575586",
+      "rulers_count": 14,
+      "epochs": [
+        "world_700"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+      "rulers_url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+    }
+  },
+  {
+    "territory": "Abbasid Caliphate",
+    "status": "review",
+    "flags": [
+      "missing_images",
+      "missing_start_or_end",
+      "name_format_issues"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q12536",
+      "rulers_count": 25,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Abbasid_caliphs"
+    }
+  },
+  {
+    "territory": "Cordoba",
+    "status": "review",
+    "flags": [
+      "missing_start_or_end",
+      "missing_images",
+      "name_format_issues",
+      "no_geodata",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1337854",
+      "rulers_count": 19,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Cordoba",
+      "rulers_url": "https://en.wikipedia.org/wiki/Emirate_of_Cordoba"
+    }
+  },
+  {
+    "territory": "Fatimid Caliphate",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "overlapping_rulers",
+      "missing_start_or_end",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q160307",
+      "rulers_count": 71,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+      "rulers_url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+    }
+  },
+  {
+    "territory": "Venice",
+    "status": "review",
+    "flags": [
+      "missing_images",
+      "ruler_gaps",
+      "missing_start_or_end",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q4948",
+      "rulers_count": 104,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Republic_of_Venice",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_doges_of_Venice"
+    }
+  },
+  {
+    "territory": "Asturias",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "missing_start_or_end",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q231392",
+      "rulers_count": 10,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Asturias",
+      "rulers_url": "https://en.wikipedia.org/wiki/Kingdom_of_Asturias"
+    }
+  },
+  {
+    "territory": "Aragon",
+    "status": "review",
+    "flags": [
+      "no_geodata",
+      "ruler_gaps",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q204920",
+      "rulers_count": 31,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Crown_of_Aragon",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Aragonese_monarchs"
+    }
+  },
+  {
+    "territory": "Castile",
+    "status": "review",
+    "flags": [
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q179293",
+      "rulers_count": 12,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Castile",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Castilian_monarchs"
+    }
+  },
+  {
+    "territory": "Navarre",
+    "status": "review",
+    "flags": [
+      "name_format_issues",
+      "overlapping_rulers",
+      "missing_images",
+      "missing_start_or_end",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q200262",
+      "rulers_count": 45,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Navarre",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Navarrese_monarchs"
+    }
+  },
+  {
+    "territory": "Brittany",
+    "status": "review",
+    "flags": [
+      "missing_start_or_end",
+      "missing_images",
+      "overlapping_rulers",
+      "no_geodata",
+      "ruler_gaps"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q71747",
+      "rulers_count": 43,
+      "epochs": [],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Duchy_of_Brittany",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Brittany"
+    }
+  },
+  {
+    "territory": "Papal States",
+    "status": "broken",
+    "flags": [
+      "missing_images",
+      "ruler_gaps",
+      "missing_start_or_end",
+      "very_short_reigns"
+    ],
+    "broken_reasons": [
+      "93/101 Herrscher ohne Enddatum (92%) — Trennstrich im Parsing wahrscheinlich nicht erkannt"
+    ],
+    "details": {
+      "territory_qid": "Q170174",
+      "rulers_count": 101,
+      "epochs": [
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_800"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_States",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_popes"
+    }
+  },
+  {
+    "territory": "Kyivan Rus",
+    "status": "broken",
+    "flags": [
+      "ruler_gaps",
+      "very_short_reigns",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [
+      "start>end: Olga of Kiev (969>962)"
+    ],
+    "details": {
+      "territory_qid": "Q1108445",
+      "rulers_count": 18,
+      "epochs": [
+        "world_1000",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kievan_Rus",
+      "rulers_url": "https://en.wikipedia.org/wiki/Grand_Prince_of_Kiev"
+    }
+  },
+  {
+    "territory": "Norway",
+    "status": "review",
+    "flags": [
+      "very_short_reigns",
+      "ruler_gaps",
+      "missing_start_or_end",
+      "missing_images",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q20",
+      "rulers_count": 67,
+      "epochs": [
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1945",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Norway",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Norwegian_monarchs"
+    }
+  },
+  {
+    "territory": "Sweden",
+    "status": "broken",
+    "flags": [
+      "missing_start_or_end",
+      "overlapping_rulers",
+      "ruler_gaps",
+      "parsing_fallback_used",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q34",
+      "rulers_count": 20,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1492",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1945",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sweden_in_the_Middle_Ages",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Swedish_monarchs"
+    }
+  },
+  {
+    "territory": "Serbia",
+    "status": "review",
+    "flags": [
+      "missing_images",
+      "ruler_gaps",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1311990",
+      "rulers_count": 7,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1279",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1994",
+        "world_2000",
+        "world_2010",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Principality_of_Serbia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Serbian_monarchs"
+    }
+  },
+  {
+    "territory": "Croatia",
+    "status": "broken",
+    "flags": [
+      "overlapping_rulers",
+      "missing_start_or_end",
+      "very_short_reigns",
+      "ruler_gaps",
+      "missing_images"
+    ],
+    "broken_reasons": [
+      "start>end: Stjepan Tvrtko (1390>1374)"
+    ],
+    "details": {
+      "territory_qid": "Q858841",
+      "rulers_count": 49,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Croatia_(medieval)",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Croatia"
+    }
+  },
+  {
+    "territory": "Kingdom of Georgia",
+    "status": "review",
+    "flags": [
+      "ruler_gaps",
+      "missing_start_or_end",
+      "missing_images",
+      "very_short_reigns",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q154667",
+      "rulers_count": 100,
+      "epochs": [
+        "world_1000",
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1914",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Georgia",
+      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Georgian_monarchs"
+    }
+  },
+  {
+    "territory": "Aghlabid Emirate",
+    "status": "review",
+    "flags": [
+      "overlapping_rulers",
+      "ruler_gaps",
+      "missing_images"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q207600",
+      "rulers_count": 8,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Aghlabid_Emirate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Idrisid Caliphate",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q431575",
+      "rulers_count": 0,
+      "epochs": [
+        "world_800",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Idrisid_Caliphate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Emirate of Sicily",
+    "status": "review",
+    "flags": [
+      "missing_images",
+      "overlapping_rulers"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1250763",
+      "rulers_count": 32,
+      "epochs": [
+        "world_1000",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Sicily",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Buwayhid Emirates",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q273874",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1000",
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Buwayhid_Emirates",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Ghaznavid Emirate",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q12844800",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1000",
+        "world_1100",
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ghaznavid_Emirate",
+      "rulers_url": null
+    }
+  }
+]
