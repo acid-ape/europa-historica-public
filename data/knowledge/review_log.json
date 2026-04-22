@@ -1528,25 +1528,6 @@
     }
   },
   {
-    "territory": "Emirate of Sicily",
-    "status": "review",
-    "flags": [
-      "missing_images",
-      "overlapping_rulers"
-    ],
-    "broken_reasons": [],
-    "details": {
-      "territory_qid": "Q1250763",
-      "rulers_count": 32,
-      "epochs": [
-        "world_1000",
-        "world_900"
-      ],
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Sicily",
-      "rulers_url": null
-    }
-  },
-  {
     "territory": "Buwayhid Emirates",
     "status": "broken",
     "flags": [
@@ -1891,6 +1872,58 @@
         "world_1300"
       ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Khanate_of_the_Golden_Horde",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Trebizond",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q178913",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Trebizond",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Sicily",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q188586",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1530",
+        "world_1600"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Sicily",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Emirate of Sicily",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1250763",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1000",
+        "world_900"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Emirate_of_Sicily",
       "rulers_url": null
     }
   }

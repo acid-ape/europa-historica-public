@@ -1482,9 +1482,9 @@ const TERRITORY_MAPPING = {
     label:         "Almohad Caliphate"
   },
   "trebizond": {
-    wikidataId:    "Q45301",
+    wikidataId:    "Q178913",
     rulerPosition: null,
-    label:         "Trebizond"
+    label:         "Empire of Trebizond"
   },
   "hafsid caliphate": {
     wikidataId:    "Q752662",
@@ -1550,6 +1550,11 @@ const TERRITORY_MAPPING = {
     wikidataId:    "Q79965",
     rulerPosition: null,
     label:         "Khanate of the Golden Horde"
+  },
+  "sicily": {
+    wikidataId:    "Q188586",
+    rulerPosition: null,
+    label:         "Sicily"
   }
 };
 

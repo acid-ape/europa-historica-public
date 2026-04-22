@@ -6503,30 +6503,6 @@
       "lastEpoch": "world_1200"
     }
   },
-  "Q199987": {
-    "id": "Q199987",
-    "label": "Trebizond",
-    "subjecto": "Trebizond",
-    "territory_type": "ruler_based",
-    "wikipedia": "https://en.wikipedia.org/wiki/Trebizond",
-    "rulers_url": null,
-    "wikidataId": "Q199987",
-    "description": "Trabzon is a city on the Black Sea coast of northeastern Turkey and the capital of Trabzon Province . Historically known as Trebizond , the city was founded in 756 BC as Trapezous by Greek colonists from Miletus . It was added into the Achaemenid Empire by Cyrus the Great and was later part of the independent Kingdom of Pontus that challenged Rome until 68 BC. Thenceforth part of the Roman and later Byzantine Empire, the city was the capital of the Empire of Trebizond , one of the successor states of the Byzantine Empire after the Fourth Crusade in 1204. In 1461 it came under Ottoman rule.",
-    "capitals": [],
-    "flag": null,
-    "coatOfArms": null,
-    "status": "draft",
-    "special_case": false,
-    "geodata": {
-      "epochs": [
-        "world_1279",
-        "world_1300",
-        "world_1400"
-      ],
-      "firstEpoch": "world_1279",
-      "lastEpoch": "world_1400"
-    }
-  },
   "Q752662": {
     "id": "Q752662",
     "label": "Hafsid Caliphate",
@@ -6731,7 +6707,7 @@
     "wikipedia": "https://en.wikipedia.org/wiki/Seljuk_Caliphate",
     "rulers_url": null,
     "wikidataId": "Q975405",
-    "description": "",
+    "description": "The Sultanate of Rum, or Seljuk Empire of Rum, was a culturally Turco-Persian, Sunni Muslim state established over conquered Byzantine territories and peoples (Rum) of Anatolia by the Seljuk Turks following their entry into Anatolia after the Battle of Manzikert in 1071. The name Rum was a synonym for the medieval Roman Empire and its peoples, as it remains in modern Turkish. The name is derived from the Aramaic and Parthian names for ancient Rome, which had reached these languages via the Greek Ῥωμαῖοι. The Seljuk Turks used the name to refer to Anatolia. The Sultanate of Rum is considered to be the beginning of Turkish history in Anatolia.",
     "capitals": [],
     "flag": null,
     "coatOfArms": null,
@@ -6744,7 +6720,8 @@
       ],
       "firstEpoch": "world_1300",
       "lastEpoch": "world_1400"
-    }
+    },
+    "wiki_url": "https://en.wikipedia.org/wiki/Sultanate_of_Rum"
   },
   "Q1028": {
     "id": "Q1028",
@@ -6782,6 +6759,57 @@
       ],
       "firstEpoch": "world_1300",
       "lastEpoch": "world_2010"
+    }
+  },
+  "Q178913": {
+    "id": "Q178913",
+    "label": "Trebizond",
+    "subjecto": "Trebizond",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Trebizond",
+    "rulers_url": null,
+    "wikidataId": "Q178913",
+    "description": "The Empire of Trebizond or the Trapezuntine Empire was one of the three Byzantine rump states of the Byzantine Empire that existed during the 13th through to the 15th century. The empire consisted of the Pontus, or far northeastern corner of Anatolia, and portions of southern Crimea. It was formed with the help of Georgia's interventions in Trebizond.",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1400"
+    },
+    "wiki_url": "https://en.wikipedia.org/wiki/Empire_of_Trebizond"
+  },
+  "Q188586": {
+    "id": "Q188586",
+    "label": "Sicily",
+    "subjecto": "Sicily",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sicily",
+    "rulers_url": null,
+    "wikidataId": "Q188586",
+    "description": "Sicily ( Italian and Sicilian : Sicilia ) , officially the Sicilian Region , is an island in the central Mediterranean Sea and one of the twenty regions of Italy , situated south of the Italian Peninsula in continental Europe . With over 4.7 million inhabitants, including 1.2 million in and around the capital city of Palermo , it is both the largest and most populous island in the Mediterranean Sea .",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Bandiera_del_Regno_di_Sicilia_4.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_the_Aragonese_Kings_of_Sicily%28Crowned%29.svg",
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1530",
+        "world_1600"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1600"
     }
   }
 }

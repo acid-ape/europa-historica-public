@@ -21990,5 +21990,139 @@
     "territory_type": "ruler_based",
     "context_start": 1077,
     "context_end": 1307
+  },
+  "Q178913": {
+    "rulers": [
+      {
+        "name": "David I of Trebizond",
+        "start": 1204,
+        "end": 1212,
+        "wiki_link": "/wiki/David_Komnenos"
+      },
+      {
+        "name": "Alexios I of Trebizond",
+        "start": 1204,
+        "end": 1222,
+        "wiki_link": "/wiki/Alexios_I_of_Trebizond"
+      },
+      {
+        "name": "Andronikos I of Trebizond",
+        "start": 1222,
+        "end": 1235,
+        "wiki_link": "/wiki/Andronikos_I_of_Trebizond"
+      },
+      {
+        "name": "John I of Trebizond",
+        "start": 1235,
+        "end": 1238,
+        "wiki_link": "/wiki/John_I_of_Trebizond"
+      },
+      {
+        "name": "Manuel I of Trebizond",
+        "start": 1238,
+        "end": 1263,
+        "wiki_link": "/wiki/Manuel_I_of_Trebizond"
+      },
+      {
+        "name": "Andronikos II of Trebizond",
+        "start": 1263,
+        "end": 1266,
+        "wiki_link": "/wiki/Andronikos_II_of_Trebizond"
+      },
+      {
+        "name": "George, Emperor of Trebizond",
+        "start": 1266,
+        "end": 1280,
+        "wiki_link": "/wiki/George,_Emperor_of_Trebizond"
+      },
+      {
+        "name": "John II of Trebizond",
+        "start": 1280,
+        "end": 1297,
+        "wiki_link": "/wiki/John_II_of_Trebizond"
+      },
+      {
+        "name": "Theodora of Trebizond",
+        "start": 1284,
+        "end": 1285,
+        "wiki_link": "/wiki/Theodora_of_Trebizond"
+      },
+      {
+        "name": "Alexios II of Trebizond",
+        "start": 1297,
+        "end": 1330,
+        "wiki_link": "/wiki/Alexios_II_of_Trebizond"
+      },
+      {
+        "name": "Andronikos III of Trebizond",
+        "start": 1330,
+        "end": 1332,
+        "wiki_link": "/wiki/Andronikos_III_of_Trebizond"
+      },
+      {
+        "name": "Manuel II of Trebizond",
+        "start": 1332,
+        "end": 1332,
+        "wiki_link": "/wiki/Manuel_II_of_Trebizond"
+      },
+      {
+        "name": "Basil of Trebizond",
+        "start": 1332,
+        "end": 1340,
+        "wiki_link": "/wiki/Basil_of_Trebizond"
+      },
+      {
+        "name": "John III of Trebizond",
+        "start": 1342,
+        "end": 1344,
+        "wiki_link": "/wiki/John_III_of_Trebizond"
+      },
+      {
+        "name": "Michael of Trebizond",
+        "start": 1344,
+        "end": 1349,
+        "wiki_link": "/wiki/Michael_of_Trebizond"
+      },
+      {
+        "name": "Alexios III of Trebizond",
+        "start": 1349,
+        "end": 1390,
+        "wiki_link": "/wiki/Alexios_III_of_Trebizond"
+      },
+      {
+        "name": "Manuel III of Trebizond",
+        "start": 1390,
+        "end": 1417,
+        "wiki_link": "/wiki/Manuel_III_of_Trebizond"
+      },
+      {
+        "name": "Alexios IV of Trebizond",
+        "start": 1417,
+        "end": 1429,
+        "wiki_link": "/wiki/Alexios_IV_of_Trebizond"
+      },
+      {
+        "name": "John IV of Trebizond",
+        "start": 1429,
+        "end": 1460,
+        "wiki_link": "/wiki/John_IV_of_Trebizond"
+      },
+      {
+        "name": "Alexios V Megas Komnenos",
+        "start": 1460,
+        "end": 1460,
+        "wiki_link": "/wiki/Alexios_V_of_Trebizond"
+      },
+      {
+        "name": "David II of Trebizond",
+        "start": 1460,
+        "end": 1461,
+        "wiki_link": "/wiki/David_of_Trebizond"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1204,
+    "context_end": 1461
   }
 }
