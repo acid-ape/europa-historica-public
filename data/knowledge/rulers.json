@@ -14425,16 +14425,16 @@
         "start": 822,
         "end": 852,
         "wikidataId": "Q307412",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Abderram%C3%A1n_II.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q307412.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Abderram%C3%A1n_II.jpg"
       },
       {
         "name": "Muhammad I",
         "start": 852,
         "end": 886,
         "wikidataId": "Q356624",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dirham_muhammad_i_20068.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q356624.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dirham_muhammad_i_20068.jpg"
       },
       {
         "name": "al-Mundhir",
@@ -14449,32 +14449,32 @@
         "start": 888,
         "end": 912,
         "wikidataId": "Q307680",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdalah_fel%C3%BAs_20286.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q307680.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdalah_fel%C3%BAs_20286.jpg"
       },
       {
         "name": "ʿAbd al-Rahmān III al-Nāṣir li-Dīn Allāh",
         "start": 912,
         "end": 929,
         "wikidataId": "Q190418",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AtaiforDeGuadalajara-9100538_%28cropped%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q190418.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AtaiforDeGuadalajara-9100538_%28cropped%29.jpg"
       },
       {
         "name": "Al-Ḥakam II al-Mustanṣir bi-llāh",
         "start": 961,
         "end": 976,
         "wikidataId": "Q284531",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/MonAlhakenII01.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q284531.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MonAlhakenII01.jpg"
       },
       {
         "name": "Hishām II al-Muʾayyad bi-llāh",
         "start": 976,
         "end": 1009,
         "wikidataId": "Q169640",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hisham_II_of_C%C3%B3rdoba_Dinar_94227.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q169640.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hisham_II_of_C%C3%B3rdoba_Dinar_94227.jpg"
       },
       {
         "name": "Muhammad II al-Mahdī bi'llāh",
@@ -14489,8 +14489,8 @@
         "start": 1009,
         "end": 1010,
         "wikidataId": "Q919199",
-        "image": null,
-        "imageUrl": null
+        "image": "data/images/rulers/Q919199.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/R.77203_Dirham_%2852594821907%29.jpg/330px-R.77203_Dirham_%2852594821907%29.jpg"
       },
       {
         "name": "ʿAbd al-Raḥmān IV al-Murtaḍā bi-llāh",
@@ -14521,8 +14521,8 @@
         "start": 1021,
         "end": 1023,
         "wikidataId": "Q1931590",
-        "image": null,
-        "imageUrl": null
+        "image": "data/images/rulers/Q1931590.jpg",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Dirham_yahya_22332.jpg/330px-Dirham_yahya_22332.jpg"
       },
       {
         "name": "ʿAbd al-Rahmān V al-Mustaẓhir bi-llāh",
@@ -15730,839 +15730,735 @@
   "Q4948": {
     "rulers": [
       {
+        "name": "Marcello Tegalliano",
+        "start": 717,
+        "end": 726,
+        "wiki_link": "/wiki/Marcello_Tegalliano"
+      },
+      {
+        "name": "Orso Ipato",
+        "start": 726,
+        "end": 737,
+        "wiki_link": "/wiki/Orso_Ipato"
+      },
+      {
+        "name": "Teodato Ipato",
+        "start": 742,
+        "end": 755,
+        "wiki_link": "/wiki/Teodato_Ipato"
+      },
+      {
+        "name": "Galla Gaulo",
+        "start": 755,
+        "end": 756,
+        "wiki_link": "/wiki/Galla_Gaulo"
+      },
+      {
+        "name": "Domenico Monegario",
+        "start": 756,
+        "end": 764,
+        "wiki_link": "/wiki/Domenico_Monegario"
+      },
+      {
+        "name": "Maurizio Galbaio",
+        "start": 764,
+        "end": 797,
+        "wiki_link": "/wiki/Maurizio_Galbaio"
+      },
+      {
+        "name": "Giovanni Galbaio",
+        "start": 797,
+        "end": 803,
+        "wiki_link": "/wiki/Giovanni_Galbaio"
+      },
+      {
+        "name": "Obelerio degli Antenori",
+        "start": 804,
+        "end": 810,
+        "wiki_link": "/wiki/Obelerio_degli_Antenori"
+      },
+      {
+        "name": "Agnello Participazio",
+        "start": 810,
+        "end": 827,
+        "wiki_link": "/wiki/Agnello_Participazio"
+      },
+      {
+        "name": "Giustiniano Participazio",
+        "start": 827,
+        "end": 829,
+        "wiki_link": "/wiki/Giustiniano_Participazio"
+      },
+      {
+        "name": "Giovanni I Participazio",
+        "start": 829,
+        "end": 836,
+        "wiki_link": "/wiki/Giovanni_I_Participazio"
+      },
+      {
+        "name": "Pietro Tradonico",
+        "start": 836,
+        "end": 864,
+        "wiki_link": "/wiki/Pietro_Tradonico"
+      },
+      {
+        "name": "Orso I Participazio",
+        "start": 864,
+        "end": 881,
+        "wiki_link": "/wiki/Orso_I_Participazio"
+      },
+      {
+        "name": "Giovanni II Participazio",
+        "start": 881,
+        "end": 887,
+        "wiki_link": "/wiki/Giovanni_II_Participazio"
+      },
+      {
         "name": "Pietro Tribuno",
-        "start": 912,
-        "end": null,
-        "wikidataId": "Q719416",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_Tribuno.jpg",
-        "imageUrl": null
+        "start": 887,
+        "end": 911,
+        "wiki_link": "/wiki/Pietro_Tribuno"
+      },
+      {
+        "name": "Pietro I Candiano",
+        "start": 887,
+        "end": 888,
+        "wiki_link": "/wiki/Pietro_I_Candiano"
       },
       {
         "name": "Orso II Participazio",
-        "start": 932,
-        "end": null,
-        "wikidataId": "Q718138",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Madonna_dell%27Orto_%28Venice%29_-_Chapel_St_Mauro_-_Orso_II_Participazio.jpg",
-        "imageUrl": null
+        "start": 912,
+        "end": 932,
+        "wiki_link": "/wiki/Orso_II_Participazio"
       },
       {
         "name": "Pietro II Candiano",
-        "start": 872,
+        "start": 932,
         "end": 939,
-        "wikidataId": "Q168357",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_II_Candiano.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_II_Candiano"
       },
       {
         "name": "Pietro Participazio",
-        "start": 942,
-        "end": null,
-        "wikidataId": "Q183137",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_Badoer_Participazio.jpg",
-        "imageUrl": null
+        "start": 939,
+        "end": 942,
+        "wiki_link": "/wiki/Pietro_Participazio"
       },
       {
         "name": "Pietro III Candiano",
-        "start": 959,
-        "end": null,
-        "wikidataId": "Q598782",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_III_Candiano.jpg",
-        "imageUrl": null
+        "start": 942,
+        "end": 959,
+        "wiki_link": "/wiki/Pietro_III_Candiano"
       },
       {
         "name": "Pietro IV Candiano",
-        "start": 928,
+        "start": 959,
         "end": 976,
-        "wikidataId": "Q378398",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_IV_Candiano.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_IV_Candiano"
       },
       {
         "name": "Pietro I Orseolo",
-        "start": 928,
-        "end": 987,
-        "wikidataId": "Q707192",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Rocco_%28Venice%29_-_Statue_of_Saint_Peter_Orseolo.jpg",
-        "imageUrl": null
+        "start": 976,
+        "end": 978,
+        "wiki_link": "/wiki/Pietro_I_Orseolo"
       },
       {
         "name": "Vitale Candiano",
-        "start": 979,
-        "end": null,
-        "wikidataId": "Q62347",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vitale_Candiano.jpg",
-        "imageUrl": null
+        "start": 978,
+        "end": 979,
+        "wiki_link": "/wiki/Vitale_Candiano"
       },
       {
         "name": "Tribuno Memmo",
-        "start": 991,
-        "end": null,
-        "wikidataId": "Q603567",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tribuno_Memmo.jpg",
-        "imageUrl": null
+        "start": 979,
+        "end": 991,
+        "wiki_link": "/wiki/Tribuno_Memmo"
       },
       {
         "name": "Pietro II Orseolo",
-        "start": 961,
-        "end": null,
-        "wikidataId": "Q507725",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust_of_Pietro_Orseolo_II._Panteon_Veneto%3B_Istituto_Veneto_di_Scienze%2C_Lettere_ed_Arti.jpg",
-        "imageUrl": null
+        "start": 991,
+        "end": 1009,
+        "wiki_link": "/wiki/Pietro_II_Orseolo"
       },
       {
         "name": "Otto Orseolo",
-        "start": 992,
-        "end": null,
-        "wikidataId": "Q935635",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Domenico_tintoretto%2C_ritratto_dei_dogi_pietro_orseolo_II_e_ottone_orseolo.JPG",
-        "imageUrl": null
+        "start": 1009,
+        "end": 1026,
+        "wiki_link": "/wiki/Otto_Orseolo"
       },
       {
         "name": "Pietro Barbolano",
-        "start": 1032,
-        "end": null,
-        "wikidataId": "Q938439",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_Barbolano.jpg",
-        "imageUrl": null
+        "start": 1026,
+        "end": 1032,
+        "wiki_link": "/wiki/Pietro_Barbolano"
       },
       {
         "name": "Domenico Flabanico",
-        "start": 1043,
-        "end": null,
-        "wikidataId": "Q741273",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Domenico_Flabanico.png",
-        "imageUrl": null
+        "start": 1032,
+        "end": 1041,
+        "wiki_link": "/wiki/Domenico_Flabanico"
       },
       {
         "name": "Domenico I Contarini",
-        "start": 1071,
-        "end": null,
-        "wikidataId": "Q522675",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Domenico_I_Contarini.jpg",
-        "imageUrl": null
+        "start": 1043,
+        "end": 1071,
+        "wiki_link": "/wiki/Domenico_I_Contarini"
       },
       {
         "name": "Domenico Selvo",
-        "start": 1087,
-        "end": null,
-        "wikidataId": "Q908278",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/31_Domenico_Selvo.jpg",
-        "imageUrl": null
+        "start": 1071,
+        "end": 1084,
+        "wiki_link": "/wiki/Domenico_Selvo"
       },
       {
         "name": "Vitale Faliero",
-        "start": 1095,
-        "end": null,
-        "wikidataId": "Q653624",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vitale_Faliero_de%27_Doni.jpg",
-        "imageUrl": null
+        "start": 1084,
+        "end": 1095,
+        "wiki_link": "/wiki/Vitale_Faliero"
       },
       {
         "name": "Vitale I Michiel",
-        "start": 1102,
-        "end": null,
-        "wikidataId": "Q982082",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/33_Vitale_Michiel.jpg",
-        "imageUrl": null
+        "start": 1096,
+        "end": 1102,
+        "wiki_link": "/wiki/Vitale_I_Michiel"
       },
       {
         "name": "Ordelafo Faliero",
-        "start": 1117,
-        "end": null,
-        "wikidataId": "Q954541",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Ordelaffo_Falier%2C_pala_d%27oro%2C_Venezia.jpg",
-        "imageUrl": null
+        "start": 1102,
+        "end": 1117,
+        "wiki_link": "/wiki/Ordelafo_Faliero"
       },
       {
         "name": "Domenico Michiel",
-        "start": 1130,
-        "end": null,
-        "wikidataId": "Q281879",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Domenico_Michiel%2C_Doge_of_Venice.jpg",
-        "imageUrl": null
+        "start": 1117,
+        "end": 1129,
+        "wiki_link": "/wiki/Domenico_Michiel"
       },
       {
         "name": "Pietro Polani",
-        "start": 1148,
-        "end": null,
-        "wikidataId": "Q1073651",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/36_Pietro_Polani.jpg",
-        "imageUrl": null
+        "start": 1130,
+        "end": 1147,
+        "wiki_link": "/wiki/Pietro_Polani"
       },
       {
         "name": "Domenico Morosini",
-        "start": 1156,
-        "end": null,
-        "wikidataId": "Q908262",
-        "image": null,
-        "imageUrl": null
+        "start": 1148,
+        "end": 1156,
+        "wiki_link": "/wiki/Domenico_Morosini"
       },
       {
         "name": "Vitale II Michiel",
-        "start": 1172,
-        "end": null,
-        "wikidataId": "Q724616",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vitale_II_Michele.jpg",
-        "imageUrl": null
+        "start": 1155,
+        "end": 1172,
+        "wiki_link": "/wiki/Vitale_II_Michiel"
       },
       {
         "name": "Sebastiano Ziani",
-        "start": 1178,
-        "end": null,
-        "wikidataId": "Q537167",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/39_Sebastiano_Ziani.jpg",
-        "imageUrl": null
+        "start": 1172,
+        "end": 1178,
+        "wiki_link": "/wiki/Sebastiano_Ziani"
       },
       {
         "name": "Orio Mastropiero",
-        "start": 1192,
-        "end": null,
-        "wikidataId": "Q1073866",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/40_Orio_Mastro_Pietro.jpg",
-        "imageUrl": null
+        "start": 1178,
+        "end": 1192,
+        "wiki_link": "/wiki/Orio_Mastropiero"
       },
       {
         "name": "Enrico Dandolo",
-        "start": 1107,
+        "start": 1192,
         "end": 1205,
-        "wikidataId": "Q205688",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/EnricoDandolo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Enrico_Dandolo"
       },
       {
         "name": "Pietro Ziani",
-        "start": 1230,
-        "end": null,
-        "wikidataId": "Q666431",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_Ziani_murale.jpg",
-        "imageUrl": null
+        "start": 1205,
+        "end": 1229,
+        "wiki_link": "/wiki/Pietro_Ziani"
       },
       {
         "name": "Jacopo Tiepolo",
-        "start": 1249,
-        "end": null,
-        "wikidataId": "Q558090",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto_Giacomo_Tiepolo.jpg",
-        "imageUrl": null
+        "start": 1229,
+        "end": 1249,
+        "wiki_link": "/wiki/Jacopo_Tiepolo"
       },
       {
         "name": "Marino Morosini",
-        "start": 1181,
+        "start": 1249,
         "end": 1253,
-        "wikidataId": "Q1072685",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Frari_%28Venice%29_-_Chapter_Room_-_Doge_Marino_Morosini_by_Palma_il_Giovane.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marino_Morosini"
       },
       {
         "name": "Reniero Zeno",
-        "start": 1268,
-        "end": null,
-        "wikidataId": "Q1072987",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Renier_Zen%2C_Doge_of_the_Republic_of_Venice.jpg",
-        "imageUrl": null
+        "start": 1253,
+        "end": 1268,
+        "wiki_link": "/wiki/Reniero_Zeno"
       },
       {
         "name": "Lorenzo Tiepolo",
-        "start": 1275,
-        "end": null,
-        "wikidataId": "Q725465",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/46_Lorenzo_Tiepolo.jpg",
-        "imageUrl": null
+        "start": 1268,
+        "end": 1275,
+        "wiki_link": "/wiki/Lorenzo_Tiepolo"
       },
       {
         "name": "Jacopo Contarini",
-        "start": 1194,
+        "start": 1275,
         "end": 1280,
-        "wikidataId": "Q645927",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Jacopo_Contarini_portrait.JPG",
-        "imageUrl": null
+        "wiki_link": "/wiki/Jacopo_Contarini"
       },
       {
         "name": "Giovanni Dandolo",
-        "start": 1289,
-        "end": null,
-        "wikidataId": "Q532733",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Giovanni_Dandolo.png",
-        "imageUrl": null
+        "start": 1280,
+        "end": 1289,
+        "wiki_link": "/wiki/Giovanni_Dandolo"
       },
       {
         "name": "Pietro Gradenigo",
-        "start": 1251,
+        "start": 1289,
         "end": 1311,
-        "wikidataId": "Q723300",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_Gradenigo.png",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_Gradenigo"
       },
       {
         "name": "Marino Zorzi",
-        "start": 1231,
+        "start": 1311,
         "end": 1312,
-        "wikidataId": "Q1065976",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marino_Zorzi.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marino_Zorzi"
       },
       {
         "name": "Giovanni Soranzo",
-        "start": 1240,
-        "end": 1328,
-        "wikidataId": "Q1010686",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Soranzo_Portrait.JPG",
-        "imageUrl": null
+        "start": 1312,
+        "end": 1329,
+        "wiki_link": "/wiki/Giovanni_Soranzo"
       },
       {
         "name": "Francesco Dandolo",
-        "start": 1339,
-        "end": null,
-        "wikidataId": "Q768846",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Dandolo.jpg",
-        "imageUrl": null
+        "start": 1329,
+        "end": 1339,
+        "wiki_link": "/wiki/Francesco_Dandolo"
       },
       {
         "name": "Bartolomeo Gradenigo",
-        "start": 1263,
-        "end": 1342,
-        "wikidataId": "Q279896",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Accademia_-_Doge_Bartolomeo_Gradenigo_by_Paris_Bordone.jpg",
-        "imageUrl": null
+        "start": 1339,
+        "end": 1343,
+        "wiki_link": "/wiki/Bartolomeo_Gradenigo"
       },
       {
         "name": "Andrea Dandolo",
-        "start": 1306,
+        "start": 1343,
         "end": 1354,
-        "wikidataId": "Q353193",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Dandolo_%281306-1354%29_-_54_%C3%A8me_Doge_de_Venise.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Andrea_Dandolo"
       },
       {
         "name": "Marino Faliero",
-        "start": 1274,
+        "start": 1354,
         "end": 1355,
-        "wikidataId": "Q434940",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne_Ferdinand_Victor_Delacroix_019.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marino_Faliero"
       },
       {
         "name": "Giovanni Gradenigo",
-        "start": 1280,
+        "start": 1355,
         "end": 1356,
-        "wikidataId": "Q1010654",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Grosso_of_Giovanni_Gradenigo%2C_Doge_of_Venice.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_Gradenigo"
       },
       {
         "name": "Giovanni Dolfin",
-        "start": 1303,
+        "start": 1356,
         "end": 1361,
-        "wikidataId": "Q1243594",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolfin_Doge.png",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_Dolfin"
       },
       {
         "name": "Lorenzo Celsi",
-        "start": 1310,
+        "start": 1361,
         "end": 1365,
-        "wikidataId": "Q939184",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lorenzo_Celsi.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Lorenzo_Celsi"
       },
       {
         "name": "Marco Cornaro",
-        "start": 1286,
+        "start": 1365,
         "end": 1368,
-        "wikidataId": "Q1893721",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Marco_Cornaro_portrait.JPG",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marco_Cornaro"
       },
       {
         "name": "Andrea Contarini",
-        "start": 1300,
+        "start": 1368,
         "end": 1382,
-        "wikidataId": "Q493681",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Contarini_Portrait.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Andrea_Contarini"
       },
       {
         "name": "Michele Morosini",
-        "start": 1308,
+        "start": 1382,
         "end": 1382,
-        "wikidataId": "Q1931114",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Choir_of_Santi_Giovanni_e_Paolo_%28Venice%29_-_Monument_to_doge_Michele_Morosini_-_Close-up.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Michele_Morosini"
       },
       {
         "name": "Antonio Venier",
-        "start": 1330,
+        "start": 1382,
         "end": 1400,
-        "wikidataId": "Q605625",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio_Venier.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Antonio_Venier"
       },
       {
         "name": "Michele Steno",
-        "start": 1331,
-        "end": 1413,
-        "wikidataId": "Q541090",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Michele_Steno.jpg",
-        "imageUrl": null
+        "start": 1400,
+        "end": 1414,
+        "wiki_link": "/wiki/Michele_Steno"
       },
       {
         "name": "Tommaso Mocenigo",
-        "start": 1343,
+        "start": 1414,
         "end": 1423,
-        "wikidataId": "Q654063",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponti%2C_Carlo_%28ca._1823-1893%29_-_Tommaso_Mocenigo_%28doge_1413-1423%29.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Tommaso_Mocenigo"
       },
       {
         "name": "Francesco Foscari",
-        "start": 1373,
+        "start": 1423,
         "end": 1457,
-        "wikidataId": "Q503874",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29_Portrait_of_the_Venecian_doge_Francesco_Foscari_by_Lazzaro_Bastiani_-_Correr_Museum.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Foscari"
       },
       {
         "name": "Pasquale Malipiero",
-        "start": 1392,
+        "start": 1457,
         "end": 1462,
-        "wikidataId": "Q775174",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gentile_Bellini_010.jpeg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pasquale_Malipiero"
       },
       {
         "name": "Cristoforo Moro",
-        "start": 1390,
+        "start": 1462,
         "end": 1471,
-        "wikidataId": "Q1140460",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Doge_Cristoforo_Moro_%281390-1471%29.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Cristoforo_Moro"
       },
       {
         "name": "Nicolò Tron",
-        "start": 1399,
+        "start": 1471,
         "end": 1473,
-        "wikidataId": "Q1243626",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicol%C3%B2_Tron_LXVIII_Doge_di_Venezia_1471.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_Tron"
       },
       {
         "name": "Nicolò Marcello",
-        "start": 1399,
+        "start": 1473,
         "end": 1474,
-        "wikidataId": "Q734230",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bellini-doge-nicol%C3%B2-marcello.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_Marcello"
       },
       {
         "name": "Pietro Mocenigo",
-        "start": 1406,
+        "start": 1474,
         "end": 1476,
-        "wikidataId": "Q957672",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PietroMocenigo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_Mocenigo"
       },
       {
         "name": "Andrea Vendramin",
-        "start": 1393,
+        "start": 1476,
         "end": 1478,
-        "wikidataId": "Q495242",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Vendramin%2C_by_Gentile_Bellini_cropped.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Andrea_Vendramin"
       },
       {
         "name": "Giovanni Mocenigo",
-        "start": 1409,
+        "start": 1478,
         "end": 1485,
-        "wikidataId": "Q538920",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29_Doge_Giovanni_Mocenigo_by_Gentile_Bellini_-_Correr_Museum.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_Mocenigo"
       },
       {
         "name": "Marco Barbarigo",
-        "start": 1413,
+        "start": 1485,
         "end": 1486,
-        "wikidataId": "Q1349235",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Domenico_Tintoretto_-_Portrait_of_Marco_Barbarigo_-_WGA19634.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marco_Barbarigo"
       },
       {
         "name": "Agostino Barbarigo",
-        "start": 1419,
+        "start": 1486,
         "end": 1501,
-        "wikidataId": "Q395582",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Basaiti_Portrait_of_Doge_Agostino_Barbarigo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Agostino_Barbarigo"
       },
       {
         "name": "Leonardo Loredan",
-        "start": 1436,
+        "start": 1501,
         "end": 1521,
-        "wikidataId": "Q250210",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Bellini%2C_portrait_of_Doge_Leonardo_Loredan.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Leonardo_Loredan"
       },
       {
         "name": "Antonio Grimani",
-        "start": 1434,
+        "start": 1521,
         "end": 1523,
-        "wikidataId": "Q602332",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AntonioGrimani.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Antonio_Grimani"
       },
       {
         "name": "Andrea Gritti",
-        "start": 1455,
+        "start": 1523,
         "end": 1538,
-        "wikidataId": "Q345506",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincenzo_Catena_009.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Andrea_Gritti"
       },
       {
         "name": "Pietro Lando",
-        "start": 1462,
-        "end": null,
-        "wikidataId": "Q1348814",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Doge_Petrus_Lando%2C_in_the_style_of_Titian%2C_c._1545%2C_oil_on_canvas%2C_16th_century_frame_in_the_style_of_Jacopo_Sansovino_-_Hyde_Collection_-_Glens_Falls%2C_NY_-_20180224_122213.jpg",
-        "imageUrl": null
+        "start": 1538,
+        "end": 1545,
+        "wiki_link": "/wiki/Pietro_Lando"
       },
       {
         "name": "Francesco Donato",
-        "start": 1468,
+        "start": 1545,
         "end": 1553,
-        "wikidataId": "Q593430",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Workshop_of_Tiziano_-_Portrait_of_Doge_Francesco_Donato.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Donato"
       },
       {
         "name": "Marcantonio Trivisan",
-        "start": 1475,
+        "start": 1553,
         "end": 1554,
-        "wikidataId": "Q732524",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Titian_%E2%80%93_Portrait_of_Marcantonio_Trevisan%2C_Doge_of_Venice_%E2%80%93_Google_Art_Project.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marcantonio_Trivisan"
       },
       {
         "name": "Francesco Venier",
-        "start": 1489,
-        "end": null,
-        "wikidataId": "Q774070",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiziano%2C_Portrait_of_Doge_Francesco_Venier_Oil_on_canvas%2C_Thyssen-Bornemisza_Collection.jpg",
-        "imageUrl": null
+        "start": 1554,
+        "end": 1556,
+        "wiki_link": "/wiki/Francesco_Venier"
       },
       {
         "name": "Lorenzo Priuli",
-        "start": 1489,
+        "start": 1556,
         "end": 1559,
-        "wikidataId": "Q1232902",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lorenzo_Priuli_Cropped.JPG",
-        "imageUrl": null
+        "wiki_link": "/wiki/Lorenzo_Priuli"
       },
       {
         "name": "Girolamo Priuli",
-        "start": 1486,
+        "start": 1559,
         "end": 1567,
-        "wikidataId": "Q551627",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Tintoretto_-_Portrait_of_Doge_Girolamo_Priuli_-_WGA22684.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Girolamo_Priuli_(1486%E2%80%931567)"
       },
       {
         "name": "Pietro Loredan",
-        "start": 1481,
+        "start": 1567,
         "end": 1570,
-        "wikidataId": "Q1368089",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Tintoretto_-_Doge_Pietro_Loredano_-_Google_Art_Project.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_Loredan_(doge)"
       },
       {
         "name": "Alvise I Mocenigo",
-        "start": 1507,
+        "start": 1570,
         "end": 1577,
-        "wikidataId": "Q449435",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Tintoretto_-_Doge_Alvise_Mocenigo_-_WGA22694.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Alvise_I_Mocenigo"
       },
       {
         "name": "Sebastiano Venier",
-        "start": 1496,
+        "start": 1577,
         "end": 1578,
-        "wikidataId": "Q729088",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Robusti%2C_gen._Tintoretto%2C_Kunsthistorisches_Museum_Wien%2C_Gem%C3%A4ldegalerie_-_Sebastiano_Venier_%28gest._1578%29_%28Im_Hintergrund%2C_Die_Seeschlacht_bei_Lepanto%29_-_GG_32_-_Kunsthistorisches_Museum.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Sebastiano_Venier"
       },
       {
         "name": "Nicolò da Ponte",
-        "start": 1491,
+        "start": 1578,
         "end": 1585,
-        "wikidataId": "Q660445",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Teniers_II_%281610-1690%29_-_Portrait_of_a_Doge_%28after_Jacopo_Tintoretto%29_-_P.1978.PG.435_-_Courtauld_Gallery.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_da_Ponte"
       },
       {
         "name": "Pasquale Cicogna",
-        "start": 1509,
-        "end": null,
-        "wikidataId": "Q951996",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Tintoretto_-_Doge_Pasquale_Cicogna.jpg",
-        "imageUrl": null
+        "start": 1585,
+        "end": 1595,
+        "wiki_link": "/wiki/Pasquale_Cicogna"
+      },
+      {
+        "name": "Morosina Morosini-Grimani",
+        "start": 1595,
+        "end": 1605,
+        "wiki_link": "/wiki/Morosina_Morosini"
       },
       {
         "name": "Marino Grimani",
-        "start": 1532,
+        "start": 1595,
         "end": 1605,
-        "wikidataId": "Q746707",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Marino_Grimani_LACMA_39.12.23.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marino_Grimani_(doge)"
       },
       {
         "name": "Leonardo Donato",
-        "start": 1536,
+        "start": 1606,
         "end": 1612,
-        "wikidataId": "Q250338",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_Donato.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Leonardo_Donato"
       },
       {
         "name": "Marcantonio Memmo",
-        "start": 1536,
+        "start": 1612,
         "end": 1615,
-        "wikidataId": "Q647706",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcantoniomemmogemvlbassano_hi.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marcantonio_Memmo"
       },
       {
         "name": "Giovanni Bembo",
-        "start": 1543,
+        "start": 1615,
         "end": 1618,
-        "wikidataId": "Q652145",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Bembo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_Bembo"
       },
       {
         "name": "Nicolò Donato",
-        "start": 1539,
+        "start": 1618,
         "end": 1618,
-        "wikidataId": "Q633501",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicol%C3%B2_Don%C3%A0.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_Donato"
       },
       {
         "name": "Antonio Priuli",
-        "start": 1548,
+        "start": 1618,
         "end": 1623,
-        "wikidataId": "Q604434",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AntonioPriuli.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Antonio_Priuli_(doge)"
       },
       {
         "name": "Francesco Contarini",
-        "start": 1556,
+        "start": 1623,
         "end": 1624,
-        "wikidataId": "Q185348",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%B4%D0%BE%D0%B6%D0%B0_%D0%A4%D1%80%D0%B0%D0%BD%D1%87%D0%B5%D1%81%D0%BA%D0%BE_%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%BD%D0%B8.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Contarini"
       },
       {
         "name": "Giovanni I Cornaro",
-        "start": 1551,
+        "start": 1625,
         "end": 1629,
-        "wikidataId": "Q1243584",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_I_Cornaro_Ricci.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_I_Cornaro"
       },
       {
         "name": "Nicolò Contarini",
-        "start": 1553,
+        "start": 1630,
         "end": 1631,
-        "wikidataId": "Q1367728",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicol%C3%B2_Contarini.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_Contarini"
       },
       {
         "name": "Francesco Erizzo",
-        "start": 1566,
+        "start": 1631,
         "end": 1646,
-        "wikidataId": "Q933477",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Accademia_-_Bernardo_Strozzi_Portrait_de_Francesco_Erizzo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Erizzo"
       },
       {
         "name": "Francesco Molin",
-        "start": 1575,
+        "start": 1646,
         "end": 1655,
-        "wikidataId": "Q648728",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Molin.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Molin"
       },
       {
         "name": "Carlo Contarini",
-        "start": 1580,
+        "start": 1655,
         "end": 1656,
-        "wikidataId": "Q536373",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Contarini_portrait_2.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Carlo_Contarini"
       },
       {
         "name": "Francesco Cornaro",
-        "start": 1585,
+        "start": 1656,
         "end": 1656,
-        "wikidataId": "Q1150113",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Cornaro.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Cornaro_(doge)"
       },
       {
-        "name": "Bertuccio Valier",
-        "start": 1596,
+        "name": "Bertuccio Valiero",
+        "start": 1656,
         "end": 1658,
-        "wikidataId": "Q647104",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bertuccio_Valiero.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Bertuccio_Valier"
       },
       {
         "name": "Giovanni Pesaro",
-        "start": 1589,
+        "start": 1658,
         "end": 1659,
-        "wikidataId": "Q645781",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Pesaro.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_Pesaro"
       },
       {
         "name": "Domenico II Contarini",
-        "start": 1585,
+        "start": 1659,
         "end": 1675,
-        "wikidataId": "Q1234171",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Titulyarnik_-_Domenico_II_Contarini.png",
-        "imageUrl": null
+        "wiki_link": "/wiki/Domenico_II_Contarini"
       },
       {
         "name": "Nicolò Sagredo",
-        "start": 1606,
+        "start": 1675,
         "end": 1676,
-        "wikidataId": "Q1243577",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolo_sagredo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Nicol%C3%B2_Sagredo"
+      },
+      {
+        "name": "Giovanni Sagredo",
+        "start": 1676,
+        "end": 1676
       },
       {
         "name": "Alvise Contarini",
-        "start": 1601,
+        "start": 1676,
         "end": 1684,
-        "wikidataId": "Q449428",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29_Palazzo_Mocenigo_-_Portrait_du_Doge_Alviso_Contarini%2C_1677.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Alvise_Contarini"
       },
       {
         "name": "Marcantonio Giustinian",
-        "start": 1619,
+        "start": 1684,
         "end": 1688,
-        "wikidataId": "Q638146",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcantonio_giustinian.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marcantonio_Giustinian"
       },
       {
         "name": "Francesco Morosini",
-        "start": 1619,
+        "start": 1688,
         "end": 1694,
-        "wikidataId": "Q34481",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Doge_Francesco_Morosini_%281619%E2%80%931694%29%2C_half-length%2C_in_armour_.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Morosini"
       },
       {
-        "name": "Silvestro Valier",
-        "start": 1630,
+        "name": "Silvestro Valiero",
+        "start": 1694,
         "end": 1700,
-        "wikidataId": "Q642806",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinacoteca_Querini_Stampalia_-_Ritratto_del_doge_Silvestro_Valier_1694_-_Nicol%C3%B2_Cassana.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Silvestro_Valier"
       },
       {
         "name": "Alvise II Mocenigo",
-        "start": 1628,
+        "start": 1700,
         "end": 1709,
-        "wikidataId": "Q132292",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29_Palazzo_Mocenigo_-_Portego_-_Portrait_du_doge_Alvise_II_Mocenigo_%281700%29.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Alvise_II_Mocenigo"
       },
       {
         "name": "Giovanni II Cornaro",
-        "start": 1647,
+        "start": 1709,
         "end": 1722,
-        "wikidataId": "Q1226634",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ca%27_Rezzonico_-_Ritratto_del_doge_Giovanni_II_Corner_-_Giambattista_Tiepolo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Giovanni_II_Cornaro"
       },
       {
         "name": "Sebastiano Mocenigo",
-        "start": 1662,
+        "start": 1722,
         "end": 1732,
-        "wikidataId": "Q449448",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvise_III_Mocenigo_doge.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Sebastiano_Mocenigo"
       },
       {
         "name": "Carlo Ruzzini",
-        "start": 1653,
+        "start": 1732,
         "end": 1735,
-        "wikidataId": "Q733355",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Ruzzini.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Carlo_Ruzzini"
       },
       {
         "name": "Alvise Pisani",
-        "start": 1664,
+        "start": 1735,
         "end": 1741,
-        "wikidataId": "Q449469",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvisepisani.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Alvise_Pisani"
       },
       {
         "name": "Pietro Grimani",
-        "start": 1677,
+        "start": 1741,
         "end": 1752,
-        "wikidataId": "Q786457",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro-grimani.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Pietro_Grimani"
       },
       {
         "name": "Francesco Loredan",
-        "start": 1685,
+        "start": 1752,
         "end": 1762,
-        "wikidataId": "Q982085",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Francesco_Loredan.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Francesco_Loredan"
       },
       {
         "name": "Marco Foscarini",
-        "start": 1696,
+        "start": 1762,
         "end": 1763,
-        "wikidataId": "Q1242215",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Doge_Marco_Foscarini.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Marco_Foscarini"
       },
       {
         "name": "Alvise Giovanni Mocenigo",
-        "start": 1701,
+        "start": 1763,
         "end": 1778,
-        "wikidataId": "Q449468",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvise_IV_Mocenigo.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Alvise_Giovanni_Mocenigo"
       },
       {
         "name": "Paolo Renier",
-        "start": 1710,
+        "start": 1779,
         "end": 1789,
-        "wikidataId": "Q663054",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29_Ritratto_del_Doge_Paolo_Renier_%281779%29_-_Lodovico_Gallina.jpg",
-        "imageUrl": null
+        "wiki_link": "/wiki/Paolo_Renier"
       },
       {
         "name": "Ludovico Manin",
-        "start": 1725,
-        "end": 1802,
-        "wikidataId": "Q458677",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lodovico_Manin.jpg",
-        "imageUrl": null
+        "start": 1789,
+        "end": 1797,
+        "wiki_link": "/wiki/Ludovico_Manin"
       }
     ],
-    "status": "draft"
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 697,
+    "context_end": 1797
   },
   "Q231392": {
     "rulers": [
@@ -16571,80 +16467,80 @@
         "start": 842,
         "end": null,
         "wikidataId": "Q184558",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XIV_of_France.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q184558.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_XIV_of_France.jpg"
       },
       {
         "name": "Pelagius of Asturias",
         "start": 718,
         "end": 737,
         "wikidataId": "Q14655",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Don_Pelayo%2C_rey_de_Asturias.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q14655.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Don_Pelayo%2C_rey_de_Asturias.jpg"
       },
       {
         "name": "Fruela II of Asturias",
         "start": 910,
         "end": 924,
         "wikidataId": "Q333603",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Miniatura_de_Fruela_II_el_Leproso%2C_rey_de_Le%C3%B3n.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q333603.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Miniatura_de_Fruela_II_el_Leproso%2C_rey_de_Le%C3%B3n.JPG"
       },
       {
         "name": "Galicia",
         "start": 910,
         "end": null,
         "wikidataId": "Q303421",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/King_of_Galicia_-_Rei_de_Galicia_-_Ariamirus.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q303421.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/King_of_Galicia_-_Rei_de_Galicia_-_Ariamirus.jpg"
       },
       {
         "name": "Santa Cruz de Cangas de Onís",
         "start": 791,
         "end": 842,
         "wikidataId": "Q1679911",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia_de_la_santa_cruz.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q1679911.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia_de_la_santa_cruz.jpg"
       },
       {
         "name": "Cathedral Basilica of San Salvador",
         "start": 791,
         "end": 842,
         "wikidataId": "Q1534288",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_of_Oviedo_2021_-_exterior.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q1534288.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_of_Oviedo_2021_-_exterior.jpg"
       },
       {
         "name": "Church of Santa María del Naranco",
         "start": 842,
         "end": 866,
         "wikidataId": "Q1246842",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Mar%C3%ADa_del_Naranco_2021.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q1246842.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Mar%C3%ADa_del_Naranco_2021.jpg"
       },
       {
         "name": "Church of San Salvador de Valdediós",
         "start": 866,
         "end": 910,
         "wikidataId": "Q1534305",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SanSalvadorValdedios-1.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q1534305.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SanSalvadorValdedios-1.jpg"
       },
       {
         "name": "Church of San Salvador de Priesca",
         "start": 910,
         "end": 925,
         "wikidataId": "Q1130947",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Priesca1.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q1130947.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Priesca1.jpg"
       },
       {
         "name": "Al-Andalus",
         "start": 711,
         "end": 1492,
         "wikidataId": "Q123559",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Andalus-ar.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q123559.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Al-Andalus-ar.jpg"
       }
     ],
     "status": "draft"
@@ -16656,248 +16552,248 @@
         "start": 1035,
         "end": 1063,
         "wikidataId": "Q379792",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramiro_I_de_Arag%C3%B3n_01.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q379792.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramiro_I_de_Arag%C3%B3n_01.jpg"
       },
       {
         "name": "Sancho Ramírez",
         "start": 1076,
         "end": 1094,
         "wikidataId": "Q344802",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Ram%C3%ADrez_%281100-1145%29.jpeg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q344802.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Ram%C3%ADrez_%281100-1145%29.jpeg"
       },
       {
         "name": "Peter I",
         "start": 1094,
         "end": 1104,
         "wikidataId": "Q379748",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_I_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q379748.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_I_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "Alfonso I",
         "start": 1104,
         "end": 1134,
         "wikidataId": "Q81833",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_I_de_Arag%C3%B3n_por_Pradilla_%281879%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q81833.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_I_de_Arag%C3%B3n_por_Pradilla_%281879%29.jpg"
       },
       {
         "name": "Ramiro II the Monk",
         "start": 1134,
         "end": 1137,
         "wikidataId": "Q316194",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Remiro_II_d%27Arag%C3%B3n_%28cropped%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q316194.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Remiro_II_d%27Arag%C3%B3n_%28cropped%29.jpg"
       },
       {
         "name": "Petronilla",
         "start": 1137,
         "end": 1164,
         "wikidataId": "Q235409",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Peronella_reina.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q235409.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Peronella_reina.jpg"
       },
       {
         "name": "Alfonso II",
         "start": 1164,
         "end": 1196,
         "wikidataId": "Q299156",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_II_de_Arag%C3%B3n_from_Liber_feudorum_maior.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q299156.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_II_de_Arag%C3%B3n_from_Liber_feudorum_maior.jpg"
       },
       {
         "name": "Peter II",
         "start": 1196,
         "end": 1213,
         "wikidataId": "Q315058",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_II_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q315058.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_II_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "James I",
         "start": 1213,
         "end": 1276,
         "wikidataId": "Q212052",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_James_I_the_Conqueror_-_Google_Art_Project.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q212052.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_James_I_the_Conqueror_-_Google_Art_Project.jpg"
       },
       {
         "name": "Peter III",
         "start": 1276,
         "end": 1285,
         "wikidataId": "Q312311",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pedro_III_de_Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312311.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pedro_III_de_Arag%C3%B3n.jpg"
       },
       {
         "name": "Alfonso III",
         "start": 1285,
         "end": 1291,
         "wikidataId": "Q336855",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_Alfons_III_the_Liberal_-_Google_Art_Project.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q336855.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_Alfons_III_the_Liberal_-_Google_Art_Project.jpg"
       },
       {
         "name": "James II",
         "start": 1291,
         "end": 1327,
         "wikidataId": "Q312735",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chaime_II_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312735.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chaime_II_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "Alfonso IV",
         "start": 1327,
         "end": 1336,
         "wikidataId": "Q380088",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alifonso_IV_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q380088.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alifonso_IV_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "Peter IV",
         "start": 1336,
         "end": 1387,
         "wikidataId": "Q336823",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_IV_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q336823.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_IV_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "John I",
         "start": 1387,
         "end": 1396,
         "wikidataId": "Q358374",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_I_of_Aragon.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q358374.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_I_of_Aragon.jpg"
       },
       {
         "name": "Martin",
         "start": 1396,
         "end": 1410,
         "wikidataId": "Q332681",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mart%C3%ADn_I_de_Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q332681.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mart%C3%ADn_I_de_Arag%C3%B3n.jpg"
       },
       {
         "name": "Ferdinand I the Honest",
         "start": 1412,
         "end": 1416,
         "wikidataId": "Q47412",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferran_d%27Antequera_al_retaule_Sancho_de_Rojas_%28detall%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q47412.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferran_d%27Antequera_al_retaule_Sancho_de_Rojas_%28detall%29.jpg"
       },
       {
         "name": "Alfonso V the Magnanimous",
         "start": 1416,
         "end": 1458,
         "wikidataId": "Q312304",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_Alfons_IV_the_Magnanimous_-_Google_Art_Project.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312304.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaume_Mateu_-_Alfons_IV_the_Magnanimous_-_Google_Art_Project.jpg"
       },
       {
         "name": "John II the Great",
         "start": 1458,
         "end": 1479,
         "wikidataId": "Q312328",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_II_of_Aragon.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312328.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_II_of_Aragon.jpg"
       },
       {
         "name": "Ferdinand II the Catholic",
         "start": 1479,
         "end": 1516,
         "wikidataId": "Q12860",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/FerdinandIIA.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q12860.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FerdinandIIA.jpg"
       },
       {
         "name": "Joanna of Castile",
         "start": 1516,
         "end": 1555,
         "wikidataId": "Q171136",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_de_Flandes_-_Portrait_of_Joan_the_Mad_-_WGA12045.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q171136.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_de_Flandes_-_Portrait_of_Joan_the_Mad_-_WGA12045.jpg"
       },
       {
         "name": "Henry IV of Castile",
         "start": 1462,
         "end": 1463,
         "wikidataId": "Q310918",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/ENRIQUEIV.jpeg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q310918.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ENRIQUEIV.jpeg"
       },
       {
         "name": "Peter V of Aragon",
         "start": 1463,
         "end": 1466,
         "wikidataId": "Q965686",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Huguet-RetauleCondestable-7244_%28cropped%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q965686.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Huguet-RetauleCondestable-7244_%28cropped%29.jpg"
       },
       {
         "name": "René",
         "start": 1466,
         "end": 1472,
         "wikidataId": "Q170353",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Renedesanjou.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q170353.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Renedesanjou.jpg"
       },
       {
         "name": "Charles I the Emperor",
         "start": 1516,
         "end": 1556,
         "wikidataId": "Q32500",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q32500.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg"
       },
       {
         "name": "Philip I the Prudent",
         "start": 1556,
         "end": 1598,
         "wikidataId": "Q34417",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q34417.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg"
       },
       {
         "name": "Philip II the Pious",
         "start": 1598,
         "end": 1621,
         "wikidataId": "Q34464",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe-III-de-Espana_A-Vidal.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q34464.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe-III-de-Espana_A-Vidal.jpg"
       },
       {
         "name": "Philip III the Great",
         "start": 1621,
         "end": 1665,
         "wikidataId": "Q691402",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip_IV_of_Spain.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q691402.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip_IV_of_Spain.jpg"
       },
       {
         "name": "Charles II the Bewitched",
         "start": 1665,
         "end": 1700,
         "wikidataId": "Q36174",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rey_Carlos_II.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q36174.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rey_Carlos_II.jpg"
       },
       {
         "name": "Philip IV the Spirited",
         "start": 1700,
         "end": 1705,
         "wikidataId": "Q170467",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe_V_de_Espa%C3%B1a.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q170467.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe_V_de_Espa%C3%B1a.jpg"
       },
       {
         "name": "Charles III the Archduke",
         "start": 1705,
         "end": 1707,
         "wikidataId": "Q150665",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_van_Meytens_%28attrib.%29_-_Portr%C3%A4t_Kaiser_Karl_VI.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q150665.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin_van_Meytens_%28attrib.%29_-_Portr%C3%A4t_Kaiser_Karl_VI.jpg"
       }
     ],
     "status": "draft"
@@ -16909,99 +16805,99 @@
         "start": 1065,
         "end": 1072,
         "wikidataId": "Q317905",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_II_de_Castilla_%28Ayuntamiento_de_Le%C3%B3n%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q317905.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_II_de_Castilla_%28Ayuntamiento_de_Le%C3%B3n%29.jpg"
       },
       {
         "name": "Alfonso VI",
         "start": 1072,
         "end": 1109,
         "wikidataId": "Q235080",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/AlfonsoVI_of_Castile.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q235080.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/AlfonsoVI_of_Castile.jpg"
       },
       {
         "name": "Urraca",
         "start": 1109,
         "end": 1126,
         "wikidataId": "Q128701",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/UrracaRegina_TumboA.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q128701.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/UrracaRegina_TumboA.jpg"
       },
       {
         "name": "Alfonso VII",
         "start": 1126,
         "end": 1157,
         "wikidataId": "Q312767",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_VII.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312767.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_VII.jpg"
       },
       {
         "name": "Sancho III",
         "start": 1157,
         "end": 1158,
         "wikidataId": "Q315076",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q315076.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg"
       },
       {
         "name": "Alfonso VIII",
         "start": 1158,
         "end": 1214,
         "wikidataId": "Q295268",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfons8_Tumbo.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q295268.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfons8_Tumbo.jpg"
       },
       {
         "name": "Henry I",
         "start": 1214,
         "end": 1217,
         "wikidataId": "Q348943",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique_I_de_Castilla.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q348943.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique_I_de_Castilla.jpg"
       },
       {
         "name": "Berengaria",
         "start": 1217,
         "end": 1246,
         "wikidataId": "Q232323",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Berenguela.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q232323.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Berenguela.jpg"
       },
       {
         "name": "Ferdinand III",
         "start": 1217,
         "end": 1252,
         "wikidataId": "Q243122",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_III_de_Castilla_02.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q243122.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_III_de_Castilla_02.jpg"
       },
       {
         "name": "Alfonso X",
         "start": 1252,
         "end": 1284,
         "wikidataId": "Q47595",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_X_el_Sabio_en_El_libro_de_los_juegos.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q47595.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_X_el_Sabio_en_El_libro_de_los_juegos.jpg"
       },
       {
         "name": "Sancho IV",
         "start": 1284,
         "end": 1295,
         "wikidataId": "Q312110",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_IV_Tarifa.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312110.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_IV_Tarifa.jpg"
       },
       {
         "name": "Ferdinand IV",
         "start": 1295,
         "end": 1312,
         "wikidataId": "Q316859",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_IV_de_Castilla_%28Ayuntamiento_de_Le%C3%B3n%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q316859.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_IV_de_Castilla_%28Ayuntamiento_de_Le%C3%B3n%29.jpg"
       }
     ],
-    "status": "draft"
+    "status": "validated"
   },
   "Q200262": {
     "rulers": [
@@ -17010,16 +16906,16 @@
         "start": 882,
         "end": 905,
         "wikidataId": "Q2298503",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fortun_Garces.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q2298503.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fortun_Garces.jpg"
       },
       {
         "name": "Sancho I Garcés",
         "start": 905,
         "end": 925,
         "wikidataId": "Q914160",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/San%C3%A71.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q914160.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/San%C3%A71.jpg"
       },
       {
         "name": "Jimeno Garcés",
@@ -17034,72 +16930,72 @@
         "start": 931,
         "end": 970,
         "wikidataId": "Q773815",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Garcia_Sanchez_I.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q773815.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garcia_Sanchez_I.jpg"
       },
       {
         "name": "Sancho II Garcés Abarca",
         "start": 970,
         "end": 994,
         "wikidataId": "Q381250",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Garc%C3%A9s_II_de_Pamplona_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q381250.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Garc%C3%A9s_II_de_Pamplona_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg"
       },
       {
         "name": "García Sánchez II",
         "start": 994,
         "end": 1000,
         "wikidataId": "Q358396",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Garc%C3%ADa_S%C3%A1nchez_II_de_Pamplona_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q358396.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garc%C3%ADa_S%C3%A1nchez_II_de_Pamplona_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg"
       },
       {
         "name": "Sancho III the Great",
         "start": 1004,
         "end": 1035,
         "wikidataId": "Q296652",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_el_Mayor_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q296652.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_el_Mayor_%28Diputaci%C3%B3n_Provincial_de_Zaragoza%29.jpg"
       },
       {
         "name": "García Sánchez III",
         "start": 1035,
         "end": 1054,
         "wikidataId": "Q359043",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Garcia_%28III%29_Sanches_de_Navarra_-_Compendio_de_cr%C3%B3nicas_de_reyes_%28Biblioteca_Nacional_de_Espa%C3%B1a%29.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q359043.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Garcia_%28III%29_Sanches_de_Navarra_-_Compendio_de_cr%C3%B3nicas_de_reyes_%28Biblioteca_Nacional_de_Espa%C3%B1a%29.png"
       },
       {
         "name": "Sancho IV Garcés",
         "start": 1054,
         "end": 1076,
         "wikidataId": "Q457299",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_IV_the_Noble.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q457299.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_IV_the_Noble.jpg"
       },
       {
         "name": "Sancho V Ramírez",
         "start": 1076,
         "end": 1094,
         "wikidataId": "Q344802",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Ram%C3%ADrez_%281100-1145%29.jpeg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q344802.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_Ram%C3%ADrez_%281100-1145%29.jpeg"
       },
       {
         "name": "Peter",
         "start": 1094,
         "end": 1104,
         "wikidataId": "Q379748",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_I_d%27Arag%C3%B3n.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q379748.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pietro_I_d%27Arag%C3%B3n.jpg"
       },
       {
         "name": "Alfonso I the Battler",
         "start": 1104,
         "end": 1134,
         "wikidataId": "Q81833",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_I_de_Arag%C3%B3n_por_Pradilla_%281879%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q81833.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_I_de_Arag%C3%B3n_por_Pradilla_%281879%29.jpg"
       },
       {
         "name": "García Ramírez the Restorer",
@@ -20281,5 +20177,1818 @@
     "territory_type": "ruler_based",
     "context_start": 827,
     "context_end": 1072
+  },
+  "Q163422": {
+    "rulers": [
+      {
+        "name": "Yahya Ibn Ibrahim",
+        "start": 1040,
+        "end": 1048,
+        "wiki_link": "/wiki/Yahya_Ibn_Ibrahim"
+      },
+      {
+        "name": "Yahya ibn Umar al-Lamtuni",
+        "start": 1048,
+        "end": 1056,
+        "wiki_link": "/wiki/Yahya_ibn_Umar_al-Lamtuni"
+      },
+      {
+        "name": "Abu Bakr ibn Umar",
+        "start": 1056,
+        "end": 1087,
+        "wiki_link": "/wiki/Abu_Bakr_ibn_Umar"
+      },
+      {
+        "name": "Youssef ibn Tashfin",
+        "start": 1061,
+        "end": 1106,
+        "wiki_link": "/wiki/Yusuf_ibn_Tashfin"
+      },
+      {
+        "name": "Ali ibn Yusuf",
+        "start": 1106,
+        "end": 1143,
+        "wiki_link": "/wiki/Ali_ibn_Yusuf"
+      },
+      {
+        "name": "Tashfin ibn ʿAli",
+        "start": 1143,
+        "end": 1145,
+        "wiki_link": "/wiki/Tashfin_ibn_Ali"
+      },
+      {
+        "name": "Ibn Tāshfīn",
+        "start": 1146,
+        "end": 1147,
+        "wiki_link": "/wiki/Ibrahim_ibn_Tashfin"
+      },
+      {
+        "name": "Ishaq ibn ʿAli",
+        "start": 1147,
+        "end": 1147,
+        "wiki_link": "/wiki/Ishaq_ibn_Ali"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1040,
+    "context_end": 1147
+  },
+  "Q8733": {
+    "rulers": [
+      {
+        "name": "Tughril I",
+        "start": 1037,
+        "end": 1063,
+        "wiki_link": "/wiki/Tughril_I"
+      },
+      {
+        "name": "Alp Arslan",
+        "start": 1063,
+        "end": 1072,
+        "wiki_link": "/wiki/Alp_Arslan"
+      },
+      {
+        "name": "Malik-Shah I",
+        "start": 1072,
+        "end": 1092,
+        "wiki_link": "/wiki/Malik-Shah_I"
+      },
+      {
+        "name": "Mahmud I of Great Seljuk",
+        "start": 1092,
+        "end": 1094,
+        "wiki_link": "/wiki/Mahmud_I_(Seljuk_sultan)"
+      },
+      {
+        "name": "Barkiyaruq",
+        "start": 1092,
+        "end": 1104,
+        "wiki_link": "/wiki/Berkyaruq"
+      },
+      {
+        "name": "Muhammad I Tapar",
+        "start": 1105,
+        "end": 1118,
+        "wiki_link": "/wiki/Muhammad_I_Tapar"
+      },
+      {
+        "name": "Malik-Shah II",
+        "start": 1105,
+        "end": 1105,
+        "wiki_link": "/wiki/Malik-Shah_II"
+      },
+      {
+        "name": "Ahmad Sanjar",
+        "start": 1118,
+        "end": 1153,
+        "wiki_link": "/wiki/Ahmad_Sanjar"
+      },
+      {
+        "name": "Daud I ibn Mahmud",
+        "start": 1131,
+        "end": 1132,
+        "wiki_link": "/wiki/Dawud_(Seljuk_sultan)"
+      },
+      {
+        "name": "Ghiyath ad-Din Mas'ud",
+        "start": 1134,
+        "end": 1152,
+        "wiki_link": "/wiki/Ghiyath_ad-Din_Mas%27ud"
+      },
+      {
+        "name": "Malik-Shah III",
+        "start": 1152,
+        "end": 1153,
+        "wiki_link": "/wiki/Malik-Shah_III"
+      },
+      {
+        "name": "Arslan-Shah",
+        "start": 1161,
+        "end": 1176,
+        "wiki_link": "/wiki/Arslan-Shah_(Seljuk_sultan)"
+      },
+      {
+        "name": "Toghrul III",
+        "start": 1175,
+        "end": 1194,
+        "wiki_link": "/wiki/Tughril_III"
+      },
+      {
+        "name": "Qizil Arslan",
+        "start": 1191,
+        "end": 1191,
+        "wiki_link": "/wiki/Qizil_Arslan"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1037,
+    "context_end": 1194
+  },
+  "Q45": {
+    "rulers": [
+      {
+        "name": "Afonso I of Portugal",
+        "start": 1139,
+        "end": 1185,
+        "wiki_link": "/wiki/Afonso_I_of_Portugal"
+      },
+      {
+        "name": "Sancho I of Portugal",
+        "start": 1185,
+        "end": 1211,
+        "wiki_link": "/wiki/Sancho_I_of_Portugal"
+      },
+      {
+        "name": "Afonso II of Portugal",
+        "start": 1211,
+        "end": 1223,
+        "wiki_link": "/wiki/Afonso_II_of_Portugal"
+      },
+      {
+        "name": "Sancho II of Portugal",
+        "start": 1223,
+        "end": 1247,
+        "wiki_link": "/wiki/Sancho_II_of_Portugal"
+      },
+      {
+        "name": "Afonso III of Portugal",
+        "start": 1248,
+        "end": 1279,
+        "wiki_link": "/wiki/Afonso_III_of_Portugal"
+      },
+      {
+        "name": "Denis I of Portugal",
+        "start": 1279,
+        "end": 1325,
+        "wiki_link": "/wiki/Denis_of_Portugal"
+      },
+      {
+        "name": "Afonso IV of Portugal",
+        "start": 1325,
+        "end": 1357,
+        "wiki_link": "/wiki/Afonso_IV_of_Portugal"
+      },
+      {
+        "name": "Peter I of Portugal",
+        "start": 1357,
+        "end": 1367,
+        "wiki_link": "/wiki/Peter_I_of_Portugal"
+      },
+      {
+        "name": "Ferdinand I of Portugal",
+        "start": 1367,
+        "end": 1383,
+        "wiki_link": "/wiki/Ferdinand_I_of_Portugal"
+      },
+      {
+        "name": "John I of Portugal",
+        "start": 1385,
+        "end": 1433,
+        "wiki_link": "/wiki/John_I_of_Portugal"
+      },
+      {
+        "name": "Edward I of Portugal",
+        "start": 1433,
+        "end": 1438,
+        "wiki_link": "/wiki/Edward,_King_of_Portugal"
+      },
+      {
+        "name": "Afonso V of Portugal",
+        "start": 1438,
+        "end": 1481,
+        "wiki_link": "/wiki/Afonso_V_of_Portugal"
+      },
+      {
+        "name": "John II of Portugal",
+        "start": 1477,
+        "end": 1477,
+        "wiki_link": "/wiki/John_II_of_Portugal"
+      },
+      {
+        "name": "John II of Portugal",
+        "start": 1481,
+        "end": 1495,
+        "wiki_link": "/wiki/John_II_of_Portugal"
+      },
+      {
+        "name": "Manuel I of Portugal",
+        "start": 1495,
+        "end": 1521,
+        "wiki_link": "/wiki/Manuel_I_of_Portugal"
+      },
+      {
+        "name": "John III of Portugal",
+        "start": 1521,
+        "end": 1557,
+        "wiki_link": "/wiki/John_III_of_Portugal"
+      },
+      {
+        "name": "Sebastian of Portugal",
+        "start": 1557,
+        "end": 1578,
+        "wiki_link": "/wiki/Sebastian,_King_of_Portugal"
+      },
+      {
+        "name": "Henry I of Portugal",
+        "start": 1578,
+        "end": 1580,
+        "wiki_link": "/wiki/Henry,_King_of_Portugal"
+      },
+      {
+        "name": "António, Prior of Crato",
+        "start": 1580,
+        "end": 1580,
+        "wiki_link": "/wiki/Ant%C3%B3nio,_Prior_of_Crato"
+      },
+      {
+        "name": "Philip II of Spain",
+        "start": 1580,
+        "end": 1598,
+        "wiki_link": "/wiki/Philip_II_of_Spain"
+      },
+      {
+        "name": "Philip III of Spain",
+        "start": 1598,
+        "end": 1621,
+        "wiki_link": "/wiki/Philip_III_of_Spain"
+      },
+      {
+        "name": "Philip IV of Spain",
+        "start": 1621,
+        "end": 1640,
+        "wiki_link": "/wiki/Philip_IV_of_Spain"
+      },
+      {
+        "name": "John IV of Portugal",
+        "start": 1640,
+        "end": 1656,
+        "wiki_link": "/wiki/John_IV_of_Portugal"
+      },
+      {
+        "name": "Afonso VI of Portugal",
+        "start": 1656,
+        "end": 1683,
+        "wiki_link": "/wiki/Afonso_VI_of_Portugal"
+      },
+      {
+        "name": "Peter II of Portugal",
+        "start": 1683,
+        "end": 1706,
+        "wiki_link": "/wiki/Peter_II_of_Portugal"
+      },
+      {
+        "name": "John V of Portugal",
+        "start": 1706,
+        "end": 1750,
+        "wiki_link": "/wiki/John_V_of_Portugal"
+      },
+      {
+        "name": "José I of Portugal",
+        "start": 1750,
+        "end": 1777,
+        "wiki_link": "/wiki/Joseph_I_of_Portugal"
+      },
+      {
+        "name": "Maria I of Portugal",
+        "start": 1777,
+        "end": 1816,
+        "wiki_link": "/wiki/Maria_I_of_Portugal"
+      },
+      {
+        "name": "John VI of Portugal",
+        "start": 1816,
+        "end": 1826,
+        "wiki_link": "/wiki/John_VI_of_Portugal"
+      },
+      {
+        "name": "Pedro I of Brazil",
+        "start": 1826,
+        "end": 1826,
+        "wiki_link": "/wiki/Pedro_I_of_Brazil"
+      },
+      {
+        "name": "Maria II of Portugal",
+        "start": 1826,
+        "end": 1828,
+        "wiki_link": "/wiki/Maria_II_of_Portugal"
+      },
+      {
+        "name": "Miguel I of Portugal",
+        "start": 1828,
+        "end": 1834,
+        "wiki_link": "/wiki/Miguel_I_of_Portugal"
+      },
+      {
+        "name": "Maria II of Portugal",
+        "start": 1834,
+        "end": 1853,
+        "wiki_link": "/wiki/Maria_II_of_Portugal"
+      },
+      {
+        "name": "Pedro V of Portugal",
+        "start": 1853,
+        "end": 1861,
+        "wiki_link": "/wiki/Pedro_V_of_Portugal"
+      },
+      {
+        "name": "Luís I of Portugal",
+        "start": 1861,
+        "end": 1889,
+        "wiki_link": "/wiki/Lu%C3%ADs_I_of_Portugal"
+      },
+      {
+        "name": "Carlos I of Portugal",
+        "start": 1889,
+        "end": 1908,
+        "wiki_link": "/wiki/Carlos_I_of_Portugal"
+      },
+      {
+        "name": "Manuel II of Portugal",
+        "start": 1908,
+        "end": 1910,
+        "wiki_link": "/wiki/Manuel_II_of_Portugal"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1139,
+    "context_end": 1910
+  },
+  "Q83285": {
+    "rulers": [
+      {
+        "name": "Abd al-Mu'min",
+        "start": 1130,
+        "end": 1163,
+        "wiki_link": "/wiki/Abd_al-Mu%27min"
+      },
+      {
+        "name": "Abu Yaqub Yusuf I",
+        "start": 1163,
+        "end": 1184,
+        "wiki_link": "/wiki/Abu_Yaqub_Yusuf"
+      },
+      {
+        "name": "Abu Yusuf Yaqub al-Mansur",
+        "start": 1184,
+        "end": 1199,
+        "wiki_link": "/wiki/Yaqub_al-Mansur"
+      },
+      {
+        "name": "Muhammad al-Nasir",
+        "start": 1199,
+        "end": 1213,
+        "wiki_link": "/wiki/Muhammad_al-Nasir"
+      },
+      {
+        "name": "Yusuf II al-Mustansir",
+        "start": 1213,
+        "end": 1224,
+        "wiki_link": "/wiki/Yusuf_II,_Almohad_caliph"
+      },
+      {
+        "name": "Abdallah al-Adil",
+        "start": 1224,
+        "end": 1227,
+        "wiki_link": "/wiki/Abdallah_al-Adil"
+      },
+      {
+        "name": "Abdul-Wahid I, Almohad Caliph",
+        "start": 1224,
+        "end": 1224,
+        "wiki_link": "/wiki/Abd_al-Wahid_I"
+      },
+      {
+        "name": "Yahya, Almohad Caliph",
+        "start": 1227,
+        "end": 1229,
+        "wiki_link": "/wiki/Yahya_al-Mu%27tasim"
+      },
+      {
+        "name": "Idris al-Ma'mun",
+        "start": 1229,
+        "end": 1232,
+        "wiki_link": "/wiki/Idris_al-Ma%27mun"
+      },
+      {
+        "name": "Abd al-Wahid II",
+        "start": 1232,
+        "end": 1242,
+        "wiki_link": "/wiki/Abd_al-Wahid_II"
+      },
+      {
+        "name": "Abu al-Hasan as-Said al-Mutadid",
+        "start": 1242,
+        "end": 1248,
+        "wiki_link": "/wiki/Abu_al-Hasan_as-Said_al-Mutadid"
+      },
+      {
+        "name": "Abu Hafs Umar al-Murtada",
+        "start": 1248,
+        "end": 1266,
+        "wiki_link": "/wiki/Abu_Hafs_Umar_al-Murtada"
+      },
+      {
+        "name": "Idris II",
+        "start": 1266,
+        "end": 1269,
+        "wiki_link": "/wiki/Idris_al-Wathiq"
+      }
+    ],
+    "status": "draft",
+    "territory_type": "ruler_based",
+    "context_start": 1121,
+    "context_end": 1269
+  },
+  "Q199987": {
+    "rulers": [
+      {
+        "name": "David I of Trebizond",
+        "start": 1204,
+        "end": 1212,
+        "wiki_link": "/wiki/David_Komnenos"
+      },
+      {
+        "name": "Alexios I of Trebizond",
+        "start": 1204,
+        "end": 1222,
+        "wiki_link": "/wiki/Alexios_I_of_Trebizond"
+      },
+      {
+        "name": "Andronikos I of Trebizond",
+        "start": 1222,
+        "end": 1235,
+        "wiki_link": "/wiki/Andronikos_I_of_Trebizond"
+      },
+      {
+        "name": "John I of Trebizond",
+        "start": 1235,
+        "end": 1238,
+        "wiki_link": "/wiki/John_I_of_Trebizond"
+      },
+      {
+        "name": "Manuel I of Trebizond",
+        "start": 1238,
+        "end": 1263,
+        "wiki_link": "/wiki/Manuel_I_of_Trebizond"
+      },
+      {
+        "name": "Andronikos II of Trebizond",
+        "start": 1263,
+        "end": 1266,
+        "wiki_link": "/wiki/Andronikos_II_of_Trebizond"
+      },
+      {
+        "name": "George, Emperor of Trebizond",
+        "start": 1266,
+        "end": 1280,
+        "wiki_link": "/wiki/George,_Emperor_of_Trebizond"
+      },
+      {
+        "name": "John II of Trebizond",
+        "start": 1280,
+        "end": 1297,
+        "wiki_link": "/wiki/John_II_of_Trebizond"
+      },
+      {
+        "name": "Theodora of Trebizond",
+        "start": 1284,
+        "end": 1285,
+        "wiki_link": "/wiki/Theodora_of_Trebizond"
+      },
+      {
+        "name": "Alexios II of Trebizond",
+        "start": 1297,
+        "end": 1330,
+        "wiki_link": "/wiki/Alexios_II_of_Trebizond"
+      },
+      {
+        "name": "Andronikos III of Trebizond",
+        "start": 1330,
+        "end": 1332,
+        "wiki_link": "/wiki/Andronikos_III_of_Trebizond"
+      },
+      {
+        "name": "Manuel II of Trebizond",
+        "start": 1332,
+        "end": 1332,
+        "wiki_link": "/wiki/Manuel_II_of_Trebizond"
+      },
+      {
+        "name": "Basil of Trebizond",
+        "start": 1332,
+        "end": 1340,
+        "wiki_link": "/wiki/Basil_of_Trebizond"
+      },
+      {
+        "name": "John III of Trebizond",
+        "start": 1342,
+        "end": 1344,
+        "wiki_link": "/wiki/John_III_of_Trebizond"
+      },
+      {
+        "name": "Michael of Trebizond",
+        "start": 1344,
+        "end": 1349,
+        "wiki_link": "/wiki/Michael_of_Trebizond"
+      },
+      {
+        "name": "Alexios III of Trebizond",
+        "start": 1349,
+        "end": 1390,
+        "wiki_link": "/wiki/Alexios_III_of_Trebizond"
+      },
+      {
+        "name": "Manuel III of Trebizond",
+        "start": 1390,
+        "end": 1417,
+        "wiki_link": "/wiki/Manuel_III_of_Trebizond"
+      },
+      {
+        "name": "Alexios IV of Trebizond",
+        "start": 1417,
+        "end": 1429,
+        "wiki_link": "/wiki/Alexios_IV_of_Trebizond"
+      },
+      {
+        "name": "John IV of Trebizond",
+        "start": 1429,
+        "end": 1460,
+        "wiki_link": "/wiki/John_IV_of_Trebizond"
+      },
+      {
+        "name": "David II of Trebizond",
+        "start": 1460,
+        "end": 1461,
+        "wiki_link": "/wiki/David_of_Trebizond"
+      },
+      {
+        "name": "Alexios V Megas Komnenos",
+        "start": 1460,
+        "end": 1460,
+        "wiki_link": "/wiki/Alexios_V_of_Trebizond"
+      }
+    ],
+    "status": "draft",
+    "territory_type": "ruler_based",
+    "context_start": 1204,
+    "context_end": 1461
+  },
+  "Q752662": {
+    "rulers": [
+      {
+        "name": "Abu-Muhàmmad Abd-Al·lah ibn Abd-al-Wàhid",
+        "start": 1224,
+        "end": 1228,
+        "wiki_link": "/wiki/Abd-Allah_(Hafsid)"
+      },
+      {
+        "name": "Mohammad Abu Zakariya Yahya",
+        "start": 1229,
+        "end": 1249,
+        "wiki_link": "/wiki/Abu_Zakariya_Yahya"
+      },
+      {
+        "name": "Muhammad I al-Mustansir",
+        "start": 1249,
+        "end": 1277,
+        "wiki_link": "/wiki/Muhammad_I_al-Mustansir"
+      },
+      {
+        "name": "Yahya II al-Wàthiq",
+        "start": 1276,
+        "end": 1279,
+        "wiki_link": "/wiki/Yahya_II_al-Wathiq"
+      },
+      {
+        "name": "Abu-Ishaq Ibrahim",
+        "start": 1279,
+        "end": 1283,
+        "wiki_link": "/wiki/Abu_Ishaq_Ibrahim_I"
+      },
+      {
+        "name": "Ibn Abi-Umara",
+        "start": 1283,
+        "end": 1284
+      },
+      {
+        "name": "Abu-Faris ibn Ibrahim",
+        "start": 1283,
+        "end": 1284
+      },
+      {
+        "name": "Abu Hafs Umar I",
+        "start": 1284,
+        "end": 1295,
+        "wiki_link": "/wiki/Abu_Hafs_Umar_bin_Yahya"
+      },
+      {
+        "name": "Abu-Assida Muhàmmad",
+        "start": 1294,
+        "end": 1309,
+        "wiki_link": "/wiki/Abu_Asida_Muhammad_II"
+      },
+      {
+        "name": "Abu-Zakariyyà Yahya III",
+        "start": 1294,
+        "end": 1301
+      },
+      {
+        "name": "Abu-l-Baqà Khàlid",
+        "start": 1309,
+        "end": 1311,
+        "wiki_link": "/wiki/Abu-l-Baqa_Khalid_An-Nasr"
+      },
+      {
+        "name": "Abu al-Abbas Ahmad II",
+        "start": 1371,
+        "end": 1394,
+        "wiki_link": "/wiki/Abu_al-Abbas_Ahmad_II"
+      },
+      {
+        "name": "Uthman",
+        "start": 1435,
+        "end": 1488,
+        "wiki_link": "/wiki/Abu_%27Amr_%27Uthman"
+      },
+      {
+        "name": "Abû `Abd Allâh Muhammad IV al-Mutawakkil",
+        "start": 1493,
+        "end": 1526,
+        "wiki_link": "/wiki/Abu_Abdallah_Muhammad_IV_al-Mutawakkil"
+      },
+      {
+        "name": "Mulay Hassan",
+        "start": 1526,
+        "end": 1543,
+        "wiki_link": "/wiki/Abu_Abdallah_Muhammad_V_al-Hasan"
+      },
+      {
+        "name": "Mulay Ahmad",
+        "start": 1543,
+        "end": 1573,
+        "wiki_link": "/wiki/Abu_al-Abbas_Ahmad_III"
+      },
+      {
+        "name": "Abû `Abd Allâh Muhammad",
+        "start": 1573,
+        "end": 1574,
+        "wiki_link": "/wiki/Abu_Abdallah_Muhammad_VI_ibn_al-Hasan"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1229,
+    "context_end": 1574
+  },
+  "Q282428": {
+    "rulers": [
+      {
+        "name": "Al-Ashraf",
+        "start": 1250,
+        "end": 1254,
+        "wiki_link": "/wiki/Al-Ashraf_Musa,_Sultan_of_Egypt"
+      },
+      {
+        "name": "Shajar al-Durr",
+        "start": 1250,
+        "end": 1250,
+        "wiki_link": "/wiki/Shajar_al-Durr"
+      },
+      {
+        "name": "Aybak",
+        "start": 1250,
+        "end": 1250,
+        "wiki_link": "/wiki/Aybak"
+      },
+      {
+        "name": "Aybak",
+        "start": 1254,
+        "end": 1257,
+        "wiki_link": "/wiki/Aybak"
+      },
+      {
+        "name": "Al-Mansur Ali",
+        "start": 1257,
+        "end": 1259,
+        "wiki_link": "/wiki/Al-Mansur_Ali"
+      },
+      {
+        "name": "Qutuz",
+        "start": 1259,
+        "end": 1260,
+        "wiki_link": "/wiki/Qutuz"
+      },
+      {
+        "name": "Baibars",
+        "start": 1260,
+        "end": 1277,
+        "wiki_link": "/wiki/Baybars"
+      },
+      {
+        "name": "Al-Said Barakah",
+        "start": 1277,
+        "end": 1279,
+        "wiki_link": "/wiki/Al-Sa%27id_Baraka"
+      },
+      {
+        "name": "Solamish",
+        "start": 1279,
+        "end": 1279,
+        "wiki_link": "/wiki/Solamish"
+      },
+      {
+        "name": "Qalawun",
+        "start": 1279,
+        "end": 1290,
+        "wiki_link": "/wiki/Qalawun"
+      },
+      {
+        "name": "Al-Ashraf Khalil",
+        "start": 1290,
+        "end": 1293,
+        "wiki_link": "/wiki/Al-Ashraf_Khalil"
+      },
+      {
+        "name": "Al-Nasir Muhammad",
+        "start": 1293,
+        "end": 1294,
+        "wiki_link": "/wiki/Al-Nasir_Muhammad"
+      },
+      {
+        "name": "Al-Adil Kitbugha",
+        "start": 1294,
+        "end": 1296,
+        "wiki_link": "/wiki/Al-Adil_Kitbugha"
+      },
+      {
+        "name": "Lajin",
+        "start": 1296,
+        "end": 1299,
+        "wiki_link": "/wiki/Lajin"
+      },
+      {
+        "name": "Al-Nasir Muhammad",
+        "start": 1299,
+        "end": 1309,
+        "wiki_link": "/wiki/Al-Nasir_Muhammad"
+      },
+      {
+        "name": "Baibars II",
+        "start": 1308,
+        "end": 1309,
+        "wiki_link": "/wiki/Baybars_II"
+      },
+      {
+        "name": "Baibars II",
+        "start": 1309,
+        "end": 1310,
+        "wiki_link": "/wiki/Baybars_II"
+      },
+      {
+        "name": "Al-Nasir Muhammad",
+        "start": 1310,
+        "end": 1341,
+        "wiki_link": "/wiki/Al-Nasir_Muhammad"
+      },
+      {
+        "name": "Saif ad-Din Abu-Bakr",
+        "start": 1341,
+        "end": 1341,
+        "wiki_link": "/wiki/Al-Mansur_Abu_Bakr"
+      },
+      {
+        "name": "Kujuk",
+        "start": 1341,
+        "end": 1342,
+        "wiki_link": "/wiki/Al-Ashraf_Kujuk"
+      },
+      {
+        "name": "Shihab ad-Din Ahmad",
+        "start": 1342,
+        "end": 1342,
+        "wiki_link": "/wiki/Al-Nasir_Ahmad,_Sultan_of_Egypt"
+      },
+      {
+        "name": "Al-Salih Ismail",
+        "start": 1342,
+        "end": 1345,
+        "wiki_link": "/wiki/Al-Salih_Ismail,_Sultan_of_Egypt"
+      },
+      {
+        "name": "Al-Kamil Shaban",
+        "start": 1345,
+        "end": 1346,
+        "wiki_link": "/wiki/Al-Kamil_Sha%27ban"
+      },
+      {
+        "name": "Al-Mudhàffar Hajjí",
+        "start": 1346,
+        "end": 1347,
+        "wiki_link": "/wiki/Al-Muzaffar_Hajji"
+      },
+      {
+        "name": "An-Nàssir Hàssan",
+        "start": 1347,
+        "end": 1351,
+        "wiki_link": "/wiki/Al-Nasir_Hasan"
+      },
+      {
+        "name": "Al-Salih Salih",
+        "start": 1351,
+        "end": 1354,
+        "wiki_link": "/wiki/As-Salih_Salih"
+      },
+      {
+        "name": "An-Nàssir Hàssan",
+        "start": 1355,
+        "end": 1361,
+        "wiki_link": "/wiki/Al-Nasir_Hasan"
+      },
+      {
+        "name": "al-Mansur Muhammad",
+        "start": 1361,
+        "end": 1363,
+        "wiki_link": "/wiki/Al-Mansur_Muhammad,_Sultan_of_Egypt"
+      },
+      {
+        "name": "Al-Ashraf Sha'ban",
+        "start": 1363,
+        "end": 1377,
+        "wiki_link": "/wiki/Al-Ashraf_Sha%27ban"
+      },
+      {
+        "name": "Al-Mansur Alà-ad-Din Alí",
+        "start": 1377,
+        "end": 1381,
+        "wiki_link": "/wiki/Al-Mansur_Ali_II,_Sultan_of_Egypt"
+      },
+      {
+        "name": "Al-Salih Hajji",
+        "start": 1381,
+        "end": 1382,
+        "wiki_link": "/wiki/Al-Salih_Hajji"
+      },
+      {
+        "name": "Al-Salih Hajji",
+        "start": 1389,
+        "end": 1390,
+        "wiki_link": "/wiki/Al-Salih_Hajji"
+      },
+      {
+        "name": "Nasir-ad-Din Faraj",
+        "start": 1399,
+        "end": 1405,
+        "wiki_link": "/wiki/An-Nasir_Faraj"
+      },
+      {
+        "name": "Al-Manszúr Abd al-Azíz",
+        "start": 1405,
+        "end": 1405,
+        "wiki_link": "/wiki/Izz_al-Din_Abd_al-Aziz"
+      },
+      {
+        "name": "Nasir-ad-Din Faraj",
+        "start": 1405,
+        "end": 1412,
+        "wiki_link": "/wiki/An-Nasir_Faraj"
+      },
+      {
+        "name": "Al-Musta'in",
+        "start": 1412,
+        "end": 1412,
+        "wiki_link": "/wiki/Al-Musta%27in_(Egypt)"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1250,
+    "context_end": 1517
+  },
+  "Q81009": {
+    "rulers": [
+      {
+        "name": "Ekinchi",
+        "start": 1097,
+        "end": 1097,
+        "wiki_link": "/wiki/Ekinchi_(Khwarazm_Shah)"
+      },
+      {
+        "name": "Muhammad I of Khwarazm",
+        "start": 1097,
+        "end": 1127,
+        "wiki_link": "/wiki/Muhammad_I_of_Khwarazm"
+      },
+      {
+        "name": "Atsız",
+        "start": 1128,
+        "end": 1156,
+        "wiki_link": "/wiki/Atsiz"
+      },
+      {
+        "name": "Il-Arslan",
+        "start": 1156,
+        "end": 1172,
+        "wiki_link": "/wiki/Il-Arslan"
+      },
+      {
+        "name": "Ala ad-Din Tekish",
+        "start": 1172,
+        "end": 1200,
+        "wiki_link": "/wiki/Ala_al-Din_Tekish"
+      },
+      {
+        "name": "Muhammad II of Khwarazm",
+        "start": 1200,
+        "end": 1220,
+        "wiki_link": "/wiki/Muhammad_II_of_Khwarazm"
+      },
+      {
+        "name": "Jalal ad-Din Mingburnu",
+        "start": 1220,
+        "end": 1231,
+        "wiki_link": "/wiki/Jalal_al-Din_Mangburni"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1077,
+    "context_end": 1231
+  },
+  "Q49683": {
+    "rulers": [
+      {
+        "name": "Mindaugas",
+        "start": 1236,
+        "end": 1263,
+        "wiki_link": "/wiki/Mindaugas"
+      },
+      {
+        "name": "Vaišvilkas",
+        "start": 1263,
+        "end": 1267,
+        "wiki_link": "/wiki/Vaišvilkas"
+      },
+      {
+        "name": "Shvarnas",
+        "start": 1267,
+        "end": 1269,
+        "wiki_link": "/wiki/Shvarnas"
+      },
+      {
+        "name": "Traidenis",
+        "start": 1269,
+        "end": 1282,
+        "wiki_link": "/wiki/Traidenis"
+      },
+      {
+        "name": "Daumantas",
+        "start": 1282,
+        "end": 1285,
+        "wiki_link": "/wiki/Daumantas_of_Lithuania"
+      },
+      {
+        "name": "Butigeidis",
+        "start": 1285,
+        "end": 1291,
+        "wiki_link": "/wiki/Butigeidis"
+      },
+      {
+        "name": "Butvydas",
+        "start": 1291,
+        "end": 1295,
+        "wiki_link": "/wiki/Butvydas"
+      },
+      {
+        "name": "Vytenis",
+        "start": 1295,
+        "end": 1315,
+        "wiki_link": "/wiki/Vytenis"
+      },
+      {
+        "name": "Gediminas",
+        "start": 1315,
+        "end": 1341,
+        "wiki_link": "/wiki/Gediminas"
+      },
+      {
+        "name": "Jaunutis",
+        "start": 1341,
+        "end": 1345,
+        "wiki_link": "/wiki/Jaunutis"
+      },
+      {
+        "name": "Algirdas",
+        "start": 1345,
+        "end": 1377,
+        "wiki_link": "/wiki/Algirdas"
+      },
+      {
+        "name": "Jogaila",
+        "start": 1377,
+        "end": 1392,
+        "wiki_link": "/wiki/Jogaila"
+      },
+      {
+        "name": "Vytautas the Great",
+        "start": 1392,
+        "end": 1430,
+        "wiki_link": "/wiki/Vytautas"
+      },
+      {
+        "name": "Švitrigaila",
+        "start": 1430,
+        "end": 1432,
+        "wiki_link": "/wiki/Švitrigaila"
+      },
+      {
+        "name": "Sigismund Kęstutaitis",
+        "start": 1432,
+        "end": 1440,
+        "wiki_link": "/wiki/Sigismund_Kęstutaitis"
+      },
+      {
+        "name": "Casimir IV Jagiellon",
+        "start": 1440,
+        "end": 1492,
+        "wiki_link": "/wiki/Casimir_IV_Jagiellon"
+      },
+      {
+        "name": "Alexander Jagiellon",
+        "start": 1492,
+        "end": 1506,
+        "wiki_link": "/wiki/Alexander_Jagiellon"
+      },
+      {
+        "name": "Sigismund I the Old",
+        "start": 1506,
+        "end": 1544,
+        "wiki_link": "/wiki/Sigismund_I_the_Old"
+      },
+      {
+        "name": "Sigismund II Augustus",
+        "start": 1544,
+        "end": 1572,
+        "wiki_link": "/wiki/Sigismund_II_Augustus"
+      },
+      {
+        "name": "Henry III of France",
+        "start": 1573,
+        "end": 1575,
+        "wiki_link": "/wiki/Henry_III_of_France"
+      },
+      {
+        "name": "Stephen Báthory",
+        "start": 1576,
+        "end": 1586,
+        "wiki_link": "/wiki/Stephen_Báthory"
+      },
+      {
+        "name": "Sigismund III Vasa",
+        "start": 1587,
+        "end": 1632,
+        "wiki_link": "/wiki/Sigismund_III_Vasa"
+      },
+      {
+        "name": "Władysław IV Vasa",
+        "start": 1632,
+        "end": 1648,
+        "wiki_link": "/wiki/Władysław_IV_Vasa"
+      },
+      {
+        "name": "John II Casimir",
+        "start": 1648,
+        "end": 1668,
+        "wiki_link": "/wiki/John_II_Casimir"
+      },
+      {
+        "name": "Michael Korybut Wiśniowiecki",
+        "start": 1669,
+        "end": 1673,
+        "wiki_link": "/wiki/Michael_Korybut_Wiśniowiecki"
+      },
+      {
+        "name": "John III Sobieski",
+        "start": 1674,
+        "end": 1696,
+        "wiki_link": "/wiki/John_III_Sobieski"
+      },
+      {
+        "name": "Augustus II the Strong",
+        "start": 1697,
+        "end": 1733,
+        "wiki_link": "/wiki/Augustus_II_the_Strong"
+      },
+      {
+        "name": "Augustus III of Poland",
+        "start": 1734,
+        "end": 1763,
+        "wiki_link": "/wiki/Augustus_III_of_Poland"
+      },
+      {
+        "name": "Stanisław August Poniatowski",
+        "start": 1764,
+        "end": 1795,
+        "wiki_link": "/wiki/Stanisław_August_Poniatowski"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1236,
+    "context_end": 1795
+  },
+  "Q178084": {
+    "rulers": [
+      {
+        "name": "Hulagu Khan",
+        "start": 1256,
+        "end": 1265,
+        "wiki_link": "/wiki/Hulagu_Khan"
+      },
+      {
+        "name": "Abaqa Khan",
+        "start": 1265,
+        "end": 1282,
+        "wiki_link": "/wiki/Abaqa_Khan"
+      },
+      {
+        "name": "Tekuder",
+        "start": 1282,
+        "end": 1284,
+        "wiki_link": "/wiki/Tekuder"
+      },
+      {
+        "name": "Arghun",
+        "start": 1284,
+        "end": 1291,
+        "wiki_link": "/wiki/Arghun"
+      },
+      {
+        "name": "Gaykhatu",
+        "start": 1291,
+        "end": 1295,
+        "wiki_link": "/wiki/Gaykhatu"
+      },
+      {
+        "name": "Baydu",
+        "start": 1295,
+        "end": 1295,
+        "wiki_link": "/wiki/Baydu"
+      },
+      {
+        "name": "Ghazan",
+        "start": 1295,
+        "end": 1304,
+        "wiki_link": "/wiki/Ghazan"
+      },
+      {
+        "name": "Öljaitü",
+        "start": 1304,
+        "end": 1316,
+        "wiki_link": "/wiki/Öljaitü"
+      },
+      {
+        "name": "Abu Said",
+        "start": 1316,
+        "end": 1335,
+        "wiki_link": "/wiki/Abu_Said_Bahadur_Khan"
+      },
+      {
+        "name": "Arpa Ke'un",
+        "start": 1335,
+        "end": 1336,
+        "wiki_link": "/wiki/Arpa_Ke'un"
+      },
+      {
+        "name": "Musa Khan",
+        "start": 1336,
+        "end": 1337,
+        "wiki_link": "/wiki/Musa_Khan_(Ilkhanate)"
+      },
+      {
+        "name": "Muhammad Khan",
+        "start": 1336,
+        "end": 1338,
+        "wiki_link": "/wiki/Muhammad_Khan_(Ilkhanate)"
+      },
+      {
+        "name": "Sati Beg",
+        "start": 1338,
+        "end": 1339,
+        "wiki_link": "/wiki/Sati_Beg"
+      },
+      {
+        "name": "Sulayman Khan",
+        "start": 1339,
+        "end": 1343,
+        "wiki_link": "/wiki/Sulayman_Khan_(Ilkhanate)"
+      },
+      {
+        "name": "Anushirwan",
+        "start": 1343,
+        "end": 1357,
+        "wiki_link": "/wiki/Anushirwan_(Ilkhanate)"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1256,
+    "context_end": 1357
+  },
+  "Q48189": {
+    "rulers": [
+      {
+        "name": "Hermann von Salza",
+        "start": 1209,
+        "end": 1239,
+        "wiki_link": "/wiki/Hermann_von_Salza"
+      },
+      {
+        "name": "Conrad of Thuringia",
+        "start": 1239,
+        "end": 1240,
+        "wiki_link": "/wiki/Conrad_of_Thuringia"
+      },
+      {
+        "name": "Gerhard von Malberg",
+        "start": 1241,
+        "end": 1244,
+        "wiki_link": "/wiki/Gerhard_von_Malberg"
+      },
+      {
+        "name": "Heinrich von Hohenlohe",
+        "start": 1244,
+        "end": 1249,
+        "wiki_link": "/wiki/Heinrich_von_Hohenlohe"
+      },
+      {
+        "name": "Günther von Wüllersleben",
+        "start": 1249,
+        "end": 1252,
+        "wiki_link": "/wiki/Günther_von_Wüllersleben"
+      },
+      {
+        "name": "Poppo von Osterna",
+        "start": 1252,
+        "end": 1256,
+        "wiki_link": "/wiki/Poppo_von_Osterna"
+      },
+      {
+        "name": "Anno von Sangerhausen",
+        "start": 1256,
+        "end": 1273,
+        "wiki_link": "/wiki/Anno_von_Sangerhausen"
+      },
+      {
+        "name": "Hartmann von Heldrungen",
+        "start": 1273,
+        "end": 1282,
+        "wiki_link": "/wiki/Hartmann_von_Heldrungen"
+      },
+      {
+        "name": "Burchard von Schwanden",
+        "start": 1282,
+        "end": 1290,
+        "wiki_link": "/wiki/Burchard_von_Schwanden"
+      },
+      {
+        "name": "Conrad von Feuchtwangen",
+        "start": 1290,
+        "end": 1297,
+        "wiki_link": "/wiki/Conrad_von_Feuchtwangen"
+      },
+      {
+        "name": "Gottfried von Hohenlohe",
+        "start": 1297,
+        "end": 1303,
+        "wiki_link": "/wiki/Gottfried_von_Hohenlohe"
+      },
+      {
+        "name": "Siegfried von Feuchtwangen",
+        "start": 1303,
+        "end": 1311,
+        "wiki_link": "/wiki/Siegfried_von_Feuchtwangen"
+      },
+      {
+        "name": "Karl von Trier",
+        "start": 1311,
+        "end": 1324,
+        "wiki_link": "/wiki/Karl_von_Trier"
+      },
+      {
+        "name": "Werner von Orseln",
+        "start": 1324,
+        "end": 1330,
+        "wiki_link": "/wiki/Werner_von_Orseln"
+      },
+      {
+        "name": "Luther of Brunswick",
+        "start": 1331,
+        "end": 1335,
+        "wiki_link": "/wiki/Luther_of_Brunswick"
+      },
+      {
+        "name": "Dietrich von Altenburg",
+        "start": 1335,
+        "end": 1341,
+        "wiki_link": "/wiki/Dietrich_von_Altenburg"
+      },
+      {
+        "name": "Ludolf König",
+        "start": 1342,
+        "end": 1345,
+        "wiki_link": "/wiki/Ludolf_König"
+      },
+      {
+        "name": "Heinrich Dusemer",
+        "start": 1345,
+        "end": 1351,
+        "wiki_link": "/wiki/Heinrich_Dusemer"
+      },
+      {
+        "name": "Winrich von Kniprode",
+        "start": 1351,
+        "end": 1382,
+        "wiki_link": "/wiki/Winrich_von_Kniprode"
+      },
+      {
+        "name": "Conrad Zöllner von Rothenstein",
+        "start": 1382,
+        "end": 1390,
+        "wiki_link": "/wiki/Conrad_Zöllner_von_Rothenstein"
+      },
+      {
+        "name": "Conrad von Wallenrode",
+        "start": 1391,
+        "end": 1393,
+        "wiki_link": "/wiki/Conrad_von_Wallenrode"
+      },
+      {
+        "name": "Conrad von Jungingen",
+        "start": 1393,
+        "end": 1407,
+        "wiki_link": "/wiki/Conrad_von_Jungingen"
+      },
+      {
+        "name": "Ulrich von Jungingen",
+        "start": 1407,
+        "end": 1410,
+        "wiki_link": "/wiki/Ulrich_von_Jungingen"
+      },
+      {
+        "name": "Heinrich von Plauen",
+        "start": 1410,
+        "end": 1413,
+        "wiki_link": "/wiki/Heinrich_von_Plauen"
+      },
+      {
+        "name": "Michael Küchmeister",
+        "start": 1414,
+        "end": 1422,
+        "wiki_link": "/wiki/Michael_Küchmeister"
+      },
+      {
+        "name": "Paul von Rusdorf",
+        "start": 1422,
+        "end": 1441,
+        "wiki_link": "/wiki/Paul_von_Rusdorf"
+      },
+      {
+        "name": "Conrad von Erlichshausen",
+        "start": 1441,
+        "end": 1449,
+        "wiki_link": "/wiki/Conrad_von_Erlichshausen"
+      },
+      {
+        "name": "Ludwig von Erlichshausen",
+        "start": 1450,
+        "end": 1467,
+        "wiki_link": "/wiki/Ludwig_von_Erlichshausen"
+      },
+      {
+        "name": "Heinrich Reffle von Richtenberg",
+        "start": 1470,
+        "end": 1477,
+        "wiki_link": "/wiki/Heinrich_Reffle_von_Richtenberg"
+      },
+      {
+        "name": "Martin Truchsess von Wetzhausen",
+        "start": 1477,
+        "end": 1489,
+        "wiki_link": "/wiki/Martin_Truchsess_von_Wetzhausen"
+      },
+      {
+        "name": "Johann von Tiefen",
+        "start": 1489,
+        "end": 1497,
+        "wiki_link": "/wiki/Johann_von_Tiefen"
+      },
+      {
+        "name": "Friedrich of Saxony",
+        "start": 1498,
+        "end": 1510,
+        "wiki_link": "/wiki/Friedrich_of_Saxony_(Grand_Master)"
+      },
+      {
+        "name": "Albrecht of Brandenburg-Ansbach",
+        "start": 1511,
+        "end": 1525,
+        "wiki_link": "/wiki/Albert,_Duke_of_Prussia"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1190,
+    "context_end": 1525
+  },
+  "Q582861": {
+    "rulers": [
+      {
+        "name": "Abd al-Haqq I",
+        "start": 1215,
+        "end": 1217,
+        "wiki_link": "/wiki/Abd_al-Haqq_I"
+      },
+      {
+        "name": "Uthman I",
+        "start": 1217,
+        "end": 1240,
+        "wiki_link": "/wiki/Uthman_I,_Marinid"
+      },
+      {
+        "name": "Muhammad ibn Abd al-Haqq",
+        "start": 1240,
+        "end": 1244,
+        "wiki_link": "/wiki/Muhammad_ibn_Abd_al-Haqq"
+      },
+      {
+        "name": "Abu Yahya ibn Abd al-Haqq",
+        "start": 1244,
+        "end": 1258,
+        "wiki_link": "/wiki/Abu_Yahya_ibn_Abd_al-Haqq"
+      },
+      {
+        "name": "Umar ibn Yahya",
+        "start": 1258,
+        "end": 1259,
+        "wiki_link": "/wiki/Umar_ibn_Yahya"
+      },
+      {
+        "name": "Abu Yusuf Yaqub",
+        "start": 1259,
+        "end": 1286,
+        "wiki_link": "/wiki/Abu_Yusuf_Yaqub"
+      },
+      {
+        "name": "Abu Yaqub Yusuf I",
+        "start": 1286,
+        "end": 1307,
+        "wiki_link": "/wiki/Abu_Yaqub_Yusuf_I"
+      },
+      {
+        "name": "Abu Thabit Amir",
+        "start": 1307,
+        "end": 1308,
+        "wiki_link": "/wiki/Abu_Thabit_Amir"
+      },
+      {
+        "name": "Abu Rabia Sulayman",
+        "start": 1308,
+        "end": 1310,
+        "wiki_link": "/wiki/Abu_Rabia_Sulayman"
+      },
+      {
+        "name": "Abu Said Uthman II",
+        "start": 1310,
+        "end": 1331,
+        "wiki_link": "/wiki/Abu_Said_Uthman_II"
+      },
+      {
+        "name": "Abu al-Hasan Ali",
+        "start": 1331,
+        "end": 1348,
+        "wiki_link": "/wiki/Abu_al-Hasan_Ali_ibn_Uthman"
+      },
+      {
+        "name": "Abu Inan Faris",
+        "start": 1348,
+        "end": 1358,
+        "wiki_link": "/wiki/Abu_Inan_Faris"
+      },
+      {
+        "name": "Muhammad ibn Yaqub",
+        "start": 1358,
+        "end": 1359,
+        "wiki_link": "/wiki/Muhammad_ibn_Yaqub_(Marinid)"
+      },
+      {
+        "name": "Abu Salim Ibrahim II",
+        "start": 1359,
+        "end": 1361,
+        "wiki_link": "/wiki/Abu_Salim_Ibrahim_II"
+      },
+      {
+        "name": "Abu Umar Tashufin",
+        "start": 1361,
+        "end": 1361,
+        "wiki_link": "/wiki/Abu_Umar_Tashufin"
+      },
+      {
+        "name": "Abd al-Halim",
+        "start": 1361,
+        "end": 1362,
+        "wiki_link": "/wiki/Abd_al-Halim_(Marinid)"
+      },
+      {
+        "name": "Abu Zayyan Muhammad II",
+        "start": 1362,
+        "end": 1366,
+        "wiki_link": "/wiki/Abu_Zayyan_Muhammad_II"
+      },
+      {
+        "name": "Abu al-Faras Abd al-Aziz II",
+        "start": 1366,
+        "end": 1372,
+        "wiki_link": "/wiki/Abu_al-Faras_Abd_al-Aziz_II"
+      },
+      {
+        "name": "Muhammad III",
+        "start": 1372,
+        "end": 1374,
+        "wiki_link": "/wiki/Muhammad_III_(Marinid)"
+      },
+      {
+        "name": "Abu Zayyan Muhammad III",
+        "start": 1374,
+        "end": 1384,
+        "wiki_link": "/wiki/Abu_Zayyan_Muhammad_III"
+      },
+      {
+        "name": "Abu al-Abbas Ahmad",
+        "start": 1374,
+        "end": 1393,
+        "wiki_link": "/wiki/Abu_al-Abbas_Ahmad_(Marinid)"
+      },
+      {
+        "name": "Abd al-Aziz III",
+        "start": 1393,
+        "end": 1398,
+        "wiki_link": "/wiki/Abd_al-Aziz_III_(Marinid)"
+      },
+      {
+        "name": "Abdallah ibn Ahmad",
+        "start": 1398,
+        "end": 1399,
+        "wiki_link": "/wiki/Abdallah_ibn_Ahmad_(Marinid)"
+      },
+      {
+        "name": "Abu Said Uthman III",
+        "start": 1399,
+        "end": 1420,
+        "wiki_link": "/wiki/Abu_Said_Uthman_III"
+      },
+      {
+        "name": "Abd al-Haqq II",
+        "start": 1420,
+        "end": 1465,
+        "wiki_link": "/wiki/Abd_al-Haqq_II"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1244,
+    "context_end": 1465
+  },
+  "Q20737645": {
+    "rulers": [
+      {
+        "name": "Timur (Tamerlane)",
+        "start": 1370,
+        "end": 1405,
+        "wiki_link": "/wiki/Timur"
+      },
+      {
+        "name": "Shah Rukh",
+        "start": 1405,
+        "end": 1447,
+        "wiki_link": "/wiki/Shah_Rukh_(Timurid)"
+      },
+      {
+        "name": "Ulugh Beg",
+        "start": 1447,
+        "end": 1449,
+        "wiki_link": "/wiki/Ulugh_Beg"
+      },
+      {
+        "name": "Abd al-Latif Mirza",
+        "start": 1449,
+        "end": 1450,
+        "wiki_link": "/wiki/Abd_al-Latif_Mirza"
+      },
+      {
+        "name": "Abdullah Mirza",
+        "start": 1450,
+        "end": 1451,
+        "wiki_link": "/wiki/Abdullah_Mirza_(Timurid)"
+      },
+      {
+        "name": "Abu Said Mirza",
+        "start": 1451,
+        "end": 1469,
+        "wiki_link": "/wiki/Abu_Said_Mirza"
+      },
+      {
+        "name": "Ahmad Mirza",
+        "start": 1469,
+        "end": 1494,
+        "wiki_link": "/wiki/Ahmad_Mirza"
+      },
+      {
+        "name": "Mahmud Mirza",
+        "start": 1494,
+        "end": 1500,
+        "wiki_link": "/wiki/Mahmud_Mirza"
+      },
+      {
+        "name": "Baysunghur",
+        "start": 1500,
+        "end": 1501,
+        "wiki_link": "/wiki/Baysunghur_(son_of_Mahmud_Mirza)"
+      },
+      {
+        "name": "Babur",
+        "start": 1501,
+        "end": 1507,
+        "wiki_link": "/wiki/Babur"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1370,
+    "context_end": 1507
+  },
+  "Q975405": {
+    "rulers": [
+      {
+        "name": "Suleiman I",
+        "start": 1077,
+        "end": 1086,
+        "wiki_link": "/wiki/Suleiman_I_of_Rum"
+      },
+      {
+        "name": "Kilij Arslan I",
+        "start": 1092,
+        "end": 1107,
+        "wiki_link": "/wiki/Kilij_Arslan_I"
+      },
+      {
+        "name": "Malik Shah",
+        "start": 1107,
+        "end": 1116,
+        "wiki_link": "/wiki/Malik_Shah_of_Rum"
+      },
+      {
+        "name": "Masud I",
+        "start": 1116,
+        "end": 1156,
+        "wiki_link": "/wiki/Masud_I_of_Rum"
+      },
+      {
+        "name": "Kilij Arslan II",
+        "start": 1156,
+        "end": 1192,
+        "wiki_link": "/wiki/Kilij_Arslan_II"
+      },
+      {
+        "name": "Kaykhusraw I",
+        "start": 1192,
+        "end": 1196,
+        "wiki_link": "/wiki/Kaykhusraw_I"
+      },
+      {
+        "name": "Suleiman II",
+        "start": 1196,
+        "end": 1204,
+        "wiki_link": "/wiki/Suleiman_II_of_Rum"
+      },
+      {
+        "name": "Kilij Arslan III",
+        "start": 1204,
+        "end": 1205,
+        "wiki_link": "/wiki/Kilij_Arslan_III"
+      },
+      {
+        "name": "Kaykhusraw I",
+        "start": 1205,
+        "end": 1211,
+        "wiki_link": "/wiki/Kaykhusraw_I"
+      },
+      {
+        "name": "Kaykaus I",
+        "start": 1211,
+        "end": 1220,
+        "wiki_link": "/wiki/Kaykaus_I"
+      },
+      {
+        "name": "Kayqubad I",
+        "start": 1220,
+        "end": 1237,
+        "wiki_link": "/wiki/Kayqubad_I"
+      },
+      {
+        "name": "Kaykhusraw II",
+        "start": 1237,
+        "end": 1246,
+        "wiki_link": "/wiki/Kaykhusraw_II"
+      },
+      {
+        "name": "Kaykaus II",
+        "start": 1246,
+        "end": 1262,
+        "wiki_link": "/wiki/Kaykaus_II"
+      },
+      {
+        "name": "Kilij Arslan IV",
+        "start": 1248,
+        "end": 1265,
+        "wiki_link": "/wiki/Kilij_Arslan_IV"
+      },
+      {
+        "name": "Kayqubad II",
+        "start": 1249,
+        "end": 1257,
+        "wiki_link": "/wiki/Kayqubad_II"
+      },
+      {
+        "name": "Kaykhusraw III",
+        "start": 1265,
+        "end": 1282,
+        "wiki_link": "/wiki/Kaykhusraw_III"
+      },
+      {
+        "name": "Masud II",
+        "start": 1282,
+        "end": 1296,
+        "wiki_link": "/wiki/Masud_II"
+      },
+      {
+        "name": "Kayqubad III",
+        "start": 1298,
+        "end": 1302,
+        "wiki_link": "/wiki/Kayqubad_III"
+      },
+      {
+        "name": "Masud II",
+        "start": 1303,
+        "end": 1307,
+        "wiki_link": "/wiki/Masud_II"
+      }
+    ],
+    "status": "validated",
+    "territory_type": "ruler_based",
+    "context_start": 1077,
+    "context_end": 1307
   }
 }

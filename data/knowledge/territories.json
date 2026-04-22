@@ -5438,12 +5438,12 @@
   "Q179293": {
     "id": "Q179293",
     "label": "Castile",
-    "subjecto": "Castilla",
+    "subjecto": "Castile",
     "territory_type": "ruler_based",
-    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Castile",
-    "rulers_url": "https://en.wikipedia.org/wiki/List_of_Castilian_monarchs",
+    "wikipedia": "https://en.wikipedia.org/wiki/Castile",
+    "rulers_url": null,
     "wikidataId": "Q179293",
-    "description": "The Kingdom of Castile ( / k æ ˈ s t iː l / ; Spanish : Reino de Castilla : Latin : Regnum Castellae ) was a polity in the Iberian Peninsula during the Middle Ages . It traces its origins to the 9th-century County of Castile ( Spanish : Condado de Castilla , Latin : Comitatus Castellae ), as an eastern frontier lordship of the Kingdom of León . During the 10th century, the Castilian counts increased their autonomy, but it was not until 1065 that it was separated from the Kingdom of León and became a kingdom in its own right. Between 1072 and 1157, it was again united with León, and after 1230, the union became permanent.",
+    "description": "",
     "capitals": [],
     "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Banner_of_the_Kingdom_of_Castile.svg",
     "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Arms_of_Castille_%281214-15th_Century%29.svg",
@@ -5451,12 +5451,12 @@
     "special_case": false,
     "geodata": {
       "epochs": [
-        "world_1000",
-        "world_1100",
-        "world_1200"
+        "world_1279",
+        "world_1300",
+        "world_1400"
       ],
-      "firstEpoch": "world_1000",
-      "lastEpoch": "world_1200"
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1400"
     }
   },
   "Q200262": {
@@ -6052,6 +6052,736 @@
       ],
       "firstEpoch": "world_1000",
       "lastEpoch": "world_1200"
+    }
+  },
+  "Q3042057": {
+    "id": "Q3042057",
+    "label": "Soomra Dynasty",
+    "wikidataId": "Q3042057",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Soomra_dynasty",
+    "description": "The Soomra dynasty was a late medieval dynasty of Sindh ruled by the Soomro tribe of Sindh, and at times adjacent regions, located in what is now Pakistan."
+  },
+  "Q494462": {
+    "id": "Q494462",
+    "label": "Oghuz Turks",
+    "wikidataId": "Q494462",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oghuz_Turks",
+    "description": "The Oghuz Turks were a western Turkic people who spoke the Oghuz branch of the Turkic language family. In the 8th century, they formed a tribal confederation conventionally named the Oghuz Yabgu State in Central Asia. Today the Turkmen, Azerbaijanis and Turks are descendants of Oghuz Turks. The term Oghuz was gradually supplanted by the terms Turkmen and Turcoman by the 13th century."
+  },
+  "Q1035516": {
+    "id": "Q1035516",
+    "label": "Cumans",
+    "wikidataId": "Q1035516",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Cumans",
+    "description": "The Cumans or Kumans were a Turkic nomadic people from Central Asia comprising the western branch of the Cuman–Kipchak confederation who spoke the Cuman language. They are referred to as Polovtsians (Polovtsy) in Rus' chronicles, as \"Cumans\" in Western sources, and as \"Kipchaks\" in Eastern sources."
+  },
+  "Q276315": {
+    "id": "Q276315",
+    "label": "Karakalpaks",
+    "wikidataId": "Q276315",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Karakalpaks",
+    "description": "The Karakalpaks, or Qaraqalpaqs, are a Turkic ethnic group native to Karakalpakstan in Northwestern Uzbekistan. During the 18th century, they settled in the lower reaches of the Amu Darya and in the (former) delta of Amu Darya on the southern shore of the Aral Sea. The name Karakalpak comes from two words: qara meaning 'black' and qalpaq meaning 'hat'. The Karakalpaks number nearly 871,970 worldwide, out of which about 726,000 live in the Karakalpakstan region of Uzbekistan."
+  },
+  "Q2066863": {
+    "id": "Q2066863",
+    "label": "Goghtn",
+    "wikidataId": "Q2066863",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Goghtn",
+    "description": "Goght’n was a canton located in the province of Vaspurakan in historical Armenia. Its borders roughly corresponded to the modern Ordubad Rayon of Nakhichevan, Azerbaijan."
+  },
+  "Q4448526": {
+    "id": "Q4448526",
+    "label": "Syunik",
+    "wikidataId": "Q4448526",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Syunik",
+    "description": "Syunik may refer to:Siunia dynasty, ancient Armenian noble family.\nSyunik, the 9th province of the historic Kingdom of Armenia.\nKingdom of Syunik, medieval Armenian kingdom dependent to Bagratid Armenia, Kingdom of Georgia and Mongol Empire.\nSyunik (village), a village in Syunik Province.\nSyunik Province, an administrative entity in Armenia.\n\n"
+  },
+  "Q1550130": {
+    "id": "Q1550130",
+    "label": "Kingdom of Artsakh",
+    "wikidataId": "Q1550130",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Artsakh",
+    "description": "The Kingdom of Artsakh was a medieval dependent Armenian kingdom on the territory of Syunik and Artsakh provinces, Gardman canton of Utik province, Mazaz and Varazhnunik canton of Ayrarat province. Contemporary sources referred to it as the Khachen."
+  },
+  "Q177076": {
+    "id": "Q177076",
+    "label": "Caucasian Albania",
+    "wikidataId": "Q177076",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Caucasian_Albania",
+    "description": "Caucasian Albania is a modern exonym for a former state located in ancient times in the Caucasus, mostly overlapping the region of present-day Azerbaijan. The modern endonyms for the area are Aghwank and Aluank, among the Udi people, who regard themselves as descended from the inhabitants of Caucasian Albania. However, its original endonym is unknown."
+  },
+  "Q3826": {
+    "id": "Q3826",
+    "label": "Muscat",
+    "wikidataId": "Q3826",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Muscat",
+    "description": "Muscat is the capital and most populous city of Oman. It is the seat of the Governorate of Muscat. According to the National Centre for Statistics and Information (NCSI), the population of the Muscat Governorate in 2022 was 1.72 million. The metropolitan area includes six provinces, called wilayat, and spans approximately 6,500 km2 (2,500 sq mi)."
+  },
+  "Q26962106": {
+    "id": "Q26962106",
+    "label": "Lak people",
+    "wikidataId": "Q26962106",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lak_people",
+    "description": "Lak people may refer to:Laks (Caucasus), an ethnic group of Dagestan, North Caucasus, Russia\nLaks (Iran), an ethnic group of southwestern Iran"
+  },
+  "Q15916991": {
+    "id": "Q15916991",
+    "label": "Durdzuks",
+    "wikidataId": "Q15916991",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Durdzuks",
+    "description": "The Durdzuks, also known as Dzurdzuks, was a medieval exonym of the 9th-18th centuries used mainly in Georgian, Arabic, but also Armenian sources in reference to the Vainakh peoples."
+  },
+  "Q2667578": {
+    "id": "Q2667578",
+    "label": "Khunzakh",
+    "wikidataId": "Q2667578",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khunzakh",
+    "description": "Khunzakh is a rural locality and the administrative center of Khunzakhsky District in the Republic of Dagestan, Russia, located in the North Caucasus mountains 1,600 meters (5,200 ft) above sea level. Population: 4,245 (2010 census); 3,694 (2002 census); 2,901 (1989 Soviet census)."
+  },
+  "Q7216494": {
+    "id": "Q7216494",
+    "label": "Kingdom of Kakheti-Hereti",
+    "wikidataId": "Q7216494",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Kakheti-Hereti",
+    "description": "The Kingdom of Kakheti-Hereti was an early medieval Georgian monarchy in eastern Georgia, centered at the province of Kakheti, with its capital first at Telavi. It emerged in c.  1014 AD, under the leadership of energetic ruler of principality of Kakheti, Kvirike III the Great that finally defeated the ruler of Hereti and crowned himself as a king of the unified realms of Kakheti and Hereti."
+  },
+  "Q112745": {
+    "id": "Q112745",
+    "label": "Kingdom of Tashir-Dzoraget",
+    "wikidataId": "Q112745",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Tashir-Dzoraget",
+    "description": "The Kingdom of Tashir-Dzoraget, alternatively known as the Kingdom of Lori or Kiurikian Kingdom by later historians, was a medieval Armenian kingdom formed in the year 979 by the Kiurikian dynasty, a branch of the Bagratuni dynasty, as a vassal kingdom of the Bagratid Kingdom of Armenia. The first capital of the kingdom was Matsnaberd, currently part of modern-day Azerbaijan."
+  },
+  "Q517333": {
+    "id": "Q517333",
+    "label": "Principality of Polotsk",
+    "wikidataId": "Q517333",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Principality_of_Polotsk",
+    "description": "The Principality of Polotsk, also known as the Duchy of Polotsk or Polotskian Rus', was a medieval principality. The origin and date of the establishment of the state are uncertain. Chronicles of Kievan Rus' mention Polotsk being conquered by Vladimir the Great, and thereafter it became associated with Kievan Rus' and its ruling Rurikids."
+  },
+  "Q267816": {
+    "id": "Q267816",
+    "label": "Duchy of Benevento",
+    "wikidataId": "Q267816",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Duchy_of_Benevento",
+    "description": "The Duchy of Benevento was the southernmost Lombard duchy in the Italian Peninsula that was centered in Benevento, a city in Southern Italy. Lombard dukes ruled Benevento from 571 to 774, when the Kingdom of the Lombards was conquered by the Kingdom of the Franks. Being cut off from the rest of the Lombard possessions by the papal Duchy of Rome, Benevento always had held some degree of independence."
+  },
+  "Q530670": {
+    "id": "Q530670",
+    "label": "Kingdom of Burgundy",
+    "wikidataId": "Q530670",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Burgundy",
+    "description": "Kingdom of Burgundy named after the Germanic tribe of Burgundians, was a name given to various successive kingdoms centered in the historical region of Burgundy during the Middle Ages. The heartland of historical Burgundy correlates with the border area between France and Switzerland, and includes the major modern cities of Geneva and Lyon."
+  },
+  "Q2342282": {
+    "id": "Q2342282",
+    "label": "Imamate of Oman",
+    "wikidataId": "Q2342282",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Imamate_of_Oman",
+    "description": "The Imamate of Oman, officially the Imamate State of Oman, was several succession of states within the Oman proper in the Hajar Mountains, part of the present-day Sultanate of Oman. The capital of the Imamate alternated historically between Rustaq and Nizwa. The Imamate's territory extended north to Ibri and south to the Alsharqiyah region and the Sharqiya Sands. The Imamate was bounded in the east by the Hajar Mountains and in the west by the Rub' al Khali desert."
+  },
+  "Q538677": {
+    "id": "Q538677",
+    "label": "Angevin Empire",
+    "wikidataId": "Q538677",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Angevin_Empire",
+    "description": "The Angevin Empire was the collection of territories held by the House of Plantagenet during the 12th and 13th centuries, when they ruled over an area covering roughly all of present-day England, half of France, and parts of Ireland and Wales, and claiming overlordship and some influence over the remaining parts of Wales, Scotland and Ireland. It may be described as an early example of a composite monarchy."
+  },
+  "Q151536": {
+    "id": "Q151536",
+    "label": "Novgorod Republic",
+    "wikidataId": "Q151536",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Novgorod_Republic",
+    "description": "The Novgorod Republic, formally known as Lord Novgorod the Great, was a city-state that existed from the 12th to 15th centuries in northwestern Russia, stretching from the Gulf of Finland in the west to the Ural Mountains in the east. Its capital was the city of Novgorod. The republic prospered as the easternmost trading post of the Hanseatic League, and its people were much influenced by the culture of the Byzantines, with the Novgorod school of icon painting producing many fine works."
+  },
+  "Q83546": {
+    "id": "Q83546",
+    "label": "Vladimir-Suzdal",
+    "wikidataId": "Q83546",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vladimir-Suzdal",
+    "description": "The Grand Principality of Vladimir, before 1157 the Principality of Suzdal, and commonly known as Vladimir-Suzdal, or simply Suzdalia and Vladimiria, was a medieval principality that was established during the disintegration of Kievan Rus'. In historiography, the territory of the grand principality and the principalities that emerged from it is commonly denoted as northeast Russia or northeast Rus'."
+  },
+  "Q1483430": {
+    "id": "Q1483430",
+    "label": "Principality of Kiev",
+    "wikidataId": "Q1483430",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Principality_of_Kiev",
+    "description": "The inner Principality of Kiev was a medieval principality centered on the city of Kiev."
+  },
+  "Q239502": {
+    "id": "Q239502",
+    "label": "Kingdom of Galicia-Volhynia",
+    "wikidataId": "Q239502",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia-Volhynia",
+    "description": "The Principality or, from 1253, Kingdom of Galicia–Volhynia, also known as the Kingdom of Ruthenia or Kingdom of Rus', was a medieval state in Eastern Europe which existed from 1199 to 1349. Its territory was predominantly located in modern-day Ukraine, with parts in Belarus, Poland, Romania, Moldova, and Lithuania. Along with Novgorod and Vladimir-Suzdal, it was one of the three most important powers to emerge from the collapse of Kievan Rus'."
+  },
+  "Q13403037": {
+    "id": "Q13403037",
+    "label": "Russian principalities",
+    "wikidataId": "Q13403037",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Russian_principalities",
+    "description": "The Russian principalities, also known as the Rus' principalities, were polities that became independent following the disintegration of Kievan Rus' in the 12th century as a result of feudal fragmentation. During the 14th century the principalities of Southwestern and Southern Rus' were incorporated by the Kingdom of Poland and Grand Duchy of Lithuania."
+  },
+  "Q170770": {
+    "id": "Q170770",
+    "label": "Grand Principality of Moscow",
+    "wikidataId": "Q170770",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Grand_Principality_of_Moscow",
+    "description": "The Grand Principality of Moscow, before 1389 the Principality of Moscow, also known by the exonym Muscovy, was a late medieval Russian monarchy. Its capital was the city of Moscow. Originally established as an appanage principality in the 13th century, Moscow became the leading Russian principality and was transformed into a centralized Russian state in the late 15th century."
+  },
+  "Q2980623": {
+    "id": "Q2980623",
+    "label": "Kingdom of Bosnia",
+    "wikidataId": "Q2980623",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Bosnia",
+    "description": "The Kingdom of Bosnia, or Bosnian Kingdom, was a medieval kingdom that lasted for nearly a century, from 1377 to 1463, and evolved out of the Banate of Bosnia, which itself lasted from at least 1154."
+  },
+  "Q10957559": {
+    "id": "Q10957559",
+    "label": "Principality of Moldavia",
+    "wikidataId": "Q10957559",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Moldavia",
+    "description": "Moldavia is a historical region and former principality in Eastern Europe, corresponding to the territory between the Eastern Carpathians and the Dniester River. An initially independent and later autonomous state under Ottoman overlordship, it existed from the 14th century to 1859, when it united with Wallachia as the basis of the modern Romanian state; at various times, Moldavia included the regions of Bessarabia, all of Bukovina and Hertsa."
+  },
+  "Q171393": {
+    "id": "Q171393",
+    "label": "Wallachia",
+    "wikidataId": "Q171393",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Wallachia",
+    "description": "Wallachia is a geographical region of modern-day Romania, as well as one of the two historical Romanian principalities that laid the foundation for the establishment of the modern Romanian state. It is situated north of the Lower Danube and south of the Southern Carpathians. Wallachia was traditionally divided into two sections, Muntenia and Oltenia. Dobruja could sometimes be considered a third section due to its proximity and brief rule over it."
+  },
+  "Q62623": {
+    "id": "Q62623",
+    "label": "Kalmar Union",
+    "wikidataId": "Q62623",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kalmar_Union",
+    "description": "The Kalmar Union was a personal union in Scandinavia, agreed at Kalmar in Sweden as designed by Queen Margaret of Denmark. From 1397 to 1523, it joined under a single monarch the three kingdoms of Denmark, Sweden, and Norway, together with Norway's maritime colonies."
+  },
+  "Q27260": {
+    "id": "Q27260",
+    "label": "Samma dynasty",
+    "wikidataId": "Q27260",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Samma_dynasty",
+    "description": "The Sammā dynasty was a Sindhi Muslim dynasty which ruled the Sindh Sultanate, a medieval kingdom based in Sindh. It was established by Unar bin Babinah in 1351 who defeated Sardar Hamir the last Soomra Emir and declared independence from the Delhi Sultanate. The Sammas took the title of Jam the equivalent of \"Sultan\" while claiming descent from Jamshid. The capital of the sultanate was in the city of Samanagar. The Sammas were replaced in the early 16th century by the Arghun dynasty."
+  },
+  "Q307697": {
+    "id": "Q307697",
+    "label": "Zayyanid dynasty",
+    "wikidataId": "Q307697",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Zayyanid_dynasty",
+    "description": "The Zayyanid dynasty or Ziyanids or Abd al-Wadids was a Berber Zenata dynasty that ruled the Kingdom of Tlemcen, mainly in modern Algeria centered on the town of Tlemcen in northwest Algeria. The Zayyanid dynasty's rule lasted from 1235 to 1557."
+  },
+  "Q190513": {
+    "id": "Q190513",
+    "label": "Khanate of Sibir",
+    "wikidataId": "Q190513",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khanate_of_Sibir",
+    "description": "The Khanate of Sibir was a Siberian Tatar state in western Siberia. It was founded at the end of the 15th century, following the break-up of the Golden Horde. Throughout its history, members of the Shaybanid and Taibugid dynasties often contested the rulership over the Khanate between each other; both of these competing tribes were direct patrilineal descendants of Genghis Khan through his eldest son Jochi and Jochi's fifth son Shayban (Shiban)."
+  },
+  "Q7081520": {
+    "id": "Q7081520",
+    "label": "Oirat",
+    "wikidataId": "Q7081520",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oirat",
+    "description": "Oirat or Elut may refer to:Oirats, the westernmost group of the Mongols\nOirat language\n\n"
+  },
+  "Q79965": {
+    "id": "Q79965",
+    "label": "Khanate of the Golden Horde",
+    "subjecto": "Khanate of the Golden Horde",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Khanate_of_the_Golden_Horde",
+    "rulers_url": null,
+    "wikidataId": "Q79965",
+    "description": "The Golden Horde , or Ulus of Jochi , self-designated as Ulug Ulus ( lit. ' Great State ' in Turkic), was originally a Mongol and later Turkicized khanate established in the 13th century, originating from the northwestern part of the Mongol Empire . After the division of the Mongol Empire in 1259, it became a functionally independent khanate. It is also known as the Kipchak Khanate , and replaced the earlier, less organized Cuman–Kipchak confederation .",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1300"
+      ],
+      "firstEpoch": "world_1300",
+      "lastEpoch": "world_1300"
+    }
+  },
+  "Q2553863": {
+    "id": "Q2553863",
+    "label": "White Horde",
+    "wikidataId": "Q2553863",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/White_Horde",
+    "description": "The White Horde, or more appropriately, the left wing of the Jochid ulus, was one of the uluses within the Mongol Empire formed around 1225, after the death of Jochi when his son, Orda, inherited his father's appanage by the Jaxartes. It was the eastern constituent part of the Golden Horde alongside the Blue Horde to the west."
+  },
+  "Q269109": {
+    "id": "Q269109",
+    "label": "Principality of Ryazan",
+    "wikidataId": "Q269109",
+    "territory_type": "context_only",
+    "status": "validated",
+    "wikipedia": "https://en.wikipedia.org/wiki/Principality_of_Ryazan",
+    "description": "The Principality of Ryazan, later known as the Grand Principality of Ryazan, was a principality from 1129 to 1521. Its capital was the city of Ryazan, now known as Old Ryazan, which was destroyed in 1237 during the Mongol invasions. The capital was moved to Pereyaslavl-Ryazansky, later renamed Ryazan."
+  },
+  "Q163422": {
+    "id": "Q163422",
+    "label": "Almoravid dynasty",
+    "subjecto": "Almoravid dynasty",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Almoravid_dynasty",
+    "rulers_url": null,
+    "wikidataId": "Q163422",
+    "description": "The Almoravid dynasty ( Arabic : المرابطون , romanized : Al-Murābiṭūn , lit. ' those from the ribats ' ) was a Berber Muslim dynasty centered in the territory of present-day Morocco . It established an empire that stretched over the western Maghreb and al-Andalus , starting in the 1050s and lasting until its fall to the Almohads in 1147.",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1100"
+      ],
+      "firstEpoch": "world_1100",
+      "lastEpoch": "world_1100"
+    }
+  },
+  "Q8733": {
+    "id": "Q8733",
+    "label": "Seljuk Empire",
+    "subjecto": "Seljuk Empire",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+    "rulers_url": null,
+    "wikidataId": "Q8733",
+    "description": "The Seljuk Empire ( /ˈsɛld͡ʒuːk/ SEL-jook in BrE , /sɛlˈd͡ʒuːk/ sel-JOOK in AmE ), or the Great Seljuk Empire , was a high medieval Turkic, culturally Persianate empire established and ruled by the Qïnïq branch of Oghuz Turks . The empire spanned a total area of 3.9 million square kilometres (1.5 million square miles) from Anatolia and the Levant in the west to the Hindu Kush in the east, and from Central Asia in the north to the Persian Gulf in the south, and it spanned the time period 1037–1308, though Seljuk rule beyond the Anatolian peninsula ended in 1194.",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_China_%281889%E2%80%931912%29.svg",
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1100"
+      ],
+      "firstEpoch": "world_1100",
+      "lastEpoch": "world_1100"
+    }
+  },
+  "Q45": {
+    "id": "Q45",
+    "label": "Portugal",
+    "subjecto": "Portugal",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Portugal",
+    "rulers_url": null,
+    "wikidataId": "Q45",
+    "description": "Portugal , officially the Portuguese Republic , is a country located on the Iberian Peninsula in Southwestern Europe . It is a unitary republic made up by mainland Portugal and two autonomous regions , with Lisbon as both its capital and largest city . It has a total population of over 10.7 million. The mainland is bordered by Spain to the north and east, with Madeira and the Azores in the Atlantic Ocean . The mainland includes the westernmost point of continental Europe .",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Portugal_%28official%29.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg",
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1945",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "firstEpoch": "world_1200",
+      "lastEpoch": "world_2010"
+    }
+  },
+  "Q83285": {
+    "id": "Q83285",
+    "label": "Almohad Caliphate",
+    "subjecto": "Almohad Caliphate",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Almohad_Caliphate",
+    "rulers_url": null,
+    "wikidataId": "Q83285",
+    "description": "The Almohad Caliphate or Almohad Empire was a North African empire ruled by a Berber Muslim dynasty in the 12th and 13th centuries. At its height, it controlled much of the Maghreb and the Iberian Peninsula ( Al-Andalus ).",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Stema_e_Bashkis%C3%AB_Durr%C3%ABs.svg",
+    "status": "draft",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1200"
+      ],
+      "firstEpoch": "world_1200",
+      "lastEpoch": "world_1200"
+    }
+  },
+  "Q199987": {
+    "id": "Q199987",
+    "label": "Trebizond",
+    "subjecto": "Trebizond",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Trebizond",
+    "rulers_url": null,
+    "wikidataId": "Q199987",
+    "description": "Trabzon is a city on the Black Sea coast of northeastern Turkey and the capital of Trabzon Province . Historically known as Trebizond , the city was founded in 756 BC as Trapezous by Greek colonists from Miletus . It was added into the Achaemenid Empire by Cyrus the Great and was later part of the independent Kingdom of Pontus that challenged Rome until 68 BC. Thenceforth part of the Roman and later Byzantine Empire, the city was the capital of the Empire of Trebizond , one of the successor states of the Byzantine Empire after the Fourth Crusade in 1204. In 1461 it came under Ottoman rule.",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "draft",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1400"
+    }
+  },
+  "Q752662": {
+    "id": "Q752662",
+    "label": "Hafsid Caliphate",
+    "subjecto": "Hafsid Caliphate",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hafsid_Caliphate",
+    "rulers_url": null,
+    "wikidataId": "Q752662",
+    "description": "The Hafsid dynasty ( Arabic : الحفصيون , romanized : al-Ḥafṣiyūn ) was a Sunni Muslim dynasty of Berber descent that ruled Ifriqiya (modern day Tunisia, western Libya, and eastern Algeria) from 1229 to 1574. The dynasty was founded by Abu Zakariya Yahya , who was initially appointed governor of the region by the Almohad caliph before declaring his independence.",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1500"
+    }
+  },
+  "Q282428": {
+    "id": "Q282428",
+    "label": "Mamluke Sultanate",
+    "subjecto": "Mamluke Sultanate",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Mamluke_Sultanate",
+    "rulers_url": null,
+    "wikidataId": "Q282428",
+    "description": "The Mamluk Sultanate ( Arabic : سلطنة المماليك , romanized : Salṭanat al-Mamālīk ), also known as Mamluk Egypt or the Mamluk Empire , was a state that ruled Egypt , the Syrian region and the Hejaz from the mid-13th to early 16th centuries, with Cairo as its capital. It was ruled by a military caste of mamluks (freed slave soldiers) headed by a sultan . The sultanate was established with the overthrow of the Ayyubid dynasty in Egypt in 1250 and was conquered by the Ottoman Empire in 1517. Mamluk history is generally divided into the Turkic or Bahri period (1250–1382) and the Circassian or Burji period (1382–1517), named after the predominant ethnicity or corps of the ruling Mamluks during these respective eras.",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1500"
+    }
+  },
+  "Q81009": {
+    "id": "Q81009",
+    "label": "Kwarizm-Shah",
+    "subjecto": "Kwarizm-Shah",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Kwarizm-Shah",
+    "rulers_url": null,
+    "wikidataId": "Q81009",
+    "description": "",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1200"
+      ],
+      "firstEpoch": "world_1200",
+      "lastEpoch": "world_1200"
+    }
+  },
+  "Q49683": {
+    "id": "Q49683",
+    "label": "Lithuania",
+    "subjecto": "Lithuania",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Lithuania",
+    "rulers_url": null,
+    "wikidataId": "Q49683",
+    "description": "Lithuania , officially the Republic of Lithuania , is a country in the Baltic region of Europe . It is one of three Baltic states and lies on the eastern shore of the Baltic Sea , bordered by Latvia to the north, Belarus to the east and south, Poland to the south, and the Russian semi-exclave of Kaliningrad Oblast to the southwest, with a maritime border with Sweden to the west. Lithuania covers an area of 65,300 km 2 (25,200 sq mi), and has a population of 2.9 million. Its capital and largest city is Vilnius ; other major cities include Kaunas , Klaipėda , Šiauliai and Panevėžys . Lithuanians are the titular nation , belong to the ethnolinguistic group of Balts , and speak Lithuanian .",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_banner_of_the_Grand_Duchy_of_Lithuania.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/POL_COA_Grand_Duchy_of_Lithuania.svg",
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_2010"
+    }
+  },
+  "Q178084": {
+    "id": "Q178084",
+    "label": "Ilkhanate",
+    "subjecto": "Ilkhanate",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ilkhanate",
+    "rulers_url": null,
+    "wikidataId": "Q178084",
+    "description": "The Ilkhanate or Il-khanate was a Mongol khanate founded in the southwestern territories of the Mongol Empire . It was ruled by the Il-Khans or Ilkhanids ( Persian : ایلخانان , romanized : Īlkhānān ), and known to the Mongols as Hülegü Ulus ( lit. ' people / state of Hülegü ' ). The Ilkhanid realm was officially known as the Land of Iran ( Irānzamin ) or simply Iran . It was established after Hülegü , the son of Tolui and grandson of Genghis Khan , inherited the West Asian and Central Asian part of the Mongol Empire after his brother Möngke Khan died in 1259.",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ilkhanate.svg",
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1300"
+      ],
+      "firstEpoch": "world_1300",
+      "lastEpoch": "world_1300"
+    }
+  },
+  "Q48189": {
+    "id": "Q48189",
+    "label": "Teutonic Knights",
+    "subjecto": "Teutonic Knights",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Teutonic_Knights",
+    "rulers_url": null,
+    "wikidataId": "Q48189",
+    "description": "The Teutonic Order is a Catholic religious institution founded as a military society c. 1190 in Acre , Kingdom of Jerusalem . The Order of Brothers of the German House of Saint Mary in Jerusalem was formed to aid Christians on their pilgrimages to the Holy Land and to establish hospitals . Its members have commonly been known as the Teutonic Knights , having historically served as a crusading military order for supporting Catholic rule in the Holy Land and the Northern Crusades during the Middle Ages , as well as supplying military protection for Catholics in Eastern Europe .",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_State_of_the_Teutonic_Order.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Insignia_Germany_Order_Teutonic.svg",
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1500"
+    }
+  },
+  "Q582861": {
+    "id": "Q582861",
+    "label": "Merinides",
+    "subjecto": "Merinides",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Merinides",
+    "rulers_url": null,
+    "wikidataId": "Q582861",
+    "description": "",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1279"
+      ],
+      "firstEpoch": "world_1279",
+      "lastEpoch": "world_1279"
+    }
+  },
+  "Q20737645": {
+    "id": "Q20737645",
+    "label": "Timurid Emirates",
+    "subjecto": "Timurid Emirates",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Timurid_Emirates",
+    "rulers_url": null,
+    "wikidataId": "Q20737645",
+    "description": "The Timurid dynasty , self-designated as Gurkani , was the ruling dynasty of the Timurid Empire (1370–1507). It was a Sunni Muslim dynasty or Barlās clan of Turco-Mongol origin descended from the warlord Timur (also known as Tamerlane). The word \"Gurkani\" derives from Gurkân ( گورکان )—a Persianized form of the Mongolian word kürgen , meaning 'son-in-law'. This was an honorific title used by the dynasty as the Timurids were in-laws of the line of Genghis Khan , founder of the Mongol Empire , as Timur had married Saray Mulk Khanum , a direct descendant of Genghis Khan . Members of the Timurid dynasty signaled the Timurid Renaissance , and they were strongly influenced by Persian culture and established two significant empires in history, the Timurid Empire (1370–1507) based in Persia and Central Asia , and the Mughal Empire (1526–1857) based in the Indian subcontinent .",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1492",
+        "world_1500"
+      ],
+      "firstEpoch": "world_1492",
+      "lastEpoch": "world_1500"
+    }
+  },
+  "Q975405": {
+    "id": "Q975405",
+    "label": "Seljuk Caliphate",
+    "subjecto": "Seljuk Caliphate",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Seljuk_Caliphate",
+    "rulers_url": null,
+    "wikidataId": "Q975405",
+    "description": "",
+    "capitals": [],
+    "flag": null,
+    "coatOfArms": null,
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1300",
+        "world_1400"
+      ],
+      "firstEpoch": "world_1300",
+      "lastEpoch": "world_1400"
+    }
+  },
+  "Q1028": {
+    "id": "Q1028",
+    "label": "Morocco",
+    "subjecto": "Morocco",
+    "territory_type": "ruler_based",
+    "wikipedia": "https://en.wikipedia.org/wiki/Morocco",
+    "rulers_url": null,
+    "wikidataId": "Q1028",
+    "description": "Morocco , officially the Kingdom of Morocco , is a country in the Maghreb region of North Africa . It has coastlines on the Mediterranean Sea to the north and the Atlantic Ocean to the west, and has land borders with Algeria to the east , and the disputed territory of Western Sahara to the south , partly occupied by Morocco since 1975. Morocco also claims the Spanish exclaves of Ceuta , Melilla and Peñón de Vélez de la Gomera , and several small Spanish-controlled islands off its coast. Morocco also claims to share a border with Mauritania through the disputed territory of Western Sahara. It has a population of approximately 37 million. Islam is both the official and predominant religion, while Arabic and Berber are the official languages. Additionally, French and the Moroccan dialect of Arabic are widely spoken. The culture of Morocco is a mix of Arab , Berber , European (specifically Andalusian ), and African cultures. Its capital is Rabat , while its largest city is Casablanca .",
+    "capitals": [],
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Morocco.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Morocco.svg",
+    "status": "validated",
+    "special_case": false,
+    "geodata": {
+      "epochs": [
+        "world_1300",
+        "world_1400",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "firstEpoch": "world_1300",
+      "lastEpoch": "world_2010"
     }
   }
 }

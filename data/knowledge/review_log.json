@@ -1222,25 +1222,6 @@
     }
   },
   {
-    "territory": "Castile",
-    "status": "review",
-    "flags": [
-      "overlapping_rulers"
-    ],
-    "broken_reasons": [],
-    "details": {
-      "territory_qid": "Q179293",
-      "rulers_count": 12,
-      "epochs": [
-        "world_1000",
-        "world_1100",
-        "world_1200"
-      ],
-      "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Castile",
-      "rulers_url": "https://en.wikipedia.org/wiki/List_of_Castilian_monarchs"
-    }
-  },
-  {
     "territory": "Navarre",
     "status": "review",
     "flags": [
@@ -1599,6 +1580,317 @@
         "world_1200"
       ],
       "wikipedia_url": "https://en.wikipedia.org/wiki/Ghaznavid_Emirate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Almoravid dynasty",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q163422",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Almoravid_dynasty",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Seljuk Empire",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q8733",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1100"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Portugal",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q45",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1200",
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500",
+        "world_1530",
+        "world_1600",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1945",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Portugal",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Hafsid Caliphate",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q752662",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Hafsid_Caliphate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Mamluke Sultanate",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q282428",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Mamluke_Sultanate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Kwarizm-Shah",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q81009",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1200"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Kwarizm-Shah",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Lithuania",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q49683",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1920",
+        "world_1930",
+        "world_1938",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Lithuania",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Ilkhanate",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q178084",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1300"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Ilkhanate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Teutonic Knights",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q48189",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400",
+        "world_1492",
+        "world_1500"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Teutonic_Knights",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Merinides",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q582861",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Merinides",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Timurid Empire",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q20737645",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timurid_Empire",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Seljuk Caliphate",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q975405",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1300",
+        "world_1400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Caliphate",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Morocco",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q1028",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1300",
+        "world_1400",
+        "world_1650",
+        "world_1700",
+        "world_1715",
+        "world_1783",
+        "world_1800",
+        "world_1815",
+        "world_1880",
+        "world_1900",
+        "world_1914",
+        "world_1920",
+        "world_1930",
+        "world_1960",
+        "world_1994",
+        "world_2000",
+        "world_2010"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Morocco",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Timurid Emirates",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q20737645",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1492",
+        "world_1500"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Timurid_Emirates",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Castile",
+    "status": "broken",
+    "flags": [
+      "parsing_fallback_used"
+    ],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q179293",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1279",
+        "world_1300",
+        "world_1400"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Castile",
+      "rulers_url": null
+    }
+  },
+  {
+    "territory": "Khanate of the Golden Horde",
+    "status": "clean",
+    "flags": [],
+    "broken_reasons": [],
+    "details": {
+      "territory_qid": "Q79965",
+      "rulers_count": 0,
+      "epochs": [
+        "world_1300"
+      ],
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Khanate_of_the_Golden_Horde",
       "rulers_url": null
     }
   }

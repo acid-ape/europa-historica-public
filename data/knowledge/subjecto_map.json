@@ -1274,7 +1274,7 @@
   },
   "Angevin Empire": {
     "subjecto": "Angevin Empire",
-    "wikidataId": null,
+    "wikidataId": "Q538677",
     "label": "Angevin Empire",
     "count": 1,
     "epochs": [
@@ -1942,7 +1942,7 @@
   },
   "Arran": {
     "subjecto": "Arran",
-    "wikidataId": null,
+    "wikidataId": "Q177076",
     "label": "Arran",
     "count": 2,
     "epochs": [
@@ -1985,7 +1985,7 @@
   },
   "Artsakh": {
     "subjecto": "Artsakh",
-    "wikidataId": null,
+    "wikidataId": "Q1550130",
     "label": "Artsakh",
     "count": 1,
     "epochs": [
@@ -4284,7 +4284,7 @@
   },
   "Bosnia": {
     "subjecto": "Bosnia",
-    "wikidataId": null,
+    "wikidataId": "Q2980623",
     "label": "Bosnia",
     "count": 1,
     "epochs": [
@@ -4785,7 +4785,7 @@
   },
   "Burgandy": {
     "subjecto": "Burgandy",
-    "wikidataId": null,
+    "wikidataId": "Q530670",
     "label": "Burgandy",
     "count": 3,
     "epochs": [
@@ -7692,7 +7692,7 @@
   },
   "Cuman Khanates": {
     "subjecto": "Cuman Khanates",
-    "wikidataId": null,
+    "wikidataId": "Q1035516",
     "label": "Cuman Khanates",
     "count": 1,
     "epochs": [
@@ -7704,7 +7704,7 @@
   },
   "Cuman-Kipchak confederation": {
     "subjecto": "Cuman-Kipchak confederation",
-    "wikidataId": null,
+    "wikidataId": "Q1035516",
     "label": "Cuman-Kipchak confederation",
     "count": 1,
     "epochs": [
@@ -8808,7 +8808,7 @@
   },
   "Durdzuks": {
     "subjecto": "Durdzuks",
-    "wikidataId": null,
+    "wikidataId": "Q15916991",
     "label": "Durdzuks",
     "count": 1,
     "epochs": [
@@ -8877,7 +8877,7 @@
   },
   "Dutchy of Benevento": {
     "subjecto": "Dutchy of Benevento",
-    "wikidataId": null,
+    "wikidataId": "Q267816",
     "label": "Dutchy of Benevento",
     "count": 3,
     "epochs": [
@@ -11092,7 +11092,7 @@
   },
   "Goghtn": {
     "subjecto": "Goghtn",
-    "wikidataId": null,
+    "wikidataId": "Q2066863",
     "label": "Goghtn",
     "count": 1,
     "epochs": [
@@ -11128,7 +11128,7 @@
   },
   "Golden Horde": {
     "subjecto": "Golden Horde",
-    "wikidataId": null,
+    "wikidataId": "Q79965",
     "label": "Golden Horde",
     "count": 2,
     "epochs": [
@@ -11285,7 +11285,7 @@
   },
   "Grand Duchy of Moscow": {
     "subjecto": "Grand Duchy of Moscow",
-    "wikidataId": null,
+    "wikidataId": "Q170770",
     "label": "Grand Duchy of Moscow",
     "count": 3,
     "epochs": [
@@ -13635,7 +13635,7 @@
   },
   "Ibadites": {
     "subjecto": "Ibadites",
-    "wikidataId": null,
+    "wikidataId": "Q2342282",
     "label": "Ibadites",
     "count": 1,
     "epochs": [
@@ -15147,7 +15147,7 @@
   },
   "Kakheti-Hereti": {
     "subjecto": "Kakheti-Hereti",
-    "wikidataId": null,
+    "wikidataId": "Q7216494",
     "label": "Kakheti-Hereti",
     "count": 1,
     "epochs": [
@@ -15347,7 +15347,7 @@
   },
   "Kalmar Union": {
     "subjecto": "Kalmar Union",
-    "wikidataId": null,
+    "wikidataId": "Q62623",
     "label": "Kalmar Union",
     "count": 2,
     "epochs": [
@@ -15693,7 +15693,7 @@
   },
   "Karakalpaks": {
     "subjecto": "Karakalpaks",
-    "wikidataId": null,
+    "wikidataId": "Q276315",
     "label": "Karakalpaks",
     "count": 1,
     "epochs": [
@@ -16379,7 +16379,7 @@
   },
   "Khanate of Sibir": {
     "subjecto": "Khanate of Sibir",
-    "wikidataId": null,
+    "wikidataId": "Q190513",
     "label": "Khanate of Sibir",
     "count": 3,
     "epochs": [
@@ -16536,7 +16536,7 @@
   },
   "Khundzi": {
     "subjecto": "Khundzi",
-    "wikidataId": null,
+    "wikidataId": "Q2667578",
     "label": "Khundzi",
     "count": 1,
     "epochs": [
@@ -16656,7 +16656,7 @@
   },
   "Kievan Rus": {
     "subjecto": "Kievan Rus",
-    "wikidataId": null,
+    "wikidataId": "Q1108445",
     "label": "Kievan Rus",
     "count": 2,
     "epochs": [
@@ -18706,7 +18706,7 @@
   },
   "Leks": {
     "subjecto": "Leks",
-    "wikidataId": null,
+    "wikidataId": "Q26962106",
     "label": "Leks",
     "count": 1,
     "epochs": [
@@ -20515,7 +20515,7 @@
   },
   "Maskat": {
     "subjecto": "Maskat",
-    "wikidataId": null,
+    "wikidataId": "Q3826",
     "label": "Maskat",
     "count": 1,
     "epochs": [
@@ -22153,7 +22153,7 @@
   },
   "Moldova": {
     "subjecto": "Moldova",
-    "wikidataId": null,
+    "wikidataId": "Q10957559",
     "label": "Moldova",
     "count": 4,
     "epochs": [
@@ -25252,7 +25252,7 @@
   },
   "Novgorod": {
     "subjecto": "Novgorod",
-    "wikidataId": null,
+    "wikidataId": "Q151536",
     "label": "Novgorod",
     "count": 1,
     "epochs": [
@@ -25780,7 +25780,7 @@
   },
   "Oghuz": {
     "subjecto": "Oghuz",
-    "wikidataId": null,
+    "wikidataId": "Q494462",
     "label": "Oghuz",
     "count": 1,
     "epochs": [
@@ -25828,7 +25828,7 @@
   },
   "Oirat Confederation": {
     "subjecto": "Oirat Confederation",
-    "wikidataId": null,
+    "wikidataId": "Q7081520",
     "label": "Oirat Confederation",
     "count": 2,
     "epochs": [
@@ -26185,7 +26185,7 @@
   },
   "Other Rus Principalities": {
     "subjecto": "Other Rus Principalities",
-    "wikidataId": null,
+    "wikidataId": "Q13403037",
     "label": "Other Rus Principalities",
     "count": 1,
     "epochs": [
@@ -28682,7 +28682,7 @@
   },
   "Principality of Galicia-Volhynia": {
     "subjecto": "Principality of Galicia-Volhynia",
-    "wikidataId": null,
+    "wikidataId": "Q239502",
     "label": "Principality of Galicia-Volhynia",
     "count": 1,
     "epochs": [
@@ -28694,7 +28694,7 @@
   },
   "Principality of Kyiv": {
     "subjecto": "Principality of Kyiv",
-    "wikidataId": null,
+    "wikidataId": "Q1483430",
     "label": "Principality of Kyiv",
     "count": 1,
     "epochs": [
@@ -28706,7 +28706,7 @@
   },
   "Principality of Novgorod": {
     "subjecto": "Principality of Novgorod",
-    "wikidataId": null,
+    "wikidataId": "Q151536",
     "label": "Principality of Novgorod",
     "count": 1,
     "epochs": [
@@ -28718,7 +28718,7 @@
   },
   "Principality of Polotsk": {
     "subjecto": "Principality of Polotsk",
-    "wikidataId": null,
+    "wikidataId": "Q517333",
     "label": "Principality of Polotsk",
     "count": 1,
     "epochs": [
@@ -28730,7 +28730,7 @@
   },
   "Principality of Vladimir-Suzdal": {
     "subjecto": "Principality of Vladimir-Suzdal",
-    "wikidataId": null,
+    "wikidataId": "Q83546",
     "label": "Principality of Vladimir-Suzdal",
     "count": 1,
     "epochs": [
@@ -28742,7 +28742,7 @@
   },
   "Principality of Wallachia": {
     "subjecto": "Principality of Wallachia",
-    "wikidataId": null,
+    "wikidataId": "Q171393",
     "label": "Principality of Wallachia",
     "count": 1,
     "epochs": [
@@ -29628,7 +29628,7 @@
   },
   "Raška": {
     "subjecto": "Raška",
-    "wikidataId": null,
+    "wikidataId": "Q1311990",
     "label": "Raška",
     "count": 1,
     "epochs": [
@@ -30021,7 +30021,7 @@
   },
   "Ryazan": {
     "subjecto": "Ryazan",
-    "wikidataId": null,
+    "wikidataId": "Q269109",
     "label": "Ryazan",
     "count": 2,
     "epochs": [
@@ -32100,7 +32100,7 @@
   },
   "Sind": {
     "subjecto": "Sind",
-    "wikidataId": null,
+    "wikidataId": "Q27260",
     "label": "Sind",
     "count": 2,
     "epochs": [
@@ -32551,7 +32551,7 @@
   },
   "Soomra Emirate": {
     "subjecto": "Soomra Emirate",
-    "wikidataId": null,
+    "wikidataId": "Q3042057",
     "label": "Soomra Emirate",
     "count": 1,
     "epochs": [
@@ -33491,7 +33491,7 @@
   },
   "Syunik": {
     "subjecto": "Syunik",
-    "wikidataId": null,
+    "wikidataId": "Q4448526",
     "label": "Syunik",
     "count": 1,
     "epochs": [
@@ -33958,7 +33958,7 @@
   },
   "Tashir": {
     "subjecto": "Tashir",
-    "wikidataId": null,
+    "wikidataId": "Q112745",
     "label": "Tashir",
     "count": 1,
     "epochs": [
@@ -35210,7 +35210,7 @@
   },
   "Touareg": {
     "subjecto": "Touareg",
-    "wikidataId": null,
+    "wikidataId": "Q58843",
     "label": "Touareg",
     "count": 1,
     "epochs": [
@@ -38595,7 +38595,7 @@
   },
   "White Horde": {
     "subjecto": "White Horde",
-    "wikidataId": null,
+    "wikidataId": "Q2553863",
     "label": "White Horde",
     "count": 2,
     "epochs": [
@@ -40925,7 +40925,7 @@
   },
   "Zayyanid Caliphate": {
     "subjecto": "Zayyanid Caliphate",
-    "wikidataId": null,
+    "wikidataId": "Q307697",
     "label": "Zayyanid Caliphate",
     "count": 2,
     "epochs": [

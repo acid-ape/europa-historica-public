@@ -1259,6 +1259,55 @@ const TERRITORY_MAPPING = {
   "peshemegs":     { wikidataId: "Q181752",   rulerPosition: null, label: "Pechenegs" },
   "cantia":        { wikidataId: "Q104906",   rulerPosition: null, label: "Kent" },
 
+  // ── 1100–1492 AD batch ────────────────────────────────────
+  // 1100 AD
+  "soomra emirate":               { wikidataId: "Q3042057",  rulerPosition: null, label: "Soomra Dynasty" },
+  "oghuz":                        { wikidataId: "Q494462",   rulerPosition: null, label: "Oghuz Turks" },
+  "cuman-kipchak confederation":  { wikidataId: "Q1035516",  rulerPosition: null, label: "Cumans" },
+  "karakalpaks":                  { wikidataId: "Q276315",   rulerPosition: null, label: "Karakalpaks" },
+  "goghtn":                       { wikidataId: "Q2066863",  rulerPosition: null, label: "Goghtn" },
+  "syunik":                       { wikidataId: "Q4448526",  rulerPosition: null, label: "Syunik" },
+  "artsakh":                      { wikidataId: "Q1550130",  rulerPosition: null, label: "Kingdom of Artsakh" },
+  "arran":                        { wikidataId: "Q177076",   rulerPosition: null, label: "Caucasian Albania" },
+  "maskat":                       { wikidataId: "Q3826",     rulerPosition: null, label: "Muscat" },
+  "leks":                         { wikidataId: "Q26962106", rulerPosition: null, label: "Lak people" },
+  "durdzuks":                     { wikidataId: "Q15916991", rulerPosition: null, label: "Durdzuks" },
+  "khundzi":                      { wikidataId: "Q2667578",  rulerPosition: null, label: "Khunzakh" },
+  "kakheti-hereti":               { wikidataId: "Q7216494",  rulerPosition: null, label: "Kingdom of Kakheti-Hereti" },
+  "tashir":                       { wikidataId: "Q112745",   rulerPosition: null, label: "Kingdom of Tashir-Dzoraget" },
+  "principality of polotsk":      { wikidataId: "Q517333",   rulerPosition: null, label: "Principality of Polotsk" },
+  "dutchy of benevento":          { wikidataId: "Q267816",   rulerPosition: null, label: "Duchy of Benevento" },
+  "burgandy":                     { wikidataId: "Q530670",   rulerPosition: null, label: "Kingdom of Burgundy" },
+  "kievan rus":                   { wikidataId: "Q1108445",  rulerPosition: null, label: "Kyivan Rus" },
+  // 1200 AD
+  "ibadites":                     { wikidataId: "Q2342282",  rulerPosition: null, label: "Imamate of Oman" },
+  "angevin empire":               { wikidataId: "Q538677",   rulerPosition: null, label: "Angevin Empire" },
+  "principality of novgorod":     { wikidataId: "Q151536",   rulerPosition: null, label: "Novgorod Republic" },
+  "principality of vladimir-suzdal": { wikidataId: "Q83546", rulerPosition: null, label: "Vladimir-Suzdal" },
+  "principality of kyiv":         { wikidataId: "Q1483430",  rulerPosition: null, label: "Principality of Kiev" },
+  "principality of galicia-volhynia": { wikidataId: "Q239502", rulerPosition: null, label: "Kingdom of Galicia-Volhynia" },
+  "cuman khanates":               { wikidataId: "Q1035516",  rulerPosition: null, label: "Cumans" },
+  "other rus principalities":     { wikidataId: "Q13403037", rulerPosition: null, label: "Russian principalities" },
+  // 1279 AD
+  "touareg":                      { wikidataId: "Q58843",    rulerPosition: null, label: "Tuareg people" },
+  // 1300 AD
+  "grand duchy of moscow":        { wikidataId: "Q170770",   rulerPosition: null, label: "Grand Principality of Moscow" },
+  "raška":                        { wikidataId: "Q1311990",  rulerPosition: null, label: "Serbia" },
+  "novgorod":                     { wikidataId: "Q151536",   rulerPosition: null, label: "Novgorod Republic" },
+  // 1400 AD
+  "bosnia":                       { wikidataId: "Q2980623",  rulerPosition: null, label: "Kingdom of Bosnia" },
+  "moldova":                      { wikidataId: "Q10957559", rulerPosition: null, label: "Principality of Moldavia" },
+  "principality of wallachia":    { wikidataId: "Q171393",   rulerPosition: null, label: "Wallachia" },
+  "kalmar union":                 { wikidataId: "Q62623",    rulerPosition: null, label: "Kalmar Union" },
+  // 1492 AD
+  "sind":                         { wikidataId: "Q27260",    rulerPosition: null, label: "Samma dynasty" },
+  "zayyanid caliphate":           { wikidataId: "Q307697",   rulerPosition: null, label: "Zayyanid dynasty" },
+  "khanate of sibir":             { wikidataId: "Q190513",   rulerPosition: null, label: "Khanate of Sibir" },
+  "oirat confederation":          { wikidataId: "Q7081520",  rulerPosition: null, label: "Oirat" },
+  "golden horde":                 { wikidataId: "Q79965",    rulerPosition: null, label: "Golden Horde" },
+  "white horde":                  { wikidataId: "Q2553863",  rulerPosition: null, label: "White Horde" },
+  "ryazan":                       { wikidataId: "Q269109",   rulerPosition: null, label: "Principality of Ryazan" },
+
   // ── Middle Ages — ruler_based batch ───────────────────────
   "umayyad caliphate": {
     wikidataId:    "Q8575586",
@@ -1411,6 +1460,96 @@ const TERRITORY_MAPPING = {
     wikidataId:    "Q1337854",
     rulerPosition: null,
     label:         "Cordoba"
+  },
+  "almoravid dynasty": {
+    wikidataId:    "Q163422",
+    rulerPosition: null,
+    label:         "Almoravid dynasty"
+  },
+  "seljuk empire": {
+    wikidataId:    "Q8733",
+    rulerPosition: null,
+    label:         "Seljuk Empire"
+  },
+  "portugal": {
+    wikidataId:    "Q45",
+    rulerPosition: null,
+    label:         "Portugal"
+  },
+  "almohad caliphate": {
+    wikidataId:    "Q199688",
+    rulerPosition: null,
+    label:         "Almohad Caliphate"
+  },
+  "trebizond": {
+    wikidataId:    "Q45301",
+    rulerPosition: null,
+    label:         "Trebizond"
+  },
+  "hafsid caliphate": {
+    wikidataId:    "Q752662",
+    rulerPosition: null,
+    label:         "Hafsid Caliphate"
+  },
+  "mamluke sultanate": {
+    wikidataId:    "Q282428",
+    rulerPosition: null,
+    label:         "Mamluke Sultanate"
+  },
+  "kwarizm-shah": {
+    wikidataId:    "Q81009",
+    rulerPosition: null,
+    label:         "Kwarizm-Shah"
+  },
+  "lithuania": {
+    wikidataId:    "Q49683",
+    rulerPosition: null,
+    label:         "Lithuania"
+  },
+  "ilkhanate": {
+    wikidataId:    "Q178084",
+    rulerPosition: null,
+    label:         "Ilkhanate"
+  },
+  "teutonic knights": {
+    wikidataId:    "Q48189",
+    rulerPosition: null,
+    label:         "Teutonic Knights"
+  },
+  "merinides": {
+    wikidataId:    "Q582861",
+    rulerPosition: null,
+    label:         "Merinides"
+  },
+  "timurid empire": {
+    wikidataId:    "Q20737645",
+    rulerPosition: null,
+    label:         "Timurid Empire"
+  },
+  "seljuk caliphate": {
+    wikidataId:    "Q975405",
+    rulerPosition: null,
+    label:         "Seljuk Caliphate"
+  },
+  "morocco": {
+    wikidataId:    "Q1028",
+    rulerPosition: null,
+    label:         "Morocco"
+  },
+  "timurid emirates": {
+    wikidataId:    "Q20737645",
+    rulerPosition: null,
+    label:         "Timurid Emirates"
+  },
+  "castile": {
+    wikidataId:    "Q179293",
+    rulerPosition: null,
+    label:         "Castile"
+  },
+  "khanate of the golden horde": {
+    wikidataId:    "Q79965",
+    rulerPosition: null,
+    label:         "Khanate of the Golden Horde"
   }
 };
 
