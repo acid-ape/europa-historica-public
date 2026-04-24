@@ -1,0 +1,57 @@
+{
+  "body": [
+    "Throughout the ages, borders have shifted, empires have risen and fallen, and names have appeared and faded from the map. Europa Historica invites you to explore these changes, to follow territories, trace rulers, and watch how history unfolds across space and time.",
+    "This project is built step by step by a single developer and supported by artificial intelligence, but it stands on the shoulders of open knowledge. Much of what you see here is made possible by the work of:"
+  ],
+  "credits": [
+    { "text": "Historical Basemaps", "url": "https://github.com/aourednik/historical-basemaps" },
+    { "text": "Wikipedia", "url": "https://www.wikipedia.org/" },
+    { "text": "Wikidata", "url": "https://www.wikidata.org/" },
+    { "text": "Pleiades — ancient places gazetteer", "url": "https://pleiades.stoa.org/" }
+  ],
+  "body2": [
+    "This project would not be possible without open knowledge and the people who make it accessible.",
+    "If you enjoy exploring, notice something, or have ideas to improve the map, feedback is always welcome — reach out on <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>.",
+    "Thank you and stay curious, there is always something new to discover!"
+  ],
+  "about": {
+    "title": "About this project",
+    "paragraphs": [
+      "Europa Historica combines historical map data with structured knowledge to make political change visible over time.",
+      "The territorial shapes are based on datasets from Historical Basemaps. These are combined with information from Wikipedia and Wikidata to connect places, states, and rulers across different periods. Ancient settlements are sourced from the Pleiades gazetteer.",
+      "This means:"
+    ],
+    "list": [
+      "borders are approximations based on available historical data",
+      "names and contexts can change depending on time and interpretation",
+      "the project evolves continuously as new data is added and refined"
+    ],
+    "paragraphs2": [
+      "The map currently covers over 295 territories from 8000 BC to 1500 AD, with rulers, flags, and historical context for many of them. It includes a guided tour, narrative trails, a historical events layer, ancient settlements, and a global search — and works on mobile as well.",
+      "Europa Historica is built step by step as an independent project, exploring how history can be experienced interactively and not just read.",
+      "It was created to address a simple problem: history we read rarely fits into context as clearly as history we see. Too often, history is understood in isolation, rather than within the world and time in which it existed.",
+      "If you spot any mistakes or have ideas, feel free to reach out on <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>."
+    ]
+  },
+  "updates": {
+    "title": "Updates",
+    "date": "April 2026",
+    "intro": "Europa Historica is in active development. The map currently covers <strong>8000 BC to 2010 AD</strong> with over <strong>295 territories</strong> and <strong>3,000+ rulers</strong>. All epochs from prehistory through 1500 AD are now fully populated with territories, descriptions, and ruler lists where available.",
+    "recently_label": "Recently added:",
+    "recently": [
+      "1100–1500 AD complete — Mamluk Sultanate, Ilkhanate, Teutonic Knights, Lithuania, Timurid Empire, Marinid dynasty, Sultanate of Rum, and more",
+      "Almohad Caliphate, Almoravid dynasty, Khwarezm-Shah, Hafsid Caliphate, Empire of Trebizond — full ruler lists",
+      "500–1000 AD batch: ~40 territories (Balts, Rus' Khaganate, Icelandic Commonwealth, and more)",
+      "Historical events layer — 39 key events across all eras, with descriptions and links",
+      "Two narrative trails — Byzantine Empire and the history of writing",
+      "Multi-context territories: Denmark, Norway, Sweden, Serbia, Croatia, Georgia, France, Germany, Austria, Prussia, Persia"
+    ],
+    "coming_label": "Coming next:",
+    "coming": [
+      "More ruler portraits and flags",
+      "More narrative trails",
+      "Road to Germany — Kaiserreich, Weimar Republic, division and reunification"
+    ],
+    "feedback": "Feedback and corrections are always welcome on <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>."
+  }
+}

@@ -17,16 +17,26 @@ function _evStarPath(r) {
 // ── Load ──────────────────────────────────
 async function loadEventsData() {
   if (eventsData !== null) return;
+  const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
+  const url = suffix ? `data/events${suffix}.json` : 'data/events.json?v=2d';
   try {
-    const r = await fetch('data/events.json?v=2d');
-    if (!r.ok) throw new Error('events.json not found');
+    const r = await fetch(url);
+    if (!r.ok) throw new Error('events not found');
     eventsData = await r.json();
-    console.log(`Events: ${eventsData.length} loaded`);
   } catch(e) {
     console.warn('Events data not loaded:', e);
     eventsData = [];
   }
 }
+
+window.addEventListener('langchange', async () => {
+  eventsData = null;
+  if (eventsMode > 0) {
+    await loadEventsData();
+    const year = typeof pctToYear === 'function' && typeof state !== 'undefined' ? pctToYear(state.pct) : 0;
+    renderEvents(year);
+  }
+});
 
 // ── Toggle ────────────────────────────────
 // Cycles: 0 (off) → 1 (±150yr window) → 2 (all so far) → 0

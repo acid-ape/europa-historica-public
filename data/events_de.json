@@ -1,0 +1,314 @@
+[
+    {
+        "id": "invention_writing",
+        "title": "Die Erfindung der Schrift",
+        "year": -3200,
+        "lat": 31.32,
+        "lon": 45.64,
+        "wiki": "History_of_writing"
+    },
+    {
+        "id": "great_pyramid",
+        "title": "Die Große Pyramide von Gizeh wurde erbaut",
+        "year": -2560,
+        "lat": 29.98,
+        "lon": 31.13,
+        "wiki": "Great_Pyramid_of_Giza"
+    },
+    {
+        "id": "olympic_games",
+        "title": "Die ersten Olympischen Spiele",
+        "year": -776,
+        "lat": 37.64,
+        "lon": 21.63,
+        "wiki": "Ancient_Olympic_Games"
+    },
+    {
+        "id": "founding_rome",
+        "title": "Gründung Roms",
+        "year": -753,
+        "lat": 41.9,
+        "lon": 12.5,
+        "wiki": "Founding_of_Rome"
+    },
+    {
+        "id": "battle_marathon",
+        "title": "Schlacht bei Marathon",
+        "year": -490,
+        "lat": 38.15,
+        "lon": 23.97,
+        "wiki": "Battle_of_Marathon"
+    },
+    {
+        "id": "alexander_conquest",
+        "title": "Alexander der Große beginnt seine Eroberungszüge",
+        "year": -334,
+        "lat": 40.76,
+        "lon": 22.52,
+        "wiki": "Alexander_the_Great"
+    },
+    {
+        "id": "caesar_assassination",
+        "title": "Die Ermordung von Julius Cäsar",
+        "year": -44,
+        "lat": 41.9,
+        "lon": 12.47,
+        "wiki": "Assassination_of_Julius_Caesar"
+    },
+    {
+        "id": "augustus_empire",
+        "title": "Augustus wird Kaiser",
+        "year": -27,
+        "lat": 41.9,
+        "lon": 12.5,
+        "wiki": "Augustus"
+    },
+    {
+        "id": "founding_constantinople",
+        "title": "Gründung von Konstantinopel",
+        "year": 330,
+        "lat": 41.01,
+        "lon": 28.97,
+        "wiki": "Constantinople"
+    },
+    {
+        "id": "division_rome",
+        "title": "Teilung des Römischen Reiches",
+        "year": 395,
+        "lat": 43.0,
+        "lon": 18.0,
+        "wiki": "Division_of_the_Roman_Empire"
+    },
+    {
+        "id": "fall_western_rome",
+        "title": "Der Untergang des Weströmischen Reiches",
+        "year": 476,
+        "lat": 45.44,
+        "lon": 12.34,
+        "wiki": "Fall_of_the_Western_Roman_Empire"
+    },
+    {
+        "id": "rise_of_islam",
+        "title": "Die Hidschra – Der Aufstieg des Islam",
+        "year": 622,
+        "lat": 24.47,
+        "lon": 39.61,
+        "wiki": "Hijra"
+    },
+    {
+        "id": "fall_jerusalem",
+        "title": "Der Fall Jerusalems – Die arabische Eroberung",
+        "year": 637,
+        "lat": 31.78,
+        "lon": 35.23,
+        "wiki": "Siege_of_Jerusalem_(636–637)"
+    },
+    {
+        "id": "coronation_charlemagne",
+        "title": "Krönung Karls des Großen",
+        "year": 800,
+        "lat": 41.9,
+        "lon": 12.5,
+        "wiki": "Charlemagne"
+    },
+    {
+        "id": "treaty_verdun",
+        "title": "Vertrag von Verdun",
+        "year": 843,
+        "lat": 49.16,
+        "lon": 5.39,
+        "wiki": "Treaty_of_Verdun"
+    },
+    {
+        "id": "battle_hastings",
+        "title": "Schlacht bei Hastings",
+        "year": 1066,
+        "lat": 50.91,
+        "lon": 0.59,
+        "wiki": "Battle_of_Hastings"
+    },
+    {
+        "id": "first_crusade",
+        "title": "Der erste Kreuzzug beginnt",
+        "year": 1096,
+        "lat": 45.78,
+        "lon": 3.08,
+        "wiki": "First_Crusade"
+    },
+    {
+        "id": "magna_carta",
+        "title": "Magna Carta",
+        "year": 1215,
+        "lat": 51.44,
+        "lon": -0.56,
+        "wiki": "Magna_Carta"
+    },
+    {
+        "id": "great_schism",
+        "title": "Das Große Schisma",
+        "year": 1054,
+        "lat": 41.01,
+        "lon": 28.97,
+        "wiki": "East–West_Schism"
+    },
+    {
+        "id": "sack_constantinople",
+        "title": "Die Plünderung von Konstantinopel – Der Vierte Kreuzzug",
+        "year": 1204,
+        "lat": 41.01,
+        "lon": 28.97,
+        "wiki": "Sack_of_Constantinople_(1204)"
+    },
+    {
+        "id": "black_death",
+        "title": "Der Schwarze Tod erreicht Europa",
+        "year": 1347,
+        "lat": 37.5,
+        "lon": 15.09,
+        "wiki": "Black_Death"
+    },
+    {
+        "id": "fall_constantinople",
+        "title": "Der Fall von Konstantinopel",
+        "year": 1453,
+        "lat": 41.01,
+        "lon": 28.97,
+        "wiki": "Fall_of_Constantinople"
+    },
+    {
+        "id": "gutenberg_press",
+        "title": "Gutenbergs Druckerpresse",
+        "year": 1450,
+        "lat": 49.99,
+        "lon": 8.27,
+        "wiki": "Johannes_Gutenberg"
+    },
+    {
+        "id": "columbus",
+        "title": "Kolumbus erreicht Amerika",
+        "year": 1492,
+        "lat": 37.38,
+        "lon": -5.99,
+        "wiki": "Voyages_of_Christopher_Columbus"
+    },
+    {
+        "id": "martin_luther",
+        "title": "Martin Luther – 95 Thesen",
+        "year": 1517,
+        "lat": 51.87,
+        "lon": 12.65,
+        "wiki": "Ninety-five_Theses"
+    },
+    {
+        "id": "thirty_years_war",
+        "title": "Der Dreißigjährige Krieg beginnt",
+        "year": 1618,
+        "lat": 50.07,
+        "lon": 14.42,
+        "wiki": "Thirty_Years%27_War"
+    },
+    {
+        "id": "peace_westphalia",
+        "title": "Westfälischer Frieden",
+        "year": 1648,
+        "lat": 51.96,
+        "lon": 7.63,
+        "wiki": "Peace_of_Westphalia"
+    },
+    {
+        "id": "newton_principia",
+        "title": "Newtons „Principia Mathematica“",
+        "year": 1687,
+        "lat": 52.2,
+        "lon": 0.12,
+        "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica"
+    },
+    {
+        "id": "french_revolution",
+        "title": "Die Französische Revolution beginnt",
+        "year": 1789,
+        "lat": 48.85,
+        "lon": 2.35,
+        "wiki": "French_Revolution"
+    },
+    {
+        "id": "congress_vienna",
+        "title": "Wiener Kongress",
+        "year": 1815,
+        "lat": 48.21,
+        "lon": 16.37,
+        "wiki": "Congress_of_Vienna"
+    },
+    {
+        "id": "revolutions_1848",
+        "title": "Die Revolutionen von 1848",
+        "year": 1848,
+        "lat": 48.85,
+        "lon": 2.35,
+        "wiki": "Revolutions_of_1848"
+    },
+    {
+        "id": "unification_germany",
+        "title": "Deutsche Wiedervereinigung",
+        "year": 1871,
+        "lat": 52.52,
+        "lon": 13.4,
+        "wiki": "Unification_of_Germany"
+    },
+    {
+        "id": "ww1_start",
+        "title": "Der Erste Weltkrieg beginnt",
+        "year": 1914,
+        "lat": 44.8,
+        "lon": 20.46,
+        "wiki": "World_War_I"
+    },
+    {
+        "id": "russian_revolution",
+        "title": "Russische Revolution",
+        "year": 1917,
+        "lat": 59.93,
+        "lon": 30.32,
+        "wiki": "Russian_Revolution"
+    },
+    {
+        "id": "ww1_end",
+        "title": "Ende des Ersten Weltkriegs",
+        "year": 1918,
+        "lat": 49.42,
+        "lon": 2.88,
+        "wiki": "Armistice_of_11_November_1918"
+    },
+    {
+        "id": "ww2_end",
+        "title": "Der Zweite Weltkrieg endet",
+        "year": 1945,
+        "lat": 52.52,
+        "lon": 13.4,
+        "wiki": "World_War_II"
+    },
+    {
+        "id": "treaty_rome",
+        "title": "Römische Verträge – Gründung der EWG",
+        "year": 1957,
+        "lat": 41.9,
+        "lon": 12.5,
+        "wiki": "Treaty_of_Rome"
+    },
+    {
+        "id": "fall_berlin_wall",
+        "title": "Fall der Berliner Mauer",
+        "year": 1989,
+        "lat": 52.52,
+        "lon": 13.4,
+        "wiki": "Fall_of_the_Berlin_Wall"
+    },
+    {
+        "id": "soviet_dissolution",
+        "title": "Auflösung der Sowjetunion",
+        "year": 1991,
+        "lat": 55.75,
+        "lon": 37.62,
+        "wiki": "Dissolution_of_the_Soviet_Union"
+    }
+]

@@ -17002,264 +17002,264 @@
         "start": 1134,
         "end": 1150,
         "wikidataId": "Q431172",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/King_of_Navarre_GarciaIV.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q431172.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/King_of_Navarre_GarciaIV.JPG"
       },
       {
         "name": "Sancho VI the Wise",
         "start": 1150,
         "end": 1194,
         "wikidataId": "Q318258",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SanchoelSabio.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q318258.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/SanchoelSabio.jpg"
       },
       {
         "name": "Sancho VII the Strong",
         "start": 1194,
         "end": 1234,
         "wikidataId": "Q318272",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_VII_de_Navarra_-_Compendio_de_cr%C3%B3nicas_de_reyes_%28Biblioteca_Nacional_de_Espa%C3%B1a%29.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q318272.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_VII_de_Navarra_-_Compendio_de_cr%C3%B3nicas_de_reyes_%28Biblioteca_Nacional_de_Espa%C3%B1a%29.png"
       },
       {
         "name": "Theobald I the Posthumous",
         "start": 1234,
         "end": 1253,
         "wikidataId": "Q314562",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thibault_IV_Comte_de_Champagne.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q314562.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thibault_IV_Comte_de_Champagne.jpg"
       },
       {
         "name": "Theobald II the Young",
         "start": 1253,
         "end": 1270,
         "wikidataId": "Q351859",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Teobaldo_II_de_Navarra.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q351859.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Teobaldo_II_de_Navarra.jpg"
       },
       {
         "name": "Henry I the Fat",
         "start": 1270,
         "end": 1274,
         "wikidataId": "Q366919",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_01_Navarre.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q366919.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_01_Navarre.jpg"
       },
       {
         "name": "Joan I",
         "start": 1274,
         "end": 1305,
         "wikidataId": "Q229189",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JanaNavarra_BNf.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q229189.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JanaNavarra_BNf.jpg"
       },
       {
         "name": "Philip I the Fair",
         "start": 1284,
         "end": 1305,
         "wikidataId": "Q130969",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip_iv_and_family._2_%28detail_crop%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q130969.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip_iv_and_family._2_%28detail_crop%29.jpg"
       },
       {
         "name": "Louis I the Quarreller",
         "start": 1305,
         "end": 1316,
         "wikidataId": "Q8384",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ludv%C3%ADk_X.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q8384.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ludv%C3%ADk_X.png"
       },
       {
         "name": "John I the Posthumous",
         "start": 1316,
         "end": null,
         "wikidataId": "Q8404",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/JeanIposthume.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q8404.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JeanIposthume.JPG"
       },
       {
         "name": "Philip II the Tall",
         "start": 1316,
         "end": 1322,
         "wikidataId": "Q8433",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sacre_Philippe5_France_01_%28cropped%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q8433.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sacre_Philippe5_France_01_%28cropped%29.jpg"
       },
       {
         "name": "Charles I the Fair",
         "start": 1322,
         "end": 1328,
         "wikidataId": "Q174964",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles4_mini.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q174964.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles4_mini.jpg"
       },
       {
         "name": "Joan II",
         "start": 1328,
         "end": 1349,
         "wikidataId": "Q230031",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jana2Navarra_hlava.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q230031.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jana2Navarra_hlava.jpg"
       },
       {
         "name": "Philip III the Wise",
         "start": 1328,
         "end": 1343,
         "wikidataId": "Q505112",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippe_III_de_Navarre.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q505112.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippe_III_de_Navarre.jpg"
       },
       {
         "name": "Charles II the Bad",
         "start": 1349,
         "end": 1387,
         "wikidataId": "Q43082",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_II_of_Navarre.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q43082.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_II_of_Navarre.png"
       },
       {
         "name": "Charles III the Noble",
         "start": 1387,
         "end": 1425,
         "wikidataId": "Q358365",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karel3_hl.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q358365.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Karel3_hl.jpg"
       },
       {
         "name": "Blanche Ι",
         "start": 1425,
         "end": 1441,
         "wikidataId": "Q233865",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Teniers_II_and_Jan_van_Kessel_I_-_The_Presentation_of_the_Captain_General%27s_Baton_to_Antonio_de_Moncada_by_the_Queen_Regent_Blanca_of_Sicily_in_1410.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q233865.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Teniers_II_and_Jan_van_Kessel_I_-_The_Presentation_of_the_Captain_General%27s_Baton_to_Antonio_de_Moncada_by_the_Queen_Regent_Blanca_of_Sicily_in_1410.jpg"
       },
       {
         "name": "John II the Great",
         "start": 1425,
         "end": 1441,
         "wikidataId": "Q312328",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_II_of_Aragon.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q312328.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ariosto%2C_after_-_John_II_of_Aragon.jpg"
       },
       {
         "name": "Eleanor",
         "start": 1479,
         "end": null,
         "wikidataId": "Q236889",
-        "image": null,
-        "imageUrl": null
+        "image": "data/images/rulers/Q236889.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Royal_Coat_of_Arms_of_the_Crown_of_Castile_%2815th_Century%29.svg/330px-Royal_Coat_of_Arms_of_the_Crown_of_Castile_%2815th_Century%29.svg.png"
       },
       {
         "name": "Charles IV",
         "start": 1441,
         "end": 1461,
         "wikidataId": "Q470641",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Princep_carles_de_viana.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q470641.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Princep_carles_de_viana.jpg"
       },
       {
         "name": "Blanche II",
         "start": 1461,
         "end": 1464,
         "wikidataId": "Q853282",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/La_reina_Blanca_II_de_Navarra_%28Museo_del_Prado%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q853282.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La_reina_Blanca_II_de_Navarra_%28Museo_del_Prado%29.jpg"
       },
       {
         "name": "Francis Phoebus",
         "start": 1479,
         "end": 1483,
         "wikidataId": "Q363572",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francois_Febus.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q363572.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Francois_Febus.jpg"
       },
       {
         "name": "Catherine",
         "start": 1483,
         "end": 1517,
         "wikidataId": "Q236896",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_de_Foix.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q236896.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine_de_Foix.jpg"
       },
       {
         "name": "John III",
         "start": 1484,
         "end": 1516,
         "wikidataId": "Q371100",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portret_van_Johan_III_van_Navarra_Iohannes_dei_Gratia_Navarrae._etc._Rex_%28titel_op_object%29%2C_RP-P-1910-2303.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q371100.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portret_van_Johan_III_van_Navarra_Iohannes_dei_Gratia_Navarrae._etc._Rex_%28titel_op_object%29%2C_RP-P-1910-2303.jpg"
       },
       {
         "name": "Ferdinand I",
         "start": 1512,
         "end": 1516,
         "wikidataId": "Q12860",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/FerdinandIIA.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q12860.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/FerdinandIIA.jpg"
       },
       {
         "name": "Henry II",
         "start": 1517,
         "end": 1555,
         "wikidataId": "Q317506",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_d%27Albret.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q317506.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_d%27Albret.jpg"
       },
       {
         "name": "Joana III",
         "start": 1555,
         "end": 1572,
         "wikidataId": "Q229286",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeanne-albret-navarre.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q229286.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeanne-albret-navarre.jpg"
       },
       {
         "name": "Antoine",
         "start": 1555,
         "end": 1562,
         "wikidataId": "Q310334",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Unknown_-_Portrait_of_Anthony_of_Bourbon_%281518%E2%80%931562%29%2C_King_of_Navarre_-_MNK_XII-294_-_National_Museum_Krak%C3%B3w.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q310334.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Unknown_-_Portrait_of_Anthony_of_Bourbon_%281518%E2%80%931562%29%2C_King_of_Navarre_-_MNK_XII-294_-_National_Museum_Krak%C3%B3w.jpg"
       },
       {
         "name": "Henry III the Great",
         "start": 1572,
         "end": 1610,
         "wikidataId": "Q936976",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_IV_of_france_by_pourbous_younger.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q936976.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_IV_of_france_by_pourbous_younger.jpg"
       },
       {
         "name": "Joanna III",
         "start": 1516,
         "end": 1555,
         "wikidataId": "Q171136",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_de_Flandes_-_Portrait_of_Joan_the_Mad_-_WGA12045.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q171136.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_de_Flandes_-_Portrait_of_Joan_the_Mad_-_WGA12045.jpg"
       },
       {
         "name": "Philip IV",
         "start": 1556,
         "end": 1598,
         "wikidataId": "Q34417",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q34417.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg"
       },
       {
         "name": "Philip V",
         "start": 1598,
         "end": 1621,
         "wikidataId": "Q34464",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe-III-de-Espana_A-Vidal.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q34464.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Felipe-III-de-Espana_A-Vidal.jpg"
       },
       {
         "name": "Juan Martínez de Medrano",
         "start": 1328,
         "end": null,
         "wikidataId": "Q122826853",
-        "image": null,
-        "imageUrl": null
+        "image": "data/images/rulers/Q122826853.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Seal_of_Juan_Mart%C3%ADnez_de_Medrano_%281276%29.png/330px-Seal_of_Juan_Mart%C3%ADnez_de_Medrano_%281276%29.png"
       }
     ],
     "status": "draft"
@@ -17271,8 +17271,8 @@
         "start": 938,
         "end": 952,
         "wikidataId": "Q725368",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Entree_d%27Henri_IV_%C3%A0_Rennes_%26_Alain_Barbe-Torte.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q725368.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Entree_d%27Henri_IV_%C3%A0_Rennes_%26_Alain_Barbe-Torte.JPG"
       },
       {
         "name": "Drogo",
@@ -17303,8 +17303,8 @@
         "start": 988,
         "end": 990,
         "wikidataId": "Q2045863",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancenis_castle.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q2045863.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ancenis_castle.JPG"
       },
       {
         "name": "Conan I",
@@ -17319,32 +17319,32 @@
         "start": 992,
         "end": 1008,
         "wikidataId": "Q465187",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariage_Geoffroi%2C_duc_de_Bretagne_et_Havoise_de_Normandie.JPG",
-        "imageUrl": null
+        "image": "data/images/rulers/Q465187.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariage_Geoffroi%2C_duc_de_Bretagne_et_Havoise_de_Normandie.JPG"
       },
       {
         "name": "Alan III",
         "start": 1008,
         "end": 1040,
         "wikidataId": "Q465203",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan_III_of_Brittany_%28icon%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q465203.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan_III_of_Brittany_%28icon%29.jpg"
       },
       {
         "name": "Odo I",
         "start": 1008,
         "end": 1034,
         "wikidataId": "Q2441684",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Eudes_of_Penthi%C3%A8vre.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q2441684.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eudes_of_Penthi%C3%A8vre.png"
       },
       {
         "name": "Conan II",
         "start": 1040,
         "end": 1066,
         "wikidataId": "Q527950",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry_scene19_detail_Castle_Dinan.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q527950.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry_scene19_detail_Castle_Dinan.jpg"
       },
       {
         "name": "Hawise",
@@ -17367,16 +17367,16 @@
         "start": 1072,
         "end": 1112,
         "wikidataId": "Q453613",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Fergent%2C_duc_de_Bretagne.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q453613.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Fergent%2C_duc_de_Bretagne.jpg"
       },
       {
         "name": "Conan III the Fat",
         "start": 1112,
         "end": 1148,
         "wikidataId": "Q728149",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/B29_denier_de_Conan_III%2C_duc_de_Bretagne_%2818964049549%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q728149.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/B29_denier_de_Conan_III%2C_duc_de_Bretagne_%2818964049549%29.jpg"
       },
       {
         "name": "Bertha",
@@ -17399,152 +17399,152 @@
         "start": 1156,
         "end": 1166,
         "wikidataId": "Q338985",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Conan_IV_de_Bretagne.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q338985.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Conan_IV_de_Bretagne.jpg"
       },
       {
         "name": "Constance",
         "start": 1166,
         "end": 1201,
         "wikidataId": "Q234317",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Mrs_Siddons_as_Constance_in_King_John_%284673471%29.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q234317.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Mrs_Siddons_as_Constance_in_King_John_%284673471%29.jpg"
       },
       {
         "name": "Geoffrey II",
         "start": 1181,
         "end": 1186,
         "wikidataId": "Q314550",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_de_Geoffroi_II_-_Duc_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q314550.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_de_Geoffroi_II_-_Duc_de_Bretagne.png"
       },
       {
         "name": "Guy",
         "start": 1199,
         "end": 1201,
         "wikidataId": "Q1335873",
-        "image": null,
-        "imageUrl": null
+        "image": "data/images/rulers/Q1335873.png",
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Blason_famille_fr_Thouars.svg/330px-Blason_famille_fr_Thouars.svg.png"
       },
       {
         "name": "Arthur I",
         "start": 1196,
         "end": 1203,
         "wikidataId": "Q363800",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Artur_of_Brittany.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q363800.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Artur_of_Brittany.jpg"
       },
       {
         "name": "Alix",
         "start": 1203,
         "end": 1221,
         "wikidataId": "Q241627",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_d%27Alix_-_Duchesse_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q241627.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_d%27Alix_-_Duchesse_de_Bretagne.png"
       },
       {
         "name": "Peter I Mauclerc",
         "start": 1213,
         "end": 1221,
         "wikidataId": "Q465182",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Mauclerc.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q465182.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Mauclerc.jpg"
       },
       {
         "name": "John I the Red",
         "start": 1221,
         "end": 1286,
         "wikidataId": "Q381851",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_de_Jean_I_-_Duc_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q381851.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_de_Jean_I_-_Duc_de_Bretagne.png"
       },
       {
         "name": "John II",
         "start": 1286,
         "end": 1305,
         "wikidataId": "Q453989",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_II_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q453989.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_II_de_Bretagne.png"
       },
       {
         "name": "Arthur II",
         "start": 1305,
         "end": 1312,
         "wikidataId": "Q506501",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Artur_Bretan.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q506501.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Artur_Bretan.jpg"
       },
       {
         "name": "John III the Good",
         "start": 1312,
         "end": 1341,
         "wikidataId": "Q259146",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PohrebJana3Bretan.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q259146.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/PohrebJana3Bretan.jpg"
       },
       {
         "name": "Joan the Lame",
         "start": 1341,
         "end": 1364,
         "wikidataId": "Q257621",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Joan_of_Penthievre.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q257621.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Joan_of_Penthievre.png"
       },
       {
         "name": "Charles I",
         "start": 1341,
         "end": 1364,
         "wikidataId": "Q454063",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/CarlosIdebritania.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q454063.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/CarlosIdebritania.jpg"
       },
       {
         "name": "John (IV) of Montfort",
         "start": 1341,
         "end": 1345,
         "wikidataId": "Q544055",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_z_Montfortu.gif",
-        "imageUrl": null
+        "image": "data/images/rulers/Q544055.gif",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_z_Montfortu.gif"
       },
       {
         "name": "John (V) of Montfort",
         "start": 1345,
         "end": 1364,
         "wikidataId": "Q449008",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_IV_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q449008.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_IV_de_Bretagne.png"
       },
       {
         "name": "John V the Wise",
         "start": 1399,
         "end": 1442,
         "wikidataId": "Q454013",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_Jean_V_de_Bretagne.jpg",
-        "imageUrl": null
+        "image": "data/images/rulers/Q454013.jpg",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sceau_Jean_V_de_Bretagne.jpg"
       },
       {
         "name": "Francis I the Well-Loved",
         "start": 1442,
         "end": 1450,
         "wikidataId": "Q472719",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois_Ier_de_Bretagne_%28BNF-RC-A-07511%29.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q472719.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois_Ier_de_Bretagne_%28BNF-RC-A-07511%29.png"
       },
       {
         "name": "Peter II the Simple",
         "start": 1450,
         "end": 1457,
         "wikidataId": "Q545140",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_II_de_Bretagne_en_pri%C3%A8re_devant_la_Vierge_%C3%A0_l%27Enfant_%28cropped%29.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q545140.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_II_de_Bretagne_en_pri%C3%A8re_devant_la_Vierge_%C3%A0_l%27Enfant_%28cropped%29.png"
       },
       {
         "name": "Arthur III the Justicier",
         "start": 1457,
         "end": 1458,
         "wikidataId": "Q454053",
-        "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_III_de_Bretagne.png",
-        "imageUrl": null
+        "image": "data/images/rulers/Q454053.png",
+        "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_III_de_Bretagne.png"
       },
       {
         "name": "Francis II",

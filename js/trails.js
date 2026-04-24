@@ -11,10 +11,19 @@ let _trailActivatedEvents = false;
 // ── Load ──────────────────────────────────
 async function loadTrailsData() {
   if (_trailsData) return _trailsData;
-  const r = await fetch('data/trails.json');
+  const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
+  const r = await fetch(`data/trails${suffix}.json`);
   _trailsData = await r.json();
   return _trailsData;
 }
+
+window.addEventListener('langchange', () => {
+  _trailsData = null;
+  const menu = document.getElementById('trail-menu');
+  if (menu && menu.classList.contains('open')) {
+    menu.classList.remove('open');
+  }
+});
 
 // ── Menu (fly-up from button) ─────────────
 async function openTrailMenu() {
@@ -33,11 +42,11 @@ async function openTrailMenu() {
   const trails = await loadTrailsData();
 
   menu.innerHTML =
-    '<div id="trail-menu-hint">▼ Choose a trail</div>' +
-    trails.map(t => `
-    <div class="trail-menu-item" onclick="startTrail('${t.id}')">
-      <div class="trail-menu-title">${t.title}</div>
-      <div class="trail-menu-sub">${t.subtitle || ''} &middot; ${t.steps.length} steps</div>
+    `<div id="trail-menu-hint">${t('trail_choose')}</div>` +
+    trails.map(tr => `
+    <div class="trail-menu-item" onclick="startTrail('${tr.id}')">
+      <div class="trail-menu-title">${tr.title}</div>
+      <div class="trail-menu-sub">${tr.subtitle || ''} &middot; ${tr.steps.length} ${t('trail_steps')}</div>
     </div>`).join('');
 
   // Re-measure after fetch; fall back to pre-fetch rect if button hidden (zero size)
@@ -74,7 +83,7 @@ async function openTrailMenu() {
 async function startTrail(id) {
   document.getElementById('trail-menu').classList.remove('open');
   const trails = await loadTrailsData();
-  _activeTrail   = trails.find(t => t.id === id);
+  _activeTrail   = trails.find(tr => tr.id === id);
   if (!_activeTrail) return;
   _activeStepIdx = 0;
   document.getElementById('trails-btn').classList.add('on');
@@ -250,7 +259,7 @@ function _renderTrailPanel(step, idx, total) {
   // Next button
   const nextBtn = document.getElementById('trail-btn-next');
   const isLast  = idx === total - 1;
-  nextBtn.textContent = isLast ? 'Explore the map' : 'Next →';
+  nextBtn.textContent = isLast ? t('trail_finish') : t('trail_next');
   nextBtn.classList.toggle('trail-btn-finish', isLast);
 
   // Wikipedia link(s)

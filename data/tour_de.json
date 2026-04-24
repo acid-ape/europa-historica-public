@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Das historische Europa",
+        "text": "Diese interaktive Karte zeigt, wie die Welt zu verschiedenen Zeitpunkten in der Geschichte aussah – von 8000 v. Chr. bis 2010 n. Chr. Klicken Sie auf ein Gebiet, um mehr über seine Herrscher und seine Geschichte zu erfahren."
+    },
+    {
+        "target": "#tl-wrap",
+        "pos": "above",
+        "title": "Die Zeitleiste",
+        "text": "Zieh den Schieberegler oder klick an einer beliebigen Stelle auf der Zeitleiste, um durch die Geschichte zu navigieren. Das Jahr ändert sich in Echtzeit, während du dich bewegst."
+    },
+    {
+        "target": "#era-select-row",
+        "pos": "above",
+        "title": "Zeiträume",
+        "text": "Springe schnell zu einer bestimmten Epoche – Urgeschichte, Antike, Mittelalter und mehr. Tippe erneut, um die Auswahl aufzuheben und zur vollständigen Zeitleiste zurückzukehren."
+    },
+    {
+        "target": ".btn-group-left",
+        "pos": "above",
+        "title": "Navigationselemente",
+        "text": "Springe mithilfe des Eingabefelds direkt zu einem beliebigen Jahr oder blättere mit den Schaltflächen ± vorwärts und rückwärts durch die Zeit."
+    },
+    {
+        "target": ".btn-group-center",
+        "pos": "above",
+        "title": "Info & Suche",
+        "text": "Hier finden Sie die wichtigsten Funktionen:\n◉  Startet diese Führung\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und ermöglicht das Durchsuchen\n⌕  Sucht nach Herrschern, Orten und Ereignissen"
+    },
+    {
+        "target": "#play-btns",
+        "pos": "above",
+        "title": "Wiedergabe",
+        "text": "Verwende ▶, um den Verlauf vorwärts abzuspielen, oder ◀ und ◀◀, um in der Zeit zurückzugehen. Stelle die Wiedergabegeschwindigkeit mit den Geschwindigkeitsschaltflächen ein – von ½× bis 3×."
+    },
+    {
+        "target": "#pleiades-btn",
+        "pos": "above",
+        "title": "Antike Siedlungen",
+        "text": "Klicken Sie einmal, um alte Siedlungen aus der Zeit um das aktuelle Jahr anzuzeigen. Klicken Sie erneut, um alle Siedlungen bis zu diesem Zeitpunkt anzuzeigen."
+    },
+    {
+        "target": "#events-btn",
+        "pos": "above",
+        "title": "Historische Ereignisse",
+        "text": "Klicken Sie einmal, um Ereignisse in einem Zeitraum von 150 Jahren anzuzeigen. Klicken Sie erneut, um alle Ereignisse bis zum aktuellen Jahr anzuzeigen. Klicken Sie auf eine ✦-Markierung auf der Karte, um Details anzuzeigen."
+    },
+    {
+        "target": "#trails-btn",
+        "pos": "above",
+        "title": "Historische Wanderwege",
+        "text": "Begeben Sie sich auf eine Reise durch die Geschichte mit unseren geführten Rundgängen. Jeder Rundgang führt Sie in chronologischer Reihenfolge durch wichtige Epochen – mit Hintergrundinformationen, Bildern und Verknüpfungen, die die Zusammenhänge zwischen den Ereignissen verdeutlichen."
+    },
+    {
+        "target": "#legend",
+        "pos": "right",
+        "title": "Legend",
+        "text": "Jedes Gebiet ist nach seiner kulturellen Gruppe farblich gekennzeichnet – germanisch, römisch, osmanisch und weitere. Hier siehst du, welche Gruppen in der aktuellen Epoche aktiv sind und was die verschiedenen Grenzstile bedeuten."
+    },
+    {
+        "title": "Das war's schon!",
+        "text": "Die Karte steht dir zur Erkundung offen. Klicke auf ein beliebiges Gebiet, um mehr über seine Herrscher und seine Geschichte zu erfahren.",
+        "finish": true
+    }
+]

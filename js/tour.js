@@ -2,75 +2,21 @@
 //  Europa Historica — Guided Tour
 // ═══════════════════════════════════════════
 
-const _TOUR_STEPS = [
-  {
-    target: null,
-    pos: 'center',
-    title: 'Europa Historica',
-    text: 'This interactive map shows how the world looked at different points in history — from 8000 BC to 2010 AD. Click any territory to explore its rulers and history.',
-  },
-  {
-    target: '#tl-wrap',
-    pos: 'above',
-    title: 'The Timeline',
-    text: 'Drag the slider or click anywhere on the track to travel through history. The year updates in real time as you move.',
-  },
-  {
-    target: '#era-select-row',
-    pos: 'above',
-    title: 'Time Periods',
-    text: 'Quickly jump to a specific era — Prehistory, Antiquity, Middle Ages, and more. Tap again to deselect and return to the full timeline.',
-  },
-  {
-    target: '.btn-group-left',
-    pos: 'above',
-    title: 'Navigation Controls',
-    text: 'Jump directly to any year using the input field, or step forward and backward through time with the ± buttons.',
-  },
-  {
-    target: '.btn-group-center',
-    pos: 'above',
-    title: 'Info & Search',
-    text: 'Here you can access the main tools:\n◉  starts this guided tour\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, and events',
-  },
-  {
-    target: '#play-btns',
-    pos: 'above',
-    title: 'Playback',
-    text: 'Use ▶ to animate history forward, or ◀ and ◀◀ to travel backwards through time. Adjust the pace with the speed buttons — from ½× to 3×.',
-  },
-  {
-    target: '#pleiades-btn',
-    pos: 'above',
-    title: 'Ancient Settlements',
-    text: 'Click once to show ancient settlements near the current year. Click again to show all settlements up to this point in time.',
-  },
-  {
-    target: '#events-btn',
-    pos: 'above',
-    title: 'Historical Events',
-    text: 'Click once to show events in a 150-year window. Click again to show all events up to the current year. Click a ✦ marker on the map for details.',
-  },
-  {
-    target: '#trails-btn',
-    pos: 'above',
-    title: 'Historical Trails',
-    text: 'Follow the path of history with guided trails. Each trail takes you through key moments in chronological order — with context, images, and links that connect the dots between events.',
-  },
-  {
-    target: '#legend',
-    pos: 'right',
-    title: 'Legend',
-    text: 'Each territory is colored by its cultural group — Germanic, Roman, Ottoman, and more. Here you can see which groups are active in the current epoch and what the different border styles mean.',
-  },
-  {
-    target: null,
-    pos: 'center',
-    title: "You're all set!",
-    text: 'The map is yours to explore. Click any territory to discover its rulers and history.',
-    finish: true,
-  },
-];
+let _tourSteps = [];
+
+async function _loadTourSteps() {
+  const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
+  const url = suffix ? `data/tour${suffix}.json` : 'data/tour.json';
+  try {
+    const r = await fetch(url);
+    _tourSteps = await r.json();
+  } catch(e) {
+    console.warn('tour.json not loaded, using empty steps:', e);
+    _tourSteps = [];
+  }
+}
+
+window.addEventListener('langchange', () => { _tourSteps = []; });
 
 const _TT_W = 300;
 const _PAD  = 10;
@@ -82,8 +28,9 @@ let _tourTt  = null;
 let _tourAutoExpandedLegend = false;
 
 // ── Public API ─────────────────────────────
-function startTour() {
+async function startTour() {
   hideIntro();
+  if (!_tourSteps.length) await _loadTourSteps();
   _tourIdx = 0;
   _tourBuild();
   setTimeout(() => _tourShow(_tourIdx), 300);
@@ -112,7 +59,8 @@ function _tourBuild() {
 
 // ── Show step ──────────────────────────────
 function _tourShow(i) {
-  const step   = _TOUR_STEPS[i];
+  const step   = _tourSteps[i];
+  if (!step) return;
   const isLast = !!step.finish;
 
   // On mobile: open drawer for steps that target the controls bar
@@ -138,7 +86,7 @@ function _tourShow(i) {
     }
   }
 
-  document.getElementById('tr-count').textContent = 'Step ' + (i + 1) + ' of ' + _TOUR_STEPS.length;
+  document.getElementById('tr-count').textContent = 'Step ' + (i + 1) + ' of ' + _tourSteps.length;
   document.getElementById('tr-title').textContent = step.title;
   document.getElementById('tr-body').textContent  = step.text;
 
@@ -256,7 +204,7 @@ function _tourNext() {
   _tourTt.classList.remove('tr-on');
   _tourHl.classList.remove('tr-on');
   _tourIdx++;
-  if (_tourIdx >= _TOUR_STEPS.length) { _tourSkip(); return; }
+  if (_tourIdx >= _tourSteps.length) { _tourSkip(); return; }
   setTimeout(() => _tourShow(_tourIdx), 180);
 }
 

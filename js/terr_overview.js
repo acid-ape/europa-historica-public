@@ -120,8 +120,8 @@ function _buildRows(filter) {
 
   const q = filter.toLowerCase().trim();
   return Object.values(_terrData)
-    .filter(t => !ctxChildQids.has(t.id) || t.territory_type === 'multi_context')
-    .filter(t => !q || (t.label || '').toLowerCase().includes(q))
+    .filter(terr => !ctxChildQids.has(terr.id) || terr.territory_type === 'multi_context')
+    .filter(terr => !q || (terr.label || '').toLowerCase().includes(q))
     .sort((a, b) => (a.label || '').localeCompare(b.label || ''));
 }
 
@@ -131,25 +131,25 @@ function _renderTable(filter) {
   if (!tbody) return;
 
   if (!_terrLoaded) {
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#5a4a2a;padding:20px">Loading…</td></tr>';
+    tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;color:#5a4a2a;padding:20px">${t('terr_loading')}</td></tr>`;
     return;
   }
 
   const rows = _buildRows(filter);
 
   if (!rows.length) {
-    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center;color:#5a4a2a;padding:20px">No territories found.</td></tr>';
+    tbody.innerHTML = `<tr><td colspan="5" style="text-align:center;color:#5a4a2a;padding:20px">${t('terr_none')}</td></tr>`;
     return;
   }
 
-  tbody.innerHTML = rows.map(t => {
-    const qid     = t.wikidataId || t.id || '';
-    const label   = t.label || qid;
-    const wikiUrl = t.wikipedia || '';
+  tbody.innerHTML = rows.map(terr => {
+    const qid     = terr.wikidataId || terr.id || '';
+    const label   = terr.label || qid;
+    const wikiUrl = terr.wikipedia || '';
     const wdUrl   = qid ? `https://www.wikidata.org/wiki/${qid}` : '';
-    const count    = _rulerCount(t);
-    const typeStr  = _typeLabel(t.territory_type);
-    const period   = _epochRange(t);
+    const count    = _rulerCount(terr);
+    const typeStr  = _typeLabel(terr.territory_type);
+    const period   = _epochRange(terr);
 
     const wikiLink = wikiUrl
       ? `<a href="${wikiUrl}" target="_blank" class="to-link" title="Wikipedia">↗</a>`
@@ -161,7 +161,7 @@ function _renderTable(filter) {
     return `<tr>
       <td class="to-name">${label}${wikiLink}</td>
       <td class="to-cell">${qidCell}</td>
-      <td class="to-cell"><span class="to-type to-type-${t.territory_type}">${typeStr}</span></td>
+      <td class="to-cell"><span class="to-type to-type-${terr.territory_type}">${typeStr}</span></td>
       <td class="to-cell to-num">${countCell}</td>
       <td class="to-cell to-num to-period">${periodCell}</td>
     </tr>`;

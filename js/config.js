@@ -1546,6 +1546,11 @@ const TERRITORY_MAPPING = {
     rulerPosition: null,
     label:         "Castile"
   },
+  "castille": {
+    wikidataId:    "Q179293",
+    rulerPosition: null,
+    label:         "Castile"
+  },
   "khanate of the golden horde": {
     wikidataId:    "Q79965",
     rulerPosition: null,
@@ -1775,19 +1780,47 @@ async function loadRulersData() {
   return rulersData;
 }
 
-let territoriesData = null;
+let territoriesData   = null;
+let territoriesDataDe = null;
 
 async function loadTerritoriesData() {
   if (territoriesData) return territoriesData;
   try {
-    const r = await fetch('data/knowledge/territories.json', { cache: 'no-cache' });
+    const [r, rDe] = await Promise.all([
+      fetch('data/knowledge/territories.json', { cache: 'no-cache' }),
+      fetch('data/knowledge/territories_de.json', { cache: 'no-cache' }).catch(() => null),
+    ]);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     territoriesData = await r.json();
+    if (rDe && rDe.ok) territoriesDataDe = await rDe.json();
   } catch(e) {
     console.warn('territories.json nicht geladen:', e.message);
-    return {};  // nicht cachen — Retry beim nächsten Klick
+    return {};
   }
   return territoriesData;
+}
+
+// Returns translated description for a territory (falls back to EN)
+function getTerrDesc(territory) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  if (lang !== 'en' && territoriesDataDe) {
+    const de = territoriesDataDe[territory.wikidataId || territory.id];
+    if (de && de.description) return de.description;
+  }
+  return territory.description || '';
+}
+
+// Returns translated description for a multi_context sub-context (falls back to EN)
+function getCtxDesc(ctx, territory) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  if (lang !== 'en' && territoriesDataDe) {
+    const de = territoriesDataDe[territory.wikidataId || territory.id];
+    if (de && de.contexts) {
+      const deCtx = de.contexts.find(c => c.start === ctx.start && c.end === ctx.end);
+      if (deCtx && deCtx.description) return deCtx.description;
+    }
+  }
+  return ctx.description || '';
 }
 
 function getCapitalForYear(capitals, year) {
