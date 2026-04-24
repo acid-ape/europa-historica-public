@@ -5,7 +5,8 @@
     "year": -3200,
     "lat": 31.32,
     "lon": 45.64,
-    "wiki": "History_of_writing"
+    "wiki": "History_of_writing",
+    "description": "The earliest known writing system emerged in Mesopotamia around 3200 BC. Sumerian scribes used clay tablets to record trade and administration, changing human civilization forever."
   },
   {
     "id": "great_pyramid",
@@ -13,7 +14,8 @@
     "year": -2560,
     "lat": 29.98,
     "lon": 31.13,
-    "wiki": "Great_Pyramid_of_Giza"
+    "wiki": "Great_Pyramid_of_Giza",
+    "description": "Built as a tomb for Pharaoh Khufu, the Great Pyramid was the tallest human structure for nearly 4,000 years and remains one of the Seven Wonders of the Ancient World."
   },
   {
     "id": "olympic_games",
@@ -21,7 +23,8 @@
     "year": -776,
     "lat": 37.64,
     "lon": 21.63,
-    "wiki": "Ancient_Olympic_Games"
+    "wiki": "Ancient_Olympic_Games",
+    "description": "The Greeks held the first recorded Olympic Games at Olympia. Athletes from across the Greek world competed every four years in honor of Zeus, establishing a tradition lasting over a millennium."
   },
   {
     "id": "founding_rome",
@@ -29,7 +32,8 @@
     "year": -753,
     "lat": 41.90,
     "lon": 12.50,
-    "wiki": "Founding_of_Rome"
+    "wiki": "Founding_of_Rome",
+    "description": "According to Roman tradition, Romulus founded the city of Rome on the Palatine Hill. From this small Latin settlement, one of history's greatest empires would eventually grow."
   },
   {
     "id": "battle_marathon",
@@ -37,7 +41,8 @@
     "year": -490,
     "lat": 38.15,
     "lon": 23.97,
-    "wiki": "Battle_of_Marathon"
+    "wiki": "Battle_of_Marathon",
+    "description": "A Greek force of around 10,000 defeated a much larger Persian army on the plain of Marathon, halting the first Persian invasion and becoming a defining moment of Greek identity."
   },
   {
     "id": "alexander_conquest",
@@ -45,7 +50,8 @@
     "year": -334,
     "lat": 40.76,
     "lon": 22.52,
-    "wiki": "Alexander_the_Great"
+    "wiki": "Alexander_the_Great",
+    "description": "Alexander III of Macedon crossed into Asia with 40,000 troops, beginning a campaign that would forge an empire from Greece to the edge of India in just thirteen years."
   },
   {
     "id": "caesar_assassination",
@@ -53,7 +59,8 @@
     "year": -44,
     "lat": 41.90,
     "lon": 12.47,
-    "wiki": "Assassination_of_Julius_Caesar"
+    "wiki": "Assassination_of_Julius_Caesar",
+    "description": "On the Ides of March, a group of senators stabbed Julius Caesar to death in the Theatre of Pompey. The killing plunged Rome into civil war and ended the Roman Republic."
   },
   {
     "id": "augustus_empire",
@@ -61,7 +68,8 @@
     "year": -27,
     "lat": 41.90,
     "lon": 12.50,
-    "wiki": "Augustus"
+    "wiki": "Augustus",
+    "description": "The Senate granted Octavian the title Augustus, marking the beginning of the Roman Empire. His 40-year reign transformed Rome's institutions and set the template for imperial rule."
   },
   {
     "id": "founding_constantinople",
@@ -69,7 +77,8 @@
     "year": 330,
     "lat": 41.01,
     "lon": 28.97,
-    "wiki": "Constantinople"
+    "wiki": "Constantinople",
+    "description": "Emperor Constantine I dedicated a new capital on the Bosphorus, renamed Constantinople. The city would serve as the heart of the Eastern Roman Empire for over a thousand years."
   },
   {
     "id": "division_rome",
@@ -77,7 +86,8 @@
     "year": 395,
     "lat": 43.00,
     "lon": 18.00,
-    "wiki": "Division_of_the_Roman_Empire"
+    "wiki": "Division_of_the_Roman_Empire",
+    "description": "On the death of Theodosius I, the Roman Empire was permanently divided between his two sons. The western and eastern halves would follow very different paths in the centuries ahead."
   },
   {
     "id": "fall_western_rome",
@@ -85,7 +95,8 @@
     "year": 476,
     "lat": 45.44,
     "lon": 12.34,
-    "wiki": "Fall_of_the_Western_Roman_Empire"
+    "wiki": "Fall_of_the_Western_Roman_Empire",
+    "description": "The Germanic chieftain Odoacer deposed Romulus Augustulus, the last western emperor. Though largely symbolic, the date marks the traditional end of the Western Roman Empire."
   },
   {
     "id": "rise_of_islam",
@@ -93,7 +104,8 @@
     "year": 622,
     "lat": 24.47,
     "lon": 39.61,
-    "wiki": "Hijra"
+    "wiki": "Hijra",
+    "description": "Muhammad's migration from Mecca to Medina marks year one of the Islamic calendar. Within a century of his death, Islam had spread from Spain to Central Asia."
   },
   {
     "id": "fall_jerusalem",
@@ -101,7 +113,8 @@
     "year": 637,
     "lat": 31.78,
     "lon": 35.23,
-    "wiki": "Siege_of_Jerusalem_(636–637)"
+    "wiki": "Siege_of_Jerusalem_(636–637)",
+    "description": "Arab armies under Caliph Umar captured Jerusalem after a brief siege. The conquest brought the city under Islamic rule and marked a decisive expansion of the early Caliphate."
   },
   {
     "id": "coronation_charlemagne",
@@ -109,7 +122,8 @@
     "year": 800,
     "lat": 41.90,
     "lon": 12.50,
-    "wiki": "Charlemagne"
+    "wiki": "Charlemagne",
+    "description": "Pope Leo III crowned Frankish king Charlemagne as Emperor of the Romans in St. Peter's Basilica. The act revived the idea of a western empire and shaped the course of medieval Europe."
   },
   {
     "id": "treaty_verdun",
@@ -117,31 +131,8 @@
     "year": 843,
     "lat": 49.16,
     "lon": 5.39,
-    "wiki": "Treaty_of_Verdun"
-  },
-  {
-    "id": "battle_hastings",
-    "title": "Battle of Hastings",
-    "year": 1066,
-    "lat": 50.91,
-    "lon": 0.59,
-    "wiki": "Battle_of_Hastings"
-  },
-  {
-    "id": "first_crusade",
-    "title": "First Crusade begins",
-    "year": 1096,
-    "lat": 45.78,
-    "lon": 3.08,
-    "wiki": "First_Crusade"
-  },
-  {
-    "id": "magna_carta",
-    "title": "Magna Carta",
-    "year": 1215,
-    "lat": 51.44,
-    "lon": -0.56,
-    "wiki": "Magna_Carta"
+    "wiki": "Treaty_of_Verdun",
+    "description": "The three grandsons of Charlemagne divided the Frankish Empire into three parts. The treaty laid the foundation for what would eventually become France and Germany."
   },
   {
     "id": "great_schism",
@@ -149,7 +140,26 @@
     "year": 1054,
     "lat": 41.01,
     "lon": 28.97,
-    "wiki": "East–West_Schism"
+    "wiki": "East–West_Schism",
+    "description": "Mutual excommunications between Rome and Constantinople split Christianity into Roman Catholic and Eastern Orthodox branches — a division that endures to this day."
+  },
+  {
+    "id": "battle_hastings",
+    "title": "Battle of Hastings",
+    "year": 1066,
+    "lat": 50.91,
+    "lon": 0.59,
+    "wiki": "Battle_of_Hastings",
+    "description": "William of Normandy defeated King Harold II of England at Hastings. The Norman Conquest fundamentally transformed English culture, language, and political institutions."
+  },
+  {
+    "id": "first_crusade",
+    "title": "First Crusade begins",
+    "year": 1096,
+    "lat": 45.78,
+    "lon": 3.08,
+    "wiki": "First_Crusade",
+    "description": "Pope Urban II called on Christian knights to liberate Jerusalem from Muslim rule. The First Crusade ended with the capture of the holy city in 1099 and the establishment of crusader states."
   },
   {
     "id": "sack_constantinople",
@@ -157,7 +167,17 @@
     "year": 1204,
     "lat": 41.01,
     "lon": 28.97,
-    "wiki": "Sack_of_Constantinople_(1204)"
+    "wiki": "Sack_of_Constantinople_(1204)",
+    "description": "Crusaders of the Fourth Crusade diverted from their mission and sacked Constantinople, plundering its churches and treasuries. The Byzantine Empire never fully recovered."
+  },
+  {
+    "id": "magna_carta",
+    "title": "Magna Carta",
+    "year": 1215,
+    "lat": 51.44,
+    "lon": -0.56,
+    "wiki": "Magna_Carta",
+    "description": "English barons forced King John to sign the Magna Carta at Runnymede. The charter limited royal power and established the principle that even the king was subject to the law."
   },
   {
     "id": "black_death",
@@ -165,15 +185,8 @@
     "year": 1347,
     "lat": 37.50,
     "lon": 15.09,
-    "wiki": "Black_Death"
-  },
-  {
-    "id": "fall_constantinople",
-    "title": "Fall of Constantinople",
-    "year": 1453,
-    "lat": 41.01,
-    "lon": 28.97,
-    "wiki": "Fall_of_Constantinople"
+    "wiki": "Black_Death",
+    "description": "The plague arrived in Sicily on merchant ships from the Black Sea. Over the next five years it killed between 30 and 60 percent of Europe's population — the deadliest pandemic in recorded history."
   },
   {
     "id": "gutenberg_press",
@@ -181,7 +194,17 @@
     "year": 1450,
     "lat": 49.99,
     "lon": 8.27,
-    "wiki": "Johannes_Gutenberg"
+    "wiki": "Johannes_Gutenberg",
+    "description": "Johannes Gutenberg introduced movable-type printing to Europe. The resulting spread of books transformed literacy, enabled the Reformation, and accelerated the exchange of ideas across the continent."
+  },
+  {
+    "id": "fall_constantinople",
+    "title": "Fall of Constantinople",
+    "year": 1453,
+    "lat": 41.01,
+    "lon": 28.97,
+    "wiki": "Fall_of_Constantinople",
+    "description": "Ottoman Sultan Mehmed II took Constantinople after a 53-day siege, ending the Byzantine Empire. The fall shocked Christian Europe and is often cited as the end of the Middle Ages."
   },
   {
     "id": "columbus",
@@ -189,7 +212,8 @@
     "year": 1492,
     "lat": 37.38,
     "lon": -5.99,
-    "wiki": "Voyages_of_Christopher_Columbus"
+    "wiki": "Voyages_of_Christopher_Columbus",
+    "description": "Christopher Columbus, sailing under the Spanish crown, made landfall in the Bahamas. His voyage initiated a permanent link between the Old and New Worlds, with profound consequences for both."
   },
   {
     "id": "martin_luther",
@@ -197,7 +221,8 @@
     "year": 1517,
     "lat": 51.87,
     "lon": 12.65,
-    "wiki": "Ninety-five_Theses"
+    "wiki": "Ninety-five_Theses",
+    "description": "Luther's Ninety-five Theses attacked the sale of indulgences by the Catholic Church. Rapidly spread by the printing press, the document ignited the Protestant Reformation across Europe."
   },
   {
     "id": "thirty_years_war",
@@ -205,7 +230,8 @@
     "year": 1618,
     "lat": 50.07,
     "lon": 14.42,
-    "wiki": "Thirty_Years%27_War"
+    "wiki": "Thirty_Years%27_War",
+    "description": "A conflict beginning with Protestant rebellion in Bohemia became a devastating pan-European war. By its end in 1648, large parts of Central Europe had lost a third or more of their population."
   },
   {
     "id": "peace_westphalia",
@@ -213,7 +239,8 @@
     "year": 1648,
     "lat": 51.96,
     "lon": 7.63,
-    "wiki": "Peace_of_Westphalia"
+    "wiki": "Peace_of_Westphalia",
+    "description": "The treaties ending the Thirty Years' War established the principle of state sovereignty. The settlement is widely seen as the foundation of the modern international order."
   },
   {
     "id": "newton_principia",
@@ -221,7 +248,8 @@
     "year": 1687,
     "lat": 52.20,
     "lon": 0.12,
-    "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica"
+    "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+    "description": "Isaac Newton published his laws of motion and universal gravitation. The Principia transformed natural philosophy into modern physics and defined scientific thinking for two centuries."
   },
   {
     "id": "french_revolution",
@@ -229,7 +257,8 @@
     "year": 1789,
     "lat": 48.85,
     "lon": 2.35,
-    "wiki": "French_Revolution"
+    "wiki": "French_Revolution",
+    "description": "The storming of the Bastille and the fall of the monarchy set off a decade of radical change. The Revolution's ideals of liberty, equality, and popular sovereignty reshaped the political world."
   },
   {
     "id": "congress_vienna",
@@ -237,7 +266,8 @@
     "year": 1815,
     "lat": 48.21,
     "lon": 16.37,
-    "wiki": "Congress_of_Vienna"
+    "wiki": "Congress_of_Vienna",
+    "description": "European powers gathered after Napoleon's defeat to redraw the map of Europe. The Congress established a conservative order that held — with interruptions — for nearly a century."
   },
   {
     "id": "revolutions_1848",
@@ -245,7 +275,8 @@
     "year": 1848,
     "lat": 48.85,
     "lon": 2.35,
-    "wiki": "Revolutions_of_1848"
+    "wiki": "Revolutions_of_1848",
+    "description": "A wave of liberal and nationalist uprisings swept across Europe from France to Hungary. Though most were suppressed, they accelerated the political transformations of the following decades."
   },
   {
     "id": "unification_germany",
@@ -253,7 +284,8 @@
     "year": 1871,
     "lat": 52.52,
     "lon": 13.40,
-    "wiki": "Unification_of_Germany"
+    "wiki": "Unification_of_Germany",
+    "description": "After defeating France in the Franco-Prussian War, Bismarck proclaimed the German Empire at Versailles. The new state immediately became the most powerful in continental Europe."
   },
   {
     "id": "ww1_start",
@@ -261,7 +293,8 @@
     "year": 1914,
     "lat": 44.80,
     "lon": 20.46,
-    "wiki": "World_War_I"
+    "wiki": "World_War_I",
+    "description": "The assassination of Archduke Franz Ferdinand in Sarajevo triggered a chain of mobilizations. Within weeks, the major European powers were at war in a conflict that would kill seventeen million people."
   },
   {
     "id": "russian_revolution",
@@ -269,7 +302,8 @@
     "year": 1917,
     "lat": 59.93,
     "lon": 30.32,
-    "wiki": "Russian_Revolution"
+    "wiki": "Russian_Revolution",
+    "description": "The collapse of the tsarist government and the Bolshevik seizure of power transformed Russia. The October Revolution brought the world's first communist state into existence."
   },
   {
     "id": "ww1_end",
@@ -277,7 +311,8 @@
     "year": 1918,
     "lat": 49.42,
     "lon": 2.88,
-    "wiki": "Armistice_of_11_November_1918"
+    "wiki": "Armistice_of_11_November_1918",
+    "description": "The Armistice of 11 November ended four years of fighting. The war had reshaped the map of Europe, destroyed four empires, and set the conditions for the next global conflict."
   },
   {
     "id": "ww2_end",
@@ -285,7 +320,8 @@
     "year": 1945,
     "lat": 52.52,
     "lon": 13.40,
-    "wiki": "World_War_II"
+    "wiki": "World_War_II",
+    "description": "Germany's unconditional surrender ended the war in Europe. The conflict had killed over 70 million people, left much of the continent in ruins, and produced the Cold War world order."
   },
   {
     "id": "treaty_rome",
@@ -293,7 +329,8 @@
     "year": 1957,
     "lat": 41.90,
     "lon": 12.50,
-    "wiki": "Treaty_of_Rome"
+    "wiki": "Treaty_of_Rome",
+    "description": "Six European nations signed the Treaty of Rome, establishing the European Economic Community. The agreement laid the groundwork for what would become the European Union."
   },
   {
     "id": "fall_berlin_wall",
@@ -301,7 +338,8 @@
     "year": 1989,
     "lat": 52.52,
     "lon": 13.40,
-    "wiki": "Fall_of_the_Berlin_Wall"
+    "wiki": "Fall_of_the_Berlin_Wall",
+    "description": "East Germany opened its border crossings, and crowds tore down the wall that had divided Berlin since 1961. The event symbolized the collapse of communist rule across Eastern Europe."
   },
   {
     "id": "soviet_dissolution",
@@ -309,6 +347,7 @@
     "year": 1991,
     "lat": 55.75,
     "lon": 37.62,
-    "wiki": "Dissolution_of_the_Soviet_Union"
+    "wiki": "Dissolution_of_the_Soviet_Union",
+    "description": "On Christmas Day, Mikhail Gorbachev resigned as Soviet president. The USSR formally ceased to exist, ending the Cold War and leaving fifteen independent states in its wake."
   }
 ]

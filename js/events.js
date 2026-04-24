@@ -18,7 +18,7 @@ function _evStarPath(r) {
 async function loadEventsData() {
   if (eventsData !== null) return;
   const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
-  const url = suffix ? `data/events${suffix}.json` : 'data/events.json?v=2d';
+  const url = suffix ? `data/events${suffix}.json` : 'data/events.json?v=2e';
   try {
     const r = await fetch(url);
     if (!r.ok) throw new Error('events not found');
@@ -202,29 +202,28 @@ function showEventTT(event, ev) {
   const precRow = document.getElementById('tt-prec-row');
   if (precRow) precRow.style.display = 'none';
 
-  // Wikipedia extract (async)
+  // Local description
   const descEl = descEl0;
+  if (ev.description && descEl) {
+    descEl.textContent = ev.description;
+    descEl.style.display = 'block';
+    if (ctxSection) ctxSection.style.display = '';
+  }
 
-  fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(ev.wiki)}`)
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (typeof _tooltipSerial !== 'undefined' && _tooltipSerial !== serial) return;
-      if (!data) return;
-      // Wikipedia extract
-      if (data.extract && descEl) {
-        let txt = data.extract;
-        if (txt.length > 240) txt = txt.substring(0, 238) + '…';
-        descEl.textContent = txt;
-        descEl.style.display = 'block';
-        if (ctxSection) ctxSection.style.display = '';
-      }
-      // Wikipedia thumbnail image — shown full-width below header
-      if (data.thumbnail && data.thumbnail.source && evImgEl) {
-        evImgEl.src = data.thumbnail.source;
-        evImgEl.style.display = 'block';
-      }
-    })
-    .catch(() => {});
+  // Wikipedia thumbnail image only (async)
+  if (ev.wiki) {
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(ev.wiki)}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (typeof _tooltipSerial !== 'undefined' && _tooltipSerial !== serial) return;
+        if (!data) return;
+        if (data.thumbnail && data.thumbnail.source && evImgEl) {
+          evImgEl.src = data.thumbnail.source;
+          evImgEl.style.display = 'block';
+        }
+      })
+      .catch(() => {});
+  }
 
   document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
   document.getElementById('tt-wiki-wp').onclick = () =>
@@ -340,27 +339,30 @@ function createEventPanel(mouseEvent, ev) {
   panel.querySelector('.ep-wiki').addEventListener('click', () =>
     window.open('https://en.wikipedia.org/wiki/' + encodeURIComponent(ev.wiki), '_blank'));
 
-  fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(ev.wiki))
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (!panel.isConnected || !data) return;
-      const ctx = panel.querySelector('.tt-float-ctx');
-      if (data.extract) {
-        const desc = panel.querySelector('.ep-desc');
-        let txt = data.extract;
-        if (txt.length > 300) txt = txt.substring(0, 298) + '…';
-        desc.textContent = txt;
-        desc.style.display = 'block';
-        if (ctx) ctx.style.display = '';
-      }
-      if (data.thumbnail && data.thumbnail.source) {
-        const img = panel.querySelector('.ep-thumb');
-        img.src = data.thumbnail.source;
-        img.style.display = 'block';
-        if (ctx) ctx.style.display = '';
-      }
-    })
-    .catch(() => {});
+  // Local description
+  const ctx = panel.querySelector('.tt-float-ctx');
+  if (ev.description) {
+    const desc = panel.querySelector('.ep-desc');
+    desc.textContent = ev.description;
+    desc.style.display = 'block';
+    if (ctx) ctx.style.display = '';
+  }
+
+  // Wikipedia thumbnail image only (async)
+  if (ev.wiki) {
+    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(ev.wiki))
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (!panel.isConnected || !data) return;
+        if (data.thumbnail && data.thumbnail.source) {
+          const img = panel.querySelector('.ep-thumb');
+          img.src = data.thumbnail.source;
+          img.style.display = 'block';
+          if (ctx) ctx.style.display = '';
+        }
+      })
+      .catch(() => {});
+  }
 }
 
 function selectEvent(event, ev) {

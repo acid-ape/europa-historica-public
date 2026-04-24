@@ -5,7 +5,8 @@
         "year": -3200,
         "lat": 31.32,
         "lon": 45.64,
-        "wiki": "History_of_writing"
+        "wiki": "History_of_writing",
+        "description": "Das früheste bekannte Schriftsystem entstand in Mesopotamien um 3200 v. Chr. Sumerische Schreiber nutzten Tontafeln für Handel und Verwaltung und veränderten damit die menschliche Zivilisation für immer."
     },
     {
         "id": "great_pyramid",
@@ -13,7 +14,8 @@
         "year": -2560,
         "lat": 29.98,
         "lon": 31.13,
-        "wiki": "Great_Pyramid_of_Giza"
+        "wiki": "Great_Pyramid_of_Giza",
+        "description": "Als Grabmal für Pharao Cheops erbaut, war die Große Pyramide fast 4.000 Jahre lang das höchste Bauwerk der Welt und gilt als eines der Sieben Weltwunder der Antike."
     },
     {
         "id": "olympic_games",
@@ -21,7 +23,8 @@
         "year": -776,
         "lat": 37.64,
         "lon": 21.63,
-        "wiki": "Ancient_Olympic_Games"
+        "wiki": "Ancient_Olympic_Games",
+        "description": "Die Griechen veranstalteten die ersten überlieferten Olympischen Spiele in Olympia. Alle vier Jahre kämpften Athleten aus der griechischen Welt zu Ehren des Zeus – eine über ein Jahrtausend andauernde Tradition."
     },
     {
         "id": "founding_rome",
@@ -29,7 +32,8 @@
         "year": -753,
         "lat": 41.9,
         "lon": 12.5,
-        "wiki": "Founding_of_Rome"
+        "wiki": "Founding_of_Rome",
+        "description": "Der römischen Überlieferung nach gründete Romulus die Stadt Rom auf dem Palatin. Aus dieser kleinen latinischen Siedlung erwuchs schließlich eines der größten Imperien der Geschichte."
     },
     {
         "id": "battle_marathon",
@@ -37,7 +41,8 @@
         "year": -490,
         "lat": 38.15,
         "lon": 23.97,
-        "wiki": "Battle_of_Marathon"
+        "wiki": "Battle_of_Marathon",
+        "description": "Eine griechische Streitmacht von rund 10.000 Mann besiegte bei Marathon eine weit überlegene persische Armee, stoppte den ersten Persieneinfall und wurde zum prägenden Symbol griechischer Identität."
     },
     {
         "id": "alexander_conquest",
@@ -45,7 +50,8 @@
         "year": -334,
         "lat": 40.76,
         "lon": 22.52,
-        "wiki": "Alexander_the_Great"
+        "wiki": "Alexander_the_Great",
+        "description": "Alexander III. von Makedonien überquerte mit 40.000 Soldaten nach Asien und begann einen Feldzug, der in nur dreizehn Jahren ein Reich von Griechenland bis an den Rand Indiens schuf."
     },
     {
         "id": "caesar_assassination",
@@ -53,7 +59,8 @@
         "year": -44,
         "lat": 41.9,
         "lon": 12.47,
-        "wiki": "Assassination_of_Julius_Caesar"
+        "wiki": "Assassination_of_Julius_Caesar",
+        "description": "An den Iden des März wurde Caesar im Theater des Pompeius von Senatoren ermordet. Das Attentat stürzte Rom in einen Bürgerkrieg und beendete die Römische Republik."
     },
     {
         "id": "augustus_empire",
@@ -61,7 +68,8 @@
         "year": -27,
         "lat": 41.9,
         "lon": 12.5,
-        "wiki": "Augustus"
+        "wiki": "Augustus",
+        "description": "Der Senat verlieh Octavian den Titel Augustus – der Beginn des Römischen Kaiserreichs. Seine 40-jährige Herrschaft formte Roms Institutionen und schuf die Vorlage für die imperiale Herrschaft."
     },
     {
         "id": "founding_constantinople",
@@ -69,7 +77,8 @@
         "year": 330,
         "lat": 41.01,
         "lon": 28.97,
-        "wiki": "Constantinople"
+        "wiki": "Constantinople",
+        "description": "Kaiser Konstantin I. weihte am Bosporus eine neue Hauptstadt, die fortan Konstantinopel hieß. Die Stadt blieb über tausend Jahre lang das Herzstück des Oströmischen Reiches."
     },
     {
         "id": "division_rome",
@@ -77,7 +86,8 @@
         "year": 395,
         "lat": 43.0,
         "lon": 18.0,
-        "wiki": "Division_of_the_Roman_Empire"
+        "wiki": "Division_of_the_Roman_Empire",
+        "description": "Nach dem Tod des Theodosius I. wurde das Römische Reich dauerhaft unter seinen beiden Söhnen aufgeteilt. West und Ost sollten in den folgenden Jahrhunderten sehr unterschiedliche Wege gehen."
     },
     {
         "id": "fall_western_rome",
@@ -85,7 +95,8 @@
         "year": 476,
         "lat": 45.44,
         "lon": 12.34,
-        "wiki": "Fall_of_the_Western_Roman_Empire"
+        "wiki": "Fall_of_the_Western_Roman_Empire",
+        "description": "Der germanische Anführer Odoaker setzte Romulus Augustulus, den letzten weströmischen Kaiser, ab. Das Datum gilt als traditionelles Ende des Weströmischen Reiches."
     },
     {
         "id": "rise_of_islam",
@@ -93,7 +104,8 @@
         "year": 622,
         "lat": 24.47,
         "lon": 39.61,
-        "wiki": "Hijra"
+        "wiki": "Hijra",
+        "description": "Mohammeds Auswanderung von Mekka nach Medina markiert das Jahr 1 des islamischen Kalenders. Innerhalb eines Jahrhunderts nach seinem Tod hatte sich der Islam von Spanien bis Zentralasien ausgebreitet."
     },
     {
         "id": "fall_jerusalem",
@@ -101,7 +113,8 @@
         "year": 637,
         "lat": 31.78,
         "lon": 35.23,
-        "wiki": "Siege_of_Jerusalem_(636–637)"
+        "wiki": "Siege_of_Jerusalem_(636–637)",
+        "description": "Arabische Heere unter Kalif Umar nahmen Jerusalem nach kurzer Belagerung ein. Die Eroberung brachte die Stadt unter islamische Herrschaft und markierte eine entscheidende Ausweitung des frühen Kalifats."
     },
     {
         "id": "coronation_charlemagne",
@@ -109,7 +122,8 @@
         "year": 800,
         "lat": 41.9,
         "lon": 12.5,
-        "wiki": "Charlemagne"
+        "wiki": "Charlemagne",
+        "description": "Papst Leo III. krönte Karl den Großen in der Basilika St. Peter zum Kaiser der Römer. Die Krönung belebte die Idee eines westlichen Kaisertums und prägte den Lauf des mittelalterlichen Europas."
     },
     {
         "id": "treaty_verdun",
@@ -117,31 +131,8 @@
         "year": 843,
         "lat": 49.16,
         "lon": 5.39,
-        "wiki": "Treaty_of_Verdun"
-    },
-    {
-        "id": "battle_hastings",
-        "title": "Schlacht bei Hastings",
-        "year": 1066,
-        "lat": 50.91,
-        "lon": 0.59,
-        "wiki": "Battle_of_Hastings"
-    },
-    {
-        "id": "first_crusade",
-        "title": "Der erste Kreuzzug beginnt",
-        "year": 1096,
-        "lat": 45.78,
-        "lon": 3.08,
-        "wiki": "First_Crusade"
-    },
-    {
-        "id": "magna_carta",
-        "title": "Magna Carta",
-        "year": 1215,
-        "lat": 51.44,
-        "lon": -0.56,
-        "wiki": "Magna_Carta"
+        "wiki": "Treaty_of_Verdun",
+        "description": "Die drei Enkel Karls des Großen teilten das Frankenreich in drei Teile. Der Vertrag legte den Grundstein für das, was schließlich zu Frankreich und Deutschland werden sollte."
     },
     {
         "id": "great_schism",
@@ -149,7 +140,26 @@
         "year": 1054,
         "lat": 41.01,
         "lon": 28.97,
-        "wiki": "East–West_Schism"
+        "wiki": "East–West_Schism",
+        "description": "Gegenseitige Exkommunikationen zwischen Rom und Konstantinopel spalteten das Christentum in die römisch-katholische und die ostorthodoxe Kirche – eine Spaltung, die bis heute andauert."
+    },
+    {
+        "id": "battle_hastings",
+        "title": "Schlacht bei Hastings",
+        "year": 1066,
+        "lat": 50.91,
+        "lon": 0.59,
+        "wiki": "Battle_of_Hastings",
+        "description": "Wilhelm von der Normandie besiegte König Harald II. von England bei Hastings. Die normannische Eroberung veränderte Englands Kultur, Sprache und politische Institutionen grundlegend."
+    },
+    {
+        "id": "first_crusade",
+        "title": "Der erste Kreuzzug beginnt",
+        "year": 1096,
+        "lat": 45.78,
+        "lon": 3.08,
+        "wiki": "First_Crusade",
+        "description": "Papst Urban II. rief christliche Ritter zur Befreiung Jerusalems auf. Der Erste Kreuzzug endete 1099 mit der Einnahme der heiligen Stadt und der Gründung von Kreuzfahrerstaaten."
     },
     {
         "id": "sack_constantinople",
@@ -157,7 +167,17 @@
         "year": 1204,
         "lat": 41.01,
         "lon": 28.97,
-        "wiki": "Sack_of_Constantinople_(1204)"
+        "wiki": "Sack_of_Constantinople_(1204)",
+        "description": "Kreuzfahrer des Vierten Kreuzzugs lenkten ihren Zug um und plünderten Konstantinopel, raubten seine Kirchen und Schatzkammern aus. Das Byzantinische Reich erholte sich davon nie vollständig."
+    },
+    {
+        "id": "magna_carta",
+        "title": "Magna Carta",
+        "year": 1215,
+        "lat": 51.44,
+        "lon": -0.56,
+        "wiki": "Magna_Carta",
+        "description": "Die englischen Barone zwangen König Johann, die Magna Carta bei Runnymede zu unterzeichnen. Die Urkunde beschränkte die königliche Macht und verankerte den Grundsatz, dass auch der König dem Recht untersteht."
     },
     {
         "id": "black_death",
@@ -165,15 +185,8 @@
         "year": 1347,
         "lat": 37.5,
         "lon": 15.09,
-        "wiki": "Black_Death"
-    },
-    {
-        "id": "fall_constantinople",
-        "title": "Der Fall von Konstantinopel",
-        "year": 1453,
-        "lat": 41.01,
-        "lon": 28.97,
-        "wiki": "Fall_of_Constantinople"
+        "wiki": "Black_Death",
+        "description": "Die Pest gelangte auf Handelsschiffen vom Schwarzen Meer nach Sizilien. In den folgenden fünf Jahren tötete sie 30 bis 60 Prozent der europäischen Bevölkerung – die verheerendste Pandemie der aufgezeichneten Geschichte."
     },
     {
         "id": "gutenberg_press",
@@ -181,7 +194,17 @@
         "year": 1450,
         "lat": 49.99,
         "lon": 8.27,
-        "wiki": "Johannes_Gutenberg"
+        "wiki": "Johannes_Gutenberg",
+        "description": "Johannes Gutenberg führte den Buchdruck mit beweglichen Lettern in Europa ein. Die Verbreitung von Büchern veränderte die Bildung, ermöglichte die Reformation und beschleunigte den Ideenaustausch."
+    },
+    {
+        "id": "fall_constantinople",
+        "title": "Der Fall von Konstantinopel",
+        "year": 1453,
+        "lat": 41.01,
+        "lon": 28.97,
+        "wiki": "Fall_of_Constantinople",
+        "description": "Sultan Mehmed II. nahm Konstantinopel nach 53-tägiger Belagerung ein und beendete damit das Byzantinische Reich. Der Fall erschütterte das christliche Europa und gilt oft als Ende des Mittelalters."
     },
     {
         "id": "columbus",
@@ -189,7 +212,8 @@
         "year": 1492,
         "lat": 37.38,
         "lon": -5.99,
-        "wiki": "Voyages_of_Christopher_Columbus"
+        "wiki": "Voyages_of_Christopher_Columbus",
+        "description": "Christoph Kolumbus, unter spanischer Krone segelnd, landete auf den Bahamas. Seine Reise stellte eine dauerhafte Verbindung zwischen Alter und Neuer Welt her, mit tiefgreifenden Folgen für beide."
     },
     {
         "id": "martin_luther",
@@ -197,7 +221,8 @@
         "year": 1517,
         "lat": 51.87,
         "lon": 12.65,
-        "wiki": "Ninety-five_Theses"
+        "wiki": "Ninety-five_Theses",
+        "description": "Luthers Neunundneunzig Thesen griffen den Ablasshandel der Kirche an. Rasch durch den Buchdruck verbreitet, entfachten sie die Protestantische Reformation in ganz Europa."
     },
     {
         "id": "thirty_years_war",
@@ -205,7 +230,8 @@
         "year": 1618,
         "lat": 50.07,
         "lon": 14.42,
-        "wiki": "Thirty_Years%27_War"
+        "wiki": "Thirty_Years%27_War",
+        "description": "Ein mit dem Protestantenaufstand in Böhmen beginnender Konflikt wurde zu einem verheerenden gesamteuropäischen Krieg. Bis 1648 hatte ein Drittel oder mehr der Bevölkerung Mitteleuropas das Leben verloren."
     },
     {
         "id": "peace_westphalia",
@@ -213,15 +239,17 @@
         "year": 1648,
         "lat": 51.96,
         "lon": 7.63,
-        "wiki": "Peace_of_Westphalia"
+        "wiki": "Peace_of_Westphalia",
+        "description": "Die Verträge zum Ende des Dreißigjährigen Krieges begründeten das Prinzip staatlicher Souveränität. Der Friedensschluss gilt weithin als Grundlage der modernen internationalen Ordnung."
     },
     {
         "id": "newton_principia",
-        "title": "Newtons „Principia Mathematica“",
+        "title": "Newtons „Principia Mathematica"",
         "year": 1687,
         "lat": 52.2,
         "lon": 0.12,
-        "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica"
+        "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica",
+        "description": "Isaac Newton veröffentlichte seine Bewegungsgesetze und die universelle Gravitation. Die Principia verwandelte die Naturphilosophie in moderne Physik und prägte das wissenschaftliche Denken für zwei Jahrhunderte."
     },
     {
         "id": "french_revolution",
@@ -229,7 +257,8 @@
         "year": 1789,
         "lat": 48.85,
         "lon": 2.35,
-        "wiki": "French_Revolution"
+        "wiki": "French_Revolution",
+        "description": "Die Erstürmung der Bastille und der Sturz der Monarchie lösten ein Jahrzehnt radikalen Wandels aus. Die Ideale der Revolution – Freiheit, Gleichheit, Volkssouveränität – veränderten die politische Welt."
     },
     {
         "id": "congress_vienna",
@@ -237,7 +266,8 @@
         "year": 1815,
         "lat": 48.21,
         "lon": 16.37,
-        "wiki": "Congress_of_Vienna"
+        "wiki": "Congress_of_Vienna",
+        "description": "Die europäischen Mächte kamen nach Napoleons Niederlage zusammen, um die Karte Europas neu zu zeichnen. Der Kongress schuf eine konservative Ordnung, die mit Unterbrechungen fast ein Jahrhundert hielt."
     },
     {
         "id": "revolutions_1848",
@@ -245,15 +275,17 @@
         "year": 1848,
         "lat": 48.85,
         "lon": 2.35,
-        "wiki": "Revolutions_of_1848"
+        "wiki": "Revolutions_of_1848",
+        "description": "Eine Welle liberaler und nationalistischer Aufstände erfasste Europa von Frankreich bis Ungarn. Obwohl die meisten niedergeschlagen wurden, beschleunigten sie die politischen Umwälzungen der folgenden Jahrzehnte."
     },
     {
         "id": "unification_germany",
-        "title": "Deutsche Wiedervereinigung",
+        "title": "Deutsche Einigung",
         "year": 1871,
         "lat": 52.52,
         "lon": 13.4,
-        "wiki": "Unification_of_Germany"
+        "wiki": "Unification_of_Germany",
+        "description": "Nach dem Sieg über Frankreich im Deutsch-Französischen Krieg rief Bismarck das Deutsche Kaiserreich in Versailles aus. Das neue Staatswesen wurde sofort zur mächtigsten Kraft auf dem europäischen Kontinent."
     },
     {
         "id": "ww1_start",
@@ -261,7 +293,8 @@
         "year": 1914,
         "lat": 44.8,
         "lon": 20.46,
-        "wiki": "World_War_I"
+        "wiki": "World_War_I",
+        "description": "Das Attentat auf Erzherzog Franz Ferdinand in Sarajevo löste eine Kette von Mobilmachungen aus. Innerhalb weniger Wochen befanden sich die Großmächte in einem Krieg, der siebzehn Millionen Menschenleben kostete."
     },
     {
         "id": "russian_revolution",
@@ -269,7 +302,8 @@
         "year": 1917,
         "lat": 59.93,
         "lon": 30.32,
-        "wiki": "Russian_Revolution"
+        "wiki": "Russian_Revolution",
+        "description": "Der Zusammenbruch der zaristischen Regierung und die Machtübernahme der Bolschewiki veränderten Russland. Die Oktoberrevolution brachte den ersten kommunistischen Staat der Welt hervor."
     },
     {
         "id": "ww1_end",
@@ -277,7 +311,8 @@
         "year": 1918,
         "lat": 49.42,
         "lon": 2.88,
-        "wiki": "Armistice_of_11_November_1918"
+        "wiki": "Armistice_of_11_November_1918",
+        "description": "Der Waffenstillstand vom 11. November beendete vier Jahre Kampfhandlungen. Der Krieg hatte die Karte Europas neu gezeichnet, vier Imperien zerstört und die Bedingungen für den nächsten Weltkrieg geschaffen."
     },
     {
         "id": "ww2_end",
@@ -285,7 +320,8 @@
         "year": 1945,
         "lat": 52.52,
         "lon": 13.4,
-        "wiki": "World_War_II"
+        "wiki": "World_War_II",
+        "description": "Deutschlands bedingungslose Kapitulation beendete den Krieg in Europa. Der Konflikt hatte über 70 Millionen Menschen getötet, weite Teile des Kontinents in Trümmer gelegt und die Weltordnung des Kalten Krieges hervorgebracht."
     },
     {
         "id": "treaty_rome",
@@ -293,7 +329,8 @@
         "year": 1957,
         "lat": 41.9,
         "lon": 12.5,
-        "wiki": "Treaty_of_Rome"
+        "wiki": "Treaty_of_Rome",
+        "description": "Sechs europäische Nationen unterzeichneten die Römischen Verträge und gründeten die Europäische Wirtschaftsgemeinschaft. Das Abkommen legte den Grundstein für das, was später zur Europäischen Union werden sollte."
     },
     {
         "id": "fall_berlin_wall",
@@ -301,7 +338,8 @@
         "year": 1989,
         "lat": 52.52,
         "lon": 13.4,
-        "wiki": "Fall_of_the_Berlin_Wall"
+        "wiki": "Fall_of_the_Berlin_Wall",
+        "description": "Die DDR öffnete ihre Grenzübergänge, und Menschenmassen rissen die Mauer nieder, die Berlin seit 1961 geteilt hatte. Das Ereignis symbolisierte den Zusammenbruch der kommunistischen Herrschaft in ganz Osteuropa."
     },
     {
         "id": "soviet_dissolution",
@@ -309,6 +347,7 @@
         "year": 1991,
         "lat": 55.75,
         "lon": 37.62,
-        "wiki": "Dissolution_of_the_Soviet_Union"
+        "wiki": "Dissolution_of_the_Soviet_Union",
+        "description": "Am Weihnachtstag trat Michail Gorbatschow als Präsident der Sowjetunion zurück. Die UdSSR hörte auf zu existieren, beendete den Kalten Krieg und hinterließ fünfzehn unabhängige Staaten."
     }
 ]
