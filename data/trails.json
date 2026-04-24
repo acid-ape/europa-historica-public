@@ -181,7 +181,8 @@
         "lon": 35.5,
         "lat": 34.0,
         "wiki": "Phoenician_alphabet",
-        "description": "Phoenician merchants on the eastern Mediterranean coast develop something radical: an alphabet of just 22 signs. No pictures, no ideograms — only sounds. No vowels either, just consonants, leaving the reader to fill in the rest. But the reduction from hundreds of signs to twenty-two changes everything. Writing is no longer the domain of scribes who spend years in training. It becomes learnable. The alphabet is not beautiful. It is efficient — and that is why it conquers the world."
+        "description": "Phoenician merchants on the eastern Mediterranean coast develop something radical: an alphabet of just 22 signs. No pictures, no ideograms — only sounds. No vowels either, just consonants, leaving the reader to fill in the rest. But the reduction from hundreds of signs to twenty-two changes everything. Writing is no longer the domain of scribes who spend years in training. It becomes learnable. The alphabet is not beautiful. It is efficient — and that is why it conquers the world.",
+        "image": "data/images/events/way_of_writing__the_alphabet_is_born.jpg"
       },
       {
         "title": "Greece Adds a Voice",
@@ -190,7 +191,8 @@
         "lat": 38.0,
         "subjecto": "Greek city-states",
         "wiki": "Greek_alphabet",
-        "description": "The Greeks borrow the Phoenician alphabet — and immediately change it. Phoenician has no vowels; Greek does, and the language cannot be written without them. So the Greeks repurpose letters they don't need as consonants and use them for vowels instead. A small technical adjustment with enormous consequences: for the first time, a writing system can capture spoken language with full precision. Homer is written down. Philosophy becomes possible. The Greek alphabet is not just adapted — it is completed."
+        "description": "The Greeks borrow the Phoenician alphabet — and immediately change it. Phoenician has no vowels; Greek does, and the language cannot be written without them. So the Greeks repurpose letters they don't need as consonants and use them for vowels instead. A small technical adjustment with enormous consequences: for the first time, a writing system can capture spoken language with full precision. Homer is written down. Philosophy becomes possible. The Greek alphabet is not just adapted — it is completed.",
+        "image": "data/images/events/way_of_writing__greece_adds_a_voice.jpg"
       },
       {
         "title": "Rome Writes the World",

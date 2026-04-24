@@ -255,7 +255,8 @@
     "lat": 50.07,
     "lon": 14.42,
     "wiki": "Thirty_Years%27_War",
-    "description": "A conflict beginning with Protestant rebellion in Bohemia became a devastating pan-European war. By its end in 1648, large parts of Central Europe had lost a third or more of their population."
+    "description": "A conflict beginning with Protestant rebellion in Bohemia became a devastating pan-European war. By its end in 1648, large parts of Central Europe had lost a third or more of their population.",
+    "image": "data/images/events/thirty_years_war.jpg"
   },
   {
     "id": "peace_westphalia",
@@ -274,7 +275,8 @@
     "lat": 52.2,
     "lon": 0.12,
     "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica",
-    "description": "Isaac Newton published his laws of motion and universal gravitation. The Principia transformed natural philosophy into modern physics and defined scientific thinking for two centuries."
+    "description": "Isaac Newton published his laws of motion and universal gravitation. The Principia transformed natural philosophy into modern physics and defined scientific thinking for two centuries.",
+    "image": "data/images/events/newton_principia.jpg"
   },
   {
     "id": "french_revolution",
