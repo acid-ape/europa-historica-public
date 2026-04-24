@@ -6,7 +6,8 @@
     "lat": 31.32,
     "lon": 45.64,
     "wiki": "History_of_writing",
-    "description": "The earliest known writing system emerged in Mesopotamia around 3200 BC. Sumerian scribes used clay tablets to record trade and administration, changing human civilization forever."
+    "description": "The earliest known writing system emerged in Mesopotamia around 3200 BC. Sumerian scribes used clay tablets to record trade and administration, changing human civilization forever.",
+    "image": "data/images/events/invention_writing.png"
   },
   {
     "id": "great_pyramid",
@@ -15,7 +16,8 @@
     "lat": 29.98,
     "lon": 31.13,
     "wiki": "Great_Pyramid_of_Giza",
-    "description": "Built as a tomb for Pharaoh Khufu, the Great Pyramid was the tallest human structure for nearly 4,000 years and remains one of the Seven Wonders of the Ancient World."
+    "description": "Built as a tomb for Pharaoh Khufu, the Great Pyramid was the tallest human structure for nearly 4,000 years and remains one of the Seven Wonders of the Ancient World.",
+    "image": "data/images/events/great_pyramid.jpg"
   },
   {
     "id": "olympic_games",
@@ -24,16 +26,18 @@
     "lat": 37.64,
     "lon": 21.63,
     "wiki": "Ancient_Olympic_Games",
-    "description": "The Greeks held the first recorded Olympic Games at Olympia. Athletes from across the Greek world competed every four years in honor of Zeus, establishing a tradition lasting over a millennium."
+    "description": "The Greeks held the first recorded Olympic Games at Olympia. Athletes from across the Greek world competed every four years in honor of Zeus, establishing a tradition lasting over a millennium.",
+    "image": "data/images/events/olympic_games.jpg"
   },
   {
     "id": "founding_rome",
     "title": "Founding of Rome",
     "year": -753,
-    "lat": 41.90,
-    "lon": 12.50,
+    "lat": 41.9,
+    "lon": 12.5,
     "wiki": "Founding_of_Rome",
-    "description": "According to Roman tradition, Romulus founded the city of Rome on the Palatine Hill. From this small Latin settlement, one of history's greatest empires would eventually grow."
+    "description": "According to Roman tradition, Romulus founded the city of Rome on the Palatine Hill. From this small Latin settlement, one of history's greatest empires would eventually grow.",
+    "image": "data/images/events/founding_rome.jpg"
   },
   {
     "id": "battle_marathon",
@@ -42,7 +46,8 @@
     "lat": 38.15,
     "lon": 23.97,
     "wiki": "Battle_of_Marathon",
-    "description": "A Greek force of around 10,000 defeated a much larger Persian army on the plain of Marathon, halting the first Persian invasion and becoming a defining moment of Greek identity."
+    "description": "A Greek force of around 10,000 defeated a much larger Persian army on the plain of Marathon, halting the first Persian invasion and becoming a defining moment of Greek identity.",
+    "image": "data/images/events/battle_marathon.jpg"
   },
   {
     "id": "alexander_conquest",
@@ -51,25 +56,28 @@
     "lat": 40.76,
     "lon": 22.52,
     "wiki": "Alexander_the_Great",
-    "description": "Alexander III of Macedon crossed into Asia with 40,000 troops, beginning a campaign that would forge an empire from Greece to the edge of India in just thirteen years."
+    "description": "Alexander III of Macedon crossed into Asia with 40,000 troops, beginning a campaign that would forge an empire from Greece to the edge of India in just thirteen years.",
+    "image": "data/images/events/alexander_conquest.jpg"
   },
   {
     "id": "caesar_assassination",
     "title": "Assassination of Julius Caesar",
     "year": -44,
-    "lat": 41.90,
+    "lat": 41.9,
     "lon": 12.47,
     "wiki": "Assassination_of_Julius_Caesar",
-    "description": "On the Ides of March, a group of senators stabbed Julius Caesar to death in the Theatre of Pompey. The killing plunged Rome into civil war and ended the Roman Republic."
+    "description": "On the Ides of March, a group of senators stabbed Julius Caesar to death in the Theatre of Pompey. The killing plunged Rome into civil war and ended the Roman Republic.",
+    "image": "data/images/events/caesar_assassination.jpg"
   },
   {
     "id": "augustus_empire",
     "title": "Augustus becomes Emperor",
     "year": -27,
-    "lat": 41.90,
-    "lon": 12.50,
+    "lat": 41.9,
+    "lon": 12.5,
     "wiki": "Augustus",
-    "description": "The Senate granted Octavian the title Augustus, marking the beginning of the Roman Empire. His 40-year reign transformed Rome's institutions and set the template for imperial rule."
+    "description": "The Senate granted Octavian the title Augustus, marking the beginning of the Roman Empire. His 40-year reign transformed Rome's institutions and set the template for imperial rule.",
+    "image": "data/images/events/augustus_empire.jpg"
   },
   {
     "id": "founding_constantinople",
@@ -78,16 +86,18 @@
     "lat": 41.01,
     "lon": 28.97,
     "wiki": "Constantinople",
-    "description": "Emperor Constantine I dedicated a new capital on the Bosphorus, renamed Constantinople. The city would serve as the heart of the Eastern Roman Empire for over a thousand years."
+    "description": "Emperor Constantine I dedicated a new capital on the Bosphorus, renamed Constantinople. The city would serve as the heart of the Eastern Roman Empire for over a thousand years.",
+    "image": "data/images/events/founding_constantinople.png"
   },
   {
     "id": "division_rome",
     "title": "Division of the Roman Empire",
     "year": 395,
-    "lat": 43.00,
-    "lon": 18.00,
+    "lat": 43.0,
+    "lon": 18.0,
     "wiki": "Division_of_the_Roman_Empire",
-    "description": "On the death of Theodosius I, the Roman Empire was permanently divided between his two sons. The western and eastern halves would follow very different paths in the centuries ahead."
+    "description": "On the death of Theodosius I, the Roman Empire was permanently divided between his two sons. The western and eastern halves would follow very different paths in the centuries ahead.",
+    "image": "data/images/events/division_rome.png"
   },
   {
     "id": "fall_western_rome",
@@ -96,7 +106,8 @@
     "lat": 45.44,
     "lon": 12.34,
     "wiki": "Fall_of_the_Western_Roman_Empire",
-    "description": "The Germanic chieftain Odoacer deposed Romulus Augustulus, the last western emperor. Though largely symbolic, the date marks the traditional end of the Western Roman Empire."
+    "description": "The Germanic chieftain Odoacer deposed Romulus Augustulus, the last western emperor. Though largely symbolic, the date marks the traditional end of the Western Roman Empire.",
+    "image": "data/images/events/fall_western_rome.gif"
   },
   {
     "id": "rise_of_islam",
@@ -114,16 +125,18 @@
     "lat": 31.78,
     "lon": 35.23,
     "wiki": "Siege_of_Jerusalem_(636–637)",
-    "description": "Arab armies under Caliph Umar captured Jerusalem after a brief siege. The conquest brought the city under Islamic rule and marked a decisive expansion of the early Caliphate."
+    "description": "Arab armies under Caliph Umar captured Jerusalem after a brief siege. The conquest brought the city under Islamic rule and marked a decisive expansion of the early Caliphate.",
+    "image": "data/images/events/fall_jerusalem.png"
   },
   {
     "id": "coronation_charlemagne",
     "title": "Coronation of Charlemagne",
     "year": 800,
-    "lat": 41.90,
-    "lon": 12.50,
+    "lat": 41.9,
+    "lon": 12.5,
     "wiki": "Charlemagne",
-    "description": "Pope Leo III crowned Frankish king Charlemagne as Emperor of the Romans in St. Peter's Basilica. The act revived the idea of a western empire and shaped the course of medieval Europe."
+    "description": "Pope Leo III crowned Frankish king Charlemagne as Emperor of the Romans in St. Peter's Basilica. The act revived the idea of a western empire and shaped the course of medieval Europe.",
+    "image": "data/images/events/coronation_charlemagne.jpg"
   },
   {
     "id": "treaty_verdun",
@@ -132,7 +145,8 @@
     "lat": 49.16,
     "lon": 5.39,
     "wiki": "Treaty_of_Verdun",
-    "description": "The three grandsons of Charlemagne divided the Frankish Empire into three parts. The treaty laid the foundation for what would eventually become France and Germany."
+    "description": "The three grandsons of Charlemagne divided the Frankish Empire into three parts. The treaty laid the foundation for what would eventually become France and Germany.",
+    "image": "data/images/events/treaty_verdun.jpg"
   },
   {
     "id": "great_schism",
@@ -141,7 +155,8 @@
     "lat": 41.01,
     "lon": 28.97,
     "wiki": "East–West_Schism",
-    "description": "Mutual excommunications between Rome and Constantinople split Christianity into Roman Catholic and Eastern Orthodox branches — a division that endures to this day."
+    "description": "Mutual excommunications between Rome and Constantinople split Christianity into Roman Catholic and Eastern Orthodox branches — a division that endures to this day.",
+    "image": "data/images/events/great_schism.png"
   },
   {
     "id": "battle_hastings",
@@ -150,7 +165,8 @@
     "lat": 50.91,
     "lon": 0.59,
     "wiki": "Battle_of_Hastings",
-    "description": "William of Normandy defeated King Harold II of England at Hastings. The Norman Conquest fundamentally transformed English culture, language, and political institutions."
+    "description": "William of Normandy defeated King Harold II of England at Hastings. The Norman Conquest fundamentally transformed English culture, language, and political institutions.",
+    "image": "data/images/events/battle_hastings.jpg"
   },
   {
     "id": "first_crusade",
@@ -159,7 +175,8 @@
     "lat": 45.78,
     "lon": 3.08,
     "wiki": "First_Crusade",
-    "description": "Pope Urban II called on Christian knights to liberate Jerusalem from Muslim rule. The First Crusade ended with the capture of the holy city in 1099 and the establishment of crusader states."
+    "description": "Pope Urban II called on Christian knights to liberate Jerusalem from Muslim rule. The First Crusade ended with the capture of the holy city in 1099 and the establishment of crusader states.",
+    "image": "data/images/events/first_crusade.jpg"
   },
   {
     "id": "sack_constantinople",
@@ -168,7 +185,8 @@
     "lat": 41.01,
     "lon": 28.97,
     "wiki": "Sack_of_Constantinople_(1204)",
-    "description": "Crusaders of the Fourth Crusade diverted from their mission and sacked Constantinople, plundering its churches and treasuries. The Byzantine Empire never fully recovered."
+    "description": "Crusaders of the Fourth Crusade diverted from their mission and sacked Constantinople, plundering its churches and treasuries. The Byzantine Empire never fully recovered.",
+    "image": "data/images/events/sack_constantinople.jpg"
   },
   {
     "id": "magna_carta",
@@ -177,16 +195,18 @@
     "lat": 51.44,
     "lon": -0.56,
     "wiki": "Magna_Carta",
-    "description": "English barons forced King John to sign the Magna Carta at Runnymede. The charter limited royal power and established the principle that even the king was subject to the law."
+    "description": "English barons forced King John to sign the Magna Carta at Runnymede. The charter limited royal power and established the principle that even the king was subject to the law.",
+    "image": "data/images/events/magna_carta.jpg"
   },
   {
     "id": "black_death",
     "title": "Black Death reaches Europe",
     "year": 1347,
-    "lat": 37.50,
+    "lat": 37.5,
     "lon": 15.09,
     "wiki": "Black_Death",
-    "description": "The plague arrived in Sicily on merchant ships from the Black Sea. Over the next five years it killed between 30 and 60 percent of Europe's population — the deadliest pandemic in recorded history."
+    "description": "The plague arrived in Sicily on merchant ships from the Black Sea. Over the next five years it killed between 30 and 60 percent of Europe's population — the deadliest pandemic in recorded history.",
+    "image": "data/images/events/black_death.png"
   },
   {
     "id": "gutenberg_press",
@@ -195,7 +215,8 @@
     "lat": 49.99,
     "lon": 8.27,
     "wiki": "Johannes_Gutenberg",
-    "description": "Johannes Gutenberg introduced movable-type printing to Europe. The resulting spread of books transformed literacy, enabled the Reformation, and accelerated the exchange of ideas across the continent."
+    "description": "Johannes Gutenberg introduced movable-type printing to Europe. The resulting spread of books transformed literacy, enabled the Reformation, and accelerated the exchange of ideas across the continent.",
+    "image": "data/images/events/gutenberg_press.jpg"
   },
   {
     "id": "fall_constantinople",
@@ -204,7 +225,8 @@
     "lat": 41.01,
     "lon": 28.97,
     "wiki": "Fall_of_Constantinople",
-    "description": "Ottoman Sultan Mehmed II took Constantinople after a 53-day siege, ending the Byzantine Empire. The fall shocked Christian Europe and is often cited as the end of the Middle Ages."
+    "description": "Ottoman Sultan Mehmed II took Constantinople after a 53-day siege, ending the Byzantine Empire. The fall shocked Christian Europe and is often cited as the end of the Middle Ages.",
+    "image": "data/images/events/fall_constantinople.jpg"
   },
   {
     "id": "columbus",
@@ -213,7 +235,8 @@
     "lat": 37.38,
     "lon": -5.99,
     "wiki": "Voyages_of_Christopher_Columbus",
-    "description": "Christopher Columbus, sailing under the Spanish crown, made landfall in the Bahamas. His voyage initiated a permanent link between the Old and New Worlds, with profound consequences for both."
+    "description": "Christopher Columbus, sailing under the Spanish crown, made landfall in the Bahamas. His voyage initiated a permanent link between the Old and New Worlds, with profound consequences for both.",
+    "image": "data/images/events/columbus.png"
   },
   {
     "id": "martin_luther",
@@ -222,7 +245,8 @@
     "lat": 51.87,
     "lon": 12.65,
     "wiki": "Ninety-five_Theses",
-    "description": "Luther's Ninety-five Theses attacked the sale of indulgences by the Catholic Church. Rapidly spread by the printing press, the document ignited the Protestant Reformation across Europe."
+    "description": "Luther's Ninety-five Theses attacked the sale of indulgences by the Catholic Church. Rapidly spread by the printing press, the document ignited the Protestant Reformation across Europe.",
+    "image": "data/images/events/martin_luther.png"
   },
   {
     "id": "thirty_years_war",
@@ -240,13 +264,14 @@
     "lat": 51.96,
     "lon": 7.63,
     "wiki": "Peace_of_Westphalia",
-    "description": "The treaties ending the Thirty Years' War established the principle of state sovereignty. The settlement is widely seen as the foundation of the modern international order."
+    "description": "The treaties ending the Thirty Years' War established the principle of state sovereignty. The settlement is widely seen as the foundation of the modern international order.",
+    "image": "data/images/events/peace_westphalia.jpg"
   },
   {
     "id": "newton_principia",
     "title": "Newton's Principia Mathematica",
     "year": 1687,
-    "lat": 52.20,
+    "lat": 52.2,
     "lon": 0.12,
     "wiki": "Philosophi%C3%A6_Naturalis_Principia_Mathematica",
     "description": "Isaac Newton published his laws of motion and universal gravitation. The Principia transformed natural philosophy into modern physics and defined scientific thinking for two centuries."
@@ -258,7 +283,8 @@
     "lat": 48.85,
     "lon": 2.35,
     "wiki": "French_Revolution",
-    "description": "The storming of the Bastille and the fall of the monarchy set off a decade of radical change. The Revolution's ideals of liberty, equality, and popular sovereignty reshaped the political world."
+    "description": "The storming of the Bastille and the fall of the monarchy set off a decade of radical change. The Revolution's ideals of liberty, equality, and popular sovereignty reshaped the political world.",
+    "image": "data/images/events/french_revolution.jpg"
   },
   {
     "id": "congress_vienna",
@@ -267,7 +293,8 @@
     "lat": 48.21,
     "lon": 16.37,
     "wiki": "Congress_of_Vienna",
-    "description": "European powers gathered after Napoleon's defeat to redraw the map of Europe. The Congress established a conservative order that held — with interruptions — for nearly a century."
+    "description": "European powers gathered after Napoleon's defeat to redraw the map of Europe. The Congress established a conservative order that held — with interruptions — for nearly a century.",
+    "image": "data/images/events/congress_vienna.png"
   },
   {
     "id": "revolutions_1848",
@@ -276,25 +303,28 @@
     "lat": 48.85,
     "lon": 2.35,
     "wiki": "Revolutions_of_1848",
-    "description": "A wave of liberal and nationalist uprisings swept across Europe from France to Hungary. Though most were suppressed, they accelerated the political transformations of the following decades."
+    "description": "A wave of liberal and nationalist uprisings swept across Europe from France to Hungary. Though most were suppressed, they accelerated the political transformations of the following decades.",
+    "image": "data/images/events/revolutions_1848.jpg"
   },
   {
     "id": "unification_germany",
     "title": "German Unification",
     "year": 1871,
     "lat": 52.52,
-    "lon": 13.40,
+    "lon": 13.4,
     "wiki": "Unification_of_Germany",
-    "description": "After defeating France in the Franco-Prussian War, Bismarck proclaimed the German Empire at Versailles. The new state immediately became the most powerful in continental Europe."
+    "description": "After defeating France in the Franco-Prussian War, Bismarck proclaimed the German Empire at Versailles. The new state immediately became the most powerful in continental Europe.",
+    "image": "data/images/events/unification_germany.png"
   },
   {
     "id": "ww1_start",
     "title": "World War I begins",
     "year": 1914,
-    "lat": 44.80,
+    "lat": 44.8,
     "lon": 20.46,
     "wiki": "World_War_I",
-    "description": "The assassination of Archduke Franz Ferdinand in Sarajevo triggered a chain of mobilizations. Within weeks, the major European powers were at war in a conflict that would kill seventeen million people."
+    "description": "The assassination of Archduke Franz Ferdinand in Sarajevo triggered a chain of mobilizations. Within weeks, the major European powers were at war in a conflict that would kill seventeen million people.",
+    "image": "data/images/events/ww1_start.jpg"
   },
   {
     "id": "russian_revolution",
@@ -303,7 +333,8 @@
     "lat": 59.93,
     "lon": 30.32,
     "wiki": "Russian_Revolution",
-    "description": "The collapse of the tsarist government and the Bolshevik seizure of power transformed Russia. The October Revolution brought the world's first communist state into existence."
+    "description": "The collapse of the tsarist government and the Bolshevik seizure of power transformed Russia. The October Revolution brought the world's first communist state into existence.",
+    "image": "data/images/events/russian_revolution.jpg"
   },
   {
     "id": "ww1_end",
@@ -312,34 +343,38 @@
     "lat": 49.42,
     "lon": 2.88,
     "wiki": "Armistice_of_11_November_1918",
-    "description": "The Armistice of 11 November ended four years of fighting. The war had reshaped the map of Europe, destroyed four empires, and set the conditions for the next global conflict."
+    "description": "The Armistice of 11 November ended four years of fighting. The war had reshaped the map of Europe, destroyed four empires, and set the conditions for the next global conflict.",
+    "image": "data/images/events/ww1_end.jpg"
   },
   {
     "id": "ww2_end",
     "title": "World War II ends",
     "year": 1945,
     "lat": 52.52,
-    "lon": 13.40,
+    "lon": 13.4,
     "wiki": "World_War_II",
-    "description": "Germany's unconditional surrender ended the war in Europe. The conflict had killed over 70 million people, left much of the continent in ruins, and produced the Cold War world order."
+    "description": "Germany's unconditional surrender ended the war in Europe. The conflict had killed over 70 million people, left much of the continent in ruins, and produced the Cold War world order.",
+    "image": "data/images/events/ww2_end.jpg"
   },
   {
     "id": "treaty_rome",
     "title": "Treaty of Rome — EEC founded",
     "year": 1957,
-    "lat": 41.90,
-    "lon": 12.50,
+    "lat": 41.9,
+    "lon": 12.5,
     "wiki": "Treaty_of_Rome",
-    "description": "Six European nations signed the Treaty of Rome, establishing the European Economic Community. The agreement laid the groundwork for what would become the European Union."
+    "description": "Six European nations signed the Treaty of Rome, establishing the European Economic Community. The agreement laid the groundwork for what would become the European Union.",
+    "image": "data/images/events/treaty_rome.jpg"
   },
   {
     "id": "fall_berlin_wall",
     "title": "Fall of the Berlin Wall",
     "year": 1989,
     "lat": 52.52,
-    "lon": 13.40,
+    "lon": 13.4,
     "wiki": "Fall_of_the_Berlin_Wall",
-    "description": "East Germany opened its border crossings, and crowds tore down the wall that had divided Berlin since 1961. The event symbolized the collapse of communist rule across Eastern Europe."
+    "description": "East Germany opened its border crossings, and crowds tore down the wall that had divided Berlin since 1961. The event symbolized the collapse of communist rule across Eastern Europe.",
+    "image": "data/images/events/fall_berlin_wall.jpg"
   },
   {
     "id": "soviet_dissolution",
@@ -348,6 +383,7 @@
     "lat": 55.75,
     "lon": 37.62,
     "wiki": "Dissolution_of_the_Soviet_Union",
-    "description": "On Christmas Day, Mikhail Gorbachev resigned as Soviet president. The USSR formally ceased to exist, ending the Cold War and leaving fifteen independent states in its wake."
+    "description": "On Christmas Day, Mikhail Gorbachev resigned as Soviet president. The USSR formally ceased to exist, ending the Cold War and leaving fifteen independent states in its wake.",
+    "image": "data/images/events/soviet_dissolution.png"
   }
 ]

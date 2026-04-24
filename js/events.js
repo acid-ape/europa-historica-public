@@ -210,19 +210,10 @@ function showEventTT(event, ev) {
     if (ctxSection) ctxSection.style.display = '';
   }
 
-  // Wikipedia thumbnail image only (async)
-  if (ev.wiki) {
-    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(ev.wiki)}`)
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (typeof _tooltipSerial !== 'undefined' && _tooltipSerial !== serial) return;
-        if (!data) return;
-        if (data.thumbnail && data.thumbnail.source && evImgEl) {
-          evImgEl.src = data.thumbnail.source;
-          evImgEl.style.display = 'block';
-        }
-      })
-      .catch(() => {});
+  // Local thumbnail image
+  if (ev.image && evImgEl) {
+    evImgEl.src = ev.image;
+    evImgEl.style.display = 'block';
   }
 
   document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
@@ -348,20 +339,12 @@ function createEventPanel(mouseEvent, ev) {
     if (ctx) ctx.style.display = '';
   }
 
-  // Wikipedia thumbnail image only (async)
-  if (ev.wiki) {
-    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(ev.wiki))
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (!panel.isConnected || !data) return;
-        if (data.thumbnail && data.thumbnail.source) {
-          const img = panel.querySelector('.ep-thumb');
-          img.src = data.thumbnail.source;
-          img.style.display = 'block';
-          if (ctx) ctx.style.display = '';
-        }
-      })
-      .catch(() => {});
+  // Local thumbnail image
+  if (ev.image) {
+    const img = panel.querySelector('.ep-thumb');
+    img.src = ev.image;
+    img.style.display = 'block';
+    if (ctx) ctx.style.display = '';
   }
 }
 

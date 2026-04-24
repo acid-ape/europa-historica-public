@@ -10,7 +10,8 @@
         "lon": 12.49,
         "lat": 41.89,
         "wiki": "Founding_of_Rome",
-        "description": "Seven hills, a river crossing, a handful of Latin villages. Nothing here announces what is coming. But the city that grows from this spot will absorb the Mediterranean world, codify its laws, carry its languages into the future — and its collapse will shape Europe more than its existence ever did."
+        "description": "Seven hills, a river crossing, a handful of Latin villages. Nothing here announces what is coming. But the city that grows from this spot will absorb the Mediterranean world, codify its laws, carry its languages into the future — and its collapse will shape Europe more than its existence ever did.",
+        "image": "data/images/events/rise_of_europe__founding_of_rome.jpg"
       },
       {
         "title": "Republic to Empire",
@@ -19,7 +20,8 @@
         "lat": 38.0,
         "subjecto": "Roman Republic",
         "wiki": "Augustus",
-        "description": "For two centuries the republic held together — barely. Then a generation of civil wars tore it apart. Caesar crossed the Rubicon, was killed, and his adopted heir finished what he started. In 27 BC, the Senate hands Octavian a cluster of special powers. He takes the name Augustus. The republic doesn't end with a bang — it quietly becomes something else."
+        "description": "For two centuries the republic held together — barely. Then a generation of civil wars tore it apart. Caesar crossed the Rubicon, was killed, and his adopted heir finished what he started. In 27 BC, the Senate hands Octavian a cluster of special powers. He takes the name Augustus. The republic doesn't end with a bang — it quietly becomes something else.",
+        "image": "data/images/events/rise_of_europe__republic_to_empire.jpg"
       },
       {
         "title": "Rome at Its Height",
@@ -28,7 +30,8 @@
         "lat": 38.0,
         "subjecto": "Roman Empire",
         "wiki": "Roman_Empire",
-        "description": "Under Trajan, the empire reaches its greatest extent — from Scotland to Mesopotamia, from the Rhine to the Sahara. Forty million people live under Roman law. The roads, aqueducts, and legal codes are already ancient. But size is also a vulnerability: the longer the border, the more it costs to defend, and the more there is to lose."
+        "description": "Under Trajan, the empire reaches its greatest extent — from Scotland to Mesopotamia, from the Rhine to the Sahara. Forty million people live under Roman law. The roads, aqueducts, and legal codes are already ancient. But size is also a vulnerability: the longer the border, the more it costs to defend, and the more there is to lose.",
+        "image": "data/images/events/rise_of_europe__rome_at_its_height.png"
       },
       {
         "title": "Fall of the Western Empire",
@@ -37,7 +40,8 @@
         "lat": 41.89,
         "subjecto": "Western Roman Empire",
         "wiki": "Fall_of_the_Western_Roman_Empire",
-        "description": "Romulus Augustulus is deposed and the last Roman emperor of the West vanishes into obscurity. At the time, few notice — the empire has been dissolving for decades. What matters is what fills the void: Germanic kingdoms, the Catholic Church, and a broken road network that once connected everything. Europe will spend the next four centuries trying to reassemble the pieces."
+        "description": "Romulus Augustulus is deposed and the last Roman emperor of the West vanishes into obscurity. At the time, few notice — the empire has been dissolving for decades. What matters is what fills the void: Germanic kingdoms, the Catholic Church, and a broken road network that once connected everything. Europe will spend the next four centuries trying to reassemble the pieces.",
+        "image": "data/images/events/rise_of_europe__fall_of_the_western_empire.gif"
       },
       {
         "title": "Charlemagne Crowned",
@@ -46,7 +50,8 @@
         "lat": 50.77,
         "subjecto": "Carolingian Empire",
         "wiki": "Charlemagne",
-        "description": "On Christmas Day 800, Pope Leo III crowns Charlemagne Emperor in St. Peter's Basilica. The act fuses three things that will define European politics for a millennium: Germanic military power, the legacy of Rome, and the authority of the Church. For the first time since 476, a single ruler controls most of Western Europe — but it won't last long."
+        "description": "On Christmas Day 800, Pope Leo III crowns Charlemagne Emperor in St. Peter's Basilica. The act fuses three things that will define European politics for a millennium: Germanic military power, the legacy of Rome, and the authority of the Church. For the first time since 476, a single ruler controls most of Western Europe — but it won't last long.",
+        "image": "data/images/events/rise_of_europe__charlemagne_crowned.jpg"
       },
       {
         "title": "Norman Conquest of England",
@@ -55,7 +60,8 @@
         "lat": 50.91,
         "subjecto": "England",
         "wiki": "Battle_of_Hastings",
-        "description": "William defeats Harold at Hastings. The conquest grafts Norman French culture, continental feudalism, and Roman legal thinking onto Anglo-Saxon England — producing a hybrid that will generate common law, parliamentary government, and a language spoken by a billion people. The Europe that emerges from this moment is recognizably the one that will go on to shape the modern world."
+        "description": "William defeats Harold at Hastings. The conquest grafts Norman French culture, continental feudalism, and Roman legal thinking onto Anglo-Saxon England — producing a hybrid that will generate common law, parliamentary government, and a language spoken by a billion people. The Europe that emerges from this moment is recognizably the one that will go on to shape the modern world.",
+        "image": "data/images/events/rise_of_europe__norman_conquest_of_england.jpg"
       },
       {
         "title": "Peace of Westphalia",
@@ -64,7 +70,8 @@
         "lat": 51.96,
         "subjecto": "Holy Roman Empire",
         "wiki": "Peace_of_Westphalia",
-        "description": "Thirty years of religious war across Central Europe — perhaps a third of the German population dead. The treaties signed in Osnabrück and Münster in 1648 don't just end a war. They establish a new principle: that states, not churches, are the sovereign actors in international affairs. The modern international order begins here, in the smoking rubble of the Holy Roman Empire."
+        "description": "Thirty years of religious war across Central Europe — perhaps a third of the German population dead. The treaties signed in Osnabrück and Münster in 1648 don't just end a war. They establish a new principle: that states, not churches, are the sovereign actors in international affairs. The modern international order begins here, in the smoking rubble of the Holy Roman Empire.",
+        "image": "data/images/events/rise_of_europe__peace_of_westphalia.jpg"
       }
     ]
   },
@@ -79,7 +86,8 @@
         "lon": 12.49,
         "lat": 41.89,
         "wiki": "Founding_of_Rome",
-        "description": "We begin in Rome — but we are watching the East. The city on the Tiber will grow into an empire that spans the known world. That empire will generate an idea: one law, one civilization, one Rome. What this trail follows is what happens to that idea when Rome itself is gone."
+        "description": "We begin in Rome — but we are watching the East. The city on the Tiber will grow into an empire that spans the known world. That empire will generate an idea: one law, one civilization, one Rome. What this trail follows is what happens to that idea when Rome itself is gone.",
+        "image": "data/images/events/what_is_byzantine__founding_of_rome.jpg"
       },
       {
         "title": "Constantine Moves East",
@@ -88,7 +96,8 @@
         "lat": 41.01,
         "subjecto": "Eastern Roman Empire",
         "wiki": "Constantinople",
-        "description": "Constantine founds a new capital on the Bosphorus and names it after himself. He also legalizes Christianity. In one reign, the empire shifts its center of gravity eastward and changes its religion. The Latin West and the Greek East begin to drift — not yet apart, but in different directions. Rome doesn't fall. It moves."
+        "description": "Constantine founds a new capital on the Bosphorus and names it after himself. He also legalizes Christianity. In one reign, the empire shifts its center of gravity eastward and changes its religion. The Latin West and the Greek East begin to drift — not yet apart, but in different directions. Rome doesn't fall. It moves.",
+        "image": "data/images/events/what_is_byzantine__constantine_moves_east.png"
       },
       {
         "title": "Fall of the West",
@@ -97,7 +106,8 @@
         "lat": 41.01,
         "subjecto": "Western Roman Empire",
         "wiki": "Fall_of_the_Western_Roman_Empire",
-        "description": "Romulus Augustulus is deposed in Ravenna. In Constantinople, the emperor continues to rule. The Eastern court does not call this the fall of Rome — they are Rome. They will call themselves Romans for another thousand years. What collapses in the West is seen from the East as a regional setback, not the end of anything."
+        "description": "Romulus Augustulus is deposed in Ravenna. In Constantinople, the emperor continues to rule. The Eastern court does not call this the fall of Rome — they are Rome. They will call themselves Romans for another thousand years. What collapses in the West is seen from the East as a regional setback, not the end of anything.",
+        "image": "data/images/events/what_is_byzantine__fall_of_the_west.gif"
       },
       {
         "title": "Justinian's Reconquest",
@@ -106,7 +116,8 @@
         "lat": 37.0,
         "subjecto": "Eastern Roman Empire",
         "wiki": "Justinian_I",
-        "description": "Justinian reconquers North Africa, Italy, and parts of Spain. He codifies Roman law. He builds the Hagia Sophia. He speaks Latin and calls himself Roman. But his empire is Greek-speaking, Christian, and Eastern. He is the last emperor who still thinks like a Roman — and after his death, most of what he recaptured is lost again. The old Rome cannot be rebuilt. Something new is taking its place."
+        "description": "Justinian reconquers North Africa, Italy, and parts of Spain. He codifies Roman law. He builds the Hagia Sophia. He speaks Latin and calls himself Roman. But his empire is Greek-speaking, Christian, and Eastern. He is the last emperor who still thinks like a Roman — and after his death, most of what he recaptured is lost again. The old Rome cannot be rebuilt. Something new is taking its place.",
+        "image": "data/images/events/what_is_byzantine__justinians_reconquest.jpg"
       },
       {
         "title": "Arab Expansion",
@@ -115,7 +126,8 @@
         "lat": 36.0,
         "subjecto": "Umayyad Caliphate",
         "wiki": "Early_Muslim_conquests",
-        "description": "In 637, Jerusalem falls. Within a generation, Syria, Egypt, and North Africa follow — the wealthiest provinces of the empire, gone. What remains is Anatolia, Greece, and the Balkans. The empire survives, but it is no longer Mediterranean. Stripped of its richest lands, it is forced inward. It is becoming something else."
+        "description": "In 637, Jerusalem falls. Within a generation, Syria, Egypt, and North Africa follow — the wealthiest provinces of the empire, gone. What remains is Anatolia, Greece, and the Balkans. The empire survives, but it is no longer Mediterranean. Stripped of its richest lands, it is forced inward. It is becoming something else.",
+        "image": "data/images/events/what_is_byzantine__arab_expansion.png"
       },
       {
         "title": "The Great Schism",
@@ -124,7 +136,8 @@
         "lat": 41.01,
         "subjecto": "Byzantine Empire",
         "wiki": "East–West_Schism",
-        "description": "The Pope in Rome and the Patriarch in Constantinople excommunicate each other. The split has been building for centuries — different languages, different liturgy, different politics. After 1054, the Eastern Church is Orthodox, not Catholic. This is the moment Byzantium stops being a variant of Rome and becomes fully itself: a Greek-speaking, Orthodox Christian civilization with its own identity, its own theology, and its own future."
+        "description": "The Pope in Rome and the Patriarch in Constantinople excommunicate each other. The split has been building for centuries — different languages, different liturgy, different politics. After 1054, the Eastern Church is Orthodox, not Catholic. This is the moment Byzantium stops being a variant of Rome and becomes fully itself: a Greek-speaking, Orthodox Christian civilization with its own identity, its own theology, and its own future.",
+        "image": "data/images/events/what_is_byzantine__the_great_schism.png"
       },
       {
         "title": "Fall of Constantinople",
@@ -133,7 +146,8 @@
         "lat": 41.01,
         "subjecto": "Byzantine Empire",
         "wiki": "Fall_of_Constantinople",
-        "description": "Mehmed II breaches the walls. Constantine XI dies in the fighting — the last Roman emperor, defending a city founded by the first Christian emperor, eleven centuries later. The empire is gone. But the Orthodox Church survives. Russian princes claim the Byzantine legacy. Greek scholars carry their manuscripts to Italy, where they help ignite the Renaissance. An empire ends. An idea doesn't."
+        "description": "Mehmed II breaches the walls. Constantine XI dies in the fighting — the last Roman emperor, defending a city founded by the first Christian emperor, eleven centuries later. The empire is gone. But the Orthodox Church survives. Russian princes claim the Byzantine legacy. Greek scholars carry their manuscripts to Italy, where they help ignite the Renaissance. An empire ends. An idea doesn't.",
+        "image": "data/images/events/what_is_byzantine__fall_of_constantinople.jpg"
       }
     ]
   },
@@ -148,7 +162,8 @@
         "lon": 45.6,
         "lat": 31.3,
         "wiki": "Cuneiform",
-        "description": "In southern Mesopotamia, temple administrators need to track grain and livestock. They press a reed stylus into clay and make marks. At first it is accounting — not literature, not prayer, just numbers. But the marks become symbols, the symbols become words, and the words become something no one anticipated: a way to send thoughts across time. Writing is not invented. It grows from a practical problem."
+        "description": "In southern Mesopotamia, temple administrators need to track grain and livestock. They press a reed stylus into clay and make marks. At first it is accounting — not literature, not prayer, just numbers. But the marks become symbols, the symbols become words, and the words become something no one anticipated: a way to send thoughts across time. Writing is not invented. It grows from a practical problem.",
+        "image": "data/images/events/way_of_writing__the_first_words.jpg"
       },
       {
         "title": "Signs of the Nile",
@@ -157,7 +172,8 @@
         "lat": 26.0,
         "subjecto": "Egypt",
         "wiki": "Egyptian_hieroglyphs",
-        "description": "Almost simultaneously, Egypt develops its own system — hieroglyphs. Whether it emerged independently or was sparked by contact with Mesopotamia is still debated. What is clear is that the two systems are fundamentally different in form. Cuneiform is abstract wedges on clay. Hieroglyphs are pictorial, carved in stone, painted on walls. Same idea, different world. Writing is already proving it can take many shapes."
+        "description": "Almost simultaneously, Egypt develops its own system — hieroglyphs. Whether it emerged independently or was sparked by contact with Mesopotamia is still debated. What is clear is that the two systems are fundamentally different in form. Cuneiform is abstract wedges on clay. Hieroglyphs are pictorial, carved in stone, painted on walls. Same idea, different world. Writing is already proving it can take many shapes.",
+        "image": "data/images/events/way_of_writing__signs_of_the_nile.jpg"
       },
       {
         "title": "The Alphabet is Born",
@@ -183,7 +199,8 @@
         "lat": 41.89,
         "subjecto": "Roman Empire",
         "wiki": "Latin_alphabet",
-        "description": "Rome does not take the alphabet from Greece directly. It comes via the Etruscans — an older Italian civilization that had already adapted Greek script for their own language. Rome inherits it, simplifies it, and then spreads it across an empire stretching from Britain to Mesopotamia. Latin becomes the language of law, administration, and the Church. When the empire falls, the alphabet stays. It is already embedded in everything that comes after."
+        "description": "Rome does not take the alphabet from Greece directly. It comes via the Etruscans — an older Italian civilization that had already adapted Greek script for their own language. Rome inherits it, simplifies it, and then spreads it across an empire stretching from Britain to Mesopotamia. Latin becomes the language of law, administration, and the Church. When the empire falls, the alphabet stays. It is already embedded in everything that comes after.",
+        "image": "data/images/events/way_of_writing__rome_writes_the_world.png"
       },
       {
         "title": "The Press",
@@ -194,7 +211,8 @@
         "wiki_label": "Gutenberg",
         "wiki2": "History_of_writing",
         "wiki2_label": "History of Writing",
-        "description": "Johannes Gutenberg prints the first Bible with movable type in Mainz. For four thousand years, every written word had to be copied by hand. Now a single press can produce hundreds of identical pages. Writing, which began as a tool for accountants, becomes a medium for everyone. Ideas move faster than armies. The Reformation, the Scientific Revolution, the Enlightenment — all ride the press. The way of writing ends here, and something entirely new begins."
+        "description": "Johannes Gutenberg prints the first Bible with movable type in Mainz. For four thousand years, every written word had to be copied by hand. Now a single press can produce hundreds of identical pages. Writing, which began as a tool for accountants, becomes a medium for everyone. Ideas move faster than armies. The Reformation, the Scientific Revolution, the Enlightenment — all ride the press. The way of writing ends here, and something entirely new begins.",
+        "image": "data/images/events/way_of_writing__the_press.jpg"
       }
     ]
   }

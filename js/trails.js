@@ -307,23 +307,14 @@ function _renderTrailPanel(step, idx, total) {
     }
   }
 
-  // Reset + fetch image
+  // Local thumbnail image
   const img = document.getElementById('trail-panel-img');
   img.style.display = 'none'; img.src = '';
 
   panel.style.display = 'flex';
 
-  if (step.wiki) {
-    const capturedStep = step;
-    fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(step.wiki))
-      .then(r => r.ok ? r.json() : null)
-      .then(data => {
-        if (!_activeTrail || _activeTrail.steps[_activeStepIdx] !== capturedStep) return;
-        if (data && data.thumbnail && data.thumbnail.source) {
-          img.src = data.thumbnail.source;
-          img.style.display = 'block';
-        }
-      })
-      .catch(() => {});
+  if (step.image) {
+    img.src = step.image;
+    img.style.display = 'block';
   }
 }
