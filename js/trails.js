@@ -279,6 +279,9 @@ function _renderTrailPanel(step, idx, total) {
   } else {
     wiki2Btn.style.display = 'none';
   }
+  // Note: trail step `wiki_label` is part of the localized trails JSON
+  // (trails_de.json provides German labels). Default fallback "Wikipedia"
+  // remains untranslated since it's the brand name.
 
   // Progress dots
   const dots = document.getElementById('trail-progress');

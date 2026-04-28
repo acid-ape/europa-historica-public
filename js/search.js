@@ -78,19 +78,33 @@ function _highlightSrRow(rows) {
   if (rows[_srSelected]) rows[_srSelected].scrollIntoView({ block: 'nearest' });
 }
 
+// Fetch a localized JSON with EN fallback when the *_de variant is missing.
+async function _fetchLocalized(basePath) {
+  const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
+  if (suffix) {
+    // basePath like 'data/events.json' or 'data/knowledge/territories.json'
+    const localized = basePath.replace(/\.json$/, suffix + '.json');
+    try {
+      const r = await fetch(localized);
+      if (r.ok) return r.json();
+    } catch (_) { /* fall through to EN */ }
+  }
+  const r = await fetch(basePath);
+  if (!r.ok) throw new Error('not found: ' + basePath);
+  return r.json();
+}
+
 // ── Data Loading & Index Building ─────────
 async function _loadSrData() {
   if (_srLoaded) return;
-  const [tr, rr, cr, er] = await Promise.all([
-    fetch('data/knowledge/territories.json'),
-    fetch('data/knowledge/rulers.json'),
-    fetch('data/knowledge/cities.json').catch(() => null),
-    fetch('data/events.json').catch(() => null),
+  // territories + events have DE variants; rulers + cities are language-neutral
+  // (proper names of historical persons / cities).
+  const [terrData, rulerData, citiesData, eventsRaw] = await Promise.all([
+    _fetchLocalized('data/knowledge/territories.json'),
+    fetch('data/knowledge/rulers.json').then(r => r.json()),
+    fetch('data/knowledge/cities.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    _fetchLocalized('data/events.json').catch(() => null),
   ]);
-  const terrData   = await tr.json();
-  const rulerData  = await rr.json();
-  const citiesData = (cr && cr.ok) ? await cr.json() : null;
-  const eventsRaw  = (er && er.ok) ? await er.json() : null;
 
   // Reverse map: subContextQid → parent territory entry
   const subCtxParent = {};
@@ -237,7 +251,7 @@ function _doSearch(q) {
   }
 
   if (!_srLoaded) {
-    results.innerHTML = '<div class="sr-empty">Loading…</div>';
+    results.innerHTML = `<div class="sr-empty">${t('search_loading')}</div>`;
     return;
   }
 
@@ -256,10 +270,12 @@ function _doSearch(q) {
     })
     .slice(0, 50);
 
-  if (meta) meta.textContent = hits.length ? `${hits.length} result${hits.length !== 1 ? 's' : ''}` : '';
+  if (meta) meta.textContent = hits.length
+    ? `${hits.length} ${hits.length === 1 ? t('search_results_one') : t('search_results_n')}`
+    : '';
 
   if (!hits.length) {
-    results.innerHTML = '<div class="sr-empty">No results found.</div>';
+    results.innerHTML = `<div class="sr-empty">${t('search_no_results')}</div>`;
     return;
   }
 
@@ -369,3 +385,11 @@ function _srPanToLonLat(lon, lat) {
     .transition().duration(600)
     .call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(k));
 }
+
+// ── Lang change ───────────────────────────
+// Invalidate the search index so the next openSearch() reloads
+// localized territories + events JSON.
+window.addEventListener('langchange', () => {
+  _srData   = null;
+  _srLoaded = false;
+});

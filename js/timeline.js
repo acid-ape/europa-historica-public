@@ -1,11 +1,14 @@
+let _lastLegendGeo = null;
+
 function updateLegend(geo) {
+  _lastLegendGeo = geo;
   const seen = new Set();
   geo.features.forEach(f => {
     const g = getCulture(f.properties);
     seen.add(g);
   });
   const container = document.getElementById('leg-items');
-  container.innerHTML = '<h4 style="margin:0 0 0.4em;">Cultures</h4>';
+  container.innerHTML = `<h4 style="margin:0 0 0.4em;">${t('legend_cultures')}</h4>`;
   // Show in defined order
   for (const [key, group] of Object.entries(CULTURE_GROUPS)) {
     if (!seen.has(key)) continue;
@@ -15,6 +18,11 @@ function updateLegend(geo) {
     container.appendChild(div);
   }
 }
+
+// Re-render the legend header on language change.
+window.addEventListener('langchange', () => {
+  if (_lastLegendGeo) updateLegend(_lastLegendGeo);
+});
 
 // ═══════════════════════════════════════════
 //  TIMELINE & PLAYBACK

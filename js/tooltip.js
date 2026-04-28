@@ -6,6 +6,16 @@ function _safePanelX(x) {
   return Math.max(reserve, x);
 }
 
+// Localized label for a border-precision tier (1=approximate, 2=moderate, 3=established).
+// Re-evaluates t() on every call so language switches take effect on next render.
+function _precLabel(prec) {
+  if (prec === 1) return t('legend_approximate');
+  if (prec === 2) return t('legend_moderate');
+  if (prec === 3) return t('legend_established');
+  return '?';
+}
+const _precClass = {1:'p1',2:'p2',3:'p3'};
+
 // Serial token — incremented on every new tooltip open.
 // Async callbacks compare against the captured serial to avoid
 // overwriting a tooltip that has already changed to a different subject.
@@ -67,7 +77,7 @@ function createCityPanel(mouseEvent, city) {
   panel.style.zIndex = String(++_tpZBase);
 
   const icon   = city.capital ? '◎' : '⊙';
-  const subLbl = city.capital ? 'Capital city' : 'Notable city';
+  const subLbl = city.capital ? t('tt_capital_city') : t('tt_notable_city');
 
   panel.innerHTML = `
     <div class="tt-float-hdr">
@@ -79,13 +89,13 @@ function createCityPanel(mouseEvent, city) {
     </div>
     <div class="tt-sub"></div>
     <div class="tt-float-ctx" style="display:none">
-      <div class="tt-section-label">Context</div>
+      <div class="tt-section-label">${t('tt_context')}</div>
       <div class="tp-desc cp-desc" style="display:none"></div>
     </div>
     <div class="tt-div"></div>
     <div class="tt-float-links" style="display:flex;flex-direction:column;gap:3px;">
       <div class="tt-wiki cp-wiki" style="cursor:pointer">
-        <div class="wiki-i">W</div><span>Wikipedia →</span>
+        <div class="wiki-i">W</div><span>${t('tt_wiki_arrow')}</span>
       </div>
       <div class="tt-wiki cp-wikidata" style="display:none;cursor:pointer">
         <div class="wiki-i" style="background:#1a2a4a;color:#8ab0da">Q</div><span></span>
@@ -115,18 +125,17 @@ function createCityPanel(mouseEvent, city) {
   document.body.appendChild(panel);
   makeDraggable(panel, panel.querySelector('.tt-float-hdr'));
 
-  fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + wikiSlug)
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (!panel.isConnected || !data || !data.extract) return;
-      const desc = panel.querySelector('.cp-desc');
-      let txt = data.extract;
-      if (txt.length > 300) txt = txt.substring(0, 298) + '…';
-      desc.textContent = txt;
-      desc.style.display = 'block';
-      panel.querySelector('.tt-float-ctx').style.display = '';
-    })
-    .catch(() => {});
+  // Local-first: longer description from cities.json `summary` field if present
+  // (populated by crawler/fetch_city_descriptions.py — optional). Short `desc`
+  // is already shown above as the second sub-line.
+  if (city.summary) {
+    const desc = panel.querySelector('.cp-desc');
+    let txt = city.summary;
+    if (txt.length > 300) txt = txt.substring(0, 298) + '…';
+    desc.textContent = txt;
+    desc.style.display = 'block';
+    panel.querySelector('.tt-float-ctx').style.display = '';
+  }
 }
 
 function selectCity(event, city) {
@@ -220,8 +229,6 @@ function createTerritoryPanel(event, props, color) {
   const culture = getCulture(props);
   const cultureLabel = (CULTURE_GROUPS[culture]||CULTURE_GROUPS.other).label;
   const currentYear  = pctToYear(state.pct);
-  const precLabels   = {1:'Approximate',2:'Moderate',3:'Confirmed'};
-  const precClass    = {1:'p1',2:'p2',3:'p3'};
 
   const id  = 'tp-' + (++_tpCount);
   const off = 80 + ((_tpCount - 1) % 6) * 24;
@@ -232,15 +239,9 @@ function createTerritoryPanel(event, props, color) {
   panel.style.left = _safePanelX(event.clientX + 20) + 'px';
   panel.style.top  = Math.min(event.clientY - 20, window.innerHeight - 400) + 'px';
 
-  // Context bullets
+  // Context bullets — built via central renderer (panel variant = <li>…)
   const ctx = buildContext(props, currentYear);
-  const ctxLines = [
-    ctx.macht       ? `<li><span class="ctx-label">Power</span> ${ctx.macht}</li>` : '',
-    ctx.phase       ? `<li><span class="ctx-label">Period</span> ${ctx.phase}</li>` : '',
-    ctx.besonderheit? `<li><span class="ctx-label">Notable</span> ${ctx.besonderheit}</li>` : '',
-    ctx.grenze      ? `<li><span class="ctx-label">Borders</span> ${ctx.grenze}</li>` : '',
-  ].filter(Boolean);
-  const ctxHtml = ctxLines.length ? ctxLines.join('') : '';
+  const ctxHtml = EH.territoryRender.buildContextLines(ctx, 'panel');
 
   let mapping = getMappingForSubjecto(subj);
   if (!mapping) { const m2 = getMappingForSubjecto(name); if (m2) mapping = m2; }
@@ -260,29 +261,29 @@ function createTerritoryPanel(event, props, color) {
     <div class="tp-body">
       <div class="tp-sub">${cultureLabel}</div>
       <div class="tp-ctx-section"${ctxHtml ? '' : ' style="display:none"'}>
-        <div class="tt-section-label">Context</div>
+        <div class="tt-section-label">${t('tt_context')}</div>
         <div class="tp-desc" style="display:none"></div>
         <ul class="tt-context-list tp-ctx">${ctxHtml}</ul>
-        ${ctxHtml ? '<div class="tp-ai-note">This context is simplified · full Wikipedia context coming soon</div>' : ''}
+        ${ctxHtml ? `<div class="tp-ai-note">${t('tt_ai_note')}</div>` : ''}
       </div>
       <div class="tt-div tp-ruler-div"></div>
-      <div class="tt-section-label tp-ruler-label">Rulers</div>
+      <div class="tt-section-label tp-ruler-label">${t('tt_rulers')}</div>
       <div class="tp-ruler-area">${mapping
-        ? '<div class="tt-loading">Loading rulers…</div>'
-        : `<div class="tt-loading" style="color:#7a6a4a;font-style:italic">No precise ruler data available, for more info follow the <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="rp-link">wiki link →</a></div>`
+        ? `<div class="tt-loading">${t('tt_loading')}</div>`
+        : `<div class="tt-loading" style="color:#7a6a4a;font-style:italic">${t('tt_no_precise')} <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="rp-link">${t('tt_wiki_link')}</a></div>`
       }</div>
       <div class="tt-div"></div>
       <div class="tt-row tp-capital-row" style="display:none">
-        <span>Capital</span><span class="tp-capital"></span>
+        <span>${t('tt_capital')}</span><span class="tp-capital"></span>
       </div>
       <div class="tt-row">
-        <span>Border precision</span>
-        <span><span class="prec-b ${precClass[prec]}">${precLabels[prec]}</span></span>
+        <span>${t('tt_precision')}</span>
+        <span><span class="prec-b ${_precClass[prec]}">${_precLabel(prec)}</span></span>
       </div>
       <div class="tt-links">
         <div class="tt-wiki tp-wiki-wp">
           <div class="wiki-i">W</div>
-          <span class="tp-wiki-txt">Wikipedia →</span>
+          <span class="tp-wiki-txt">${t('tt_wiki_arrow')}</span>
         </div>
         ${wdHtml}
       </div>
@@ -402,25 +403,7 @@ function renderRulersInPanel(knowledge, currentYear, panel) {
     return;
   }
   if (!knowledge.rulers || knowledge.rulers.length === 0) {
-    let msg;
-    if (knowledge.note) {
-      const noteUrl  = knowledge.note.match(/https?:\/\/\S+/)?.[0];
-      const noteText = knowledge.note.replace(/https?:\/\/\S+/, '').trim();
-      msg = `<div class="tt-loading" style="color:#9a8a62">${noteText}${noteUrl ? ` <a href="${noteUrl}" target="_blank" class="rp-link">→ more</a>` : ''}</div>`;
-    } else if (knowledge.hasRulers) {
-      const linkUrl  = knowledge.rulersUrl || knowledge.wikipedia;
-      const linkText = knowledge.rulersUrl ? '→ Ruler list' : '→ Wikipedia';
-      msg = `<div class="tt-loading" style="color:#7a6a4a">No ruler for this period. <a href="${linkUrl}" target="_blank" class="rp-link">${linkText}</a></div>`;
-    } else if (knowledge.rulerDataQuality === 'imprecise') {
-      const wikiUrl = knowledge.wikipedia;
-      const linkHtml = wikiUrl ? ` <a href="${wikiUrl}" target="_blank" class="rp-link rp-link-uncertain">→ Uncertain records (Wikipedia)</a>` : '';
-      msg = `<div class="tt-loading" style="color:#9a8a62">Imprecise historical records.${linkHtml}</div>`;
-    } else {
-      const _wikiHref2 = knowledge.wikipedia || null;
-      const _link2 = _wikiHref2 ? ` <a href="${_wikiHref2}" target="_blank" class="rp-link">wiki link →</a>` : '';
-      msg = `<div class="tt-loading" style="color:#7a6a4a;font-style:italic">No precise ruler data available, for more info follow the${_link2}</div>`;
-    }
-    rulerArea.innerHTML = msg;
+    rulerArea.innerHTML = EH.territoryRender.buildEmptyRulerMessage(knowledge, 'panel');
     return;
   }
 
@@ -462,8 +445,6 @@ function showTooltip(event, props, color) {
   const culture = getCulture(props);
   const cultureLabel = (CULTURE_GROUPS[culture]||CULTURE_GROUPS.other).label;
   const currentYear = pctToYear(state.pct);
-  const precLabels = {1:'Approximate',2:'Moderate',3:'Confirmed'};
-  const precClass  = {1:'p1',2:'p2',3:'p3'};
 
   // ── Mobile: in Tooltip-Bar anzeigen ──
   if (isMobile()) {
@@ -471,18 +452,18 @@ function showTooltip(event, props, color) {
     let mapping = getMappingForSubjecto(subj);
     if (!mapping) { const m2 = getMappingForSubjecto(name); if (m2) mapping = m2; }
     const wikiName = encodeURIComponent((props.NAME || subj || name).replace(/ /g,'_'));
-    const wikiBtn = `<a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" style="font-size:10px;color:#5a8aaa;display:block;margin-top:4px">Wikipedia →</a>`;
+    const wikiBtn = `<a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" style="font-size:10px;color:#5a8aaa;display:block;margin-top:4px">${t('tt_wiki_arrow')}</a>`;
 
     // Standard: Kontext kurz
     let ctxHtml = '';
-    if (ctx.macht) ctxHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">Power</span> ${ctx.macht}</div>`;
-    if (ctx.phase) ctxHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">Period</span> ${ctx.phase}</div>`;
+    if (ctx.macht) ctxHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">${t('tt_ctx_power')}</span> ${ctx.macht}</div>`;
+    if (ctx.phase) ctxHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">${t('tt_ctx_period')}</span> ${ctx.phase}</div>`;
 
     // Full: alles
     let fullHtml = ctxHtml;
-    if (ctx.besonderheit) fullHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">Notable</span> ${ctx.besonderheit}</div>`;
-    if (ctx.grenze) fullHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">Borders</span> ${ctx.grenze}</div>`;
-    fullHtml += `<div style="margin-top:4px;color:#9a8a62;font-size:9px">Border precision: ${precLabels[prec]||'?'}</div>`;
+    if (ctx.besonderheit) fullHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">${t('tt_ctx_notable')}</span> ${ctx.besonderheit}</div>`;
+    if (ctx.grenze) fullHtml += `<div><span style="color:#7a6a4a;font-size:9px;text-transform:uppercase">${t('tt_ctx_borders')}</span> ${ctx.grenze}</div>`;
+    fullHtml += `<div style="margin-top:4px;color:#9a8a62;font-size:9px">${t('tt_precision')}: ${_precLabel(prec)}</div>`;
     if (mapping) fullHtml += `<a href="https://www.wikidata.org/wiki/${mapping.wikidataId}" target="_blank" style="font-size:10px;color:#5a8aaa;display:block">Wikidata ${mapping.wikidataId} →</a>`;
 
     const mobilePanel = showMobileTooltip(name, cultureLabel, ctxHtml, fullHtml, wikiBtn);
@@ -549,23 +530,18 @@ function showTooltip(event, props, color) {
   const typeIconEl = document.getElementById('tt-type-icon');
   if (typeIconEl) typeIconEl.textContent = '▣';
   document.getElementById('tt-name').textContent = name;
-  document.getElementById('tt-sub').textContent  = cultureLabel ? 'Territory · ' + cultureLabel : 'Territory';
+  document.getElementById('tt-sub').textContent  = cultureLabel ? `${t('tt_territory_label')} · ${cultureLabel}` : t('tt_territory_label');
   const precRow = document.getElementById('tt-prec-row');
   if (precRow) precRow.style.display = '';
   document.getElementById('tt-prec').innerHTML   =
-    `<span class="prec-b ${precClass[prec]}">${precLabels[prec]}</span>`;
+    `<span class="prec-b ${_precClass[prec]}">${_precLabel(prec)}</span>`;
 
   // Kontext-System (synchron, lokal) — nur anzeigen wenn mapping kein validiertes Territorium ist
   const ctx = buildContext(props, currentYear);
   const ctxList = document.getElementById('tt-context');
-  const ctxLines = [
-    ctx.macht       ? `<li><span class="ctx-label">Power</span> ${ctx.macht}</li>` : '',
-    ctx.phase       ? `<li><span class="ctx-label">Period</span> ${ctx.phase}</li>` : '',
-    ctx.besonderheit? `<li><span class="ctx-label">Notable</span> ${ctx.besonderheit}</li>` : '',
-    ctx.grenze      ? `<li><span class="ctx-label">Borders</span> ${ctx.grenze}</li>` : '',
-  ].filter(Boolean);
-  if (ctxLines.length) {
-    ctxList.innerHTML = ctxLines.join('');
+  const ctxHtml = EH.territoryRender.buildContextLines(ctx, 'tooltip');
+  if (ctxHtml) {
+    ctxList.innerHTML = ctxHtml;
     ctxSection.style.display = '';
     if (aiNoteEl) aiNoteEl.style.display = '';
   } else {
@@ -591,7 +567,7 @@ function showTooltip(event, props, color) {
   // Wikipedia-Link
   const wikiName = encodeURIComponent((props.NAME || subj || name).replace(/ /g,'_'));
   const wpEl = document.getElementById('tt-wiki-wp');
-  document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
+  document.getElementById('tt-wiki-txt').textContent = t('tt_wiki_arrow');
   wpEl.onclick = () => window.open(`https://en.wikipedia.org/wiki/${wikiName}`, '_blank');
 
   // Wikidata-Link
@@ -700,28 +676,14 @@ function renderRulers(knowledge, currentYear) {
   }
 
   if (!knowledge.rulers || knowledge.rulers.length === 0) {
-    let msg;
-    if (knowledge.note) {
-      // context_only: individueller Hinweis (z.B. Konsuln-Liste)
-      const noteUrl  = knowledge.note.match(/https?:\/\/\S+/)?.[0];
-      const noteText = knowledge.note.replace(/https?:\/\/\S+/, '').trim();
-      msg = `<div class="tt-loading" style="color:#9a8a62">${noteText}${noteUrl ? ` <a href="${noteUrl}" target="_blank" class="rp-link">→ more</a>` : ''}</div>`;
-    } else if (knowledge.hasRulers) {
-      const linkUrl  = knowledge.rulersUrl || knowledge.wikipedia;
-      const linkText = knowledge.rulersUrl ? t('tt_ruler_list') : '→ Wikipedia';
-      msg = `<div class="tt-loading" style="color:#7a6a4a">${t('tt_no_ruler_period')} <a href="${linkUrl}" target="_blank" class="rp-link">${linkText}</a></div>`;
-    } else if (knowledge.rulerDataQuality === 'imprecise') {
-      const wikiUrl = knowledge.wikipedia;
-      const linkHtml = wikiUrl ? ` <a href="${wikiUrl}" target="_blank" class="rp-link rp-link-uncertain">${t('tt_uncertain')}</a>` : '';
-      msg = `<div class="tt-loading" style="color:#9a8a62">${t('tt_imprecise')}${linkHtml}</div>`;
-    } else {
+    // Defensive fallback: if knowledge.wikipedia is missing, derive from current
+    // tooltip title slug so the "no precise data" message still has a wiki link.
+    if (!knowledge.wikipedia) {
       const titleEl = document.getElementById('tt-name');
-      const _slug = titleEl ? encodeURIComponent(titleEl.textContent.replace(/ /g,'_')) : null;
-      const _wikiHref = knowledge.wikipedia || (_slug ? `https://en.wikipedia.org/wiki/${_slug}` : null);
-      const _link = _wikiHref ? ` <a href="${_wikiHref}" target="_blank" class="rp-link">${t('tt_wiki_link')}</a>` : '';
-      msg = `<div class="tt-loading" style="color:#7a6a4a;font-style:italic">${t('tt_no_precise')}${_link}</div>`;
+      const slug = titleEl ? encodeURIComponent(titleEl.textContent.replace(/ /g,'_')) : null;
+      if (slug) knowledge = Object.assign({}, knowledge, { wikipedia: `https://en.wikipedia.org/wiki/${slug}` });
     }
-    rulerArea.innerHTML = msg;
+    rulerArea.innerHTML = EH.territoryRender.buildEmptyRulerMessage(knowledge, 'tooltip');
     return;
   }
 
@@ -763,7 +725,7 @@ function showCityTT(event, city) {
   const capRow = document.getElementById('tt-capital-row');
   if (capRow) capRow.style.display = 'none';
   const wikiName = encodeURIComponent(city.name.replace(/ /g,'_'));
-  document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
+  document.getElementById('tt-wiki-txt').textContent = t('tt_wiki_arrow');
   document.getElementById('tt-wiki-wp').onclick = () => window.open('https://en.wikipedia.org/wiki/'+wikiName,'_blank');
   const wdEl = document.getElementById('tt-wiki-wd');
   if (city.wikidata) {
@@ -850,9 +812,9 @@ function openRulerDetail(ruler, sourcePanel) {
     <div class="rp-body">
       ${imgHtml}
       <div class="rp-ruler-name">${ruler.name}</div>
-      <div class="rp-years">Ruled ${s} – ${e}</div>
+      <div class="rp-years">${t('tt_ruled')} ${s} – ${e}</div>
       <div class="rp-links">
-        <a href="${wikiUrl}" target="_blank" class="rp-link">Wikipedia →</a>
+        <a href="${wikiUrl}" target="_blank" class="rp-link">${t('tt_wiki_arrow')}</a>
         ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="rp-link">Wikidata ${ruler.wikidataId} →</a>` : ''}
       </div>
     </div>
@@ -1018,6 +980,9 @@ function toggleTooltipMode(mode) {
     el.classList.remove('move-mode', 'resize-mode');
     el.style.touchAction = '';
     if (btnRes) btnRes.classList.remove('active');
+    // Release listeners installed for the previous mode
+    if (_ttMoveTeardown)   { _ttMoveTeardown();   _ttMoveTeardown = null; }
+    if (_ttResizeTeardown) { _ttResizeTeardown(); _ttResizeTeardown = null; }
   } else {
     _ttMode = mode;
     el.classList.remove('move-mode', 'resize-mode');
@@ -1025,12 +990,29 @@ function toggleTooltipMode(mode) {
     el.style.touchAction = 'none'; // verhindert Karten-Pan
     if (btnRes) btnRes.classList.toggle('active', mode === 'resize');
 
+    // Switching modes: tear down the old listeners before installing new ones
+    if (mode === 'move' && _ttResizeTeardown) {
+      _ttResizeTeardown(); _ttResizeTeardown = null;
+    }
+    if (mode === 'resize' && _ttMoveTeardown) {
+      _ttMoveTeardown(); _ttMoveTeardown = null;
+    }
+
     if (mode === 'move') setupTooltipMove(el);
     if (mode === 'resize') setupTooltipResize(el);
   }
 }
 
+// Cleanups for the document-level listeners attached by setup* below.
+// Stored as module-level state so a subsequent setup call (or mode change)
+// can release the previous installation. Without this, document listeners
+// accumulate every time the user switches into 'move' or 'resize' mode.
+let _ttMoveTeardown   = null;
+let _ttResizeTeardown = null;
+
 function setupTooltipMove(el) {
+  if (_ttMoveTeardown) { _ttMoveTeardown(); _ttMoveTeardown = null; }
+
   let startX, startY, origLeft, origTop;
 
   function getXY(e) {
@@ -1068,9 +1050,20 @@ function setupTooltipMove(el) {
   el.addEventListener('mousedown',  onStart);
   document.addEventListener('mousemove', onMove);
   document.addEventListener('mouseup',   onEnd);
+
+  _ttMoveTeardown = () => {
+    el.removeEventListener('touchstart', onStart, {passive:false});
+    el.removeEventListener('touchmove',  onMove,  {passive:false});
+    el.removeEventListener('touchend',   onEnd);
+    el.removeEventListener('mousedown',  onStart);
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup',   onEnd);
+  };
 }
 
 function setupTooltipResize(el) {
+  if (_ttResizeTeardown) { _ttResizeTeardown(); _ttResizeTeardown = null; }
+
   const handle = document.getElementById('tt-resize-handle');
   if (!handle) return;
   let startX, startY, startW, startH;
@@ -1103,6 +1096,15 @@ function setupTooltipResize(el) {
   document.addEventListener('mousemove', onMove);
   document.addEventListener('touchend',  onEnd);
   document.addEventListener('mouseup',   onEnd);
+
+  _ttResizeTeardown = () => {
+    handle.removeEventListener('touchstart', onStart, {passive:false});
+    handle.removeEventListener('mousedown',  onStart);
+    document.removeEventListener('touchmove', onMove, {passive:false});
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('touchend',  onEnd);
+    document.removeEventListener('mouseup',   onEnd);
+  };
 }
 
 // ── isMobile ───────────────────────────────
@@ -1116,7 +1118,14 @@ function isMobile() {
 let _mSheetCurrentTerrHTML  = null;
 let _mSheetCurrentTerrLabel = null;
 
+// Serial token incremented on every _mSheetOpen() call. Async callbacks
+// capture the serial when scheduled and bail when it changes — protects
+// against races when the user opens a different sheet (e.g. event → city)
+// while a previous open's loadWikidataKnowledge is still pending.
+let _mSheetSerial = 0;
+
 function _mSheetOpen(html, label, showBack) {
+  ++_mSheetSerial;
   const sheet  = document.getElementById('m-sheet');
   const scroll = document.getElementById('m-sheet-scroll');
   const lbl    = document.getElementById('m-sheet-nav-label');
@@ -1126,6 +1135,8 @@ function _mSheetOpen(html, label, showBack) {
   if (back)   back.style.display = showBack ? 'block' : 'none';
   if (sheet)  sheet.classList.add('open');
 }
+
+function _mSheetCurrentSerial() { return _mSheetSerial; }
 
 function _mSheetClose() {
   const sheet = document.getElementById('m-sheet');
@@ -1179,16 +1190,9 @@ function _mSheetOpenTerritory(event, props, color) {
   const cultureLabel = (CULTURE_GROUPS[culture] || CULTURE_GROUPS.other).label;
   const currentYear  = pctToYear(state.pct);
   const prec = props.BORDERPRECISION || 1;
-  const precLabels = {1:'Approximate',2:'Moderate',3:'Confirmed'};
-  const precClass  = {1:'p1',2:'p2',3:'p3'};
 
   const ctx = buildContext(props, currentYear);
-  const ctxLines = [
-    ctx.macht        ? `<div class="ms-ctx-row"><span class="ctx-label">Power</span> ${ctx.macht}</div>` : '',
-    ctx.phase        ? `<div class="ms-ctx-row"><span class="ctx-label">Period</span> ${ctx.phase}</div>` : '',
-    ctx.besonderheit ? `<div class="ms-ctx-row"><span class="ctx-label">Notable</span> ${ctx.besonderheit}</div>` : '',
-    ctx.grenze       ? `<div class="ms-ctx-row"><span class="ctx-label">Borders</span> ${ctx.grenze}</div>` : '',
-  ].filter(Boolean).join('');
+  const ctxLines = EH.territoryRender.buildContextLines(ctx, 'mobile');
 
   let mapping  = getMappingForSubjecto(subj);
   if (!mapping) { const m2 = getMappingForSubjecto(name); if (m2) mapping = m2; }
@@ -1199,33 +1203,35 @@ function _mSheetOpenTerritory(event, props, color) {
       <img id="ms-flag" alt="" style="height:28px;width:auto;max-width:48px;object-fit:contain;border:1px solid rgba(255,255,255,0.12);border-radius:2px;">
     </div>
     <div class="ms-title" id="ms-name">${name}</div>
-    <div class="ms-sub">${cultureLabel ? 'Territory · ' + cultureLabel : 'Territory'}</div>
+    <div class="ms-sub">${cultureLabel ? `${t('tt_territory_label')} · ${cultureLabel}` : t('tt_territory_label')}</div>
     <div class="ms-desc" id="ms-desc" style="display:none"></div>
     <div class="ms-ctx" id="ms-ctx">${ctxLines || ''}</div>
-    ${ctxLines ? '<div class="tp-ai-note" id="ms-ai-note">This context is simplified · full Wikipedia context coming soon</div>' : ''}
+    ${ctxLines ? `<div class="tp-ai-note" id="ms-ai-note">${t('tt_ai_note')}</div>` : ''}
     <div id="ms-ruler-section" style="display:none">
-      <div class="ms-section-label">Rulers</div>
-      <div id="ms-ruler-area">${mapping ? '<div class="ms-loading">Loading…</div>' : ''}</div>
+      <div class="ms-section-label">${t('tt_rulers')}</div>
+      <div id="ms-ruler-area">${mapping ? `<div class="ms-loading">${t('tt_loading')}</div>` : ''}</div>
     </div>
     <div class="tt-div"></div>
     <div class="ms-row" id="ms-capital-row" style="display:none">
-      <span>Capital</span><span id="ms-capital"></span>
+      <span>${t('tt_capital')}</span><span id="ms-capital"></span>
     </div>
     <div class="ms-row">
-      <span>Border precision</span>
-      <span><span class="prec-b ${precClass[prec]}">${precLabels[prec]}</span></span>
+      <span>${t('tt_precision')}</span>
+      <span><span class="prec-b ${_precClass[prec]}">${_precLabel(prec)}</span></span>
     </div>
     <div class="ms-links">
-      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">Wikipedia →</a>
+      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${mapping ? `<a href="https://www.wikidata.org/wiki/${mapping.wikidataId}" target="_blank" class="ms-link">Wikidata ${mapping.wikidataId} →</a>` : ''}
     </div>`;
 
   _mSheetCurrentTerrLabel = name;
   _mSheetCurrentTerrHTML  = null;
   _mSheetOpen(html, name, false);
+  const _mySerial = _mSheetCurrentSerial();  // bail if user navigates away
 
   if (mapping) {
     loadWikidataKnowledge(mapping, currentYear).then(knowledge => {
+      if (_mySerial !== _mSheetCurrentSerial()) return;
       const nameEl = document.getElementById('ms-name');
       if (!nameEl) return;
       if (knowledge.contextLabel) {
@@ -1244,25 +1250,7 @@ function _mSheetOpenTerritory(event, props, color) {
         return;
       }
       if (!knowledge.rulers || !knowledge.rulers.length) {
-        let msg;
-        if (knowledge.note) {
-          const noteUrl  = knowledge.note.match(/https?:\/\/\S+/)?.[0];
-          const noteText = knowledge.note.replace(/https?:\/\/\S+/, '').trim();
-          msg = `<div class="ms-loading">${noteText}${noteUrl ? ` <a href="${noteUrl}" target="_blank" class="ms-link">→ more</a>` : ''}</div>`;
-        } else if (knowledge.hasRulers) {
-          const linkUrl  = knowledge.rulersUrl || knowledge.wikipedia;
-          const linkText = knowledge.rulersUrl ? '→ Ruler list' : '→ Wikipedia';
-          msg = `<div class="ms-loading">No ruler for this period. <a href="${linkUrl}" target="_blank" class="ms-link">${linkText}</a></div>`;
-        } else if (knowledge.rulerDataQuality === 'imprecise') {
-          const wikiUrl = knowledge.wikipedia;
-          const linkHtml = wikiUrl ? ` <a href="${wikiUrl}" target="_blank" class="ms-link">→ Uncertain records (Wikipedia)</a>` : '';
-          msg = `<div class="ms-loading">Imprecise historical records.${linkHtml}</div>`;
-        } else {
-          const wikiHref = knowledge.wikipedia || null;
-          const link = wikiHref ? ` <a href="${wikiHref}" target="_blank" class="ms-link">wiki link →</a>` : '';
-          msg = `<div class="ms-loading" style="font-style:italic">No precise ruler data available, for more info follow the${link}</div>`;
-        }
-        rulerArea.innerHTML = msg;
+        rulerArea.innerHTML = EH.territoryRender.buildEmptyRulerMessage(knowledge, 'mobile');
         const sec = document.getElementById('ms-ruler-section');
         if (sec) sec.style.display = 'block';
         _mSheetSaveState();
@@ -1285,6 +1273,7 @@ function _mSheetOpenTerritory(event, props, color) {
     });
 
     loadTerritoriesData().then(territories => {
+      if (_mySerial !== _mSheetCurrentSerial()) return;
       const nameEl = document.getElementById('ms-name');
       if (!nameEl) return;
       const territory = territories[mapping.wikidataId];
@@ -1351,7 +1340,7 @@ function _mSheetOpenRuler(ruler, territoryLabel) {
     ${territoryLabel ? `<div class="ms-sub">${territoryLabel}</div>` : ''}
     <div class="ms-years-big">${s} – ${e}</div>
     <div class="ms-links">
-      <a href="${wikiUrl}" target="_blank" class="ms-link">Wikipedia →</a>
+      <a href="${wikiUrl}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${ruler.wikidataId} →</a>` : ''}
     </div>`;
 
@@ -1366,7 +1355,7 @@ function _mSheetOpenCity(city) {
     <div class="ms-sub">${city.capital ? 'Capital city' : 'Notable city'}</div>
     ${city.desc ? `<div class="ms-ctx-row" style="margin-top:6px">${city.desc}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
-      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">Wikipedia →</a>
+      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${city.wikidata} →</a>` : ''}
     </div>`;
 
@@ -1385,7 +1374,7 @@ function _mSheetOpenPleiades(city) {
     <div class="ms-sub">Ancient ${city.type} · ${yearStr}</div>
     ${city.desc ? `<div class="ms-ctx-row" style="margin-top:6px">${city.desc}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
-      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">Wikipedia →</a>
+      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${city.wikidataId} →</a>` : ''}
     </div>`;
 
@@ -1398,43 +1387,27 @@ function _mSheetOpenEvent(ev) {
   function fmtY(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
   const wikiName = encodeURIComponent(ev.wiki.replace(/ /g, '_'));
 
+  // Local-first: description and image come from events.json (+ events_de.json
+  // via i18n suffix). No live Wikipedia fetch.
+  const imgHtml = ev.image
+    ? `<img alt="${ev.title}" src="${ev.image}" style="width:100%;max-height:160px;object-fit:cover;border-radius:4px;margin-bottom:8px">`
+    : '';
+  const descHtml = ev.description
+    ? `<div class="ms-ctx-row">${ev.description}</div>`
+    : '';
+
   const html = `
-    <img id="ms-ev-img" alt="${ev.title}" style="display:none;width:100%;max-height:160px;object-fit:cover;border-radius:4px;margin-bottom:8px">
+    ${imgHtml}
     <div class="ms-sub">${fmtY(ev.year)}</div>
-    <div class="ms-loading" id="ms-ev-desc">Loading…</div>
+    ${descHtml}
     <div class="ms-links" style="margin-top:12px">
-      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">Wikipedia →</a>
+      <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
     </div>
-    <button class="ms-goto-year" onclick="_jumpToEventYear()">⏱ Go to ${fmtY(ev.year)}</button>`;
+    <button class="ms-goto-year" onclick="_jumpToEventYear()">${t('ev_jump_to')} ${fmtY(ev.year)}</button>`;
 
   _mSheetCurrentTerrHTML  = null;
   _mSheetCurrentTerrLabel = null;
   _mSheetOpen(html, ev.title, false);
-
-  fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(ev.wiki))
-    .then(r => r.ok ? r.json() : null)
-    .then(data => {
-      if (!data) return;
-      const descEl = document.getElementById('ms-ev-desc');
-      if (descEl) {
-        if (data.extract) {
-          let txt = data.extract;
-          if (txt.length > 300) txt = txt.substring(0, 298) + '…';
-          descEl.textContent = txt;
-          descEl.className = 'ms-ctx-row';
-        } else {
-          descEl.style.display = 'none';
-        }
-      }
-      if (data.thumbnail && data.thumbnail.source) {
-        const imgEl = document.getElementById('ms-ev-img');
-        if (imgEl) { imgEl.src = data.thumbnail.source; imgEl.style.display = 'block'; }
-      }
-    })
-    .catch(() => {
-      const el = document.getElementById('ms-ev-desc');
-      if (el) el.style.display = 'none';
-    });
 }
 
 // ── #tooltip: drag by header (same as terr-panel / ruler-panel) ──

@@ -189,7 +189,7 @@ function showEventTT(event, ev) {
   let noteHtml = '';
   if (epochYear !== null && epochYear !== ev.year) {
     noteHtml = `<li style="padding-left:0;color:#5a4a2a;font-style:italic">`
-             + `Map shows closest available state (~${_fmtEvYear(epochYear)})</li>`;
+             + `${t('ev_closest_state')} (~${_fmtEvYear(epochYear)})</li>`;
   }
   const ctxEl = document.getElementById('tt-context');
   ctxEl.innerHTML = noteHtml;
@@ -216,7 +216,7 @@ function showEventTT(event, ev) {
     evImgEl.style.display = 'block';
   }
 
-  document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
+  document.getElementById('tt-wiki-txt').textContent = t('tt_wiki_arrow');
   document.getElementById('tt-wiki-wp').onclick = () =>
     window.open('https://en.wikipedia.org/wiki/' + encodeURIComponent(ev.wiki), '_blank');
 
@@ -225,7 +225,7 @@ function showEventTT(event, ev) {
 
   const gotoBtn = document.getElementById('tt-goto-year');
   if (gotoBtn) {
-    gotoBtn.textContent = '⏱ Jump to this year';
+    gotoBtn.textContent = t('ev_jump_year');
     gotoBtn.style.display = 'block';
   }
 
@@ -295,7 +295,7 @@ function createEventPanel(mouseEvent, ev) {
     </div>
     <div class="tt-sub"></div>
     <div class="tt-float-ctx" style="display:none">
-      <div class="tt-section-label">Context</div>
+      <div class="tt-section-label">${t('tt_context')}</div>
       <img class="ep-thumb" style="display:none;width:calc(100% + 32px);margin:4px -16px 6px;height:130px;object-fit:cover;object-position:center top;border-top:1px solid var(--border);border-bottom:1px solid var(--border);" alt="">
       <div class="tp-desc ep-desc" style="display:none"></div>
     </div>
@@ -303,13 +303,13 @@ function createEventPanel(mouseEvent, ev) {
     <div style="display:flex;flex-direction:column;gap:5px;">
       <div class="ms-goto-year btn" style="margin:0;width:100%;text-align:center;cursor:pointer;"></div>
       <div class="tt-wiki ep-wiki" style="cursor:pointer">
-        <div class="wiki-i">W</div><span>Wikipedia →</span>
+        <div class="wiki-i">W</div><span>${t('tt_wiki_arrow')}</span>
       </div>
     </div>`;
 
   panel.querySelector('h3').textContent = ev.title;
   panel.querySelector('.tt-sub').textContent = yr;
-  panel.querySelector('.ms-goto-year').textContent = '⏱ Jump to ' + yr;
+  panel.querySelector('.ms-goto-year').textContent = `${t('ev_jump_to')} ${yr}`;
 
   document.body.appendChild(panel);
   makeDraggable(panel, panel.querySelector('.tt-float-hdr'));

@@ -1,0 +1,86 @@
+// ═══════════════════════════════════════════
+//  europa-historica — split from monolithic config.js
+//  Loaded as classic <script>; declarations live on the
+//  global scope. Other modules (map.js, timeline.js, search.js, app.js) read these symbols.
+// ═══════════════════════════════════════════
+
+const EPOCHS = [
+  { pct:  0.00, year: -8000, file:'world_bc8000.geojson', label:'8000 BC', era:'Mesolithic — Hunter-gatherers, beginning of settlement' },
+  { pct: 29.97, year: -5000, file:'world_bc5000.geojson', label:'5000 BC', era:'Neolithic — First farming cultures in Europe' },
+  { pct: 39.96, year: -4000, file:'world_bc4000.geojson', label:'4000 BC', era:'Chalcolithic — Megalithic cultures, first metalworking' },
+  { pct: 49.95, year: -3000, file:'world_bc3000.geojson', label:'3000 BC', era:'Early Bronze Age — Rise of first great civilizations' },
+  { pct: 59.94, year: -2000, file:'world_bc2000.geojson', label:'2000 BC', era:'Middle Bronze Age — Mycenaean culture, Minoans on Crete' },
+  { pct: 64.94, year: -1500, file:'world_bc1500.geojson', label:'1500 BC', era:'Late Bronze Age — Sea Peoples, collapse of Bronze Age cultures' },
+  { pct: 69.93, year: -1000, file:'world_bc1000.geojson', label:'1000 BC', era:'Early Iron Age — Phoenicians, first Greek colonies' },
+  { pct: 72.93, year:  -700, file:'world_bc700.geojson',  label:'700 BC',  era:'Archaic Period — Greek city-states, Etruscan civilization' },
+  { pct: 74.93, year:  -500, file:'world_bc500.geojson',  label:'500 BC',  era:'Classical Antiquity — Persian Wars, Athens at its peak' },
+  { pct: 75.92, year:  -400, file:'world_bc400.geojson',  label:'400 BC',  era:'Classical Antiquity — Peloponnesian War, rise of Macedon' },
+  { pct: 76.69, year:  -323, file:'world_bc323.geojson',  label:'323 BC',  era:'Hellenism — Death of Alexander, Diadochi kingdoms' },
+  { pct: 76.92, year:  -300, file:'world_bc300.geojson',  label:'300 BC',  era:'Hellenism — Roman expansion in Italy' },
+  { pct: 77.92, year:  -200, file:'world_bc200.geojson',  label:'200 BC',  era:'Roman Republic — Punic Wars, Mediterranean expansion' },
+  { pct: 78.92, year:  -100, file:'world_bc100.geojson',  label:'100 BC',  era:'Late Republic — Marius, Sulla, Caesar' },
+  { pct: 79.91, year:    -1, file:'world_bc1.geojson',    label:'1 BC',    era:'Pax Romana — Augustan Age, empire at its peak' },
+  { pct: 80.92, year:   100, file:'world_100.geojson',    label:'100',     era:'Imperial Age — Nerva-Antonine dynasty, Trajan & Hadrian' },
+  { pct: 81.92, year:   200, file:'world_200.geojson',    label:'200',     era:'Imperial Age — Severan dynasty, first signs of crisis' },
+  { pct: 82.92, year:   300, file:'world_300.geojson',    label:'300',     era:'Late Antiquity — Diocletian, Constantine, Christianization' },
+  { pct: 83.92, year:   400, file:'world_400.geojson',    label:'400',     era:'Late Antiquity — Migration Period, fall of the Western Empire' },
+  { pct: 85.91, year:   600, file:'world_600.geojson',    label:'600',     era:'Early Middle Ages — Islam emerges, Lombards in Italy' },
+  { pct: 86.91, year:   700, file:'world_700.geojson',    label:'700',     era:'Early Middle Ages — Spread of Islam, Frankish Kingdom' },
+  { pct: 87.91, year:   800, file:'world_800.geojson',    label:'800',     era:'Carolingian Empire — Charlemagne, imperial coronation' },
+  { pct: 88.91, year:   900, file:'world_900.geojson',    label:'900',     era:'Carolingian Collapse — Magyar raids, Norse invasions' },
+  { pct: 89.91, year:  1000, file:'world_1000.geojson',   label:'1000',    era:'High Middle Ages — Holy Roman Empire, Byzantine Empire' },
+  { pct: 90.91, year:  1100, file:'world_1100.geojson',   label:'1100',    era:'High Middle Ages — Crusades, Normans in Sicily' },
+  { pct: 91.91, year:  1200, file:'world_1200.geojson',   label:'1200',    era:'High Middle Ages — Fourth Crusade, Mongol storm approaches' },
+  { pct: 92.70, year:  1279, file:'world_1279.geojson',   label:'1279',    era:'Late Middle Ages — Mongols, Hanseatic League, urban culture' },
+  { pct: 92.91, year:  1300, file:'world_1300.geojson',   label:'1300',    era:'Late Middle Ages — Plague approaches, Hundred Years War' },
+  { pct: 93.91, year:  1400, file:'world_1400.geojson',   label:'1400',    era:'Late Middle Ages — Ottoman rise, Council period' },
+  { pct: 94.83, year:  1492, file:'world_1492.geojson',   label:'1492',    era:'Age of Discovery — Columbus, Reconquista ends' },
+  { pct: 94.91, year:  1500, file:'world_1500.geojson',   label:'1500',    era:'Early Modern — Habsburg hegemony, Reformation begins' },
+  { pct: 95.20, year:  1530, file:'world_1530.geojson',   label:'1530',    era:'Reformation — Augsburg, Charles V, Ottoman expansion' },
+  { pct: 95.90, year:  1600, file:'world_1600.geojson',   label:'1600',    era:'Confessional Age — Thirty Years War approaches' },
+  { pct: 96.40, year:  1650, file:'world_1650.geojson',   label:'1650',    era:'Peace of Westphalia — Modern state system emerges' },
+  { pct: 96.90, year:  1700, file:'world_1700.geojson',   label:'1700',    era:'Absolutism — Louis XIV, Great Northern War' },
+  { pct: 97.05, year:  1715, file:'world_1715.geojson',   label:'1715',    era:'Absolutism — Regency, Peace of Utrecht' },
+  { pct: 97.73, year:  1783, file:'world_1783.geojson',   label:'1783',    era:'Enlightenment — American independence, Prussia rises' },
+  { pct: 97.90, year:  1800, file:'world_1800.geojson',   label:'1800',    era:'Revolutionary Era — Napoleonic Wars begin' },
+  { pct: 98.05, year:  1815, file:'world_1815.geojson',   label:'1815',    era:'Congress of Vienna — Restoration, new European order' },
+  { pct: 98.70, year:  1880, file:'world_1880.geojson',   label:'1880',    era:'Nationalism — German & Italian unification, imperialism' },
+  { pct: 98.90, year:  1900, file:'world_1900.geojson',   label:'1900',    era:'Belle Époque — Industrialization, alliance systems' },
+  { pct: 99.04, year:  1914, file:'world_1914.geojson',   label:'1914',    era:'World War I — Shots of Sarajevo' },
+  { pct: 99.10, year:  1920, file:'world_1920.geojson',   label:'1920',    era:'Interwar Period — New state borders after WWI' },
+  { pct: 99.20, year:  1930, file:'world_1930.geojson',   label:'1930',    era:'Interwar Period — Great Depression, rise of fascism' },
+  { pct: 99.28, year:  1938, file:'world_1938.geojson',   label:'1938',    era:'Pre-War — Anschluss of Austria, Munich Agreement' },
+  { pct: 99.35, year:  1945, file:'world_1945.geojson',   label:'1945',    era:'Post-WWII — Cold War begins, Europe in ruins' },
+  { pct: 99.50, year:  1960, file:'world_1960.geojson',   label:'1960',    era:'Cold War — Berlin Wall, decolonization' },
+  { pct: 99.84, year:  1994, file:'world_1994.geojson',   label:'1994',    era:'Post-Cold War — Yugoslav Wars, EU expansion' },
+  { pct: 99.90, year:  2000, file:'world_2000.geojson',   label:'2000',    era:'Modern Era — European Union, post-Soviet states' },
+  { pct:100.00, year:  2010, file:'world_2010.geojson',   label:'2010',    era:'Present — Eurozone crisis, Arab Spring' },
+];
+
+// ═══════════════════════════════════════════
+//  CULTURAL COLOR GROUPS
+//  Each territory belongs to a cultural group
+//  Neighboring groups get contrasting colors
+// ═══════════════════════════════════════════
+const CULTURE_GROUPS = {
+  roman:    { label:'Roman / Byzantine',      color:'#b02828' },
+  frankish: { label:'Frankish / HRE',         color:'#5830a0' },
+  french:   { label:'French',                 color:'#1848a0' },
+  british:  { label:'British / Celtic',       color:'#187a58' },
+  iberian:  { label:'Iberian',                color:'#b04018' },
+  islamic:  { label:'Islamic',                color:'#3a8830' },
+  slavic:   { label:'Slavic',                 color:'#2868a8' },
+  nordic:   { label:'Nordic / Scandinavian',  color:'#c89010' },
+  ottoman:  { label:'Ottoman / Turkish',      color:'#a06010' },
+  habsburg: { label:'Habsburg / Hungarian',   color:'#603898' },
+  italian:  { label:'Italian',                color:'#907010' },
+  baltic:   { label:'Baltic',                 color:'#187870' },
+  caucasus: { label:'Caucasian',              color:'#883050' },
+  greek:    { label:'Greek',                  color:'#7828a0' },
+  steppe:   { label:'Steppe peoples / Nomads',color:'#806020' },
+  germanic: { label:'Germanic',               color:'#4a6830' },
+  prehistoric:{ label:'Prehistoric',          color:'#505848' },
+  persian:  { label:'Persian / Iranian',      color:'#9B5E00' },
+  modern:   { label:'Modern nation state',    color:'#206080' },
+  other:    { label:'Other',                  color:'#3a3a50' },
+};

@@ -38,13 +38,33 @@ const I18N = {
     tt_uncertain:    '→ Uncertain records (Wikipedia)',
     tt_no_precise:   'No precise ruler data available, for more info follow the',
     tt_wiki_link:    'wiki link →',
+    tt_wiki_arrow:   'Wikipedia →',
+    tt_wiki_arrow_back: '→ Wikipedia',
     tt_goto_year:    '⏱ Go to this year',
+    // Context bullet labels
+    tt_ctx_power:    'Power',
+    tt_ctx_period:   'Period',
+    tt_ctx_notable:  'Notable',
+    tt_ctx_borders:  'Borders',
+    tt_ai_note:      'This context is simplified · full Wikipedia context coming soon',
+    // Territory label
+    tt_territory_label: 'Territory',
+    tt_ruled:        'Ruled',
+    ev_closest_state: 'Map shows closest available state',
+    ev_jump_year:    '⏱ Jump to this year',
+    ev_jump_to:      '⏱ Jump to',
     // City tooltip
     tt_capital_city: 'Capital city',
     tt_notable_city: 'Notable city',
+    // Legend (extra)
+    legend_cultures: 'Cultures',
     // Search
     search_placeholder: 'Search territories or rulers…',
     search_hint:        'Ctrl+K to open · ↑↓ navigate · Enter to select',
+    search_loading:     'Loading…',
+    search_no_results:  'No results found.',
+    search_results_n:   'results',
+    search_results_one: 'result',
     // Territories overview
     terr_title:    'Historical Territories',
     terr_subtitle: 'A simplified overview of all territories currently included in the system.',
@@ -56,6 +76,7 @@ const I18N = {
     terr_col_period: 'Period',
     terr_loading:    'Loading…',
     terr_none:       'No territories found.',
+    terr_count_n:    'territories',
     // Trails
     trail_choose:  '▼ Choose a trail',
     trail_steps:   'steps',
@@ -112,13 +133,33 @@ const I18N = {
     tt_uncertain:    '→ Unsichere Quellen (Wikipedia)',
     tt_no_precise:   'Keine genauen Herrscherdaten verfügbar, weitere Infos über den',
     tt_wiki_link:    'Wiki-Link →',
+    tt_wiki_arrow:   'Wikipedia →',
+    tt_wiki_arrow_back: '→ Wikipedia',
     tt_goto_year:    '⏱ Zu diesem Jahr',
+    // Context bullet labels
+    tt_ctx_power:    'Macht',
+    tt_ctx_period:   'Periode',
+    tt_ctx_notable:  'Besonderheit',
+    tt_ctx_borders:  'Grenzen',
+    tt_ai_note:      'Dieser Kontext ist vereinfacht · vollständige Wikipedia-Daten folgen',
+    // Territory label
+    tt_territory_label: 'Territorium',
+    tt_ruled:        'Regierte',
+    ev_closest_state: 'Karte zeigt zeitlich nächstgelegenen Stand',
+    ev_jump_year:    '⏱ Zu diesem Jahr springen',
+    ev_jump_to:      '⏱ Springe zu',
     // City tooltip
     tt_capital_city: 'Hauptstadt',
     tt_notable_city: 'Bedeutende Stadt',
+    // Legend (extra)
+    legend_cultures: 'Kulturen',
     // Search
     search_placeholder: 'Territorien oder Herrscher suchen…',
     search_hint:        'Strg+K öffnen · ↑↓ navigieren · Enter wählen',
+    search_loading:     'Lädt…',
+    search_no_results:  'Keine Ergebnisse gefunden.',
+    search_results_n:   'Ergebnisse',
+    search_results_one: 'Ergebnis',
     // Territories overview
     terr_title:    'Historische Territorien',
     terr_subtitle: 'Eine vereinfachte Übersicht aller Territorien im System.',
@@ -130,6 +171,7 @@ const I18N = {
     terr_col_period: 'Zeitraum',
     terr_loading:    'Lädt…',
     terr_none:       'Keine Territorien gefunden.',
+    terr_count_n:    'Territorien',
     // Trails
     trail_choose:  '▼ Trail auswählen',
     trail_steps:   'Schritte',

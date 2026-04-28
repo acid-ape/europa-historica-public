@@ -41,14 +41,33 @@ document.addEventListener('keydown', e => {
 // ── Data Loading ──────────────────────────
 async function _loadTerrData() {
   if (_terrLoaded) return;
-  const [terrRes, rulerRes] = await Promise.all([
-    fetch('data/knowledge/territories.json'),
-    fetch('data/knowledge/rulers.json'),
-  ]);
+  const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
+  // territories has a localized variant; rulers is language-neutral.
+  let terrRes;
+  if (suffix) {
+    terrRes = await fetch(`data/knowledge/territories${suffix}.json`).catch(() => null);
+    if (!terrRes || !terrRes.ok) terrRes = await fetch('data/knowledge/territories.json');
+  } else {
+    terrRes = await fetch('data/knowledge/territories.json');
+  }
+  const rulerRes = await fetch('data/knowledge/rulers.json');
   _terrData  = await terrRes.json();
   _rulerData = await rulerRes.json();
   _terrLoaded = true;
 }
+
+// Reload localized data on language change. If overlay is open, re-render.
+window.addEventListener('langchange', async () => {
+  _terrData   = null;
+  _rulerData  = null;
+  _terrLoaded = false;
+  const overlay = document.getElementById('terr-overlay');
+  if (overlay && overlay.classList.contains('visible')) {
+    await _loadTerrData();
+    const search = document.getElementById('terr-search');
+    _renderTable(search ? search.value : '');
+  }
+});
 
 // ── Ruler Count ───────────────────────────
 function _rulerCount(territory) {
@@ -169,7 +188,7 @@ function _renderTable(filter) {
 
   // Update count label
   const lbl = document.getElementById('terr-count-lbl');
-  if (lbl) lbl.textContent = `${rows.length} territories`;
+  if (lbl) lbl.textContent = `${rows.length} ${t('terr_count_n')}`;
 }
 
 // ── Search handler ────────────────────────
