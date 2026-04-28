@@ -99,11 +99,14 @@ const TERRITORY_CULTURE = {
   'Alamans':'germanic','Burgunds':'germanic','Frisians':'germanic',
   'Lombard principalities':'germanic',
 
-  'Boii':'celtic',
+  // Note: 'celtic' and 'byzantine' are not defined as CULTURE_GROUPS; we map
+  // Celtic peoples to 'british' (group label "British / Celtic") and
+  // Roman/Byzantine sphere territories to 'roman' (label "Roman / Byzantine").
+  'Boii':'british',
   // Italic & Balkan
   'Etrurians':'italian','Samnites':'italian',
-  'Illyrians':'byzantine',
-  'Dacia':'byzantine',
+  'Illyrians':'roman',
+  'Dacia':'roman',
   // Near East & Levant
   'Hittites':'persian',
 
