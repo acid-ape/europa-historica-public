@@ -16,6 +16,21 @@ function _precLabel(prec) {
 }
 const _precClass = {1:'p1',2:'p2',3:'p3'};
 
+// Pick localized city description / summary fields. Both are populated by
+// crawler/fetch_city_descriptions.py: `desc`/`desc_de` (Wikidata one-liner)
+// and `summary`/`summary_de` (Wikipedia intro). DE falls back to EN if the
+// city has no German Wikipedia article.
+function _cityDesc(city) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  if (lang === 'de') return city.desc_de || city.desc || '';
+  return city.desc || '';
+}
+function _citySummary(city) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  if (lang === 'de') return city.summary_de || city.summary || '';
+  return city.summary || '';
+}
+
 // Serial token — incremented on every new tooltip open.
 // Async callbacks compare against the captured serial to avoid
 // overwriting a tooltip that has already changed to a different subject.
@@ -104,11 +119,12 @@ function createCityPanel(mouseEvent, city) {
 
   panel.querySelector('h3').textContent = city.name;
   panel.querySelector('.tt-sub').textContent = subLbl;
-  if (city.desc) {
+  const _desc = _cityDesc(city);
+  if (_desc) {
     const sub2 = document.createElement('div');
     sub2.className = 'tt-sub';
     sub2.style.color = '#b0a070';
-    sub2.textContent = city.desc;
+    sub2.textContent = _desc;
     panel.querySelector('.tt-float-ctx').before(sub2);
   }
   const wikiSlug = encodeURIComponent(city.name.replace(/ /g, '_'));
@@ -125,12 +141,13 @@ function createCityPanel(mouseEvent, city) {
   document.body.appendChild(panel);
   makeDraggable(panel, panel.querySelector('.tt-float-hdr'));
 
-  // Local-first: longer description from cities.json `summary` field if present
-  // (populated by crawler/fetch_city_descriptions.py — optional). Short `desc`
-  // is already shown above as the second sub-line.
-  if (city.summary) {
+  // Local-first: longer description from cities.json `summary`/`summary_de`
+  // (populated by crawler/fetch_city_descriptions.py). Short `desc` is
+  // already shown above as the second sub-line.
+  const _summary = _citySummary(city);
+  if (_summary) {
     const desc = panel.querySelector('.cp-desc');
-    let txt = city.summary;
+    let txt = _summary;
     if (txt.length > 300) txt = txt.substring(0, 298) + '…';
     desc.textContent = txt;
     desc.style.display = 'block';
@@ -704,8 +721,9 @@ function showCityTT(event, city) {
   if (typeIconEl2) typeIconEl2.textContent = city.capital ? '◎' : '⊙';
   document.getElementById('tt-name').textContent = city.name;
   document.getElementById('tt-sub').textContent = city.capital ? t('tt_capital_city') : t('tt_notable_city');
-  const descHtml = city.desc
-    ? `<li style="padding-left:0;color:#b0a070">${city.desc}</li>` : '';
+  const _cityDescTxt = _cityDesc(city);
+  const descHtml = _cityDescTxt
+    ? `<li style="padding-left:0;color:#b0a070">${_cityDescTxt}</li>` : '';
   document.getElementById('tt-context').innerHTML = descHtml;
   document.getElementById('tt-ruler-div').style.display = 'none';
   document.getElementById('tt-ruler-label').style.display = 'none';
@@ -1350,10 +1368,13 @@ function _mSheetOpenRuler(ruler, territoryLabel) {
 function _mSheetOpenCity(city) {
   const wikiName = encodeURIComponent(city.name.replace(/ /g, '_'));
   const wdUrl    = city.wikidata ? 'https://www.wikidata.org/wiki/' + city.wikidata : null;
+  const _desc    = _cityDesc(city);
+  const _summary = _citySummary(city);
 
   const html = `
-    <div class="ms-sub">${city.capital ? 'Capital city' : 'Notable city'}</div>
-    ${city.desc ? `<div class="ms-ctx-row" style="margin-top:6px">${city.desc}</div>` : ''}
+    <div class="ms-sub">${city.capital ? t('tt_capital_city') : t('tt_notable_city')}</div>
+    ${_desc ? `<div class="ms-ctx-row" style="margin-top:6px">${_desc}</div>` : ''}
+    ${_summary ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
       <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${city.wikidata} →</a>` : ''}
@@ -1368,14 +1389,19 @@ function _mSheetOpenPleiades(city) {
   function fmtY(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
   const yearStr   = fmtY(city.start) + ' – ' + fmtY(city.end);
   const wikiName  = encodeURIComponent(city.name.replace(/ /g, '_'));
-  const wdUrl     = city.wikidataId ? 'https://www.wikidata.org/wiki/' + city.wikidataId : null;
+  // Pleiades cities use `wikidataId` (not `wikidata`) — same shape as cities.json
+  const wdId      = city.wikidataId || city.wikidata;
+  const wdUrl     = wdId ? 'https://www.wikidata.org/wiki/' + wdId : null;
+  const _desc     = _cityDesc(city);
+  const _summary  = _citySummary(city);
 
   const html = `
-    <div class="ms-sub">Ancient ${city.type} · ${yearStr}</div>
-    ${city.desc ? `<div class="ms-ctx-row" style="margin-top:6px">${city.desc}</div>` : ''}
+    <div class="ms-sub">${t('legend_settlement')} · ${yearStr}</div>
+    ${_desc ? `<div class="ms-ctx-row" style="margin-top:6px">${_desc}</div>` : ''}
+    ${_summary ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
       <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
-      ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${city.wikidataId} →</a>` : ''}
+      ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${wdId} →</a>` : ''}
     </div>`;
 
   _mSheetCurrentTerrHTML  = null;

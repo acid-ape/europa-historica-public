@@ -182,9 +182,10 @@ function showPleiadesTT(event, city) {
   if (capRow) capRow.style.display = 'none';
   function fmtYear(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
   const yearStr = fmtYear(city.start) + ' – ' + fmtYear(city.end);
-  document.getElementById('tt-sub').textContent = 'Ancient ' + city.type + ' · ' + yearStr;
-  const descHtml = city.desc
-    ? `<li style="padding-left:0;color:#b0a070">${city.desc}</li>` : '';
+  document.getElementById('tt-sub').textContent = t('legend_settlement') + ' · ' + yearStr;
+  const _desc = (typeof _cityDesc === 'function') ? _cityDesc(city) : (city.desc || '');
+  const descHtml = _desc
+    ? `<li style="padding-left:0;color:#b0a070">${_desc}</li>` : '';
   document.getElementById('tt-context').innerHTML = descHtml;
   document.getElementById('tt-ruler-div').style.display = 'none';
   document.getElementById('tt-ruler-label').style.display = 'none';
@@ -197,7 +198,7 @@ function showPleiadesTT(event, city) {
   if (ctxSection) ctxSection.style.display = descHtml ? 'block' : 'none';
 
   const wikiName = encodeURIComponent(city.name.replace(/ /g, '_'));
-  document.getElementById('tt-wiki-txt').textContent = 'Wikipedia →';
+  document.getElementById('tt-wiki-txt').textContent = t('tt_wiki_arrow');
   document.getElementById('tt-wiki-wp').onclick = () =>
     window.open('https://en.wikipedia.org/wiki/' + wikiName, '_blank');
 
