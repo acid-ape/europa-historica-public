@@ -15,7 +15,7 @@ async function _loadIntroData() {
   const suffix = typeof getDataSuffix === 'function' ? getDataSuffix() : '';
   const url = suffix ? `data/intro${suffix}.json` : 'data/intro.json';
   try {
-    const r = await fetch(url);
+    const r = await fetch(url, { cache: 'no-cache' });
     _introDataCache[lang] = await r.json();
   } catch(e) {
     // Fallback to EN
