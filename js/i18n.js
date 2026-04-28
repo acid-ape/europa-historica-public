@@ -50,6 +50,7 @@ const I18N = {
     // Territory label
     tt_territory_label: 'Territory',
     tt_ruled:        'Ruled',
+    tt_modern_site:  'Description of the modern place at this site',
     ev_closest_state: 'Map shows closest available state',
     ev_jump_year:    '⏱ Jump to this year',
     ev_jump_to:      '⏱ Jump to',
@@ -145,6 +146,7 @@ const I18N = {
     // Territory label
     tt_territory_label: 'Territorium',
     tt_ruled:        'Regierte',
+    tt_modern_site:  'Beschreibung des heutigen Orts an dieser Stelle',
     ev_closest_state: 'Karte zeigt zeitlich nächstgelegenen Stand',
     ev_jump_year:    '⏱ Zu diesem Jahr springen',
     ev_jump_to:      '⏱ Springe zu',

@@ -27,8 +27,35 @@ function _cityDesc(city) {
 }
 function _citySummary(city) {
   const lang = typeof getLang === 'function' ? getLang() : 'en';
-  if (lang === 'de') return city.summary_de || city.summary || '';
+  if (lang === 'de' && city.summary_de) return city.summary_de;
   return city.summary || '';
+}
+// Decide whether a Wikipedia summary actually describes the *ancient* place
+// or the modern town at the same site (e.g. Iamo/Iamna → Ciutadella). We
+// consider it about the same place if any /-or-(-separated chunk of the
+// city name overlaps with the article title after diacritic-insensitive
+// normalization (e.g. "Hēmeroskopeion" matches "Hemeroskopeion"). Returns
+// the modern-place name (string) when the summary is *about a different
+// place*, else null.
+function _citySummaryModernName(city) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  const useDe = lang === 'de' && city.summary_de;
+  const src   = useDe ? city.summary_src_de : city.summary_src;
+  if (!src) return null;
+  const norm = s => s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .trim();
+  const srcN  = norm(src);
+  const parts = (city.name || '').split(/[/(]/).map(s => norm(s.replace(/\)/g, '')));
+  for (const p of parts) {
+    if (!p) continue;
+    if (srcN === p) return null;
+    if (srcN.includes(p) || p.includes(srcN)) return null;
+  }
+  return src;
 }
 
 // Serial token — incremented on every new tooltip open.
@@ -143,13 +170,22 @@ function createCityPanel(mouseEvent, city) {
 
   // Local-first: longer description from cities.json `summary`/`summary_de`
   // (populated by crawler/fetch_city_descriptions.py). Short `desc` is
-  // already shown above as the second sub-line.
+  // already shown above as the second sub-line. If the article describes
+  // the modern town at the ancient site, prefix a disclaimer.
   const _summary = _citySummary(city);
   if (_summary) {
     const desc = panel.querySelector('.cp-desc');
     let txt = _summary;
     if (txt.length > 300) txt = txt.substring(0, 298) + '…';
-    desc.textContent = txt;
+    const modern = _citySummaryModernName(city);
+    if (modern) {
+      desc.innerHTML =
+        `<div style="font-size:9px;color:#7a6a4a;font-style:italic;margin-bottom:3px">` +
+        `ⓘ ${t('tt_modern_site')}: <span style="color:#9a8a62">${modern}</span></div>` +
+        `<div>${txt.replace(/</g, '&lt;')}</div>`;
+    } else {
+      desc.textContent = txt;
+    }
     desc.style.display = 'block';
     panel.querySelector('.tt-float-ctx').style.display = '';
   }
@@ -1370,11 +1406,17 @@ function _mSheetOpenCity(city) {
   const wdUrl    = city.wikidata ? 'https://www.wikidata.org/wiki/' + city.wikidata : null;
   const _desc    = _cityDesc(city);
   const _summary = _citySummary(city);
+  const _summaryTxt = _summary && _summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary;
+  const _modern  = _summary ? _citySummaryModernName(city) : null;
+  const _modernNote = _modern
+    ? `<div style="font-size:10px;color:#7a6a4a;font-style:italic;margin-top:8px">ⓘ ${t('tt_modern_site')}: <span style="color:#9a8a62">${_modern}</span></div>`
+    : '';
 
   const html = `
     <div class="ms-sub">${city.capital ? t('tt_capital_city') : t('tt_notable_city')}</div>
     ${_desc ? `<div class="ms-ctx-row" style="margin-top:6px">${_desc}</div>` : ''}
-    ${_summary ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary}</div>` : ''}
+    ${_modernNote}
+    ${_summaryTxt ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summaryTxt}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
       <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${city.wikidata} →</a>` : ''}
@@ -1394,11 +1436,17 @@ function _mSheetOpenPleiades(city) {
   const wdUrl     = wdId ? 'https://www.wikidata.org/wiki/' + wdId : null;
   const _desc     = _cityDesc(city);
   const _summary  = _citySummary(city);
+  const _summaryTxt = _summary && _summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary;
+  const _modern   = _summary ? _citySummaryModernName(city) : null;
+  const _modernNote = _modern
+    ? `<div style="font-size:10px;color:#7a6a4a;font-style:italic;margin-top:8px">ⓘ ${t('tt_modern_site')}: <span style="color:#9a8a62">${_modern}</span></div>`
+    : '';
 
   const html = `
     <div class="ms-sub">${t('legend_settlement')} · ${yearStr}</div>
     ${_desc ? `<div class="ms-ctx-row" style="margin-top:6px">${_desc}</div>` : ''}
-    ${_summary ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summary.length > 320 ? _summary.substring(0, 318) + '…' : _summary}</div>` : ''}
+    ${_modernNote}
+    ${_summaryTxt ? `<div class="ms-ctx-row" style="margin-top:6px;color:#a09060">${_summaryTxt}</div>` : ''}
     <div class="ms-links" style="margin-top:12px">
       <a href="https://en.wikipedia.org/wiki/${wikiName}" target="_blank" class="ms-link">${t('tt_wiki_arrow')}</a>
       ${wdUrl ? `<a href="${wdUrl}" target="_blank" class="ms-link">Wikidata ${wdId} →</a>` : ''}
