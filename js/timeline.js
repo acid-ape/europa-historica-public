@@ -22,7 +22,50 @@ function updateLegend(geo) {
 // Re-render the legend header on language change.
 window.addEventListener('langchange', () => {
   if (_lastLegendGeo) updateLegend(_lastLegendGeo);
+  // Localized info-popups: refresh any expanded entries' bodies on language switch
+  document.querySelectorAll('#legend [data-info-key].expanded .leg-info-body').forEach(el => {
+    const key = el.parentElement.getAttribute('data-info-key');
+    if (key) el.textContent = t(key);
+  });
 });
+
+// ── Legend info-popups ──
+// Click any .leg-sym or .leg-prec entry → expands a small explanation
+// block underneath. Click again or click a different entry to collapse.
+// Wired up once on DOMContentLoaded; the entries themselves are static
+// in index.html, so a single delegated listener is enough.
+function _initLegendInfoPopups() {
+  const legend = document.getElementById('legend');
+  if (!legend) return;
+  legend.addEventListener('click', e => {
+    const entry = e.target.closest('[data-info-key]');
+    if (!entry) return;
+    const key = entry.getAttribute('data-info-key');
+    if (!key) return;
+    // Toggle: if already open, close. Else: close any other open one + open this.
+    if (entry.classList.contains('expanded')) {
+      entry.classList.remove('expanded');
+      const body = entry.querySelector('.leg-info-body');
+      if (body) body.remove();
+      return;
+    }
+    legend.querySelectorAll('[data-info-key].expanded').forEach(other => {
+      other.classList.remove('expanded');
+      const body = other.querySelector('.leg-info-body');
+      if (body) body.remove();
+    });
+    const body = document.createElement('div');
+    body.className = 'leg-info-body';
+    body.textContent = t(key);
+    entry.appendChild(body);
+    entry.classList.add('expanded');
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _initLegendInfoPopups);
+} else {
+  _initLegendInfoPopups();
+}
 
 // ═══════════════════════════════════════════
 //  TIMELINE & PLAYBACK
@@ -416,6 +459,30 @@ function toggleLegend() {
   leg.classList.toggle('collapsed');
   btn.textContent = leg.classList.contains('collapsed') ? '+' : '−';
 }
+
+// ── Legend modal (mobile only) ──
+// On phones #legend is hidden by default and shown as a centered overlay
+// via body.legend-modal-open. Trigger from #legend-btn in #top-right-bar.
+// Backdrop click closes; the in-legend close button closes too.
+function toggleLegendModal() {
+  document.body.classList.toggle('legend-modal-open');
+}
+// Backdrop click: ::after pseudo can't receive clicks, so we listen on body
+// and close if the click missed both the legend and the trigger button.
+document.addEventListener('click', e => {
+  if (!document.body.classList.contains('legend-modal-open')) return;
+  const leg = document.getElementById('legend');
+  const btn = document.getElementById('legend-btn');
+  if (leg && leg.contains(e.target)) return;
+  if (btn && btn.contains(e.target)) return;
+  document.body.classList.remove('legend-modal-open');
+});
+// ESC key closes
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.body.classList.contains('legend-modal-open')) {
+    document.body.classList.remove('legend-modal-open');
+  }
+});
 
 // Init range labels once DOM ready
 if (document.readyState === 'loading') {

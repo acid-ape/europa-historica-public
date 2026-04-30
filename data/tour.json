@@ -22,10 +22,10 @@
     "text": "Jump directly to any year using the input field, or step forward and backward through time with the ± buttons."
   },
   {
-    "target": ".btn-group-center",
-    "pos": "above",
-    "title": "Info & Search",
-    "text": "Here you can access the main tools:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, and events"
+    "target": "#top-right-bar",
+    "pos": "below",
+    "title": "Tools & Settings",
+    "text": "The top-right toolbar holds everything not tied to time:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, events\nEN/DE  language toggle\n⌂  resets the map to its default view"
   },
   {
     "target": "#play-btns",
@@ -53,13 +53,20 @@
   },
   {
     "target": "#legend",
+    "target_mobile": "#legend-btn",
     "pos": "right",
+    "pos_mobile": "below",
     "title": "Legend",
-    "text": "Each territory is colored by its cultural group — Germanic, Roman, Ottoman, and more. Here you can see which groups are active in the current epoch and what the different border styles mean."
+    "text": "Each territory is colored by its cultural group — Germanic, Roman, Ottoman, and more. Here you can see which groups are active in the current epoch and what the different border styles mean. Click any entry to expand a quick explanation."
   },
   {
     "title": "You're all set!",
-    "text": "The map is yours to explore. Click any territory to discover its rulers and history.",
-    "finish": true
+    "text": "Try one of these to get going:",
+    "finish": true,
+    "actions": [
+      { "label": "▣  Jump to Rome at its peak (117 AD)", "action": "jumpToYear",    "args": [117] },
+      { "label": "✦  Open a guided trail",              "action": "openTrailMenu" },
+      { "label": "△  Show ancient settlements",         "action": "showAncientSettlements" }
+    ]
   }
 ]

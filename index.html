@@ -17,12 +17,12 @@
 /* TOP BAR: removed - everything lives in bottom controls */
 
 /* MAP */
-#map-container{position:fixed;top:0;touch-action:none;left:0;right:0;bottom:138px;background:var(--ocean);overflow:hidden;cursor:grab;}
+#map-container{position:fixed;top:0;touch-action:none;left:0;right:0;bottom:115px;background:var(--ocean);overflow:hidden;cursor:grab;}
 .territory{stroke-linejoin:round;stroke-linecap:round;cursor:pointer;transition:fill 0.5s ease;}
 /* City labels use Crimson Text italic - distinct from territory Cinzel labels */
 
 /* CONTROLS */
-#controls{position:fixed;bottom:0;left:0;right:0;height:138px;background:rgba(7,12,18,0.97);border-top:1px solid var(--border);padding:8px 20px 12px;z-index:200;backdrop-filter:blur(12px);}
+#controls{position:fixed;bottom:0;left:0;right:0;height:115px;background:rgba(7,12,18,0.97);border-top:1px solid var(--border);padding:6px 20px 10px;z-index:200;backdrop-filter:blur(12px);}
 
 /* Bottom info bar: title | year + era */
 #tl-wrap{position:relative;height:6px;margin-bottom:8px;}
@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R8">
+  <link rel="stylesheet" href="css/style.css?v=R16">
 </head>
 <body>
 <div id="loading">
@@ -78,6 +78,29 @@
 </div>
 
 
+
+<!-- Top-right toolbar: meta + tools + map controls.
+     Sits over the map, fixed. Holds tutorial restart, info, territory list,
+     search, language toggle, and reset-view. Bottom-bar stays focused on
+     time + layer toggles. -->
+<div id="top-right-bar">
+  <button id="tour-btn" onclick="startTour()" data-i18n-title="ctrl_tutorial_btn_title" title="Restart tutorial">◉</button>
+  <button id="info-btn" onclick="openIntro()" data-i18n-title="ctrl_info_title" title="About this project">i</button>
+  <span class="bar-divider bar-divider-sm"></span>
+  <button id="terr-list-btn" onclick="openTerrOverview()" data-i18n-title="ctrl_terr_list_title" title="Territories overview">☰</button>
+  <button id="search-btn"    onclick="openSearch()"      data-i18n-title="ctrl_search_title"    title="Search (Ctrl+K)">⌕</button>
+  <span class="bar-divider bar-divider-sm"></span>
+  <div id="lang-ctrl">
+    <button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
+  </div>
+  <span class="bar-divider bar-divider-sm"></span>
+  <!-- Legend toggle: only visible on mobile (where #legend is hidden by default).
+       On desktop the legend lives top-left and stays sticky. -->
+  <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
+  <button id="map-reset-btn" onclick="resetMapView()" data-i18n-title="ctrl_reset_view" title="Reset view">⌂</button>
+</div>
 
 <div id="map-container">
   <svg id="map-svg">
@@ -109,17 +132,17 @@
     <div id="leg-items"></div>
     <div class="leg-div"></div>
     <h4 style="margin-bottom:0.4em" data-i18n="legend_types">Types</h4>
-    <div class="leg-sym"><span class="leg-type-icon">▣</span> <span data-i18n="legend_territory">Territory</span></div>
-    <div class="leg-sym"><span class="leg-type-icon">♛</span> <span data-i18n="legend_ruler">Ruler</span></div>
-    <div class="leg-sym"><span class="leg-type-icon">◎</span> <span data-i18n="legend_capital_city">Capital city</span></div>
-    <div class="leg-sym"><span class="leg-type-icon">⊙</span> <span data-i18n="legend_notable_city">Notable city</span></div>
-    <div class="leg-sym" id="leg-pleiades" style="display:none"><span class="leg-type-icon">△</span> <span data-i18n="legend_settlement">Ancient settlement</span></div>
-    <div class="leg-sym" id="leg-events"   style="display:none"><span class="leg-type-icon" style="color:#e05828">✦</span> <span data-i18n="legend_event">Historical event</span></div>
+    <div class="leg-sym" data-info-key="legend_info_territory"><span class="leg-type-icon">▣</span> <span data-i18n="legend_territory">Territory</span></div>
+    <div class="leg-sym" data-info-key="legend_info_ruler"><span class="leg-type-icon">♛</span> <span data-i18n="legend_ruler">Ruler</span></div>
+    <div class="leg-sym" data-info-key="legend_info_capital_city"><span class="leg-type-icon">◎</span> <span data-i18n="legend_capital_city">Capital city</span></div>
+    <div class="leg-sym" data-info-key="legend_info_notable_city"><span class="leg-type-icon">⊙</span> <span data-i18n="legend_notable_city">Notable city</span></div>
+    <div class="leg-sym" id="leg-pleiades" data-info-key="legend_info_settlement" style="display:none"><span class="leg-type-icon">△</span> <span data-i18n="legend_settlement">Ancient settlement</span></div>
+    <div class="leg-sym" id="leg-events"   data-info-key="legend_info_event" style="display:none"><span class="leg-type-icon" style="color:#e05828">✦</span> <span data-i18n="legend_event">Historical event</span></div>
     <div class="leg-div"></div>
     <h4 style="margin-bottom:0.4em" data-i18n="legend_precision">Border Precision</h4>
-    <div class="leg-prec"><div class="pl" style="background:rgba(200,185,138,0.7)"></div><span data-i18n="legend_established">Established</span></div>
-    <div class="leg-prec"><div class="pl" style="background:rgba(200,185,138,0.35);border-top:1px dashed rgba(200,185,138,0.5)"></div><span data-i18n="legend_moderate">Moderate</span></div>
-    <div class="leg-prec"><div class="pl" style="background:rgba(200,185,138,0.15);border-top:1px dashed rgba(200,185,138,0.2)"></div><span data-i18n="legend_approximate">Approximate</span></div>
+    <div class="leg-prec" data-info-key="legend_info_established"><div class="pl" style="background:rgba(200,185,138,0.7)"></div><span data-i18n="legend_established">Established</span></div>
+    <div class="leg-prec" data-info-key="legend_info_moderate"><div class="pl" style="background:rgba(200,185,138,0.35);border-top:1px dashed rgba(200,185,138,0.5)"></div><span data-i18n="legend_moderate">Moderate</span></div>
+    <div class="leg-prec" data-info-key="legend_info_approximate"><div class="pl" style="background:rgba(200,185,138,0.15);border-top:1px dashed rgba(200,185,138,0.2)"></div><span data-i18n="legend_approximate">Approximate</span></div>
   </div>
 </div>
 
@@ -236,6 +259,7 @@
 
     <div id="btn-row">
       <span id="m-year">8,000 BC</span>
+      <!-- TIME cluster: stepper + year input -->
       <div class="btn-group-left">
         <button id="s-100b" class="btn btn-step" onclick="stepYear(-100)">−100</button>
         <button id="s-10b"  class="btn btn-step" onclick="stepYear(-10)">−10</button>
@@ -245,15 +269,20 @@
         <button id="s-10f"  class="btn btn-step" onclick="stepYear(10)">+10</button>
         <button id="s-100f" class="btn btn-step" onclick="stepYear(100)">+100</button>
       </div>
+      <!-- BRANDING: absolute-centered, doesn't take row space.
+           Full word-mark on desktop, seal-glyph on mobile. -->
       <div class="btn-group-center">
-        <button id="tour-btn" onclick="startTour()" title="Tutorial">◉</button><button id="info-btn" onclick="openIntro()" title="About this project">i</button><img id="ctrl-logo" src="data/images/EH-Name.png" alt="Europa Historica"><div id="lang-ctrl"><button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button><span class="lang-sep">|</span><button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button></div><button id="terr-list-btn" onclick="openTerrOverview()" title="Territories overview">☰</button><button id="search-btn" onclick="openSearch()" title="Search territories & rulers (Ctrl+K)">⌕</button>
+        <img id="ctrl-logo"        class="desktop-only" src="data/images/EH-Name.png"   alt="Europa Historica">
+        <img id="ctrl-logo-mobile" class="mobile-only"  src="data/images/EH-Symbol.png" alt="EH">
       </div>
+      <!-- LAYERS + PLAYBACK cluster -->
       <div class="btn-group-right">
         <div id="layer-btns">
           <button class="btn btn-trails"  id="trails-btn"  onclick="openTrailMenu()" title="Guided trails" data-i18n="ctrl_trails">Trails</button>
           <button class="btn btn-events"   id="events-btn"  onclick="toggleEvents()"  title="Historical events — off" data-i18n="ctrl_events">Events</button>
           <button class="btn btn-pleiades" id="pleiades-btn" onclick="togglePleiades()" title="Ancient settlements — off" data-i18n="ctrl_pleiades">Pleiades</button>
         </div>
+        <span class="bar-divider bar-divider-sm"></span>
         <div id="play-btns">
           <button class="btn" id="s-2h" onclick="setSpd(-2)" title="Backward 2×">◀◀</button>
           <button class="btn" id="s-1h" onclick="setSpd(-1)" title="Backward 1×">◀</button>
@@ -377,7 +406,7 @@
 </div>
 
 <!-- i18n: must load first (provides t() used by every other module) -->
-<script src="js/i18n.js?v=R8"></script>
+<script src="js/i18n.js?v=R12"></script>
 <!-- config: split from a 2027-line monolith into 5 focused modules.
      Order: leaf modules (epochs, cities) → territories → context → loader.
      All declarations live on the global scope (classic <script>). -->
@@ -391,14 +420,14 @@
 <!-- View / interaction layer -->
 <script src="js/map.js?v=R4"></script>
 <script src="js/tooltip.js?v=R6"></script>
-<script src="js/timeline.js?v=R4"></script>
+<script src="js/timeline.js?v=R12"></script>
 <script src="js/cities.js?v=R5"></script>
 <script src="js/events.js?v=R4"></script>
-<script src="js/app.js?v=R4"></script>
+<script src="js/app.js?v=R13"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
 <script src="js/search.js?v=R4"></script>
-<script src="js/tour.js?v=R4"></script>
+<script src="js/tour.js?v=R12"></script>
 <script src="js/trails.js?v=R4"></script>
 <script>
   // Apply saved language on page load (before first render)

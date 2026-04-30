@@ -37,6 +37,14 @@ d3.select('#map-container')
   .on('touchstart.cur', function() { this.classList.add('dragging'); }, {passive:true})
   .on('touchend.cur',   function() { this.classList.remove('dragging'); });
 
+// Reset zoom + pan to default. Wired up in index.html via #map-reset-btn.
+function resetMapView() {
+  d3.select('#map-container')
+    .transition()
+    .duration(450)
+    .call(zoom.transform, d3.zoomIdentity);
+}
+
 // Capture phase fires before D3's touchstart (which calls stopImmediatePropagation)
 document.addEventListener('touchstart', function() {
   const mc = document.getElementById('map-container');
@@ -88,15 +96,8 @@ function setMsg(m) { document.getElementById('loading-msg').textContent = m; }
   });
 })();
 
-// ── Legende auf Mobile standardmäßig eingeklappt ──
-if (window.innerWidth <= 768) {
-  const leg = document.getElementById('legend');
-  const btn = document.getElementById('legend-toggle');
-  if (leg && btn) {
-    leg.classList.add('collapsed');
-    btn.textContent = '+';
-  }
-}
+// (mobile auto-collapse for #legend was removed: on phones the legend
+//  now lives in a modal opened via #legend-btn, see toggleLegendModal)
 
 // ── Legende verschiebbar ──
 (function() {

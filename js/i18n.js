@@ -26,6 +26,16 @@ const I18N = {
     legend_established: 'Established',
     legend_moderate:    'Moderate',
     legend_approximate: 'Approximate',
+    // Legend info-popups (shown on click on a legend entry)
+    legend_info_territory:    'A historical political entity — kingdom, empire, republic — at the moment shown.',
+    legend_info_ruler:        'Listed for territories where ruler data is available. Clickable in the territory panel.',
+    legend_info_capital_city: 'Diamond marker — capital of the territory at this point in time.',
+    legend_info_notable_city: 'Circle marker — major city of the era, not necessarily a capital.',
+    legend_info_settlement:   'Cross marker — ancient settlement from the Pleiades gazetteer. Visible while the Pleiades layer is on.',
+    legend_info_event:        'Star marker — historical milestone event. Visible while the Events layer is on.',
+    legend_info_established:  'Borders well documented in contemporary sources (treaties, surveys, written records).',
+    legend_info_moderate:     'Approximate borders, derived from indirect evidence.',
+    legend_info_approximate:  'Speculative borders where evidence is fragmentary or contested.',
     // Tooltip
     tt_context:      'Context',
     tt_rulers:       'Rulers',
@@ -94,6 +104,17 @@ const I18N = {
     ctrl_trails:   'Trails',
     ctrl_events:   'Events',
     ctrl_pleiades: 'Pleiades',
+    ctrl_reset_view: 'Reset map view',
+    ctrl_tutorial_btn_title: 'Restart tutorial',
+    ctrl_info_title: 'About this project',
+    ctrl_terr_list_title: 'Territories overview',
+    ctrl_search_title: 'Search (Ctrl+K)',
+    ctrl_legend_title: 'Legend',
+    // Tutorial step controls
+    tour_step_of:    'Step {n} of {total}',
+    tour_end:        'End Tour',
+    tour_next:       'Next →',
+    tour_finish_explore: 'Explore the map →',
     // Loading screen
     loading_init: 'Initializing…',
     // Tour finish
@@ -121,6 +142,16 @@ const I18N = {
     legend_established: 'Gesichert',
     legend_moderate:    'Moderat',
     legend_approximate: 'Annähernd',
+    // Legend info-popups (shown on click on a legend entry)
+    legend_info_territory:    'Eine historische politische Einheit — Königreich, Kaiserreich, Republik — zum gezeigten Zeitpunkt.',
+    legend_info_ruler:        'Aufgelistet bei Territorien, für die Herrscher-Daten vorliegen. Im Territoriums-Panel klickbar.',
+    legend_info_capital_city: 'Raute-Marker — Hauptstadt des Territoriums zu diesem Zeitpunkt.',
+    legend_info_notable_city: 'Kreis-Marker — bedeutende Stadt der Epoche, nicht zwingend Hauptstadt.',
+    legend_info_settlement:   'Kreuz-Marker — antike Siedlung aus dem Pleiades-Verzeichnis. Sichtbar wenn der Pleiades-Layer aktiv ist.',
+    legend_info_event:        'Stern-Marker — historisches Schlüsselereignis. Sichtbar wenn der Events-Layer aktiv ist.',
+    legend_info_established:  'Grenzen sind in zeitgenössischen Quellen gut dokumentiert (Verträge, Vermessungen, Urkunden).',
+    legend_info_moderate:     'Annähernde Grenzen, aus indirekten Hinweisen abgeleitet.',
+    legend_info_approximate:  'Spekulative Grenzen — die Quellenlage ist fragmentarisch oder strittig.',
     // Tooltip
     tt_context:      'Kontext',
     tt_rulers:       'Herrscher',
@@ -189,6 +220,17 @@ const I18N = {
     ctrl_trails:   'Trails',
     ctrl_events:   'Ereignisse',
     ctrl_pleiades: 'Pleiades',
+    ctrl_reset_view: 'Karte zurücksetzen',
+    ctrl_tutorial_btn_title: 'Tutorial neu starten',
+    ctrl_info_title: 'Über dieses Projekt',
+    ctrl_terr_list_title: 'Territoriums-Übersicht',
+    ctrl_search_title: 'Suchen (Strg+K)',
+    ctrl_legend_title: 'Legende',
+    // Tutorial step controls
+    tour_step_of:    'Schritt {n} von {total}',
+    tour_end:        'Tutorial beenden',
+    tour_next:       'Weiter →',
+    tour_finish_explore: 'Karte erkunden →',
     // Loading screen
     loading_init: 'Wird geladen…',
     // Tour finish

@@ -22,10 +22,10 @@
         "text": "Spring über das Eingabefeld direkt zu einem beliebigen Jahr oder blätter mit den ±-Schaltflächen vor und zurück durch die Zeit."
     },
     {
-        "target": ".btn-group-center",
-        "pos": "above",
-        "title": "Info & Suche",
-        "text": "Hier findest du die wichtigsten Funktionen:\n◉  Startet das Tutorial erneut\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und macht sie durchsuchbar\n⌕  Sucht nach Herrschern, Orten und Ereignissen"
+        "target": "#top-right-bar",
+        "pos": "below",
+        "title": "Werkzeuge & Einstellungen",
+        "text": "Oben rechts findest du alles, was nicht mit der Zeit zu tun hat:\n◉  Startet das Tutorial erneut\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und macht sie durchsuchbar\n⌕  Sucht nach Herrschern, Orten und Ereignissen\nEN/DE  Sprachwechsel\n⌂  Setzt die Karten-Ansicht zurück"
     },
     {
         "target": "#play-btns",
@@ -53,13 +53,20 @@
     },
     {
         "target": "#legend",
+        "target_mobile": "#legend-btn",
         "pos": "right",
+        "pos_mobile": "below",
         "title": "Legende",
-        "text": "Jedes Gebiet ist nach seiner kulturellen Gruppe farblich gekennzeichnet – germanisch, römisch, osmanisch und weitere. Hier siehst du, welche Gruppen in der aktuellen Epoche aktiv sind und was die verschiedenen Grenzstile bedeuten."
+        "text": "Jedes Gebiet ist nach seiner kulturellen Gruppe farblich gekennzeichnet – germanisch, römisch, osmanisch und weitere. Hier siehst du, welche Gruppen in der aktuellen Epoche aktiv sind und was die verschiedenen Grenzstile bedeuten. Klick auf einen Eintrag zeigt eine kurze Erklärung."
     },
     {
         "title": "Das war's!",
-        "text": "Die Karte steht dir zur Erkundung offen. Klick auf ein beliebiges Gebiet, um mehr über seine Herrscher und seine Geschichte zu erfahren.",
-        "finish": true
+        "text": "Probier eine dieser drei Sachen:",
+        "finish": true,
+        "actions": [
+            { "label": "▣  Spring nach Rom auf dem Höhepunkt (117 n. Chr.)", "action": "jumpToYear",    "args": [117] },
+            { "label": "✦  Einen Pfad öffnen",                              "action": "openTrailMenu" },
+            { "label": "△  Antike Siedlungen zeigen",                       "action": "showAncientSettlements" }
+        ]
     }
 ]

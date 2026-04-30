@@ -63,11 +63,21 @@ function _tourShow(i) {
   if (!step) return;
   const isLast = !!step.finish;
 
+  // Mobile-specific overrides — a step can declare alternative target
+  // and position for phones (e.g. legend points at #legend-btn instead
+  // of the desktop-only floating #legend element).
+  const onMobile = typeof isMobile === 'function' && isMobile();
+  if (onMobile) {
+    if (step.target_mobile) step.target = step.target_mobile;
+    if (step.pos_mobile)    step.pos    = step.pos_mobile;
+  }
+
   // On mobile: open drawer for steps that target the controls bar
   // #tl-wrap is visible in the collapsed strip — exclude from drawer-open
   let drawerJustOpened = false;
-  if (typeof isMobile === 'function' && isMobile() && step.target &&
-      step.target !== '#legend' && step.target !== '#tl-wrap') {
+  if (onMobile && step.target &&
+      step.target !== '#legend' && step.target !== '#legend-btn' &&
+      step.target !== '#tl-wrap' && step.target !== '#top-right-bar') {
     const ctrl = document.getElementById('controls');
     if (ctrl && !ctrl.classList.contains('m-open')) {
       ctrl.classList.add('m-open');
@@ -77,7 +87,7 @@ function _tourShow(i) {
     }
   }
 
-  // Auto-expand legend for the legend step
+  // Auto-expand desktop legend for the legend step
   if (step.target === '#legend') {
     const leg = document.getElementById('legend');
     if (leg && leg.classList.contains('collapsed')) {
@@ -85,33 +95,62 @@ function _tourShow(i) {
       toggleLegend();
     }
   }
+  // Auto-open mobile legend modal for the legend step
+  if (step.target === '#legend-btn' && onMobile) {
+    if (!document.body.classList.contains('legend-modal-open')) {
+      document.body.classList.add('legend-modal-open');
+    }
+  }
 
-  document.getElementById('tr-count').textContent = 'Step ' + (i + 1) + ' of ' + _tourSteps.length;
+  document.getElementById('tr-count').textContent =
+    t('tour_step_of').replace('{n}', i + 1).replace('{total}', _tourSteps.length);
   document.getElementById('tr-title').textContent = step.title;
-  document.getElementById('tr-body').textContent  = step.text;
+
+  // Final step with action-cards: render text + clickable cards.
+  // Each card runs a named handler from _TOUR_ACTIONS, then ends the tour.
+  const body = document.getElementById('tr-body');
+  body.textContent = step.text;
+  if (isLast && Array.isArray(step.actions) && step.actions.length) {
+    const cards = document.createElement('div');
+    cards.className = 'tt-cards';
+    step.actions.forEach(a => {
+      const card = document.createElement('button');
+      card.className = 'tt-card';
+      card.textContent = a.label;
+      card.onclick = () => {
+        _tourSkip();
+        const fn = _TOUR_ACTIONS[a.action];
+        if (typeof fn === 'function') {
+          // Mobile: collapse drawer first, then run after small delay
+          if (typeof isMobile === 'function' && isMobile()) {
+            const ctrl = document.getElementById('controls');
+            if (ctrl && ctrl.classList.contains('m-open')) {
+              ctrl.classList.remove('m-open');
+              const mb = document.getElementById('m-more'); if (mb) mb.classList.remove('open');
+            }
+            setTimeout(() => fn(...(a.args || [])), 320);
+          } else {
+            fn(...(a.args || []));
+          }
+        }
+      };
+      cards.appendChild(card);
+    });
+    body.appendChild(cards);
+  }
 
   const skp = document.getElementById('tr-skip');
   if (isLast) {
-    skp.textContent = '\u2190 Take a Trail';
-    skp.onclick = () => {
-      _tourSkip();
-      if (typeof isMobile === 'function' && isMobile()) {
-        const ctrl = document.getElementById('controls');
-        if (ctrl) { ctrl.classList.add('m-open'); const mb = document.getElementById('m-more'); if (mb) mb.classList.add('open'); }
-        setTimeout(openTrailMenu, 360);
-      } else {
-        openTrailMenu();
-      }
-    };
-    skp.classList.add('tt-equal');
+    skp.style.display = 'none';   // last step uses cards instead
   } else {
-    skp.textContent = 'End Tour';
+    skp.style.display = '';
+    skp.textContent = t('tour_end');
     skp.onclick = _tourSkip;
     skp.classList.remove('tt-equal');
   }
 
   const nxt = document.getElementById('tr-next');
-  nxt.textContent = isLast ? 'Explore the map \u2192' : 'Next \u2192';
+  nxt.textContent = isLast ? t('tour_finish_explore') : t('tour_next');
   nxt.onclick     = isLast ? _tourSkip : _tourNext;
 
   const place = () => {
@@ -132,7 +171,7 @@ function _tourShow(i) {
 
 // ── Positioning ────────────────────────────
 function _tourPlace(step) {
-  _tourTt.classList.remove('tr-on', 'tr-arr-down', 'tr-arr-left');
+  _tourTt.classList.remove('tr-on', 'tr-arr-down', 'tr-arr-left', 'tr-arr-up');
 
   if (!step.target) {
     _tourHl.style.boxShadow = 'none';
@@ -190,6 +229,16 @@ function _tourPlace(step) {
         _tourTt.style.top = (hlT + hlH / 2 + (8 - ttRect.top)) + 'px';
       }
     });
+
+  } else if (step.pos === 'below') {
+    let tx = hlL + hlW / 2 - _TT_W / 2;
+    tx = Math.max(8, Math.min(vw - _TT_W - 8, tx));
+    const arrowX = Math.max(16, Math.min(_TT_W - 24, (hlL + hlW / 2) - tx));
+    _tourTt.style.setProperty('--arrow-x', arrowX + 'px');
+    _tourTt.classList.add('tr-arr-up');
+    _tourTt.style.left      = tx + 'px';
+    _tourTt.style.top       = (hlT + hlH + _GAP) + 'px';
+    _tourTt.style.transform = '';
   }
 }
 
@@ -201,6 +250,8 @@ function _tourNext() {
     const leg = document.getElementById('legend');
     if (leg && !leg.classList.contains('collapsed')) toggleLegend();
   }
+  // Close mobile legend modal if the tour opened it
+  document.body.classList.remove('legend-modal-open');
   _tourTt.classList.remove('tr-on');
   _tourHl.classList.remove('tr-on');
   _tourIdx++;
@@ -215,6 +266,8 @@ function _tourSkip() {
 function _tourDestroy() {
   if (_tourHl) { _tourHl.remove(); _tourHl = null; }
   if (_tourTt) { _tourTt.remove(); _tourTt = null; }
+  // Close mobile legend modal if it was opened by the tour
+  document.body.classList.remove('legend-modal-open');
   // Collapse legend if tour auto-expanded it
   if (_tourAutoExpandedLegend) {
     _tourAutoExpandedLegend = false;
@@ -229,3 +282,31 @@ function _tourDestroy() {
     if (btn) { btn.textContent = '▲'; btn.classList.remove('open'); }
   }
 }
+
+// ── Final-step action cards ─────────────────
+// Whitelist of allowed actions referenced from tour.json by name. Keeps
+// the JSON declarative — no eval, no random globals.
+const _TOUR_ACTIONS = {
+  jumpToYear:    (y) => { if (typeof jumpToYear === 'function')    jumpToYear(y); },
+  openTrailMenu: ()  => { if (typeof openTrailMenu === 'function') openTrailMenu(); },
+  togglePleiades:()  => { if (typeof togglePleiades === 'function') togglePleiades(); },
+  toggleEvents:  ()  => { if (typeof toggleEvents === 'function')   toggleEvents(); },
+  // Composite: jump to a year where Pleiades data actually exists, then
+  // turn the layer on. Most Pleiades settlements live -700 to ~640 AD.
+  showAncientSettlements: () => {
+    if (typeof jumpToYear === 'function') jumpToYear(100);
+    if (typeof pleiadesMode !== 'undefined' && pleiadesMode === 0 &&
+        typeof togglePleiades === 'function') {
+      togglePleiades();
+    }
+  },
+  // Composite: jump + show events at a known dense moment.
+  showEventsAtJesusEra: () => {
+    if (typeof jumpToYear === 'function') jumpToYear(33);
+    if (typeof eventsMode !== 'undefined' && eventsMode === 0 &&
+        typeof toggleEvents === 'function') {
+      toggleEvents();
+    }
+  },
+  noop: () => {},
+};
