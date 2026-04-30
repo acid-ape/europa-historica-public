@@ -25,7 +25,7 @@
         "target": ".btn-group-center",
         "pos": "above",
         "title": "Info & Suche",
-        "text": "Hier findest du die wichtigsten Funktionen:\n◉  Startet diese Tour\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und macht sie durchsuchbar\n⌕  Sucht nach Herrschern, Orten und Ereignissen"
+        "text": "Hier findest du die wichtigsten Funktionen:\n◉  Startet das Tutorial erneut\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und macht sie durchsuchbar\n⌕  Sucht nach Herrschern, Orten und Ereignissen"
     },
     {
         "target": "#play-btns",

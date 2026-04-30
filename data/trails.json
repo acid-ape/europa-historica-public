@@ -217,5 +217,190 @@
         "image": "data/images/events/way_of_writing__the_press.jpg"
       }
     ]
+  },
+  {
+    "id": "road_to_germany",
+    "title": "Road to Germany",
+    "subtitle": "1806 – 1990",
+    "steps": [
+      {
+        "title": "End of the Holy Roman Empire",
+        "year": 1806,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Holy_Roman_Empire",
+        "description": "Napoleon’s armies have already humiliated Austria at Austerlitz. The Confederation of the Rhine pulls sixteen German states out from under imperial authority. On 6 August 1806, Francis II steps to a window in Vienna and reads a declaration: the title of Holy Roman Emperor is laid down, the empire dissolved. A thousand-year political idea ends in a single afternoon. What replaces it is uncertain — a constellation of small kingdoms with no shared roof.",
+        "image": "data/images/events/road_to_germany__end_of_the_holy_roman_empire.png"
+      },
+      {
+        "title": "Congress of Vienna",
+        "year": 1815,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Congress_of_Vienna",
+        "description": "After Napoleon’s final defeat, Europe’s powers redraw the continent in Vienna. Out of nearly three hundred former territories emerges the German Confederation: 39 states, dominated by Austria and Prussia, loosely yoked together. There is no German nation yet, no common army, no parliament that decides anything. But for the first time since 1806, the word ‘Deutschland’ has a political shape — however thin.",
+        "image": "data/images/events/road_to_germany__congress_of_vienna.png"
+      },
+      {
+        "title": "Frankfurt Parliament",
+        "year": 1848,
+        "lon": 8.68,
+        "lat": 50.11,
+        "wiki": "Frankfurt_Parliament",
+        "description": "Across Europe revolution flares; in the German lands liberals demand a constitution and a unified state. In Frankfurt’s Paulskirche, 585 elected delegates draft a constitution and offer the imperial crown to the Prussian king. Friedrich Wilhelm IV refuses — a crown ‘from the gutter,’ he calls it. Within a year the parliament is dispersed and the revolution ground down. The unification has to wait, but the idea will not.",
+        "image": "data/images/events/road_to_germany__frankfurt_parliament.png"
+      },
+      {
+        "title": "Proclamation of the German Empire",
+        "year": 1871,
+        "lon": 2.12,
+        "lat": 48.8,
+        "wiki": "Proclamation_of_the_German_Empire",
+        "description": "Bismarck has spent a decade engineering this moment: three short wars against Denmark, Austria, and France — each a chess move. After Napoleon III’s defeat at Sedan, the German princes meet in the Hall of Mirrors at Versailles and proclaim Wilhelm I as German Emperor. The site is deliberate: in the palace of France’s kings, the new empire is born. The Reich begins as a Prussian-led federation of 25 states, sealed by humiliation.",
+        "image": "data/images/events/road_to_germany__proclamation_of_the_german_empire.jpg"
+      },
+      {
+        "title": "Treaty of Versailles",
+        "year": 1919,
+        "lon": 2.12,
+        "lat": 48.8,
+        "wiki": "Treaty_of_Versailles",
+        "description": "The Great War has consumed an empire. Twenty million dead in Europe, the Hohenzollern crown gone, the Reichstag in republican hands. In the same Hall of Mirrors where the empire was proclaimed, Germany now signs a treaty written by the victors: territorial losses, reparations, the war-guilt clause. The new Weimar Republic begins burdened by a peace it did not negotiate. The treaty closes one chapter and pre-writes the next.",
+        "image": "data/images/events/road_to_germany__treaty_of_versailles.jpg"
+      },
+      {
+        "title": "Nazi Seizure of Power",
+        "year": 1933,
+        "lon": 13.4,
+        "lat": 52.52,
+        "wiki": "Adolf_Hitler%27s_rise_to_power",
+        "description": "Inflation, mass unemployment, street violence: Weimar is exhausted. On 30 January 1933 President Hindenburg appoints Hitler as Chancellor — a calculated bet by conservatives that they can contain him. Within months the Reichstag burns, the Enabling Act passes, opposition parties are banned, and Germany has become a one-party dictatorship. The republic dies without a coup, by parliamentary procedure, before an indifferent public.",
+        "image": "data/images/events/road_to_germany__nazi_seizure_of_power.jpg"
+      },
+      {
+        "title": "Stunde Null",
+        "year": 1945,
+        "lon": 13.4,
+        "lat": 52.52,
+        "wiki": "End_of_World_War_II_in_Europe",
+        "description": "Twelve years of dictatorship and six of war end in May 1945. Forty million dead in Europe alone. Berlin is rubble. The Wehrmacht surrenders unconditionally; the Allies divide the country into four occupation zones. The crimes of the regime — industrial genocide, slave labour, war of annihilation — are uncovered as the camps are liberated. Whatever Germany becomes next must begin from this. The moment is named Stunde Null: zero hour.",
+        "image": "data/images/events/road_to_germany__stunde_null.jpg"
+      },
+      {
+        "title": "Two German States",
+        "year": 1949,
+        "lon": 7.1,
+        "lat": 50.74,
+        "wiki": "Basic_Law_for_the_Federal_Republic_of_Germany",
+        "description": "Cold War lines harden. In May 1949 the western occupation zones merge into the Federal Republic of Germany, with a new capital at provincial Bonn — chosen so it cannot rival Berlin. Five months later the Soviet zone becomes the German Democratic Republic, with East Berlin as its capital. Two German states face each other across the inner-German border, each claiming to be the legitimate continuation of what came before.",
+        "image": "data/images/events/road_to_germany__two_german_states.jpg"
+      },
+      {
+        "title": "Reunification",
+        "year": 1990,
+        "lon": 13.378,
+        "lat": 52.516,
+        "wiki": "German_reunification",
+        "description": "The Berlin Wall has stood for 28 years when, on 9 November 1989, an East German press spokesman misreads new travel rules at a press conference: ‘effective immediately.’ Crowds gather. The guards open the gates. Eleven months later, on 3 October 1990, East Germany dissolves and joins the Federal Republic. After a century shaped by two world wars, partition, and dictatorship, Germany is one country again — and the postwar order it grew up under is ending.",
+        "image": "data/images/events/road_to_germany__reunification.jpg"
+      }
+    ]
+  },
+  {
+    "id": "from_mecca_to_vienna",
+    "title": "From Mecca to Vienna",
+    "subtitle": "622 – 1683",
+    "steps": [
+      {
+        "title": "The Hijra",
+        "year": 622,
+        "lon": 39.61,
+        "lat": 24.47,
+        "wiki": "Hijrah",
+        "description": "Mecca will not have him. After twelve years of preaching, persecution, and a slow exodus of his followers, Muhammad himself slips out at night and rides north to Yathrib, a small oasis town whose divided tribes have invited him to mediate their feuds. Within a generation Yathrib will be Medina — the City — and the year of his arrival, 622, will become Year One of a new calendar. Islam is no longer a fringe movement of merchants and outcasts. It is becoming a polity.",
+        "image": "data/images/events/from_mecca_to_vienna__the_hijra.jpg"
+      },
+      {
+        "title": "Conquest of the Near East",
+        "year": 635,
+        "lon": 36.29,
+        "lat": 33.51,
+        "wiki": "Muslim_conquest_of_the_Levant",
+        "description": "Three years after Muhammad’s death, his followers ride out of Arabia. The two great empires of the day — Byzantine Rome and Sasanian Persia — have just fought each other to exhaustion. Damascus, a wealthy Roman provincial capital, falls in 635. By 642 Egypt is taken, by 651 Persia is finished. A movement that began with one man in a desert town has, in a single generation, conquered the world’s oldest civilizations. The political map of the Mediterranean is being redrawn faster than anyone can write it down.",
+        "image": "data/images/events/from_mecca_to_vienna__conquest_of_the_near_east.jpg"
+      },
+      {
+        "title": "Battle of Tours",
+        "year": 732,
+        "lon": 0.34,
+        "lat": 46.58,
+        "wiki": "Battle_of_Tours",
+        "description": "A century after the Prophet’s death, Arab armies have crossed the Strait of Gibraltar, taken Spain, and pushed into Frankish territory. Near Poitiers in central France, Charles Martel meets Abd al-Rahman’s cavalry with a wall of infantry. The Arabs break themselves on it. Their commander is killed; the survivors withdraw south. The high-water mark of the western expansion has been reached. Edward Gibbon will later imagine, with some exaggeration, the Quran being taught at Oxford had Martel lost. He didn’t.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_tours.png"
+      },
+      {
+        "title": "Baghdad Founded",
+        "year": 762,
+        "lon": 44.36,
+        "lat": 33.31,
+        "wiki": "Round_City_of_Baghdad",
+        "description": "The Abbasid revolution has overthrown the Umayyads and moved the capital eastward. Caliph al-Mansur designs a new city: a perfect circle, walls four kilometres in circumference, four gates pointing to Mecca, Damascus, Khurasan, and Basra. He calls it Madinat as-Salam — the City of Peace — but everyone calls it Baghdad. Within a century it will be the largest city on Earth, a magnet for Greek philosophy, Indian mathematics, Persian poetry. The Islamic Golden Age has its capital.",
+        "image": "data/images/events/from_mecca_to_vienna__baghdad_founded.png"
+      },
+      {
+        "title": "Caliphate of Córdoba",
+        "year": 929,
+        "lon": -4.78,
+        "lat": 37.88,
+        "wiki": "Caliphate_of_Córdoba",
+        "description": "When the Abbasids took Baghdad, one Umayyad prince escaped — west, to Spain. Two centuries later his descendant Abd al-Rahman III declares himself caliph in Córdoba, breaking the formal unity of the Muslim world. By the year 1000 Córdoba is the largest city in Western Europe: half a million people, hundreds of mosques, a library said to hold 400,000 volumes when Christian Europe’s libraries hold a few hundred. Aristotle returns to the Latin West through here. So do paper, algebra, and the lute.",
+        "image": "data/images/events/from_mecca_to_vienna__caliphate_of_córdoba.png"
+      },
+      {
+        "title": "Battle of Manzikert",
+        "year": 1071,
+        "lon": 42.53,
+        "lat": 39.15,
+        "wiki": "Battle_of_Manzikert",
+        "description": "The Seljuk Turks — recent converts from the steppe — have built an empire stretching from Central Asia to the Levant. At Manzikert in eastern Anatolia, they meet a Byzantine army personally led by Emperor Romanos IV. The Byzantines are crushed; Romanos is captured. The defeat opens Anatolia, the empire’s heartland, to Turkish settlement. Within a generation what had been Greek-speaking, Christian Asia Minor for a thousand years is becoming something else. The empire never recovers, and a panicked emperor will write to the Pope for help.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_manzikert.png"
+      },
+      {
+        "title": "Crusaders Take Jerusalem",
+        "year": 1099,
+        "lon": 35.22,
+        "lat": 31.78,
+        "wiki": "Siege_of_Jerusalem_(1099)",
+        "description": "Pope Urban II’s call at Clermont in 1095 has produced something nobody quite anticipated: an army of tens of thousands marching across Europe, through Constantinople, across Anatolia, down the Levantine coast. After three years on the road, after famine and battle and intra-Christian betrayal, they arrive at Jerusalem. The siege lasts five weeks. When the walls fall on 15 July, the slaughter is general. A Frankish kingdom is established along the Levantine coast. The encounter the West has been having with Islam from a distance has just become very immediate.",
+        "image": "data/images/events/from_mecca_to_vienna__crusaders_take_jerusalem.jpg"
+      },
+      {
+        "title": "Saladin Retakes Jerusalem",
+        "year": 1187,
+        "lon": 35.22,
+        "lat": 31.78,
+        "wiki": "Siege_of_Jerusalem_(1187)",
+        "description": "For 88 years the Crusader states cling to the Levantine coast, while Muslim power around them slowly consolidates. Salah ad-Din — Saladin — Kurdish general, Sultan of Egypt and Syria, finally unites the fragmented response. At the Horns of Hattin in July 1187 he annihilates the Crusader field army; three months later Jerusalem opens its gates. The contrast with 1099 is deliberate: Saladin lets the Christian inhabitants ransom themselves, frees the poor without payment. Europe will mythologize him afterward as the model of a chivalrous enemy.",
+        "image": "data/images/events/from_mecca_to_vienna__saladin_retakes_jerusalem.jpg"
+      },
+      {
+        "title": "Fall of Constantinople",
+        "year": 1453,
+        "lon": 28.97,
+        "lat": 41.01,
+        "wiki": "Fall_of_Constantinople",
+        "description": "Mehmed II is 21 years old. The walls of Constantinople have stood since the time of Theodosius — over a thousand years. He brings to them an artillery train no city has ever faced: cannons cast specifically to break this stone. After 53 days the breach holds; Ottoman troops pour in. Constantine XI dies fighting in the streets. The Hagia Sophia becomes a mosque. Mehmed begins styling himself Kaisar-i Rum — Caesar of Rome. Byzantium, the eastern half of the Roman Empire that lasted a millennium beyond the western, has finally ended. The successor is the Ottoman Empire.",
+        "image": "data/images/events/from_mecca_to_vienna__fall_of_constantinople.jpg"
+      },
+      {
+        "title": "Battle of Vienna",
+        "year": 1683,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Battle_of_Vienna",
+        "description": "The Ottomans have been pressing into Central Europe for two centuries. In summer 1683 an army of 150,000 under Grand Vizier Kara Mustafa lays siege to Vienna — for the second time, after 1529. The city holds for two months. On 12 September a Polish-led relief force charges down from the Kahlenberg hills and breaks the siege. The Ottoman tents are looted; among the trophies, supposedly, sacks of green beans the Viennese will turn into a coffee culture. The empire’s high tide is over. From now on the line moves the other way.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_vienna.jpg"
+      }
+    ]
   }
 ]

@@ -25,7 +25,7 @@
     "target": ".btn-group-center",
     "pos": "above",
     "title": "Info & Search",
-    "text": "Here you can access the main tools:\n◉  starts this guided tour\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, and events"
+    "text": "Here you can access the main tools:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, and events"
   },
   {
     "target": "#play-btns",

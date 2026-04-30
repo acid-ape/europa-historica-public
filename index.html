@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R4">
+  <link rel="stylesheet" href="css/style.css?v=R8">
 </head>
 <body>
 <div id="loading">
@@ -246,7 +246,7 @@
         <button id="s-100f" class="btn btn-step" onclick="stepYear(100)">+100</button>
       </div>
       <div class="btn-group-center">
-        <button id="tour-btn" onclick="startTour()" title="Guided tour">◉</button><button id="info-btn" onclick="openIntro()" title="About this project">i</button><img id="ctrl-logo" src="data/images/EH-Name.png" alt="Europa Historica"><div id="lang-ctrl"><button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button><span class="lang-sep">|</span><button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button></div><button id="terr-list-btn" onclick="openTerrOverview()" title="Territories overview">☰</button><button id="search-btn" onclick="openSearch()" title="Search territories & rulers (Ctrl+K)">⌕</button>
+        <button id="tour-btn" onclick="startTour()" title="Tutorial">◉</button><button id="info-btn" onclick="openIntro()" title="About this project">i</button><img id="ctrl-logo" src="data/images/EH-Name.png" alt="Europa Historica"><div id="lang-ctrl"><button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button><span class="lang-sep">|</span><button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button></div><button id="terr-list-btn" onclick="openTerrOverview()" title="Territories overview">☰</button><button id="search-btn" onclick="openSearch()" title="Search territories & rulers (Ctrl+K)">⌕</button>
       </div>
       <div class="btn-group-right">
         <div id="layer-btns">
@@ -359,9 +359,8 @@
     </div>
 
     <div id="intro-actions">
-      <button id="intro-trail"   onclick="hideIntroThenTrail()" data-i18n="intro_trail_btn">← Take a Trail</button>
-      <button id="intro-tour"    onclick="startTour()"          data-i18n="intro_tour_btn">Take the Tour ↓</button>
-      <button id="intro-explore" onclick="hideIntro()"          data-i18n="intro_explore_btn">Explore the map →</button>
+      <button id="intro-tour"    onclick="startTour()" data-i18n="intro_tour_btn">Start Tutorial ↓</button>
+      <button id="intro-explore" onclick="hideIntro()" data-i18n="intro_explore_btn">Explore the map →</button>
     </div>
   </div>
 </div>
@@ -378,7 +377,7 @@
 </div>
 
 <!-- i18n: must load first (provides t() used by every other module) -->
-<script src="js/i18n.js?v=R6"></script>
+<script src="js/i18n.js?v=R8"></script>
 <!-- config: split from a 2027-line monolith into 5 focused modules.
      Order: leaf modules (epochs, cities) → territories → context → loader.
      All declarations live on the global scope (classic <script>). -->
@@ -396,7 +395,7 @@
 <script src="js/cities.js?v=R5"></script>
 <script src="js/events.js?v=R4"></script>
 <script src="js/app.js?v=R4"></script>
-<script src="js/intro.js?v=R5"></script>
+<script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
 <script src="js/search.js?v=R4"></script>
 <script src="js/tour.js?v=R4"></script>

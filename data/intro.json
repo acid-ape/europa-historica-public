@@ -27,7 +27,7 @@
       "the project evolves continuously as new data is added and refined"
     ],
     "paragraphs2": [
-      "The map currently covers over 295 territories from 8000 BC to 1500 AD, with rulers, flags, and historical context for many of them. It includes a guided tour, narrative trails, a historical events layer, ancient settlements, and a global search — and works on mobile as well. The interface and all content are available in English and German; switch any time via the language toggle in the bottom right.",
+      "The map currently covers over 295 territories from 8000 BC to 1500 AD, with rulers, flags, and historical context for many of them. It includes an interactive tutorial, narrative trails, a historical events layer, ancient settlements, and a global search — and works on mobile as well. The interface and all content are available in English and German; switch any time via the language toggle in the bottom right.",
       "All content is bundled with the app — descriptions, images, and event data ship locally. The map keeps working without a constant connection to Wikipedia or Wikidata.",
       "Europa Historica is built step by step as an independent project, exploring how history can be experienced interactively and not just read.",
       "It was created to address a simple problem: history we read rarely fits into context as clearly as history we see. Too often, history is understood in isolation, rather than within the world and time in which it existed.",
@@ -40,7 +40,10 @@
     "intro": "Europa Historica is in active development. The map currently covers <strong>8000 BC to 2010 AD</strong> with over <strong>295 territories</strong> and <strong>3,000+ rulers</strong>. All epochs from prehistory through 1500 AD are now fully populated with territories, descriptions, and ruler lists where available.",
     "recently_label": "Recently added:",
     "recently": [
-      "<strong>German language version</strong> — the entire interface and all content (tooltips, tour, trails, events, search) is now fully available in German. Language toggle in the bottom right.",
+      "<strong>New trail: From Mecca to Vienna</strong> — 622 to 1683, from the Hijra to the relief of the Vienna siege, in ten steps tracing the long encounter between Islam and Europe.",
+      "<strong>New trail: Road to Germany</strong> — 1806 to 1990, from the end of the Holy Roman Empire to reunification, in nine steps.",
+      "<strong>City tooltips with Wikipedia intros</strong> — Pleiades settlements now show longer descriptions in EN and DE, with a disclaimer when the article is about the modern town at the same site.",
+      "<strong>German language version</strong> — the entire interface and all content (tooltips, tutorial, trails, events, search) is now fully available in German. Language toggle in the bottom right.",
       "<strong>Fully offline-capable</strong> — all descriptions, ruler images, and event content are now bundled with the app. No live calls to Wikipedia at runtime.",
       "1100–1500 AD complete — Mamluk Sultanate, Ilkhanate, Teutonic Knights, Lithuania, Timurid Empire, Marinid dynasty, Sultanate of Rum, and more",
       "Almohad Caliphate, Almoravid dynasty, Khwarezm-Shah, Hafsid Caliphate, Empire of Trebizond — full ruler lists",
@@ -52,8 +55,8 @@
     "coming_label": "Coming next:",
     "coming": [
       "More ruler portraits and flags",
-      "More narrative trails",
-      "Road to Germany — Kaiserreich, Weimar Republic, division and reunification"
+      "Grand Duchy of Moscow → Tsardom → Empire — multi-context territory",
+      "Battles as a separate event type"
     ],
     "feedback": "Feedback and corrections are always welcome on <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>."
   }

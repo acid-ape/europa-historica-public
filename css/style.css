@@ -467,10 +467,28 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
 #intro-updates-inner a{color:#6a8aaa;text-decoration:none;}
 #intro-updates-inner a:hover{color:var(--gold2);}
 
-/* ── Actions ── */
+/* ── Actions ──
+   Hierarchy: tutorial = primary (gold), explore = secondary (dim).
+   First-time users should know the tutorial exists; experienced users
+   skip directly to explore. */
 #intro-actions{
   display:flex;justify-content:center;gap:12px;
   border-top:1px solid #1e1608;padding-top:16px;margin-top:4px;
+}
+#intro-tour{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;
+  padding:8px 22px;
+  border:1px solid var(--gold);
+  background:rgba(212,168,67,0.18);
+  color:var(--gold2);
+  border-radius:2px;cursor:pointer;
+  font-weight:600;
+  box-shadow:0 0 14px rgba(212,168,67,0.18);
+  transition:border-color .15s,color .15s,background .15s,box-shadow .15s;
+}
+#intro-tour:hover{
+  background:rgba(212,168,67,0.28);
+  box-shadow:0 0 18px rgba(212,168,67,0.32);
 }
 #intro-explore{
   font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;
@@ -479,20 +497,6 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
   transition:border-color .15s,color .15s,background .15s;
 }
 #intro-explore:hover{border-color:var(--gold);color:var(--gold2);background:rgba(212,168,67,0.08);}
-#intro-tour{
-  font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;
-  padding:7px 18px;border:1px solid #2a2010;background:transparent;
-  color:#5a4a2a;border-radius:2px;cursor:pointer;
-  transition:border-color .15s,color .15s,background .15s;
-}
-#intro-tour:hover{border-color:var(--gold);color:var(--gold2);background:rgba(212,168,67,0.06);}
-#intro-trail{
-  font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;
-  padding:7px 18px;border:1px solid #2a2010;background:transparent;
-  color:#5a4a2a;border-radius:2px;cursor:pointer;
-  transition:border-color .15s,color .15s,background .15s;
-}
-#intro-trail:hover{border-color:var(--gold);color:var(--gold2);background:rgba(212,168,67,0.06);}
 
 /* ── Guided Tour ── */
 #tour-hl{
@@ -841,7 +845,13 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 #trail-panel-counter{font-size:11px;color:#7a6a4a;flex-shrink:0;}
-#trail-panel-img{width:100%;height:130px;object-fit:cover;object-position:center top;display:none;flex-shrink:0;}
+#trail-panel-img{
+  width:100%;height:240px;
+  object-fit:contain;object-position:center;
+  background:rgba(0,0,0,0.55);
+  display:none;flex-shrink:0;
+  border-bottom:1px solid var(--border);
+}
 #trail-panel-body{padding:10px 14px 8px;overflow-y:auto;max-height:160px;}
 #trail-step-title{
   font-family:'Cinzel',serif;font-size:15px;color:var(--gold2);
@@ -909,10 +919,13 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
     width: 100vw;
     left: 0;
     bottom: 0;
-    max-height: 52vh;
+    max-height: 62vh;
     border-radius: 3px 3px 0 0;
   }
   #trail-panel-body{flex:1;max-height:none;overflow-y:auto;}
+  /* On phones the desktop 240px image swallows the body. Cap it at
+     30% of the viewport height so the description stays readable. */
+  #trail-panel-img{height:30vh;max-height:240px;}
 }
 
 /* ══════════════════════════════════════════

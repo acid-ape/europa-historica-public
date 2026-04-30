@@ -87,8 +87,7 @@ const I18N = {
     // Intro
     intro_more:    'About this project',
     intro_updates: 'Updates',
-    intro_trail_btn:   '← Take a Trail',
-    intro_tour_btn:    'Take the Tour ↓',
+    intro_tour_btn:    'Start Tutorial ↓',
     intro_explore_btn: 'Explore the map →',
     intro_lang_label:  'Language',
     // Controls
@@ -183,8 +182,7 @@ const I18N = {
     // Intro
     intro_more:    'Über dieses Projekt',
     intro_updates: 'Updates',
-    intro_trail_btn:   '← Trail starten',
-    intro_tour_btn:    'Tour starten ↓',
+    intro_tour_btn:    'Tutorial starten ↓',
     intro_explore_btn: 'Karte erkunden →',
     intro_lang_label:  'Sprache',
     // Controls

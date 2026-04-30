@@ -87,11 +87,6 @@ function hideIntro() {
   localStorage.setItem(INTRO_KEY, '1');
 }
 
-function hideIntroThenTrail() {
-  hideIntro();
-  setTimeout(openTrailMenu, 320);
-}
-
 // Opens without touching localStorage (reopen via (i) button)
 function openIntro() {
   showIntro();

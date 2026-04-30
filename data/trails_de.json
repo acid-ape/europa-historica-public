@@ -1,201 +1,406 @@
 [
-    {
-        "id": "rise_of_europe",
-        "title": "Der Aufstieg Europas",
-        "subtitle": "753 v. Chr. – 1648 n. Chr.",
-        "steps": [
-            {
-                "title": "Gründung Roms",
-                "year": -753,
-                "lon": 12.49,
-                "lat": 41.89,
-                "wiki": "Founding_of_Rome",
-                "description": "Sieben Hügel, eine Flussüberquerung, eine Handvoll lateinischer Dörfer. Nichts hier lässt ahnen, was kommen wird. Doch die Stadt, die an dieser Stelle entstehen wird, wird die mediterrane Welt in sich aufnehmen, ihre Gesetze festschreiben, ihre Sprachen in die Zukunft tragen – und ihr Untergang wird Europa stärker prägen, als es ihre Existenz jemals tat."
-            },
-            {
-                "title": "Von der Republik zum Kaiserreich",
-                "year": -27,
-                "lon": 15.0,
-                "lat": 38.0,
-                "subjecto": "Roman Republic",
-                "wiki": "Augustus",
-                "description": "Zwei Jahrhunderte lang hielt die Republik stand – gerade so. Dann zerriss sie eine Generation von Bürgerkriegen. Caesar überschritt den Rubikon, wurde ermordet, und sein Adoptivsohn vollendete, was er begonnen hatte. Im Jahr 27 v. Chr. übertrug der Senat Octavian eine Reihe von Sonderbefugnissen. Er nahm den Namen Augustus an. Die Republik endete nicht mit einem Paukenschlag – sie verwandelte sich still und leise in etwas anderes."
-            },
-            {
-                "title": "Rom auf dem Höhepunkt seiner Macht",
-                "year": 117,
-                "lon": 28.0,
-                "lat": 38.0,
-                "subjecto": "Roman Empire",
-                "wiki": "Roman_Empire",
-                "description": "Unter Trajan erreicht das Reich seine größte Ausdehnung – von Schottland bis Mesopotamien, vom Rhein bis zur Sahara. Vierzig Millionen Menschen leben unter römischem Recht. Die Straßen, Aquädukte und Gesetzbücher sind bereits uralt. Doch Größe ist auch eine Schwachstelle: Je länger die Grenze, desto höher die Kosten für ihre Verteidigung und desto mehr gibt es zu verlieren."
-            },
-            {
-                "title": "Der Untergang des Weströmischen Reiches",
-                "year": 476,
-                "lon": 12.49,
-                "lat": 41.89,
-                "subjecto": "Western Roman Empire",
-                "wiki": "Fall_of_the_Western_Roman_Empire",
-                "description": "Romulus Augustulus wird abgesetzt, und der letzte römische Kaiser des Westens verschwindet in der Vergessenheit. Damals nimmt dies kaum jemand zur Kenntnis – das Reich löst sich schon seit Jahrzehnten auf. Was zählt, ist, was die Lücke füllt: germanische Königreiche, die katholische Kirche und ein zerfallenes Straßennetz, das einst alles miteinander verband. Europa wird die nächsten vier Jahrhunderte damit verbringen, die Teile wieder zusammenzufügen."
-            },
-            {
-                "title": "Karl der Große wird gekrönt",
-                "year": 800,
-                "lon": 6.08,
-                "lat": 50.77,
-                "subjecto": "Carolingian Empire",
-                "wiki": "Charlemagne",
-                "description": "Am Weihnachtstag des Jahres 800 krönt Papst Leo III. Karl den Großen im Petersdom zum Kaiser. Dieser Akt vereint drei Elemente, die die europäische Politik ein Jahrtausend lang prägen werden: germanische Militärmacht, das Erbe Roms und die Autorität der Kirche. Zum ersten Mal seit 476 beherrscht ein einziger Herrscher den größten Teil Westeuropas – doch dies wird nicht lange währen."
-            },
-            {
-                "title": "Die normannische Eroberung Englands",
-                "year": 1066,
-                "lon": 0.58,
-                "lat": 50.91,
-                "subjecto": "England",
-                "wiki": "Battle_of_Hastings",
-                "description": "William besiegt Harold bei Hastings. Durch die Eroberung werden die normannisch-französische Kultur, der kontinentale Feudalismus und das römische Rechtsdenken in das angelsächsische England eingebracht – wodurch ein Hybrid entsteht, aus dem das Common Law, die parlamentarische Regierungsform und eine Sprache hervorgehen, die von einer Milliarde Menschen gesprochen wird. Das Europa, das aus diesem Moment hervorgeht, ist unverkennbar dasjenige, das die moderne Welt prägen wird."
-            },
-            {
-                "title": "Westfälischer Frieden",
-                "year": 1648,
-                "lon": 7.63,
-                "lat": 51.96,
-                "subjecto": "Holy Roman Empire",
-                "wiki": "Peace_of_Westphalia",
-                "description": "Dreißig Jahre Religionskrieg in Mitteleuropa – vielleicht ein Drittel der deutschen Bevölkerung ist ums Leben gekommen. Die 1648 in Osnabrück und Münster unterzeichneten Verträge beenden nicht nur einen Krieg. Sie begründen ein neues Prinzip: dass Staaten, nicht Kirchen, die souveränen Akteure in internationalen Angelegenheiten sind. Die moderne internationale Ordnung beginnt hier, in den rauchenden Trümmern des Heiligen Römischen Reiches."
-            }
-        ]
-    },
-    {
-        "id": "what_is_byzantine",
-        "title": "Was ist byzantinisch?",
-        "subtitle": "753 v. Chr. – 1453 n. Chr.",
-        "steps": [
-            {
-                "title": "Gründung Roms",
-                "year": -753,
-                "lon": 12.49,
-                "lat": 41.89,
-                "wiki": "Founding_of_Rome",
-                "description": "Wir beginnen in Rom – doch unser Blick richtet sich nach Osten. Die Stadt am Tiber wird zu einem Reich heranwachsen, das sich über die gesamte bekannte Welt erstreckt. Dieses Reich wird eine Idee hervorbringen: ein Gesetz, eine Zivilisation, ein Rom. Dieser Weg zeigt, was aus dieser Idee wird, wenn Rom selbst nicht mehr existiert."
-            },
-            {
-                "title": "Konstantin zieht nach Osten",
-                "year": 330,
-                "lon": 28.97,
-                "lat": 41.01,
-                "subjecto": "Eastern Roman Empire",
-                "wiki": "Constantinople",
-                "description": "Konstantin gründet eine neue Hauptstadt am Bosporus und benennt sie nach sich selbst. Außerdem legalisiert er das Christentum. Innerhalb einer einzigen Regierungszeit verlagert das Reich seinen Schwerpunkt nach Osten und wechselt seine Religion. Der lateinische Westen und der griechische Osten beginnen, sich voneinander zu entfernen – noch nicht voneinander, sondern in unterschiedliche Richtungen. Rom fällt nicht. Es wandert."
-            },
-            {
-                "title": "Der Untergang des Westens",
-                "year": 476,
-                "lon": 28.97,
-                "lat": 41.01,
-                "subjecto": "Western Roman Empire",
-                "wiki": "Fall_of_the_Western_Roman_Empire",
-                "description": "Romulus Augustulus wird in Ravenna abgesetzt. In Konstantinopel regiert der Kaiser weiter. Der östliche Hof bezeichnet dies nicht als den Untergang Roms – sie sind Rom. Noch weitere tausend Jahre lang werden sie sich als Römer bezeichnen. Was im Westen zusammenbricht, wird vom Osten aus als regionaler Rückschlag betrachtet, nicht als das Ende von irgendetwas."
-            },
-            {
-                "title": "Justinians Rückeroberung",
-                "year": 550,
-                "lon": 15.0,
-                "lat": 37.0,
-                "subjecto": "Eastern Roman Empire",
-                "wiki": "Justinian_I",
-                "description": "Justinian erobert Nordafrika, Italien und Teile Spaniens zurück. Er kodifiziert das römische Recht. Er lässt die Hagia Sophia errichten. Er spricht Latein und bezeichnet sich selbst als Römer. Doch sein Reich ist griechischsprachig, christlich und östlich geprägt. Er ist der letzte Kaiser, der noch wie ein Römer denkt – und nach seinem Tod geht das meiste von dem, was er zurückerobert hat, wieder verloren. Das alte Rom lässt sich nicht wieder aufbauen. Etwas Neues tritt an seine Stelle."
-            },
-            {
-                "title": "Arabische Expansion",
-                "year": 700,
-                "lon": 36.8,
-                "lat": 36.0,
-                "subjecto": "Umayyad Caliphate",
-                "wiki": "Early_Muslim_conquests",
-                "description": "Im Jahr 637 fällt Jerusalem. Innerhalb einer Generation folgen Syrien, Ägypten und Nordafrika – die reichsten Provinzen des Reiches sind verloren. Was bleibt, sind Anatolien, Griechenland und der Balkan. Das Reich überlebt, doch es ist nicht mehr mediterran. Seiner reichsten Gebiete beraubt, wird es ins Landesinnere zurückgedrängt. Es verwandelt sich in etwas anderes."
-            },
-            {
-                "title": "Das Große Schisma",
-                "year": 1054,
-                "lon": 28.97,
-                "lat": 41.01,
-                "subjecto": "Byzantine Empire",
-                "wiki": "East–West_Schism",
-                "description": "Der Papst in Rom und der Patriarch in Konstantinopel exkommunizieren sich gegenseitig. Die Spaltung hat sich über Jahrhunderte hinweg aufgebaut – unterschiedliche Sprachen, unterschiedliche Liturgie, unterschiedliche Politik. Nach 1054 ist die Ostkirche orthodox, nicht katholisch. Dies ist der Moment, in dem Byzanz aufhört, eine Variante Roms zu sein, und zu einer eigenständigen Einheit wird: eine griechischsprachige, orthodox-christliche Zivilisation mit eigener Identität, eigener Theologie und eigener Zukunft."
-            },
-            {
-                "title": "Der Fall von Konstantinopel",
-                "year": 1453,
-                "lon": 28.97,
-                "lat": 41.01,
-                "subjecto": "Byzantine Empire",
-                "wiki": "Fall_of_Constantinople",
-                "description": "Mehmed II. durchbricht die Stadtmauern. Konstantin XI. fällt im Kampf – der letzte römische Kaiser, der elf Jahrhunderte später eine Stadt verteidigt, die vom ersten christlichen Kaiser gegründet worden war. Das Reich ist untergegangen. Doch die orthodoxe Kirche überlebt. Russische Fürsten erheben Anspruch auf das byzantinische Erbe. Griechische Gelehrte bringen ihre Manuskripte nach Italien, wo sie dazu beitragen, die Renaissance zu entfachen. Ein Reich geht zu Ende. Eine Idee jedoch nicht."
-            }
-        ]
-    },
-    {
-        "id": "way_of_writing",
-        "title": "Die Kunst des Schreibens",
-        "subtitle": "3300 v. Chr. – 1450 n. Chr.",
-        "steps": [
-            {
-                "title": "Die ersten Worte",
-                "year": -3300,
-                "lon": 45.6,
-                "lat": 31.3,
-                "wiki": "Cuneiform",
-                "description": "Im südlichen Mesopotamien müssen Tempelverwalter Getreide und Viehbestand erfassen. Sie drücken einen Schilfstift in Ton und hinterlassen Zeichen. Zunächst handelt es sich um Buchhaltung – keine Literatur, kein Gebet, nur Zahlen. Doch die Zeichen werden zu Symbolen, die Symbole zu Wörtern, und die Wörter werden zu etwas, womit niemand gerechnet hat: eine Möglichkeit, Gedanken über die Zeit hinweg zu übermitteln. Die Schrift wird nicht erfunden. Sie entsteht aus einem praktischen Problem."
-            },
-            {
-                "title": "Zeichen des Nils",
-                "year": -3200,
-                "lon": 32.5,
-                "lat": 26.0,
-                "subjecto": "Egypt",
-                "wiki": "Egyptian_hieroglyphs",
-                "description": "Fast zeitgleich entwickelt Ägypten sein eigenes Schriftsystem – die Hieroglyphen. Ob es unabhängig entstand oder durch den Kontakt mit Mesopotamien angeregt wurde, ist nach wie vor umstritten. Klar ist jedoch, dass sich die beiden Systeme in ihrer Form grundlegend unterscheiden. Die Keilschrift besteht aus abstrakten Keilen auf Ton. Hieroglyphen sind bildhaft, in Stein gemeißelt oder an Wände gemalt. Gleiche Idee, andere Welt. Die Schrift beweist bereits, dass sie viele Formen annehmen kann."
-            },
-            {
-                "title": "Das Alphabet entsteht",
-                "year": -1050,
-                "lon": 35.5,
-                "lat": 34.0,
-                "wiki": "Phoenician_alphabet",
-                "description": "Phönizische Händler an der östlichen Mittelmeerküste entwickeln etwas Radikales: ein Alphabet aus nur 22 Zeichen. Keine Bilder, keine Ideogramme – nur Laute. Auch keine Vokale, nur Konsonanten, sodass der Leser den Rest selbst ergänzen muss. Doch die Reduzierung von Hunderten von Zeichen auf zweiundzwanzig verändert alles. Das Schreiben ist nicht länger die Domäne von Schriftgelehrten, die Jahre mit ihrer Ausbildung verbringen. Es wird erlernbar. Das Alphabet ist nicht schön. Es ist effizient – und deshalb erobert es die Welt."
-            },
-            {
-                "title": "Griechenland meldet sich zu Wort",
-                "year": -800,
-                "lon": 22.0,
-                "lat": 38.0,
-                "subjecto": "Greek city-states",
-                "wiki": "Greek_alphabet",
-                "description": "Die Griechen übernehmen das phönizische Alphabet – und verändern es sofort. Das Phönizische kennt keine Vokale; das Griechische schon, und die Sprache lässt sich ohne sie nicht niederschreiben. Also wandeln die Griechen Buchstaben, die sie nicht als Konsonanten benötigen, um und verwenden sie stattdessen für Vokale. Eine kleine technische Anpassung mit enormen Folgen: Zum ersten Mal kann ein Schriftsystem die gesprochene Sprache mit voller Präzision wiedergeben. Homer wird niedergeschrieben. Philosophie wird möglich. Das griechische Alphabet wird nicht nur angepasst – es wird vervollständigt."
-            },
-            {
-                "title": "Rom schreibt die Welt",
-                "year": 100,
-                "lon": 12.49,
-                "lat": 41.89,
-                "subjecto": "Roman Empire",
-                "wiki": "Latin_alphabet",
-                "description": "Rom übernimmt das Alphabet nicht direkt von Griechenland. Es gelangt über die Etrusker dorthin – eine ältere italienische Zivilisation, die die griechische Schrift bereits an ihre eigene Sprache angepasst hatte. Rom übernimmt sie, vereinfacht sie und verbreitet sie dann in einem Reich, das sich von Britannien bis nach Mesopotamien erstreckt. Latein wird zur Sprache des Rechts, der Verwaltung und der Kirche. Als das Reich untergeht, bleibt das Alphabet bestehen. Es ist bereits fest in allem verankert, was danach kommt."
-            },
-            {
-                "title": "Die Presse",
-                "year": 1450,
-                "lon": 8.27,
-                "lat": 49.99,
-                "wiki": "Johannes_Gutenberg",
-                "wiki_label": "Gutenberg",
-                "wiki2": "History_of_writing",
-                "wiki2_label": "History of Writing",
-                "description": "Johannes Gutenberg druckt in Mainz die erste Bibel mit beweglichen Lettern. Viertausend Jahre lang musste jedes geschriebene Wort von Hand abgeschrieben werden. Nun kann eine einzige Druckpresse Hunderte identischer Seiten hervorbringen. Das Schreiben, das als Werkzeug für Buchhalter begann, wird zu einem Medium für alle. Ideen verbreiten sich schneller als Armeen. Die Reformation, die wissenschaftliche Revolution, die Aufklärung – sie alle profitieren von der Druckpresse. Die alte Art des Schreibens endet hier, und etwas völlig Neues beginnt."
-            }
-        ]
-    }
+  {
+    "id": "rise_of_europe",
+    "title": "Der Aufstieg Europas",
+    "subtitle": "753 v. Chr. – 1648 n. Chr.",
+    "steps": [
+      {
+        "title": "Gründung Roms",
+        "year": -753,
+        "lon": 12.49,
+        "lat": 41.89,
+        "wiki": "Founding_of_Rome",
+        "description": "Sieben Hügel, eine Flussüberquerung, eine Handvoll lateinischer Dörfer. Nichts hier lässt ahnen, was kommen wird. Doch die Stadt, die an dieser Stelle entstehen wird, wird die mediterrane Welt in sich aufnehmen, ihre Gesetze festschreiben, ihre Sprachen in die Zukunft tragen – und ihr Untergang wird Europa stärker prägen, als es ihre Existenz jemals tat.",
+        "image": "data/images/events/rise_of_europe__founding_of_rome.jpg"
+      },
+      {
+        "title": "Von der Republik zum Kaiserreich",
+        "year": -27,
+        "lon": 15.0,
+        "lat": 38.0,
+        "subjecto": "Roman Republic",
+        "wiki": "Augustus",
+        "description": "Zwei Jahrhunderte lang hielt die Republik stand – gerade so. Dann zerriss sie eine Generation von Bürgerkriegen. Caesar überschritt den Rubikon, wurde ermordet, und sein Adoptivsohn vollendete, was er begonnen hatte. Im Jahr 27 v. Chr. übertrug der Senat Octavian eine Reihe von Sonderbefugnissen. Er nahm den Namen Augustus an. Die Republik endete nicht mit einem Paukenschlag – sie verwandelte sich still und leise in etwas anderes.",
+        "image": "data/images/events/rise_of_europe__republic_to_empire.jpg"
+      },
+      {
+        "title": "Rom auf dem Höhepunkt seiner Macht",
+        "year": 117,
+        "lon": 28.0,
+        "lat": 38.0,
+        "subjecto": "Roman Empire",
+        "wiki": "Roman_Empire",
+        "description": "Unter Trajan erreicht das Reich seine größte Ausdehnung – von Schottland bis Mesopotamien, vom Rhein bis zur Sahara. Vierzig Millionen Menschen leben unter römischem Recht. Die Straßen, Aquädukte und Gesetzbücher sind bereits uralt. Doch Größe ist auch eine Schwachstelle: Je länger die Grenze, desto höher die Kosten für ihre Verteidigung und desto mehr gibt es zu verlieren.",
+        "image": "data/images/events/rise_of_europe__rome_at_its_height.png"
+      },
+      {
+        "title": "Der Untergang des Weströmischen Reiches",
+        "year": 476,
+        "lon": 12.49,
+        "lat": 41.89,
+        "subjecto": "Western Roman Empire",
+        "wiki": "Fall_of_the_Western_Roman_Empire",
+        "description": "Romulus Augustulus wird abgesetzt, und der letzte römische Kaiser des Westens verschwindet in der Vergessenheit. Damals nimmt dies kaum jemand zur Kenntnis – das Reich löst sich schon seit Jahrzehnten auf. Was zählt, ist, was die Lücke füllt: germanische Königreiche, die katholische Kirche und ein zerfallenes Straßennetz, das einst alles miteinander verband. Europa wird die nächsten vier Jahrhunderte damit verbringen, die Teile wieder zusammenzufügen.",
+        "image": "data/images/events/rise_of_europe__fall_of_the_western_empire.gif"
+      },
+      {
+        "title": "Karl der Große wird gekrönt",
+        "year": 800,
+        "lon": 6.08,
+        "lat": 50.77,
+        "subjecto": "Carolingian Empire",
+        "wiki": "Charlemagne",
+        "description": "Am Weihnachtstag des Jahres 800 krönt Papst Leo III. Karl den Großen im Petersdom zum Kaiser. Dieser Akt vereint drei Elemente, die die europäische Politik ein Jahrtausend lang prägen werden: germanische Militärmacht, das Erbe Roms und die Autorität der Kirche. Zum ersten Mal seit 476 beherrscht ein einziger Herrscher den größten Teil Westeuropas – doch dies wird nicht lange währen.",
+        "image": "data/images/events/rise_of_europe__charlemagne_crowned.jpg"
+      },
+      {
+        "title": "Die normannische Eroberung Englands",
+        "year": 1066,
+        "lon": 0.58,
+        "lat": 50.91,
+        "subjecto": "England",
+        "wiki": "Battle_of_Hastings",
+        "description": "William besiegt Harold bei Hastings. Durch die Eroberung werden die normannisch-französische Kultur, der kontinentale Feudalismus und das römische Rechtsdenken in das angelsächsische England eingebracht – wodurch ein Hybrid entsteht, aus dem das Common Law, die parlamentarische Regierungsform und eine Sprache hervorgehen, die von einer Milliarde Menschen gesprochen wird. Das Europa, das aus diesem Moment hervorgeht, ist unverkennbar dasjenige, das die moderne Welt prägen wird.",
+        "image": "data/images/events/rise_of_europe__norman_conquest_of_england.jpg"
+      },
+      {
+        "title": "Westfälischer Frieden",
+        "year": 1648,
+        "lon": 7.63,
+        "lat": 51.96,
+        "subjecto": "Holy Roman Empire",
+        "wiki": "Peace_of_Westphalia",
+        "description": "Dreißig Jahre Religionskrieg in Mitteleuropa – vielleicht ein Drittel der deutschen Bevölkerung ist ums Leben gekommen. Die 1648 in Osnabrück und Münster unterzeichneten Verträge beenden nicht nur einen Krieg. Sie begründen ein neues Prinzip: dass Staaten, nicht Kirchen, die souveränen Akteure in internationalen Angelegenheiten sind. Die moderne internationale Ordnung beginnt hier, in den rauchenden Trümmern des Heiligen Römischen Reiches.",
+        "image": "data/images/events/rise_of_europe__peace_of_westphalia.jpg"
+      }
+    ]
+  },
+  {
+    "id": "what_is_byzantine",
+    "title": "Was ist byzantinisch?",
+    "subtitle": "753 v. Chr. – 1453 n. Chr.",
+    "steps": [
+      {
+        "title": "Gründung Roms",
+        "year": -753,
+        "lon": 12.49,
+        "lat": 41.89,
+        "wiki": "Founding_of_Rome",
+        "description": "Wir beginnen in Rom – doch unser Blick richtet sich nach Osten. Die Stadt am Tiber wird zu einem Reich heranwachsen, das sich über die gesamte bekannte Welt erstreckt. Dieses Reich wird eine Idee hervorbringen: ein Gesetz, eine Zivilisation, ein Rom. Dieser Weg zeigt, was aus dieser Idee wird, wenn Rom selbst nicht mehr existiert.",
+        "image": "data/images/events/what_is_byzantine__founding_of_rome.jpg"
+      },
+      {
+        "title": "Konstantin zieht nach Osten",
+        "year": 330,
+        "lon": 28.97,
+        "lat": 41.01,
+        "subjecto": "Eastern Roman Empire",
+        "wiki": "Constantinople",
+        "description": "Konstantin gründet eine neue Hauptstadt am Bosporus und benennt sie nach sich selbst. Außerdem legalisiert er das Christentum. Innerhalb einer einzigen Regierungszeit verlagert das Reich seinen Schwerpunkt nach Osten und wechselt seine Religion. Der lateinische Westen und der griechische Osten beginnen, sich voneinander zu entfernen – noch nicht voneinander, sondern in unterschiedliche Richtungen. Rom fällt nicht. Es wandert.",
+        "image": "data/images/events/what_is_byzantine__constantine_moves_east.png"
+      },
+      {
+        "title": "Der Untergang des Westens",
+        "year": 476,
+        "lon": 28.97,
+        "lat": 41.01,
+        "subjecto": "Western Roman Empire",
+        "wiki": "Fall_of_the_Western_Roman_Empire",
+        "description": "Romulus Augustulus wird in Ravenna abgesetzt. In Konstantinopel regiert der Kaiser weiter. Der östliche Hof bezeichnet dies nicht als den Untergang Roms – sie sind Rom. Noch weitere tausend Jahre lang werden sie sich als Römer bezeichnen. Was im Westen zusammenbricht, wird vom Osten aus als regionaler Rückschlag betrachtet, nicht als das Ende von irgendetwas.",
+        "image": "data/images/events/what_is_byzantine__fall_of_the_west.gif"
+      },
+      {
+        "title": "Justinians Rückeroberung",
+        "year": 550,
+        "lon": 15.0,
+        "lat": 37.0,
+        "subjecto": "Eastern Roman Empire",
+        "wiki": "Justinian_I",
+        "description": "Justinian erobert Nordafrika, Italien und Teile Spaniens zurück. Er kodifiziert das römische Recht. Er lässt die Hagia Sophia errichten. Er spricht Latein und bezeichnet sich selbst als Römer. Doch sein Reich ist griechischsprachig, christlich und östlich geprägt. Er ist der letzte Kaiser, der noch wie ein Römer denkt – und nach seinem Tod geht das meiste von dem, was er zurückerobert hat, wieder verloren. Das alte Rom lässt sich nicht wieder aufbauen. Etwas Neues tritt an seine Stelle.",
+        "image": "data/images/events/what_is_byzantine__justinians_reconquest.jpg"
+      },
+      {
+        "title": "Arabische Expansion",
+        "year": 700,
+        "lon": 36.8,
+        "lat": 36.0,
+        "subjecto": "Umayyad Caliphate",
+        "wiki": "Early_Muslim_conquests",
+        "description": "Im Jahr 637 fällt Jerusalem. Innerhalb einer Generation folgen Syrien, Ägypten und Nordafrika – die reichsten Provinzen des Reiches sind verloren. Was bleibt, sind Anatolien, Griechenland und der Balkan. Das Reich überlebt, doch es ist nicht mehr mediterran. Seiner reichsten Gebiete beraubt, wird es ins Landesinnere zurückgedrängt. Es verwandelt sich in etwas anderes.",
+        "image": "data/images/events/what_is_byzantine__arab_expansion.png"
+      },
+      {
+        "title": "Das Große Schisma",
+        "year": 1054,
+        "lon": 28.97,
+        "lat": 41.01,
+        "subjecto": "Byzantine Empire",
+        "wiki": "East–West_Schism",
+        "description": "Der Papst in Rom und der Patriarch in Konstantinopel exkommunizieren sich gegenseitig. Die Spaltung hat sich über Jahrhunderte hinweg aufgebaut – unterschiedliche Sprachen, unterschiedliche Liturgie, unterschiedliche Politik. Nach 1054 ist die Ostkirche orthodox, nicht katholisch. Dies ist der Moment, in dem Byzanz aufhört, eine Variante Roms zu sein, und zu einer eigenständigen Einheit wird: eine griechischsprachige, orthodox-christliche Zivilisation mit eigener Identität, eigener Theologie und eigener Zukunft.",
+        "image": "data/images/events/what_is_byzantine__the_great_schism.png"
+      },
+      {
+        "title": "Der Fall von Konstantinopel",
+        "year": 1453,
+        "lon": 28.97,
+        "lat": 41.01,
+        "subjecto": "Byzantine Empire",
+        "wiki": "Fall_of_Constantinople",
+        "description": "Mehmed II. durchbricht die Stadtmauern. Konstantin XI. fällt im Kampf – der letzte römische Kaiser, der elf Jahrhunderte später eine Stadt verteidigt, die vom ersten christlichen Kaiser gegründet worden war. Das Reich ist untergegangen. Doch die orthodoxe Kirche überlebt. Russische Fürsten erheben Anspruch auf das byzantinische Erbe. Griechische Gelehrte bringen ihre Manuskripte nach Italien, wo sie dazu beitragen, die Renaissance zu entfachen. Ein Reich geht zu Ende. Eine Idee jedoch nicht.",
+        "image": "data/images/events/what_is_byzantine__fall_of_constantinople.jpg"
+      }
+    ]
+  },
+  {
+    "id": "way_of_writing",
+    "title": "Die Kunst des Schreibens",
+    "subtitle": "3300 v. Chr. – 1450 n. Chr.",
+    "steps": [
+      {
+        "title": "Die ersten Worte",
+        "year": -3300,
+        "lon": 45.6,
+        "lat": 31.3,
+        "wiki": "Cuneiform",
+        "description": "Im südlichen Mesopotamien müssen Tempelverwalter Getreide und Viehbestand erfassen. Sie drücken einen Schilfstift in Ton und hinterlassen Zeichen. Zunächst handelt es sich um Buchhaltung – keine Literatur, kein Gebet, nur Zahlen. Doch die Zeichen werden zu Symbolen, die Symbole zu Wörtern, und die Wörter werden zu etwas, womit niemand gerechnet hat: eine Möglichkeit, Gedanken über die Zeit hinweg zu übermitteln. Die Schrift wird nicht erfunden. Sie entsteht aus einem praktischen Problem.",
+        "image": "data/images/events/way_of_writing__the_first_words.jpg"
+      },
+      {
+        "title": "Zeichen des Nils",
+        "year": -3200,
+        "lon": 32.5,
+        "lat": 26.0,
+        "subjecto": "Egypt",
+        "wiki": "Egyptian_hieroglyphs",
+        "description": "Fast zeitgleich entwickelt Ägypten sein eigenes Schriftsystem – die Hieroglyphen. Ob es unabhängig entstand oder durch den Kontakt mit Mesopotamien angeregt wurde, ist nach wie vor umstritten. Klar ist jedoch, dass sich die beiden Systeme in ihrer Form grundlegend unterscheiden. Die Keilschrift besteht aus abstrakten Keilen auf Ton. Hieroglyphen sind bildhaft, in Stein gemeißelt oder an Wände gemalt. Gleiche Idee, andere Welt. Die Schrift beweist bereits, dass sie viele Formen annehmen kann.",
+        "image": "data/images/events/way_of_writing__signs_of_the_nile.jpg"
+      },
+      {
+        "title": "Das Alphabet entsteht",
+        "year": -1050,
+        "lon": 35.5,
+        "lat": 34.0,
+        "wiki": "Phoenician_alphabet",
+        "description": "Phönizische Händler an der östlichen Mittelmeerküste entwickeln etwas Radikales: ein Alphabet aus nur 22 Zeichen. Keine Bilder, keine Ideogramme – nur Laute. Auch keine Vokale, nur Konsonanten, sodass der Leser den Rest selbst ergänzen muss. Doch die Reduzierung von Hunderten von Zeichen auf zweiundzwanzig verändert alles. Das Schreiben ist nicht länger die Domäne von Schriftgelehrten, die Jahre mit ihrer Ausbildung verbringen. Es wird erlernbar. Das Alphabet ist nicht schön. Es ist effizient – und deshalb erobert es die Welt.",
+        "image": "data/images/events/way_of_writing__the_alphabet_is_born.jpg"
+      },
+      {
+        "title": "Griechenland meldet sich zu Wort",
+        "year": -800,
+        "lon": 22.0,
+        "lat": 38.0,
+        "subjecto": "Greek city-states",
+        "wiki": "Greek_alphabet",
+        "description": "Die Griechen übernehmen das phönizische Alphabet – und verändern es sofort. Das Phönizische kennt keine Vokale; das Griechische schon, und die Sprache lässt sich ohne sie nicht niederschreiben. Also wandeln die Griechen Buchstaben, die sie nicht als Konsonanten benötigen, um und verwenden sie stattdessen für Vokale. Eine kleine technische Anpassung mit enormen Folgen: Zum ersten Mal kann ein Schriftsystem die gesprochene Sprache mit voller Präzision wiedergeben. Homer wird niedergeschrieben. Philosophie wird möglich. Das griechische Alphabet wird nicht nur angepasst – es wird vervollständigt.",
+        "image": "data/images/events/way_of_writing__greece_adds_a_voice.jpg"
+      },
+      {
+        "title": "Rom schreibt die Welt",
+        "year": 100,
+        "lon": 12.49,
+        "lat": 41.89,
+        "subjecto": "Roman Empire",
+        "wiki": "Latin_alphabet",
+        "description": "Rom übernimmt das Alphabet nicht direkt von Griechenland. Es gelangt über die Etrusker dorthin – eine ältere italienische Zivilisation, die die griechische Schrift bereits an ihre eigene Sprache angepasst hatte. Rom übernimmt sie, vereinfacht sie und verbreitet sie dann in einem Reich, das sich von Britannien bis nach Mesopotamien erstreckt. Latein wird zur Sprache des Rechts, der Verwaltung und der Kirche. Als das Reich untergeht, bleibt das Alphabet bestehen. Es ist bereits fest in allem verankert, was danach kommt.",
+        "image": "data/images/events/way_of_writing__rome_writes_the_world.png"
+      },
+      {
+        "title": "Die Presse",
+        "year": 1450,
+        "lon": 8.27,
+        "lat": 49.99,
+        "wiki": "Johannes_Gutenberg",
+        "wiki_label": "Gutenberg",
+        "wiki2": "History_of_writing",
+        "wiki2_label": "History of Writing",
+        "description": "Johannes Gutenberg druckt in Mainz die erste Bibel mit beweglichen Lettern. Viertausend Jahre lang musste jedes geschriebene Wort von Hand abgeschrieben werden. Nun kann eine einzige Druckpresse Hunderte identischer Seiten hervorbringen. Das Schreiben, das als Werkzeug für Buchhalter begann, wird zu einem Medium für alle. Ideen verbreiten sich schneller als Armeen. Die Reformation, die wissenschaftliche Revolution, die Aufklärung – sie alle profitieren von der Druckpresse. Die alte Art des Schreibens endet hier, und etwas völlig Neues beginnt.",
+        "image": "data/images/events/way_of_writing__the_press.jpg"
+      }
+    ]
+  },
+  {
+    "id": "road_to_germany",
+    "title": "Der Weg nach Deutschland",
+    "subtitle": "1806 – 1990",
+    "steps": [
+      {
+        "title": "Das Ende des Heiligen Römischen Reiches",
+        "year": 1806,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Heiliges_Römisches_Reich",
+        "description": "Napoleons Heere haben Österreich bei Austerlitz gedemütigt, der Rheinbund zieht sechzehn deutsche Staaten aus dem Reichsverband. Am 6. August 1806 tritt Franz II. in Wien an ein Fenster und verkündet: Die Reichswürde ist niedergelegt, das Heilige Römische Reich aufgelöst. Eine tausendjährige politische Idee endet an einem Nachmittag. Was bleibt, ist eine Sammlung von Königreichen ohne gemeinsames Dach.",
+        "image": "data/images/events/road_to_germany__end_of_the_holy_roman_empire.png"
+      },
+      {
+        "title": "Wiener Kongress",
+        "year": 1815,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Wiener_Kongress",
+        "description": "Nach Napoleons endgültiger Niederlage zeichnen die Mächte Europas in Wien den Kontinent neu. Aus fast dreihundert ehemaligen Territorien entsteht der Deutsche Bund: 39 Staaten, beherrscht von Österreich und Preußen, lose miteinander verbunden. Es gibt noch keine deutsche Nation, kein gemeinsames Heer, kein Parlament mit echter Macht. Aber erstmals seit 1806 hat das Wort ‚Deutschland‘ eine politische Form — wie dünn auch immer.",
+        "image": "data/images/events/road_to_germany__congress_of_vienna.png"
+      },
+      {
+        "title": "Paulskirchenparlament",
+        "year": 1848,
+        "lon": 8.68,
+        "lat": 50.11,
+        "wiki": "Frankfurter_Nationalversammlung",
+        "description": "In ganz Europa flammen Revolutionen auf; in den deutschen Ländern fordern Liberale eine Verfassung und einen geeinten Staat. In der Frankfurter Paulskirche entwerfen 585 gewählte Abgeordnete eine Verfassung und bieten dem preußischen König die Kaiserkrone an. Friedrich Wilhelm IV. lehnt ab — eine Krone ‚aus der Gosse‘, sagt er. Innerhalb eines Jahres ist das Parlament aufgelöst, die Revolution niedergeschlagen. Die Einigung muss warten — die Idee nicht.",
+        "image": "data/images/events/road_to_germany__frankfurt_parliament.png"
+      },
+      {
+        "title": "Reichsgründung in Versailles",
+        "year": 1871,
+        "lon": 2.12,
+        "lat": 48.8,
+        "wiki": "Deutsche_Reichsgründung",
+        "description": "Bismarck hat ein Jahrzehnt auf diesen Moment hingearbeitet: drei kurze Kriege gegen Dänemark, Österreich und Frankreich — jedes ein Schachzug. Nach Napoleons III. Niederlage bei Sedan versammeln sich die deutschen Fürsten im Spiegelsaal von Versailles und rufen Wilhelm I. zum deutschen Kaiser aus. Der Ort ist gewählt: im Palast der französischen Könige wird das neue Reich geboren. Das Kaiserreich entsteht als preußisch geführter Bund von 25 Staaten, besiegelt durch Demütigung.",
+        "image": "data/images/events/road_to_germany__proclamation_of_the_german_empire.jpg"
+      },
+      {
+        "title": "Versailler Vertrag",
+        "year": 1919,
+        "lon": 2.12,
+        "lat": 48.8,
+        "wiki": "Friedensvertrag_von_Versailles",
+        "description": "Der Große Krieg hat ein Kaiserreich verzehrt. Zwanzig Millionen Tote in Europa, die Krone der Hohenzollern abgesetzt, der Reichstag in republikanischen Händen. Im selben Spiegelsaal, in dem das Reich ausgerufen wurde, unterzeichnet Deutschland nun einen Vertrag, geschrieben von den Siegern: Gebietsverluste, Reparationen, der Kriegsschuldartikel. Die junge Weimarer Republik beginnt belastet mit einem Frieden, den sie nicht verhandelt hat. Der Vertrag schließt ein Kapitel — und schreibt das nächste schon mit.",
+        "image": "data/images/events/road_to_germany__treaty_of_versailles.jpg"
+      },
+      {
+        "title": "Die Machtübernahme",
+        "year": 1933,
+        "lon": 13.4,
+        "lat": 52.52,
+        "wiki": "Machtergreifung",
+        "description": "Inflation, Massenarbeitslosigkeit, Straßengewalt: Weimar ist erschöpft. Am 30. Januar 1933 ernennt Reichspräsident Hindenburg Hitler zum Reichskanzler — eine kalkulierte Wette der Konservativen, ihn einbinden zu können. Binnen Monaten brennt der Reichstag, das Ermächtigungsgesetz wird beschlossen, Oppositionsparteien werden verboten — Deutschland ist zur Ein-Parteien-Diktatur geworden. Die Republik stirbt ohne Putsch, im Parlamentsverfahren, vor einer gleichgültigen Öffentlichkeit.",
+        "image": "data/images/events/road_to_germany__nazi_seizure_of_power.jpg"
+      },
+      {
+        "title": "Stunde Null",
+        "year": 1945,
+        "lon": 13.4,
+        "lat": 52.52,
+        "wiki": "Stunde_Null",
+        "description": "Zwölf Jahre Diktatur und sechs Jahre Krieg enden im Mai 1945. Vierzig Millionen Tote allein in Europa. Berlin ist Trümmer. Die Wehrmacht kapituliert bedingungslos; die Alliierten teilen das Land in vier Besatzungszonen. Die Verbrechen des Regimes — industrieller Völkermord, Zwangsarbeit, Vernichtungskrieg — werden offengelegt, als die Lager befreit werden. Was Deutschland als Nächstes wird, muss von hier ausgehen. Man nennt diesen Moment ‚Stunde Null‘.",
+        "image": "data/images/events/road_to_germany__stunde_null.jpg"
+      },
+      {
+        "title": "Zwei deutsche Staaten",
+        "year": 1949,
+        "lon": 7.1,
+        "lat": 50.74,
+        "wiki": "Grundgesetz_für_die_Bundesrepublik_Deutschland",
+        "description": "Die Linien des Kalten Kriegs verhärten sich. Im Mai 1949 schließen sich die Westzonen zur Bundesrepublik Deutschland zusammen, mit einer neuen Hauptstadt im provinziellen Bonn — bewusst gewählt, damit sie Berlin nicht überstrahlt. Fünf Monate später wird die sowjetische Zone zur Deutschen Demokratischen Republik, mit Ost-Berlin als Hauptstadt. Zwei deutsche Staaten stehen sich an der innerdeutschen Grenze gegenüber — jeder beansprucht für sich, die legitime Fortsetzung dessen zu sein, was war.",
+        "image": "data/images/events/road_to_germany__two_german_states.jpg"
+      },
+      {
+        "title": "Die Wiedervereinigung",
+        "year": 1990,
+        "lon": 13.378,
+        "lat": 52.516,
+        "wiki": "Deutsche_Wiedervereinigung",
+        "description": "Die Berliner Mauer hat 28 Jahre gestanden, als am 9. November 1989 ein DDR-Sprecher auf einer Pressekonferenz neue Reiseregelungen falsch verliest: ‚Sofort, unverzüglich.‘ Menschenmengen versammeln sich. Die Grenzposten öffnen die Schlagbäume. Elf Monate später, am 3. Oktober 1990, löst sich die DDR auf und tritt der Bundesrepublik bei. Nach einem Jahrhundert geprägt von zwei Weltkriegen, Teilung und Diktatur ist Deutschland wieder ein Land — und die Nachkriegsordnung, in der es aufwuchs, geht zu Ende.",
+        "image": "data/images/events/road_to_germany__reunification.jpg"
+      }
+    ]
+  },
+  {
+    "id": "from_mecca_to_vienna",
+    "title": "Von Mekka nach Wien",
+    "subtitle": "622 – 1683",
+    "steps": [
+      {
+        "title": "Die Hidschra",
+        "year": 622,
+        "lon": 39.61,
+        "lat": 24.47,
+        "wiki": "Hidschra",
+        "description": "Mekka will ihn nicht. Nach zwölf Jahren Predigt, Verfolgung und langsamer Auswanderung seiner Anhänger schleicht sich Mohammed selbst nachts hinaus und reitet nordwärts ins Oasenstädtchen Yathrib. Dort haben die zerstrittenen Stämme ihn als Vermittler eingeladen. Innerhalb einer Generation wird Yathrib zu Medina — der Stadt — und das Jahr seiner Ankunft, 622, wird Jahr Eins eines neuen Kalenders. Der Islam ist nicht mehr eine Randbewegung von Händlern und Außenseitern. Er wird zum Gemeinwesen.",
+        "image": "data/images/events/from_mecca_to_vienna__the_hijra.jpg"
+      },
+      {
+        "title": "Eroberung des Nahen Ostens",
+        "year": 635,
+        "lon": 36.29,
+        "lat": 33.51,
+        "wiki": "Islamische_Expansion",
+        "description": "Drei Jahre nach Mohammeds Tod reiten seine Anhänger aus Arabien hinaus. Die beiden Großreiche der Zeit — das oströmische und das sasanidische Persien — haben sich gerade gegenseitig erschöpft. Damaskus, eine reiche römische Provinzhauptstadt, fällt 635. Bis 642 ist Ägypten genommen, bis 651 das Sasanidenreich am Ende. Eine Bewegung, die mit einem einzigen Mann in einer Wüstenstadt begann, hat in einer Generation die ältesten Hochkulturen der Welt erobert. Die politische Karte des Mittelmeerraums wird schneller umgezeichnet, als jemand sie aufschreiben kann.",
+        "image": "data/images/events/from_mecca_to_vienna__conquest_of_the_near_east.jpg"
+      },
+      {
+        "title": "Schlacht von Tours und Poitiers",
+        "year": 732,
+        "lon": 0.34,
+        "lat": 46.58,
+        "wiki": "Schlacht_von_Tours_und_Poitiers",
+        "description": "Ein Jahrhundert nach dem Tod des Propheten haben arabische Heere die Straße von Gibraltar überquert, Spanien erobert und stoßen ins Frankenreich vor. Bei Poitiers in Mittelfrankreich stellt Karl Martell Abd ar-Rahmans Reiterei eine Wand aus Fußvolk entgegen. Die Araber zerschellen daran. Ihr Befehlshaber fällt; die Überlebenden ziehen sich nach Süden zurück. Der westliche Vormarsch hat seinen höchsten Punkt erreicht. Edward Gibbon wird später, mit etwas Übertreibung, ausmalen, in Oxford werde der Koran gelehrt, hätte Martell verloren. Er hat nicht verloren.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_tours.png"
+      },
+      {
+        "title": "Bagdad gegründet",
+        "year": 762,
+        "lon": 44.36,
+        "lat": 33.31,
+        "wiki": "Bagdad",
+        "description": "Die abbasidische Revolution hat die Umayyaden gestürzt und die Hauptstadt nach Osten verlegt. Kalif al-Mansur entwirft eine neue Stadt: ein perfekter Kreis, vier Kilometer Mauer-Umfang, vier Tore in Richtung Mekka, Damaskus, Chorasan und Basra. Er nennt sie Madinat as-Salam — Stadt des Friedens — aber jeder sagt Bagdad. Innerhalb eines Jahrhunderts wird es die größte Stadt der Welt sein, ein Magnet für griechische Philosophie, indische Mathematik, persische Dichtung. Das Goldene Zeitalter des Islam hat seine Hauptstadt.",
+        "image": "data/images/events/from_mecca_to_vienna__baghdad_founded.png"
+      },
+      {
+        "title": "Kalifat von Córdoba",
+        "year": 929,
+        "lon": -4.78,
+        "lat": 37.88,
+        "wiki": "Kalifat_von_Córdoba",
+        "description": "Als die Abbasiden Bagdad nahmen, entkam ein einziger Umayyaden-Prinz — nach Westen, nach Spanien. Zwei Jahrhunderte später erklärt sich sein Nachkomme Abd ar-Rahman III. in Córdoba selbst zum Kalifen und zerbricht die formale Einheit der muslimischen Welt. Um das Jahr 1000 ist Córdoba die größte Stadt Westeuropas: eine halbe Million Menschen, hunderte Moscheen, eine Bibliothek mit angeblich 400.000 Bänden, während christliche Bibliotheken ein paar hundert haben. Aristoteles kehrt durch diese Stadt in den lateinischen Westen zurück. Auch Papier, Algebra und die Laute.",
+        "image": "data/images/events/from_mecca_to_vienna__caliphate_of_córdoba.png"
+      },
+      {
+        "title": "Schlacht bei Manzikert",
+        "year": 1071,
+        "lon": 42.53,
+        "lat": 39.15,
+        "wiki": "Schlacht_bei_Manzikert",
+        "description": "Die Seldschuken-Türken — frische Konvertiten aus der Steppe — haben ein Reich aufgebaut, das sich von Zentralasien bis in die Levante erstreckt. Bei Manzikert in Ostanatolien treffen sie auf ein byzantinisches Heer, das Kaiser Romanos IV. persönlich anführt. Die Byzantiner werden vernichtet, Romanos gerät in Gefangenschaft. Die Niederlage öffnet Anatolien — das Herzland des Reiches — der türkischen Besiedlung. In einer Generation wird das, was tausend Jahre lang griechischsprachiges, christliches Kleinasien war, zu etwas anderem. Das Reich erholt sich nie davon, und ein verzweifelter Kaiser wird den Papst um Hilfe bitten.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_manzikert.png"
+      },
+      {
+        "title": "Kreuzfahrer erobern Jerusalem",
+        "year": 1099,
+        "lon": 35.22,
+        "lat": 31.78,
+        "wiki": "Belagerung_Jerusalems_(1099)",
+        "description": "Der Aufruf Papst Urbans II. in Clermont 1095 hat etwas hervorgebracht, was niemand so erwartet hatte: ein Heer von Zehntausenden, das durch Europa zieht, durch Konstantinopel, durch Anatolien, die Levante hinunter. Nach drei Jahren Marsch, nach Hunger, Schlachten und innerchristlichem Verrat erreichen sie Jerusalem. Die Belagerung dauert fünf Wochen. Als am 15. Juli die Mauern fallen, ist das Gemetzel allgemein. Entlang der Küste entsteht ein fränkisches Königreich. Die Begegnung, die der Westen mit dem Islam bisher aus der Distanz hatte, ist gerade sehr unmittelbar geworden.",
+        "image": "data/images/events/from_mecca_to_vienna__crusaders_take_jerusalem.jpg"
+      },
+      {
+        "title": "Saladin nimmt Jerusalem zurück",
+        "year": 1187,
+        "lon": 35.22,
+        "lat": 31.78,
+        "wiki": "Belagerung_Jerusalems_(1187)",
+        "description": "88 Jahre lang halten sich die Kreuzfahrerstaaten an der Levante-Küste, während die muslimische Macht ringsum langsam wieder zusammenwächst. Salah ad-Din — Saladin — kurdischer General, Sultan von Ägypten und Syrien, vereint endlich die zersplitterte Antwort. An den Hörnern von Hattin im Juli 1187 vernichtet er das Kreuzfahrer-Feldheer; drei Monate später öffnet Jerusalem seine Tore. Der Kontrast zu 1099 ist gewollt: Saladin lässt die christlichen Einwohner sich auslösen, befreit die Armen ohne Zahlung. Europa wird ihn später zum Idealbild des ritterlichen Gegners verklären.",
+        "image": "data/images/events/from_mecca_to_vienna__saladin_retakes_jerusalem.jpg"
+      },
+      {
+        "title": "Fall Konstantinopels",
+        "year": 1453,
+        "lon": 28.97,
+        "lat": 41.01,
+        "wiki": "Eroberung_von_Konstantinopel_(1453)",
+        "description": "Mehmed II. ist 21 Jahre alt. Die Mauern Konstantinopels stehen seit der Zeit des Theodosius — über tausend Jahre. Er bringt vor sie ein Artilleriegeschütz, wie es noch keine Stadt gesehen hat: Kanonen eigens gegossen, um diesen Stein zu brechen. Nach 53 Tagen hält die Bresche; die osmanischen Truppen strömen herein. Konstantin XI. fällt im Straßenkampf. Die Hagia Sophia wird zur Moschee. Mehmed beginnt sich Kaisar-i Rum zu nennen — Caesar von Rom. Byzanz, die östliche Hälfte des römischen Reiches, die das Westliche um ein Jahrtausend überlebte, ist zu Ende. Der Nachfolger ist das Osmanische Reich.",
+        "image": "data/images/events/from_mecca_to_vienna__fall_of_constantinople.jpg"
+      },
+      {
+        "title": "Zweite Wiener Türkenbelagerung",
+        "year": 1683,
+        "lon": 16.37,
+        "lat": 48.21,
+        "wiki": "Zweite_Wiener_Türkenbelagerung",
+        "description": "Die Osmanen drängen seit zwei Jahrhunderten nach Mitteleuropa. Im Sommer 1683 belagert ein Heer von 150.000 unter Großwesir Kara Mustafa Wien — zum zweiten Mal nach 1529. Die Stadt hält zwei Monate. Am 12. September stürmt ein polnisch geführtes Entsatzheer vom Kahlenberg herab und bricht die Belagerung. Die osmanischen Zelte werden geplündert; unter den Beutestücken angeblich Säcke grüner Bohnen, aus denen die Wiener eine Kaffeekultur machen werden. Der Zenit des Reiches ist überschritten. Von hier an verläuft die Linie in die andere Richtung.",
+        "image": "data/images/events/from_mecca_to_vienna__battle_of_vienna.jpg"
+      }
+    ]
+  }
 ]
