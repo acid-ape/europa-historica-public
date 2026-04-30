@@ -228,7 +228,7 @@
         "year": 1806,
         "lon": 16.37,
         "lat": 48.21,
-        "wiki": "Heiliges_Römisches_Reich",
+        "wiki": "Holy_Roman_Empire",
         "description": "Napoleons Heere haben Österreich bei Austerlitz gedemütigt, der Rheinbund zieht sechzehn deutsche Staaten aus dem Reichsverband. Am 6. August 1806 tritt Franz II. in Wien an ein Fenster und verkündet: Die Reichswürde ist niedergelegt, das Heilige Römische Reich aufgelöst. Eine tausendjährige politische Idee endet an einem Nachmittag. Was bleibt, ist eine Sammlung von Königreichen ohne gemeinsames Dach.",
         "image": "data/images/events/road_to_germany__end_of_the_holy_roman_empire.png"
       },
@@ -237,7 +237,7 @@
         "year": 1815,
         "lon": 16.37,
         "lat": 48.21,
-        "wiki": "Wiener_Kongress",
+        "wiki": "Congress_of_Vienna",
         "description": "Nach Napoleons endgültiger Niederlage zeichnen die Mächte Europas in Wien den Kontinent neu. Aus fast dreihundert ehemaligen Territorien entsteht der Deutsche Bund: 39 Staaten, beherrscht von Österreich und Preußen, lose miteinander verbunden. Es gibt noch keine deutsche Nation, kein gemeinsames Heer, kein Parlament mit echter Macht. Aber erstmals seit 1806 hat das Wort ‚Deutschland‘ eine politische Form — wie dünn auch immer.",
         "image": "data/images/events/road_to_germany__congress_of_vienna.png"
       },
@@ -246,7 +246,7 @@
         "year": 1848,
         "lon": 8.68,
         "lat": 50.11,
-        "wiki": "Frankfurter_Nationalversammlung",
+        "wiki": "Frankfurt_Parliament",
         "description": "In ganz Europa flammen Revolutionen auf; in den deutschen Ländern fordern Liberale eine Verfassung und einen geeinten Staat. In der Frankfurter Paulskirche entwerfen 585 gewählte Abgeordnete eine Verfassung und bieten dem preußischen König die Kaiserkrone an. Friedrich Wilhelm IV. lehnt ab — eine Krone ‚aus der Gosse‘, sagt er. Innerhalb eines Jahres ist das Parlament aufgelöst, die Revolution niedergeschlagen. Die Einigung muss warten — die Idee nicht.",
         "image": "data/images/events/road_to_germany__frankfurt_parliament.png"
       },
@@ -255,7 +255,7 @@
         "year": 1871,
         "lon": 2.12,
         "lat": 48.8,
-        "wiki": "Deutsche_Reichsgründung",
+        "wiki": "Proclamation_of_the_German_Empire",
         "description": "Bismarck hat ein Jahrzehnt auf diesen Moment hingearbeitet: drei kurze Kriege gegen Dänemark, Österreich und Frankreich — jedes ein Schachzug. Nach Napoleons III. Niederlage bei Sedan versammeln sich die deutschen Fürsten im Spiegelsaal von Versailles und rufen Wilhelm I. zum deutschen Kaiser aus. Der Ort ist gewählt: im Palast der französischen Könige wird das neue Reich geboren. Das Kaiserreich entsteht als preußisch geführter Bund von 25 Staaten, besiegelt durch Demütigung.",
         "image": "data/images/events/road_to_germany__proclamation_of_the_german_empire.jpg"
       },
@@ -264,7 +264,7 @@
         "year": 1919,
         "lon": 2.12,
         "lat": 48.8,
-        "wiki": "Friedensvertrag_von_Versailles",
+        "wiki": "Treaty_of_Versailles",
         "description": "Der Große Krieg hat ein Kaiserreich verzehrt. Zwanzig Millionen Tote in Europa, die Krone der Hohenzollern abgesetzt, der Reichstag in republikanischen Händen. Im selben Spiegelsaal, in dem das Reich ausgerufen wurde, unterzeichnet Deutschland nun einen Vertrag, geschrieben von den Siegern: Gebietsverluste, Reparationen, der Kriegsschuldartikel. Die junge Weimarer Republik beginnt belastet mit einem Frieden, den sie nicht verhandelt hat. Der Vertrag schließt ein Kapitel — und schreibt das nächste schon mit.",
         "image": "data/images/events/road_to_germany__treaty_of_versailles.jpg"
       },
@@ -273,7 +273,7 @@
         "year": 1933,
         "lon": 13.4,
         "lat": 52.52,
-        "wiki": "Machtergreifung",
+        "wiki": "Nazi_seizure_of_power",
         "description": "Inflation, Massenarbeitslosigkeit, Straßengewalt: Weimar ist erschöpft. Am 30. Januar 1933 ernennt Reichspräsident Hindenburg Hitler zum Reichskanzler — eine kalkulierte Wette der Konservativen, ihn einbinden zu können. Binnen Monaten brennt der Reichstag, das Ermächtigungsgesetz wird beschlossen, Oppositionsparteien werden verboten — Deutschland ist zur Ein-Parteien-Diktatur geworden. Die Republik stirbt ohne Putsch, im Parlamentsverfahren, vor einer gleichgültigen Öffentlichkeit.",
         "image": "data/images/events/road_to_germany__nazi_seizure_of_power.jpg"
       },
@@ -282,7 +282,7 @@
         "year": 1945,
         "lon": 13.4,
         "lat": 52.52,
-        "wiki": "Stunde_Null",
+        "wiki": "End_of_World_War_II_in_Europe",
         "description": "Zwölf Jahre Diktatur und sechs Jahre Krieg enden im Mai 1945. Vierzig Millionen Tote allein in Europa. Berlin ist Trümmer. Die Wehrmacht kapituliert bedingungslos; die Alliierten teilen das Land in vier Besatzungszonen. Die Verbrechen des Regimes — industrieller Völkermord, Zwangsarbeit, Vernichtungskrieg — werden offengelegt, als die Lager befreit werden. Was Deutschland als Nächstes wird, muss von hier ausgehen. Man nennt diesen Moment ‚Stunde Null‘.",
         "image": "data/images/events/road_to_germany__stunde_null.jpg"
       },
@@ -291,7 +291,7 @@
         "year": 1949,
         "lon": 7.1,
         "lat": 50.74,
-        "wiki": "Grundgesetz_für_die_Bundesrepublik_Deutschland",
+        "wiki": "Basic_Law_for_the_Federal_Republic_of_Germany",
         "description": "Die Linien des Kalten Kriegs verhärten sich. Im Mai 1949 schließen sich die Westzonen zur Bundesrepublik Deutschland zusammen, mit einer neuen Hauptstadt im provinziellen Bonn — bewusst gewählt, damit sie Berlin nicht überstrahlt. Fünf Monate später wird die sowjetische Zone zur Deutschen Demokratischen Republik, mit Ost-Berlin als Hauptstadt. Zwei deutsche Staaten stehen sich an der innerdeutschen Grenze gegenüber — jeder beansprucht für sich, die legitime Fortsetzung dessen zu sein, was war.",
         "image": "data/images/events/road_to_germany__two_german_states.jpg"
       },
@@ -300,7 +300,7 @@
         "year": 1990,
         "lon": 13.378,
         "lat": 52.516,
-        "wiki": "Deutsche_Wiedervereinigung",
+        "wiki": "German_reunification",
         "description": "Die Berliner Mauer hat 28 Jahre gestanden, als am 9. November 1989 ein DDR-Sprecher auf einer Pressekonferenz neue Reiseregelungen falsch verliest: ‚Sofort, unverzüglich.‘ Menschenmengen versammeln sich. Die Grenzposten öffnen die Schlagbäume. Elf Monate später, am 3. Oktober 1990, löst sich die DDR auf und tritt der Bundesrepublik bei. Nach einem Jahrhundert geprägt von zwei Weltkriegen, Teilung und Diktatur ist Deutschland wieder ein Land — und die Nachkriegsordnung, in der es aufwuchs, geht zu Ende.",
         "image": "data/images/events/road_to_germany__reunification.jpg"
       }
@@ -316,7 +316,7 @@
         "year": 622,
         "lon": 39.61,
         "lat": 24.47,
-        "wiki": "Hidschra",
+        "wiki": "Hijrah",
         "description": "Mekka will ihn nicht. Nach zwölf Jahren Predigt, Verfolgung und langsamer Auswanderung seiner Anhänger schleicht sich Mohammed selbst nachts hinaus und reitet nordwärts ins Oasenstädtchen Yathrib. Dort haben die zerstrittenen Stämme ihn als Vermittler eingeladen. Innerhalb einer Generation wird Yathrib zu Medina — der Stadt — und das Jahr seiner Ankunft, 622, wird Jahr Eins eines neuen Kalenders. Der Islam ist nicht mehr eine Randbewegung von Händlern und Außenseitern. Er wird zum Gemeinwesen.",
         "image": "data/images/events/from_mecca_to_vienna__the_hijra.jpg"
       },
@@ -325,7 +325,7 @@
         "year": 635,
         "lon": 36.29,
         "lat": 33.51,
-        "wiki": "Islamische_Expansion",
+        "wiki": "Muslim_conquest_of_the_Levant",
         "description": "Drei Jahre nach Mohammeds Tod reiten seine Anhänger aus Arabien hinaus. Die beiden Großreiche der Zeit — das oströmische und das sasanidische Persien — haben sich gerade gegenseitig erschöpft. Damaskus, eine reiche römische Provinzhauptstadt, fällt 635. Bis 642 ist Ägypten genommen, bis 651 das Sasanidenreich am Ende. Eine Bewegung, die mit einem einzigen Mann in einer Wüstenstadt begann, hat in einer Generation die ältesten Hochkulturen der Welt erobert. Die politische Karte des Mittelmeerraums wird schneller umgezeichnet, als jemand sie aufschreiben kann.",
         "image": "data/images/events/from_mecca_to_vienna__conquest_of_the_near_east.jpg"
       },
@@ -334,7 +334,7 @@
         "year": 732,
         "lon": 0.34,
         "lat": 46.58,
-        "wiki": "Schlacht_von_Tours_und_Poitiers",
+        "wiki": "Battle_of_Tours",
         "description": "Ein Jahrhundert nach dem Tod des Propheten haben arabische Heere die Straße von Gibraltar überquert, Spanien erobert und stoßen ins Frankenreich vor. Bei Poitiers in Mittelfrankreich stellt Karl Martell Abd ar-Rahmans Reiterei eine Wand aus Fußvolk entgegen. Die Araber zerschellen daran. Ihr Befehlshaber fällt; die Überlebenden ziehen sich nach Süden zurück. Der westliche Vormarsch hat seinen höchsten Punkt erreicht. Edward Gibbon wird später, mit etwas Übertreibung, ausmalen, in Oxford werde der Koran gelehrt, hätte Martell verloren. Er hat nicht verloren.",
         "image": "data/images/events/from_mecca_to_vienna__battle_of_tours.png"
       },
@@ -343,7 +343,7 @@
         "year": 762,
         "lon": 44.36,
         "lat": 33.31,
-        "wiki": "Bagdad",
+        "wiki": "Round_City_of_Baghdad",
         "description": "Die abbasidische Revolution hat die Umayyaden gestürzt und die Hauptstadt nach Osten verlegt. Kalif al-Mansur entwirft eine neue Stadt: ein perfekter Kreis, vier Kilometer Mauer-Umfang, vier Tore in Richtung Mekka, Damaskus, Chorasan und Basra. Er nennt sie Madinat as-Salam — Stadt des Friedens — aber jeder sagt Bagdad. Innerhalb eines Jahrhunderts wird es die größte Stadt der Welt sein, ein Magnet für griechische Philosophie, indische Mathematik, persische Dichtung. Das Goldene Zeitalter des Islam hat seine Hauptstadt.",
         "image": "data/images/events/from_mecca_to_vienna__baghdad_founded.png"
       },
@@ -352,7 +352,7 @@
         "year": 929,
         "lon": -4.78,
         "lat": 37.88,
-        "wiki": "Kalifat_von_Córdoba",
+        "wiki": "Caliphate_of_Córdoba",
         "description": "Als die Abbasiden Bagdad nahmen, entkam ein einziger Umayyaden-Prinz — nach Westen, nach Spanien. Zwei Jahrhunderte später erklärt sich sein Nachkomme Abd ar-Rahman III. in Córdoba selbst zum Kalifen und zerbricht die formale Einheit der muslimischen Welt. Um das Jahr 1000 ist Córdoba die größte Stadt Westeuropas: eine halbe Million Menschen, hunderte Moscheen, eine Bibliothek mit angeblich 400.000 Bänden, während christliche Bibliotheken ein paar hundert haben. Aristoteles kehrt durch diese Stadt in den lateinischen Westen zurück. Auch Papier, Algebra und die Laute.",
         "image": "data/images/events/from_mecca_to_vienna__caliphate_of_córdoba.png"
       },
@@ -361,7 +361,7 @@
         "year": 1071,
         "lon": 42.53,
         "lat": 39.15,
-        "wiki": "Schlacht_bei_Manzikert",
+        "wiki": "Battle_of_Manzikert",
         "description": "Die Seldschuken-Türken — frische Konvertiten aus der Steppe — haben ein Reich aufgebaut, das sich von Zentralasien bis in die Levante erstreckt. Bei Manzikert in Ostanatolien treffen sie auf ein byzantinisches Heer, das Kaiser Romanos IV. persönlich anführt. Die Byzantiner werden vernichtet, Romanos gerät in Gefangenschaft. Die Niederlage öffnet Anatolien — das Herzland des Reiches — der türkischen Besiedlung. In einer Generation wird das, was tausend Jahre lang griechischsprachiges, christliches Kleinasien war, zu etwas anderem. Das Reich erholt sich nie davon, und ein verzweifelter Kaiser wird den Papst um Hilfe bitten.",
         "image": "data/images/events/from_mecca_to_vienna__battle_of_manzikert.png"
       },
@@ -370,7 +370,7 @@
         "year": 1099,
         "lon": 35.22,
         "lat": 31.78,
-        "wiki": "Belagerung_Jerusalems_(1099)",
+        "wiki": "Siege_of_Jerusalem_(1099)",
         "description": "Der Aufruf Papst Urbans II. in Clermont 1095 hat etwas hervorgebracht, was niemand so erwartet hatte: ein Heer von Zehntausenden, das durch Europa zieht, durch Konstantinopel, durch Anatolien, die Levante hinunter. Nach drei Jahren Marsch, nach Hunger, Schlachten und innerchristlichem Verrat erreichen sie Jerusalem. Die Belagerung dauert fünf Wochen. Als am 15. Juli die Mauern fallen, ist das Gemetzel allgemein. Entlang der Küste entsteht ein fränkisches Königreich. Die Begegnung, die der Westen mit dem Islam bisher aus der Distanz hatte, ist gerade sehr unmittelbar geworden.",
         "image": "data/images/events/from_mecca_to_vienna__crusaders_take_jerusalem.jpg"
       },
@@ -379,7 +379,7 @@
         "year": 1187,
         "lon": 35.22,
         "lat": 31.78,
-        "wiki": "Belagerung_Jerusalems_(1187)",
+        "wiki": "Siege_of_Jerusalem_(1187)",
         "description": "88 Jahre lang halten sich die Kreuzfahrerstaaten an der Levante-Küste, während die muslimische Macht ringsum langsam wieder zusammenwächst. Salah ad-Din — Saladin — kurdischer General, Sultan von Ägypten und Syrien, vereint endlich die zersplitterte Antwort. An den Hörnern von Hattin im Juli 1187 vernichtet er das Kreuzfahrer-Feldheer; drei Monate später öffnet Jerusalem seine Tore. Der Kontrast zu 1099 ist gewollt: Saladin lässt die christlichen Einwohner sich auslösen, befreit die Armen ohne Zahlung. Europa wird ihn später zum Idealbild des ritterlichen Gegners verklären.",
         "image": "data/images/events/from_mecca_to_vienna__saladin_retakes_jerusalem.jpg"
       },
@@ -388,7 +388,7 @@
         "year": 1453,
         "lon": 28.97,
         "lat": 41.01,
-        "wiki": "Eroberung_von_Konstantinopel_(1453)",
+        "wiki": "Fall_of_Constantinople",
         "description": "Mehmed II. ist 21 Jahre alt. Die Mauern Konstantinopels stehen seit der Zeit des Theodosius — über tausend Jahre. Er bringt vor sie ein Artilleriegeschütz, wie es noch keine Stadt gesehen hat: Kanonen eigens gegossen, um diesen Stein zu brechen. Nach 53 Tagen hält die Bresche; die osmanischen Truppen strömen herein. Konstantin XI. fällt im Straßenkampf. Die Hagia Sophia wird zur Moschee. Mehmed beginnt sich Kaisar-i Rum zu nennen — Caesar von Rom. Byzanz, die östliche Hälfte des römischen Reiches, die das Westliche um ein Jahrtausend überlebte, ist zu Ende. Der Nachfolger ist das Osmanische Reich.",
         "image": "data/images/events/from_mecca_to_vienna__fall_of_constantinople.jpg"
       },
@@ -397,7 +397,7 @@
         "year": 1683,
         "lon": 16.37,
         "lat": 48.21,
-        "wiki": "Zweite_Wiener_Türkenbelagerung",
+        "wiki": "Battle_of_Vienna",
         "description": "Die Osmanen drängen seit zwei Jahrhunderten nach Mitteleuropa. Im Sommer 1683 belagert ein Heer von 150.000 unter Großwesir Kara Mustafa Wien — zum zweiten Mal nach 1529. Die Stadt hält zwei Monate. Am 12. September stürmt ein polnisch geführtes Entsatzheer vom Kahlenberg herab und bricht die Belagerung. Die osmanischen Zelte werden geplündert; unter den Beutestücken angeblich Säcke grüner Bohnen, aus denen die Wiener eine Kaffeekultur machen werden. Der Zenit des Reiches ist überschritten. Von hier an verläuft die Linie in die andere Richtung.",
         "image": "data/images/events/from_mecca_to_vienna__battle_of_vienna.jpg"
       }
