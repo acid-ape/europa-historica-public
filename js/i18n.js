@@ -110,6 +110,7 @@ const I18N = {
     ctrl_terr_list_title: 'Territories overview',
     ctrl_search_title: 'Search (Ctrl+K)',
     ctrl_legend_title: 'Legend',
+    ctrl_logo_menu_title: 'Menu',
     // Tutorial step controls
     tour_step_of:    'Step {n} of {total}',
     tour_end:        'End Tour',
@@ -226,6 +227,7 @@ const I18N = {
     ctrl_terr_list_title: 'Territoriums-Übersicht',
     ctrl_search_title: 'Suchen (Strg+K)',
     ctrl_legend_title: 'Legende',
+    ctrl_logo_menu_title: 'Menü',
     // Tutorial step controls
     tour_step_of:    'Schritt {n} von {total}',
     tour_end:        'Tutorial beenden',

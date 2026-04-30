@@ -63,27 +63,39 @@ function _tourShow(i) {
   if (!step) return;
   const isLast = !!step.finish;
 
-  // Mobile-specific overrides — a step can declare alternative target
-  // and position for phones (e.g. legend points at #legend-btn instead
-  // of the desktop-only floating #legend element).
+  // Mobile-specific overrides — a step can declare alternative target,
+  // position, and text for phones (e.g. legend points at #legend-btn
+  // instead of the desktop-only floating #legend element; the steps for
+  // navigation controls and tools differ entirely between layouts).
   const onMobile = typeof isMobile === 'function' && isMobile();
   if (onMobile) {
     if (step.target_mobile) step.target = step.target_mobile;
     if (step.pos_mobile)    step.pos    = step.pos_mobile;
+    if (step.text_mobile)   step.text   = step.text_mobile;
+    if (step.title_mobile)  step.title  = step.title_mobile;
   }
 
-  // On mobile: open drawer for steps that target the controls bar
-  // #tl-wrap is visible in the collapsed strip — exclude from drawer-open
+  // On mobile: open drawer for steps that target the controls bar.
+  // #tl-wrap, #m-year (in the strip), #top-right-bar and #logo-menu-btn
+  // are all reachable without expanding the drawer — exclude them.
+  const STRIP_VISIBLE_TARGETS = new Set([
+    '#legend', '#legend-btn', '#tl-wrap', '#top-right-bar',
+    '#logo-menu-btn', '#logo-menu', '#m-year', '#year-input'
+  ]);
   let drawerJustOpened = false;
-  if (onMobile && step.target &&
-      step.target !== '#legend' && step.target !== '#legend-btn' &&
-      step.target !== '#tl-wrap' && step.target !== '#top-right-bar') {
+  if (onMobile && step.target && !STRIP_VISIBLE_TARGETS.has(step.target)) {
     const ctrl = document.getElementById('controls');
     if (ctrl && !ctrl.classList.contains('m-open')) {
       ctrl.classList.add('m-open');
       const btn = document.getElementById('m-more');
       if (btn) { btn.textContent = '▼'; btn.classList.add('open'); }
       drawerJustOpened = true;
+    }
+  }
+  // Auto-open burger menu when the tour points at it
+  if (onMobile && (step.target === '#logo-menu-btn' || step.target === '#logo-menu')) {
+    if (!document.body.classList.contains('logo-menu-open')) {
+      document.body.classList.add('logo-menu-open');
     }
   }
 
@@ -250,8 +262,9 @@ function _tourNext() {
     const leg = document.getElementById('legend');
     if (leg && !leg.classList.contains('collapsed')) toggleLegend();
   }
-  // Close mobile legend modal if the tour opened it
+  // Close mobile legend modal + logo-burger if the tour opened them
   document.body.classList.remove('legend-modal-open');
+  document.body.classList.remove('logo-menu-open');
   _tourTt.classList.remove('tr-on');
   _tourHl.classList.remove('tr-on');
   _tourIdx++;
@@ -266,8 +279,9 @@ function _tourSkip() {
 function _tourDestroy() {
   if (_tourHl) { _tourHl.remove(); _tourHl = null; }
   if (_tourTt) { _tourTt.remove(); _tourTt = null; }
-  // Close mobile legend modal if it was opened by the tour
+  // Close mobile legend modal + logo-burger if opened by the tour
   document.body.classList.remove('legend-modal-open');
+  document.body.classList.remove('logo-menu-open');
   // Collapse legend if tour auto-expanded it
   if (_tourAutoExpandedLegend) {
     _tourAutoExpandedLegend = false;

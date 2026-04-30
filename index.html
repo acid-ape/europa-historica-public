@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R16">
+  <link rel="stylesheet" href="css/style.css?v=R17">
 </head>
 <body>
 <div id="loading">
@@ -79,25 +79,45 @@
 
 
 
-<!-- Top-right toolbar: meta + tools + map controls.
-     Sits over the map, fixed. Holds tutorial restart, info, territory list,
-     search, language toggle, and reset-view. Bottom-bar stays focused on
-     time + layer toggles. -->
+<!-- Top-left logo button (mobile only): opens a dropdown with the
+     less-frequently-used actions (tutorial / info / list / language).
+     Frees space in the top-right toolbar for the everyday tools. -->
+<button id="logo-menu-btn" class="mobile-only" onclick="toggleLogoMenu()"
+        data-i18n-title="ctrl_logo_menu_title" title="Menu">
+  <img src="data/images/EH-Symbol.png" alt="EH">
+</button>
+
+<!-- Logo-burger dropdown (mobile only). -->
+<div id="logo-menu" class="mobile-only">
+  <button onclick="toggleLogoMenu(); openSearch()" data-i18n="ctrl_search_title">Search (Ctrl+K)</button>
+  <button onclick="toggleLogoMenu(); startTour()" data-i18n="ctrl_tutorial_btn_title">Restart tutorial</button>
+  <button onclick="toggleLogoMenu(); openIntro()" data-i18n="ctrl_info_title">About this project</button>
+  <button onclick="toggleLogoMenu(); openTerrOverview()" data-i18n="ctrl_terr_list_title">Territories overview</button>
+  <div id="lang-ctrl-menu">
+    <button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
+  </div>
+</div>
+
+<!-- Top-right toolbar.
+     Desktop: full set of meta + tools + map controls.
+     Mobile : compact strip with the everyday tools only (search, legend,
+     reset). Tutorial / info / territory list / language live in the
+     logo-burger above. -->
 <div id="top-right-bar">
-  <button id="tour-btn" onclick="startTour()" data-i18n-title="ctrl_tutorial_btn_title" title="Restart tutorial">◉</button>
-  <button id="info-btn" onclick="openIntro()" data-i18n-title="ctrl_info_title" title="About this project">i</button>
-  <span class="bar-divider bar-divider-sm"></span>
-  <button id="terr-list-btn" onclick="openTerrOverview()" data-i18n-title="ctrl_terr_list_title" title="Territories overview">☰</button>
-  <button id="search-btn"    onclick="openSearch()"      data-i18n-title="ctrl_search_title"    title="Search (Ctrl+K)">⌕</button>
-  <span class="bar-divider bar-divider-sm"></span>
-  <div id="lang-ctrl">
+  <button id="tour-btn"      class="desktop-only" onclick="startTour()"      data-i18n-title="ctrl_tutorial_btn_title" title="Restart tutorial">◉</button>
+  <button id="info-btn"      class="desktop-only" onclick="openIntro()"      data-i18n-title="ctrl_info_title"         title="About this project">i</button>
+  <span class="bar-divider bar-divider-sm desktop-only"></span>
+  <button id="terr-list-btn" class="desktop-only" onclick="openTerrOverview()" data-i18n-title="ctrl_terr_list_title" title="Territories overview">☰</button>
+  <button id="search-btn"      class="desktop-only" onclick="openSearch()"   data-i18n-title="ctrl_search_title"       title="Search (Ctrl+K)">⌕</button>
+  <span class="bar-divider bar-divider-sm desktop-only"></span>
+  <div id="lang-ctrl" class="desktop-only">
     <button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button>
     <span class="lang-sep">|</span>
     <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
   </div>
   <span class="bar-divider bar-divider-sm"></span>
-  <!-- Legend toggle: only visible on mobile (where #legend is hidden by default).
-       On desktop the legend lives top-left and stays sticky. -->
   <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
   <button id="map-reset-btn" onclick="resetMapView()" data-i18n-title="ctrl_reset_view" title="Reset view">⌂</button>
 </div>
@@ -259,21 +279,24 @@
 
     <div id="btn-row">
       <span id="m-year">8,000 BC</span>
-      <!-- TIME cluster: stepper + year input -->
+      <!-- year-input is a sibling of .btn-group-left so it stays reachable
+           on mobile (where the stepper group is display:none). m-year tap
+           toggles its visible class. -->
+      <input type="number" id="year-input" placeholder="Year..." onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
+      <!-- TIME cluster: stepper buttons (desktop only on mobile via CSS) -->
       <div class="btn-group-left">
         <button id="s-100b" class="btn btn-step" onclick="stepYear(-100)">−100</button>
         <button id="s-10b"  class="btn btn-step" onclick="stepYear(-10)">−10</button>
         <button id="s-1b"   class="btn btn-step" onclick="stepYear(-1)">−1</button>
-        <input type="number" id="year-input" placeholder="Year..." onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
         <button id="s-1f"   class="btn btn-step" onclick="stepYear(1)">+1</button>
         <button id="s-10f"  class="btn btn-step" onclick="stepYear(10)">+10</button>
         <button id="s-100f" class="btn btn-step" onclick="stepYear(100)">+100</button>
       </div>
-      <!-- BRANDING: absolute-centered, doesn't take row space.
-           Full word-mark on desktop, seal-glyph on mobile. -->
+      <!-- BRANDING: full word-mark on desktop only, absolute-centered.
+           On mobile the EH-Symbol moved to the top-left as the logo-menu
+           button — keeps the bottom strip lean. -->
       <div class="btn-group-center">
-        <img id="ctrl-logo"        class="desktop-only" src="data/images/EH-Name.png"   alt="Europa Historica">
-        <img id="ctrl-logo-mobile" class="mobile-only"  src="data/images/EH-Symbol.png" alt="EH">
+        <img id="ctrl-logo" class="desktop-only" src="data/images/EH-Name.png" alt="Europa Historica">
       </div>
       <!-- LAYERS + PLAYBACK cluster -->
       <div class="btn-group-right">
@@ -420,14 +443,14 @@
 <!-- View / interaction layer -->
 <script src="js/map.js?v=R4"></script>
 <script src="js/tooltip.js?v=R6"></script>
-<script src="js/timeline.js?v=R12"></script>
+<script src="js/timeline.js?v=R13"></script>
 <script src="js/cities.js?v=R5"></script>
 <script src="js/events.js?v=R4"></script>
 <script src="js/app.js?v=R13"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
 <script src="js/search.js?v=R4"></script>
-<script src="js/tour.js?v=R12"></script>
+<script src="js/tour.js?v=R13"></script>
 <script src="js/trails.js?v=R4"></script>
 <script>
   // Apply saved language on page load (before first render)

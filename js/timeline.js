@@ -461,27 +461,41 @@ function toggleLegend() {
 }
 
 // ── Legend modal (mobile only) ──
-// On phones #legend is hidden by default and shown as a centered overlay
+// On phones #legend is hidden by default and shown as a top-right dropdown
 // via body.legend-modal-open. Trigger from #legend-btn in #top-right-bar.
-// Backdrop click closes; the in-legend close button closes too.
 function toggleLegendModal() {
   document.body.classList.toggle('legend-modal-open');
 }
-// Backdrop click: ::after pseudo can't receive clicks, so we listen on body
-// and close if the click missed both the legend and the trigger button.
+
+// ── Logo burger menu (mobile only) ──
+// Top-left logo button hides less-frequent actions (tutorial, info, list,
+// language) behind a single tap to keep the top-right toolbar uncluttered.
+function toggleLogoMenu() {
+  document.body.classList.toggle('logo-menu-open');
+}
+
+// Outside-click closes both modals (legend + logo menu)
 document.addEventListener('click', e => {
-  if (!document.body.classList.contains('legend-modal-open')) return;
-  const leg = document.getElementById('legend');
-  const btn = document.getElementById('legend-btn');
-  if (leg && leg.contains(e.target)) return;
-  if (btn && btn.contains(e.target)) return;
-  document.body.classList.remove('legend-modal-open');
-});
-// ESC key closes
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && document.body.classList.contains('legend-modal-open')) {
-    document.body.classList.remove('legend-modal-open');
+  if (document.body.classList.contains('legend-modal-open')) {
+    const leg = document.getElementById('legend');
+    const btn = document.getElementById('legend-btn');
+    if (!(leg && leg.contains(e.target)) && !(btn && btn.contains(e.target))) {
+      document.body.classList.remove('legend-modal-open');
+    }
   }
+  if (document.body.classList.contains('logo-menu-open')) {
+    const menu = document.getElementById('logo-menu');
+    const btn  = document.getElementById('logo-menu-btn');
+    if (!(menu && menu.contains(e.target)) && !(btn && btn.contains(e.target))) {
+      document.body.classList.remove('logo-menu-open');
+    }
+  }
+});
+// ESC closes both
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  document.body.classList.remove('legend-modal-open');
+  document.body.classList.remove('logo-menu-open');
 });
 
 // Init range labels once DOM ready
@@ -489,4 +503,52 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', _updateRangeLabels);
 } else {
   _updateRangeLabels();
+}
+
+// ── Mobile: tap on the year display to open inline year input ──
+// On phones the +/-1, +/-10, +/-100 stepper row is hidden (saves space).
+// Instead, the year display itself is tappable: tap reveals a number
+// input pre-filled with the current year; Enter or blur jumps to it.
+function _initMobileYearInput() {
+  const span = document.getElementById('m-year');
+  const input = document.getElementById('year-input');
+  if (!span || !input) return;
+
+  span.addEventListener('click', () => {
+    if (typeof isMobile === 'function' && !isMobile()) return;
+    // Pre-fill with the current numeric year (negative for BC)
+    if (typeof state !== 'undefined' && typeof pctToYear === 'function') {
+      input.value = pctToYear(state.pct);
+    }
+    span.classList.add('m-year-editing');
+    input.classList.add('m-year-input-active');
+    input.focus();
+    input.select();
+  });
+
+  const finish = () => {
+    span.classList.remove('m-year-editing');
+    input.classList.remove('m-year-input-active');
+    if (input.value !== '' && typeof jumpToYear === 'function') {
+      jumpToYear(input.value);
+    }
+    input.value = '';
+  };
+  input.addEventListener('blur', () => {
+    if (input.classList.contains('m-year-input-active')) finish();
+  });
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { e.preventDefault(); finish(); input.blur(); }
+    if (e.key === 'Escape') {
+      input.value = '';
+      input.classList.remove('m-year-input-active');
+      span.classList.remove('m-year-editing');
+      input.blur();
+    }
+  });
+}
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _initMobileYearInput);
+} else {
+  _initMobileYearInput();
 }

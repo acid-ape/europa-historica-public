@@ -120,6 +120,66 @@ body{background:var(--bg);color:var(--txt);font-family:'Crimson Text',serif;heig
    slot — hide our toolbar to avoid overlap. */
 body:has(#controls.collapsed) #top-right-bar{display:none;}
 
+/* Logo-burger menu (mobile only). Top-left button uses the EH-Symbol;
+   click opens a dropdown with tutorial / info / territories / language.
+   Hidden completely on desktop (top-right toolbar still has all items). */
+#logo-menu-btn{
+  position:fixed;top:14px;left:14px;z-index:550;
+  width:38px;height:38px;
+  background:var(--panel);border:1px solid var(--border);border-radius:2px;
+  cursor:pointer;backdrop-filter:blur(10px);
+  display:none;align-items:center;justify-content:center;
+  padding:4px;
+  transition:border-color .15s,background .15s;
+}
+#logo-menu-btn img{width:100%;height:100%;object-fit:contain;opacity:0.85;}
+#logo-menu-btn:hover{border-color:var(--gold);background:rgba(212,168,67,0.08);}
+#logo-menu{
+  position:fixed;top:60px;left:8px;z-index:910;
+  display:none;
+  background:var(--panel);border:1px solid var(--border);border-radius:2px;
+  backdrop-filter:blur(10px);
+  padding:6px;min-width:200px;
+  flex-direction:column;gap:2px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.55);
+}
+body.logo-menu-open #logo-menu{display:flex;}
+#logo-menu > button{
+  text-align:left;
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:1px;
+  padding:8px 12px;
+  background:transparent;border:1px solid transparent;border-radius:2px;
+  color:#7a6a42;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+#logo-menu > button:hover{
+  border-color:var(--gold);color:var(--gold2);
+  background:rgba(212,168,67,0.08);
+}
+#logo-menu #lang-ctrl-menu{
+  display:flex;justify-content:center;gap:8px;
+  padding:6px 12px;margin-top:2px;
+  border-top:1px solid var(--border);
+}
+#logo-menu #lang-ctrl-menu .lang-btn-sm{
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:1.5px;
+  padding:4px 12px;border:1px solid #2a2010;background:transparent;
+  color:#5a4a2a;border-radius:2px;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+#logo-menu #lang-ctrl-menu .lang-btn-sm.active,
+#logo-menu #lang-ctrl-menu .lang-btn-sm:hover{
+  background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);
+}
+@media (max-width:768px){
+  /* Show the burger button only on mobile. */
+  #logo-menu-btn{display:flex;}
+  /* Backdrop while menu is open — minimal, just enough to confirm overlay. */
+  body.logo-menu-open::before{
+    content:'';position:fixed;inset:0;background:rgba(0,0,0,0.18);z-index:905;
+  }
+}
+
 /* Mobile-only legend modal: on phones the legend is a centered overlay,
    triggered by the #legend-btn in the top-right toolbar. Backdrop click
    or the toggle button closes it. Desktop legend is unaffected. */
@@ -859,30 +919,53 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
 
   /* Button row: single strip line */
   #btn-row { flex-wrap: nowrap; gap: 4px; padding: 0; align-items: center; }
-  .btn-group-left  { border: none; padding: 0; gap: 3px; flex-shrink: 0; }
+  /* Stepper group hidden entirely on mobile — children are all display:none
+     (tap m-year to enter a year directly). */
+  .btn-group-left  { display: none; }
   /* Hide the logo in the collapsed strip — it's absolute-centered and would
-     overlap the stepper buttons. The .m-open block below shows it again
-     in its proper place. */
+     overlap other elements. The .m-open block below shows it again. */
   .btn-group-center { display: none; }
   .btn-group-right { flex-shrink: 0; gap: 4px; }
   #layer-btns { display: none; border: none; padding: 0; }
   #play-btns  { border: none; padding: 0; gap: 4px; }
 
-  /* Strip: hide ±100, year input, speed, backward play, period selector */
-  #s-100b, #s-100f { display: none; }
+  /* Strip: hide everything time-related except slider + m-year + period selector.
+     On phones the stepper buttons are removed entirely (tap the year display
+     to type a year directly). */
+  #s-100b, #s-100f, #s-10b, #s-10f, #s-1b, #s-1f { display: none !important; }
   #year-input { display: none; }
+  /* Year input becomes visible only when the user taps m-year. */
+  #year-input.m-year-input-active {
+    display: inline-block !important;
+    width: 100px;
+    font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700;
+    color: #d4a843; text-align: center;
+    background: rgba(212,168,67,0.12);
+    border: 1px solid var(--gold);
+    border-radius: 3px; padding: 4px 6px;
+    text-shadow: 0 0 10px rgba(212,168,67,0.35);
+  }
   #s-2h, #s-1h, #sh, #s1, #s2, #s3 { display: none; }
   #era-select-row { display: none; }
   #ctrl-toggle { display: none; }
 
-  /* m-year: compact year display in strip */
+  /* m-year: tappable year display. Bigger touch target than before. */
   #m-year {
     display: inline-block;
-    font-family: 'Cinzel', serif; font-size: 13px; font-weight: 700;
-    color: #d4a843; white-space: nowrap; min-width: 68px; text-align: center;
-    flex-shrink: 0; padding: 0 2px;
+    font-family: 'Cinzel', serif; font-size: 16px; font-weight: 700;
+    color: #d4a843; white-space: nowrap; min-width: 96px; text-align: center;
+    flex-shrink: 0; padding: 4px 8px;
     text-shadow: 0 0 10px rgba(212,168,67,0.35);
+    cursor: pointer;
+    border: 1px solid rgba(212,168,67,0.18);
+    border-radius: 3px;
+    transition: border-color .15s, background .15s;
   }
+  #m-year:hover, #m-year:active {
+    border-color: var(--gold);
+    background: rgba(212,168,67,0.08);
+  }
+  #m-year.m-year-editing { display: none; }
   #m-more {
     display: flex !important; align-items: center; justify-content: center;
     position: absolute; top: -28px; right: 8px; z-index: 210;
@@ -910,6 +993,8 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
 
   #controls.m-open #era-select-row {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-bottom: 4px;
+    /* Match the framed look of the play and layer clusters below. */
+    border: 1px solid rgba(212,168,67,0.12); border-radius: 3px; padding: 4px 6px;
   }
   /* Compact era buttons on mobile — fit two rows without dominating the screen. */
   #controls.m-open #era-select-row .era-sel-btn {
@@ -920,10 +1005,10 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
      like empty rows on mobile — hide them inside the open drawer. */
   #controls.m-open .bar-divider, #controls.m-open .bar-divider-sm { display: none; }
 
-  /* 1 — step buttons */
+  /* 1 — step buttons (now hidden on mobile entirely, but keep selector
+     so the rule degrades cleanly; the children are display:none anyway) */
   #controls.m-open .btn-group-left {
-    order: 1; width: 100%; justify-content: center; flex-wrap: wrap; gap: 4px;
-    border: 1px solid rgba(212,168,67,0.12); border-radius: 3px; padding: 4px 8px;
+    display: none;
   }
   /* 2 — play + events/pleiades stacked */
   #controls.m-open .btn-group-right {
@@ -944,9 +1029,9 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
     width: 100%; position: static; transform: none;
   }
 
-  /* reveal hidden buttons in drawer */
-  #controls.m-open #s-100b, #controls.m-open #s-100f { display: inline-flex; }
-  #controls.m-open #year-input { display: inline-block; width: 68px; }
+  /* reveal hidden buttons in drawer
+     Stepper buttons stay hidden on mobile entirely (tap m-year to type a
+     year directly). Only the speed/playback row gets restored. */
   #controls.m-open #s-2h, #controls.m-open #s-1h { display: inline-flex; }
   #controls.m-open #sh, #controls.m-open #s1,
   #controls.m-open #s2, #controls.m-open #s3 { display: inline-flex; }

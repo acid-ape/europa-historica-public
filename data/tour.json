@@ -17,15 +17,21 @@
   },
   {
     "target": ".btn-group-left",
+    "target_mobile": "#m-year",
     "pos": "above",
+    "pos_mobile": "above",
     "title": "Navigation Controls",
-    "text": "Jump directly to any year using the input field, or step forward and backward through time with the ± buttons."
+    "text": "Jump directly to any year using the input field, or step forward and backward through time with the ± buttons.",
+    "text_mobile": "Tap the year display to type any year directly — Enter jumps right to it. Use the timeline above for sweeping moves; the year input for precise ones."
   },
   {
     "target": "#top-right-bar",
+    "target_mobile": "#logo-menu-btn",
     "pos": "below",
+    "pos_mobile": "below",
     "title": "Tools & Settings",
-    "text": "The top-right toolbar holds everything not tied to time:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, events\nEN/DE  language toggle\n⌂  resets the map to its default view"
+    "text": "The top-right toolbar holds everything not tied to time:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, events\nEN/DE  language toggle\n⌂  resets the map to its default view",
+    "text_mobile": "Tap the logo (top-left) for the menu:\n⌕  search rulers, places, events\n◉  restart this tutorial\n(i)  reopen the info panel\n☰  list all territories\nEN/DE  language toggle\n\nIn the top-right corner you'll find ▤ legend and ⌂ reset view."
   },
   {
     "target": "#play-btns",
