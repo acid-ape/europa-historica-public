@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R17">
+  <link rel="stylesheet" href="css/style.css?v=R18">
 </head>
 <body>
 <div id="loading">
@@ -279,15 +279,14 @@
 
     <div id="btn-row">
       <span id="m-year">8,000 BC</span>
-      <!-- year-input is a sibling of .btn-group-left so it stays reachable
-           on mobile (where the stepper group is display:none). m-year tap
-           toggles its visible class. -->
-      <input type="number" id="year-input" placeholder="Year..." onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
-      <!-- TIME cluster: stepper buttons (desktop only on mobile via CSS) -->
+      <!-- TIME cluster: stepper + year input.
+           On mobile the wrapper switches to display:contents so the input
+           can stay reachable while the stepper buttons are hidden. -->
       <div class="btn-group-left">
         <button id="s-100b" class="btn btn-step" onclick="stepYear(-100)">−100</button>
         <button id="s-10b"  class="btn btn-step" onclick="stepYear(-10)">−10</button>
         <button id="s-1b"   class="btn btn-step" onclick="stepYear(-1)">−1</button>
+        <input type="number" id="year-input" placeholder="Year..." onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
         <button id="s-1f"   class="btn btn-step" onclick="stepYear(1)">+1</button>
         <button id="s-10f"  class="btn btn-step" onclick="stepYear(10)">+10</button>
         <button id="s-100f" class="btn btn-step" onclick="stepYear(100)">+100</button>
