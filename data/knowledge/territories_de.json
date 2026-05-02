@@ -891,7 +891,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_French_monarchs",
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_France",
         "status": "validated",
-        "description": "Das Königreich Frankreich war ein Königreich in Westeuropa. Bis ins 13. Jahrhundert war die Bezeichnung Königreich der Franken gebräuchlich, da das Königreich auf das 843 gegründete Westfränkische Königreich zurückgeht. Letzteres wiederum fußt auf den Königsrechten der fränkischen Teil- und Gesamtreiche, die unter dem Dach des Fränkischen Reiches existierten. Das Fränkische Reich hat einen Vorläufer im Salfränkischen Reich, das Ende des 5. Jahrhunderts die fränkischen Einzelreiche zusammenfasste.",
+        "description": "Das Königreich Frankreich ist der historiographische Sammelbegriff für die verschiedenen politischen Gebilde Frankreichs vom Mittelalter bis in die frühe Neuzeit. Vom Hochmittelalter bis zu seiner Auflösung 1848 zählte es zu den mächtigsten Staaten Europas. Es war zudem eine frühe Kolonialmacht mit Besitzungen in Asien und Afrika — die größte war Neufrankreich in Nordamerika rund um die Großen Seen.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Standard_of_the_King_of_France.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Royal_Coat_of_Arms_of_France_%26_Navarre.svg"
       },
@@ -901,8 +901,8 @@
         "wikidataId": "Q71084",
         "wikipedia": "https://en.wikipedia.org/wiki/First_French_Empire",
         "status": "validated",
-        "label": "Erstes Kaiserreich",
-        "description": "Erstes Kaiserreich ist eine von Historikern verwendete Bezeichnung für die Periode von 1804 bis 1814 und 1815 in der Geschichte Frankreichs. Der offizielle Staatsname war Französisches Kaiserreich. Während dieser Zeit war der französische Staat staatsrechtlich eine zentralistische konstitutionelle Monarchie, wurde aber in der Praxis von Kaiser Napoleon I. weitgehend autokratisch regiert."
+        "label": "Französische Revolution & Erstes Kaiserreich",
+        "description": "In der Geschichte Frankreichs wurde die Erste Republik (französisch: Première République), in der Geschichtsschreibung manchmal als revolutionäres Frankreich bezeichnet und offiziell Französische Republik (République française) genannt, am 21. September 1792 während der Französischen Revolution gegründet. Die Erste Republik bestand bis zur Ausrufung des Ersten Kaiserreichs am 18. Mai 1804 unter Napoléon Bonaparte, wobei sich die Regierungsform mehrfach änderte."
       },
       {
         "start": 1815,
@@ -910,17 +910,17 @@
         "wikidataId": "Q71092",
         "wikipedia": "https://en.wikipedia.org/wiki/Second_French_Empire",
         "status": "validated",
-        "label": "Zweites Kaiserreich",
-        "description": "Der Ausdruck Zweites Kaiserreich bezeichnet die Zeit von 1852 bis 1870 in der Geschichte Frankreichs. Der offizielle Staatsname war Französisches Kaiserreich. In dieser Zeit war Napoleon III. der Kaiser der Franzosen. In den ersten Jahren bis etwa 1860 regierte Napoleon autoritär. Auch als Folge der wachsenden Opposition sah er sich zu schrittweisen Reformen veranlasst, die 1870 in ein parlamentarisches Regierungssystem mündeten. Außenpolitisch gelang es zunächst, das internationale Ansehen Frankreichs zu stärken, ehe in den 1860er Jahren die Erfolge weitgehend ausblieben. In wirtschaftlicher und gesellschaftlicher Hinsicht spielte die industrielle Entwicklung und damit neue Bevölkerungsgruppen wie die Industriellen oder die Arbeiter eine wichtige Rolle. Frankreich stieg zu einer der stärksten Wirtschaftsmächte auf. Der Glanz des Empire spiegelte sich unter anderem im Umbau von Paris zu einer modernen Metropole wider. Das Ende kam mit dem Deutsch-Französischen Krieg von 1870/71. Nach der Gefangennahme des Kaisers nach der Schlacht bei Sedan wurde in Paris die Dritte Republik ausgerufen."
+        "label": "Restauration & Zweites Kaiserreich",
+        "description": "Das Zweite Französische Kaiserreich, offiziell das Französische Kaiserreich, war die Regierung Frankreichs von 1852 bis 1870. Es wurde am 2. Dezember 1852 von Louis-Napoléon Bonaparte begründet, dem Präsidenten Frankreichs unter der Zweiten Französischen Republik, der sich als Napoleon III. zum Kaiser der Franzosen ausrief. Die Epoche brachte bedeutende Fortschritte bei Infrastruktur und Wirtschaft, und Frankreich behauptete sich erneut als dominierende Macht in Europa."
       },
       {
-        "label": "Frankreich",
+        "label": "Modernes Frankreich",
         "start": 1870,
         "end": 2030,
         "wikidataId": "Q142",
         "wikipedia": "https://en.wikipedia.org/wiki/France",
         "status": "validated",
-        "description": "Frankreich, amtlich la République française, ist ein interkontinentaler Einheitsstaat in Westeuropa mit Überseegebieten. Sein Staatsgebiet befindet sich auf allen Kontinenten mit Ausnahme von Asien.",
+        "description": "Frankreich, offiziell die Französische Republik, ist ein hauptsächlich in Westeuropa gelegenes Land. Zu seinen Übersee-Regionen und -Gebieten zählen Französisch-Guayana in Südamerika, Saint-Pierre und Miquelon im Nordatlantik, die Französischen Westindischen Inseln sowie zahlreiche Inseln in Ozeanien und im Indischen Ozean. Das europäische Frankreich grenzt im Norden an Belgien und Luxemburg, im Nordosten an Deutschland, im Osten an die Schweiz, im Südosten an Italien und Monaco, im Süden an Andorra und Spanien und teilt im Nordwesten eine Seegrenze mit dem Vereinigten Königreich. Hauptstadt, größte Stadt und kulturelles wie wirtschaftliches Zentrum ist Paris.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_France.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_the_French_Republic.svg"
       }
@@ -1316,8 +1316,8 @@
         "end": 1569,
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Poland",
         "status": "validated",
-        "label": "Corona Regni Poloniae",
-        "description": "Als Krone des Königreichs Polen wird die Gesamtheit der Länder bezeichnet, die mit dem Königreich Polen durch den gemeinsamen Landesherrn sowie über Lehensbeziehungen verbunden waren. Mit der Krone des Königreichs Polen ist nicht die materielle Krone gemeint, die dem König aufs Haupt gesetzt wurde, sondern die königliche Herrschaft, die in Verbindung mit der Ständeordnung das polnische Staatswesen darstellte. Der Begriff war bis zum Ende Polen-Litauens (1795) üblich."
+        "label": "Königreich Polen",
+        "description": "Das Königreich Polen (polnisch: Królestwo Polskie; lateinisch: Regnum Poloniae) war ein Staat in Mitteleuropa im Mittelalter und in der frühen Neuzeit, der von 1025 bis 1795 bestand."
       },
       {
         "wikidataId": "Q172107",
@@ -1326,16 +1326,16 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth",
         "status": "validated",
         "label": "Polen-Litauen",
-        "description": "Polen-Litauen war ein von 1569 bis 1795 bestehender Staat in Mittel- und Osteuropa. Der föderale und feudale Ständestaat besaß Elemente einer Republik auf Basis einer parlamentarisch-konstitutionellen Monarchie und einen mehrheitlich von der Aristokratie in der Freien Wahl gewählten Herrscher an der Staatsspitze."
+        "description": "Polen-Litauen, auch bekannt als Polnisch-Litauische Union oder als Erste Polnische Republik (polnisch: I Rzeczpospolita), war eine föderative Realunion zwischen dem Königreich Polen und dem Großfürstentum Litauen, die von 1569 bis 1795 bestand. Der Staat zählte vom 16. bis ins 18. Jahrhundert zu den größten und bevölkerungsreichsten Ländern Europas. Auf seinem Höhepunkt im frühen 17. Jahrhundert umfasste er rund 1.000.000 km² und beherbergte 1618 etwa 12 Millionen Einwohner verschiedener Ethnien. Amtssprachen waren Polnisch und Latein, Staatsreligion der Katholizismus."
       },
       {
-        "label": "Polen",
+        "label": "Modernes Polen",
         "wikidataId": "Q36",
         "start": 1918,
         "end": 2030,
         "wikipedia": "https://en.wikipedia.org/wiki/Poland",
         "status": "validated",
-        "description": "Polen ist eine parlamentarische Republik in Mitteleuropa. Hauptstadt des Landes ist Warschau, größter Ballungsraum die Metropolregion (GZM) um Kattowitz (Katowice). Weitere Städte mit über 400.000 Einwohnern sind Krakau (Kraków), Łódź, Breslau (Wrocław), Posen (Poznań) und Danzig (Gdańsk). Polen ist ein in 16 Woiwodschaften gegliederter Einheitsstaat. Mit einer Größe von 312.696 Quadratkilometern ist Polen das sechstgrößte Land der Europäischen Union und mit 38,18 Millionen Einwohnern das fünftbevölkerungsreichste. Es herrscht vorwiegend das ozeanische Klima im Norden und Westen sowie das kontinentale Klima im Süden und Osten des Landes."
+        "description": "Polen, offiziell die Republik Polen, ist ein Land in Mitteleuropa. Es erstreckt sich von der Ostsee im Norden bis zu Sudeten und Karpaten im Süden und grenzt im Nordosten an Litauen und Russland, im Osten an Belarus und die Ukraine, im Süden an die Slowakei und Tschechien sowie im Westen an Deutschland. Das Gebiet weist abwechslungsreiche Landschaften, vielfältige Ökosysteme und ein gemäßigtes Klima auf. Polen besteht aus 16 Woiwodschaften und ist mit über 38 Millionen Einwohnern der fünftbevölkerungsreichste Mitgliedstaat der Europäischen Union sowie das fünftgrößte EU-Land mit einer Fläche von 312.696 km². Hauptstadt und größte Stadt ist Warschau; weitere bedeutende Städte sind Krakau, Breslau, Lodz, Posen und Danzig."
       }
     ]
   },
@@ -1376,7 +1376,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_German_monarchs",
         "wikipedia": "https://en.wikipedia.org/wiki/German_Empire",
         "status": "validated",
-        "description": "Deutsches Kaiserreich ist die nachträgliche Bezeichnung des Deutschen Reiches für die Epoche von seiner Gründung 1871 bis zum Ende der Monarchie in der Novemberrevolution von 1918. Der erste deutsche Nationalstaat war eine föderale, konstitutionelle Monarchie und nach seiner Verfassung ein „ewiger Bund“ der deutschen Fürsten und der Senate der Freien Städte. Als Staatsoberhaupt nahm der König von Preußen den Titel „Deutscher Kaiser“ an. Otto von Bismarck, Ministerpräsident von Preußen und treibende Kraft hinter der Reichsgründung, war wie die meisten seiner Nachfolger zugleich Reichskanzler. Berlin, die Hauptstadt Preußens, war auch die des Kaiserreichs.",
+        "description": "Das Deutsche Kaiserreich, auch als Zweites Reich oder schlicht Deutschland bezeichnet, war die Epoche des Deutschen Reiches von der Reichsgründung 1871 bis zur Novemberrevolution 1918, als Deutschland seine Staatsform zur Republik wandelte. Das Kaiserreich bestand aus 25 Gliedstaaten mit jeweils eigenem Adel: vier Königreichen, sechs Großherzogtümern, fünf Herzogtümern, sieben Fürstentümern, drei freien Hansestädten und einem Reichsland. Preußen war zwar nur eines von vier Königreichen, vereinte jedoch rund zwei Drittel der Bevölkerung und Fläche des Reiches auf sich; die preußische Vormachtstellung war auch verfassungsrechtlich verankert, da der König von Preußen zugleich Deutscher Kaiser war.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany_%281867%E2%80%931918%29.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen_Deutsches_Reich_-_Reichsadler_1889.svg"
       },
@@ -1388,31 +1388,31 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_chancellors_of_Germany",
         "wikipedia": "https://en.wikipedia.org/wiki/Weimar_Republic",
         "status": "validated",
-        "description": "Als Weimarer Republik wird der Abschnitt der deutschen Geschichte von 1918 bis 1933 bezeichnet, in dem erstmals eine parlamentarische Demokratie im Deutschen Reich bestand. Diese Epoche löste die konstitutionelle Monarchie der Kaiserzeit ab und begann mit der Ausrufung der Republik am 9. November 1918. Sie endete de facto mit der Machtergreifung der NSDAP infolge der Ernennung Adolf Hitlers zum Reichskanzler am 30. Januar 1933. In neun Wochen wurden die demokratischen Strukturen durch Verordnungen des Reichspräsidenten vom 4. Februar und 28. Februar sowie mit Inkrafttreten des Ermächtigungsgesetzes am 24. März 1933 beseitigt. Es folgte der NS-Staat.",
+        "description": "Die Weimarer Republik war eine historische Periode des deutschen Staates vom 9. November 1918 bis zum 23. März 1933, in der dieser erstmals in seiner Geschichte eine konstitutionelle Republik war. Offiziell hieß der Staat Deutsches Reich; er wurde — und nannte sich teils inoffiziell selbst — auch als Deutsche Republik bezeichnet. Der gebräuchliche Name leitet sich von der Stadt Weimar ab, in der die Verfassunggebende Nationalversammlung tagte. Die Weimarer Republik hatte ein semipräsidentielles Regierungssystem.",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen_Deutsches_Reich_%28Weimarer_Republik%29.svg",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany_%283-2%29.svg"
       },
       {
-        "label": "NS-Staat",
+        "label": "NS-Deutschland",
         "start": 1933,
         "end": 1945,
         "wikidataId": "Q7318",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_chancellors_of_Germany",
         "wikipedia": "https://en.wikipedia.org/wiki/Nazi_Germany",
         "status": "validated",
-        "description": "Als NS-Staat oder NS-Deutschland wird das Deutsche Reich in der Zeit des Nationalsozialismus (1933–1945) bezeichnet. Zum Staatsnamen Deutsches Reich kam im Sommer 1943 Großdeutsches Reich als offizielle Selbstbezeichnung hinzu. In diesem Staat war die Diktatur Adolf Hitlers, die von der Nationalsozialistischen Deutschen Arbeiterpartei (NSDAP) gestützt wurde, an die Stelle der demokratisch verfassten Weimarer Republik getreten.",
+        "description": "NS-Deutschland, offiziell Deutsches Reich und später Großdeutsches Reich, bezeichnet den deutschen Staat zwischen 1933 und 1945, als Adolf Hitler und die NSDAP das Land beherrschten und in eine totalitäre Diktatur verwandelten. Der Begriff Drittes Reich verwies auf die nationalsozialistische These, NS-Deutschland sei der Nachfolger des Heiligen Römischen Reiches (800–1806) und des Deutschen Kaiserreichs (1871–1918). Das von den Nationalsozialisten als Tausendjähriges Reich propagierte Regime endete im Mai 1945 nach zwölf Jahren, als die Alliierten Deutschland bezwangen und die Hauptstadt Berlin einnahmen, was den Zweiten Weltkrieg in Europa beendete.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany_%281935%E2%80%931945%29.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Reichsadler_Deutsches_Reich_%281935%E2%80%931945%29.svg"
       },
       {
-        "label": "Deutschland",
+        "label": "Modernes Deutschland",
         "start": 1990,
         "end": 2030,
         "wikidataId": "Q183",
         "rulers_url": "https://en.wikipedia.org/wiki/Chancellor_of_Germany",
         "wikipedia": "https://en.wikipedia.org/wiki/Germany",
         "status": "validated",
-        "description": "Deutschland ist ein Bundesstaat in Mitteleuropa. Es besteht aus 16 Ländern und ist als freiheitlich-demokratischer und sozialer Rechtsstaat verfasst. Die 1949 gegründete Bundesrepublik Deutschland stellt die jüngste Ausprägung des 1871 erstmals gegründeten deutschen Nationalstaats dar. Im Rahmen der Wiedervereinigung Deutschlands wurde Berlin 1990 Bundeshauptstadt und 1991 zum Parlaments- und Regierungssitz bestimmt.",
+        "description": "Deutschland, offiziell die Bundesrepublik Deutschland, ist ein Land in West- und Mitteleuropa. Es liegt zwischen Ostsee und Nordsee im Norden und den Alpen im Süden. Seine 16 Länder haben zusammen über 82 Millionen Einwohner und machen Deutschland damit zum bevölkerungsreichsten Mitgliedstaat der Europäischen Union. Es grenzt im Norden an Dänemark, im Osten an Polen und Tschechien, im Süden an Österreich und die Schweiz sowie im Westen an Frankreich, Luxemburg, Belgien und die Niederlande. Hauptstadt und größte Stadt des Landes ist Berlin, wichtigstes Finanzzentrum Frankfurt; der größte Ballungsraum ist das Ruhrgebiet.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Germany.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg"
       }
@@ -1497,7 +1497,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Austria",
         "wikipedia": "https://en.wikipedia.org/wiki/Habsburg_Monarchy",
         "status": "validated",
-        "description": "Als Habsburgermonarchie oder Habsburgerreich oder Donaumonarchie, oder Haus Österreich, bezeichnet die Geschichtswissenschaft die Herrschaftsgebiete, die vom Haus Habsburg gefolgt vom Haus Habsburg-Lothringen vom ausgehenden Mittelalter bis 1918 großenteils in Personalunion regiert wurden.",
+        "description": "Die Habsburgermonarchie, auch bekannt als Habsburgerreich oder Donaumonarchie, war die Gesamtheit der Reiche, Königreiche, Herzogtümer, Grafschaften und sonstigen Territorien, die vom Hause Habsburg regiert wurden. Ab 1804 wurde sie als Kaisertum Österreich und ab 1867 als Österreich-Ungarn bezeichnet.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Banner_of_the_Holy_Roman_Emperor_with_Arms_%281493-1556%29.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_the_Archduchy_of_Austria.svg",
         "territory_type": "ruler_based"
@@ -1510,20 +1510,20 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Austria",
         "wikipedia": "https://en.wikipedia.org/wiki/Austrian_Empire",
         "status": "validated",
-        "description": "Das Kaisertum Österreich bildet einen Abschnitt in der Geschichte der Habsburgermonarchie. Es wurde am 11. August 1804 als Erbmonarchie von Erzherzog Franz von Österreich gegründet, der als Franz II. letzter Kaiser des Heiligen Römischen Reiches war. Seinen zweiten Kaisertitel Kaiser von Österreich führte er fortan als Franz I. von Österreich.",
+        "description": "Das Kaisertum Österreich, offiziell Kaisertum von Österreich, war von 1804 bis 1867 eine multinationale europäische Großmacht, die durch Proklamation aus den Ländern der Habsburger entstand. Während seiner Existenz war es nach dem Russischen Reich und dem Vereinigten Königreich die drittbevölkerungsreichste Nation Europas und nach dem Russischen Reich und dem Ersten Französischen Kaiserreich das geographisch drittgrößte Reich Europas.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Habsburg_Monarchy.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Coat_of_Arms_of_the_Empire_of_Austria_%281815%29.svg",
         "territory_type": "ruler_based"
       },
       {
-        "label": "Österreich",
+        "label": "Republik Österreich",
         "start": 1918,
         "end": 2100,
         "wikidataId": "Q40",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_presidents_of_Austria",
         "wikipedia": "https://en.wikipedia.org/wiki/Austria",
         "status": "validated",
-        "description": "Österreich   ist ein mitteleuropäischer Binnenstaat mit über 9,2 Millionen Einwohnern. Die angrenzenden Staaten sind Deutschland und Tschechien im Norden, die Slowakei und Ungarn im Osten, Slowenien und Italien im Süden sowie die Schweiz und Liechtenstein im Westen.",
+        "description": "Österreich, offiziell die Republik Österreich, ist ein Binnenstaat in Mitteleuropa, der in den Ostalpen liegt. Es ist eine Föderation aus neun Bundesländern, von denen die Hauptstadt Wien zugleich bevölkerungsreichste Stadt und Bundesland ist. Österreich grenzt im Nordwesten an Deutschland, im Norden an Tschechien, im Nordosten an die Slowakei, im Osten an Ungarn, im Süden an Slowenien und Italien sowie im Westen an die Schweiz und Liechtenstein.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Austria.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg",
         "territory_type": "ruler_based"
@@ -1576,17 +1576,17 @@
         "coatOfArms": null,
         "territory_type": "ruler_based",
         "label": "Herzogtum Preußen",
-        "description": "Das Herzogtum Preußen oder Herzoglich Preußen war ein von 1525 bis 1701 bestehendes Staatswesen, das mehrheitlich aus dem zwischen den Unterläufen von Weichsel und Memel liegenden Teil des Deutschordensstaates entstanden war. Seine Hauptstadt war Königsberg."
+        "description": "Das Herzogtum Preußen oder Herzoglich Preußen war ein Herzogtum in der Region Preußen, das im Zuge der Säkularisation des Ordensstaates entstand — jenes Gebiets, das bis zur protestantischen Reformation 1525 unter Kontrolle des Deutschen Ordens geblieben war."
       },
       {
-        "label": "Preußen",
+        "label": "Königreich Preußen",
         "start": 1701,
         "end": 1918,
         "wikidataId": "Q38872",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Prussia",
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Prussia",
         "status": "validated",
-        "description": "Preußen war ein im 13. Jahrhundert im südlichen Baltikum entstandenes Staatswesen, dessen Name im 18. Jahrhundert auf den aus dem Kurfürstentum Brandenburg und dem Herzogtum Preußen hervorgegangenen Gesamtstaat der Hohenzollern überging. Aus diesem Königreich Preußen, das seit Mitte des 19. Jahrhunderts fast ganz Norddeutschland umfasste und 1870/71 die Gründung des Deutschen Reiches vorantrieb, ging 1918 der republikanische Freistaat Preußen hervor. Im NS-Staat seiner Selbständigkeit beraubt, ging Preußen mit diesem am Ende des Zweiten Weltkriegs unter.",
+        "description": "Das Königreich Preußen war ein deutscher Staat, der von 1701 bis 1918 bestand. Es spielte eine bedeutende Rolle bei der deutschen Reichsgründung 1871 und war bis zur Auflösung 1918 ein wesentlicher Bestandteil des Deutschen Kaiserreichs. Obwohl es seinen Namen von der Region Preußen ableitete, hatte es seinen Sitz in der Mark Brandenburg.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Prussia_(1892-1918).svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_the_Kingdom_of_Prussia_1873-1918.svg",
         "territory_type": "ruler_based"
@@ -1691,7 +1691,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_shahs_of_Persia",
         "wikipedia": "https://en.wikipedia.org/wiki/Parthian_Empire",
         "status": "validated",
-        "description": "Das Partherreich war die dominierende, von den Arsakiden beherrschte Macht des ersten vorchristlichen sowie des ersten und zweiten nachchristlichen Jahrhunderts im Iranischen Hochland und Mesopotamien. Die Parther waren ein iranisches Volk, das ab etwa 240 v. Chr. im heutigen Iran ein Reich aufbaute, das zur Zeit der größten Ausdehnung auch große Teile Mesopotamiens, des südwestlichen Mittelasiens und einiger angrenzender Gebiete, einschließlich einiger griechischer Poleis, umfasste. Mitunter wird dieses Imperium nach dem Namen der regierenden Dynastie auch als Arsakidenreich bezeichnet, um auszudrücken, dass die Bevölkerung keineswegs nur aus Parthern bestand.",
+        "description": "Das Partherreich, auch bekannt als Arsakidenreich, war von 247 v. Chr. bis 224 n. Chr. eine bedeutende iranische politische und kulturelle Macht im antiken Iran.",
         "flag": null,
         "coatOfArms": null,
         "territory_type": "ruler_based"
@@ -1704,46 +1704,46 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_shahs_of_Persia",
         "wikipedia": "https://en.wikipedia.org/wiki/Sasanian_Empire",
         "status": "validated",
-        "description": "Das Sas(s)anidenreich war das zweite persische Großreich des Altertums. Der Name des Reiches, dessen Eigenbezeichnung Eranschahr lautete, leitet sich von der letzten vorislamischen persischen Dynastie der Sassaniden (Sāsāniden) ab. Im mittelalterlichen Schāhnāme wird die Dynastie nach Papak bzw. Bābak, dem (eventuellen) Sohn des Stammvaters Sas(s)an, bezeichnet. Mit sehr wenigen Ausnahmen gehörten bis zum Schluss sämtliche Großkönige der Familie der Sassaniden an.",
+        "description": "Das Sassanidenreich war das letzte vorislamische iranische Großreich, regiert von der Sassaniden-Dynastie von 224 bis 651 n. Chr.",
         "flag": null,
         "coatOfArms": null,
         "territory_type": "ruler_based"
       },
       {
-        "label": "Safawiden",
+        "label": "Safawiden-Dynastie",
         "start": 1501,
         "end": 1736,
         "wikidataId": "Q161205",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_shahs_of_Persia",
         "wikipedia": "https://en.wikipedia.org/wiki/Safavid_dynasty",
         "status": "validated",
-        "description": "Die Safawiden waren eine aus Ardabil in der iranischen Region Aserbaidschan stammende Herrscherdynastie in Persien, die von 1501 bis 1722 regierte und den schiitischen Islam als Staatsreligion etablierte.",
+        "description": "Die Safawiden-Dynastie war eine der bedeutendsten Herrscherdynastien Irans. Sie regierte von 1501 bis 1736 und etablierte den Zwölfer-Schiitismus als Staatsreligion des Iran.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Safavid_Flag.svg",
         "coatOfArms": null,
         "territory_type": "ruler_based"
       },
       {
-        "label": "Kadscharen",
+        "label": "Kadscharen-Dynastie",
         "start": 1789,
         "end": 1925,
         "wikidataId": "Q189326",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_shahs_of_Persia",
         "wikipedia": "https://en.wikipedia.org/wiki/Qajar_dynasty",
         "status": "validated",
-        "description": "Die Kadscharen oder Qadscharen waren eine Dynastie in Persien (1779–1925). Die turkmenischstämmige Familie, die sich auf den Mongolen-Herrscher Hülegü zurückführte, war nach der Ermordung des letzten Zand-Herrschers Lotf Ali Khan (1794) in Persien alleinherrschend. Die Kadscharen gehörten zu den sieben turkmenischen Stämmen, die während des Aufstiegs der Safawiden als Kizilbasch bekannt wurden.",
+        "description": "Die Kadscharen-Dynastie war ein iranisches Herrscherhaus turkstämmiger Herkunft, konkret aus dem Stamm der Kadscharen, das von 1789 bis 1925 über den Iran regierte.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/State_flag_of_Persia_%281907%E2%80%931933%29.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Emblem_of_the_Qajar_Dynasty_%28Lion_and_Sun%29.svg",
         "territory_type": "ruler_based"
       },
       {
-        "label": "Iran",
+        "label": "Iran (modern)",
         "start": 1925,
         "end": 2100,
         "wikidataId": "Q794",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_shahs_of_Persia",
         "wikipedia": "https://en.wikipedia.org/wiki/Iran",
         "status": "validated",
-        "description": "Iran ist ein Land in Vorderasien. Es wird im Norden vom Kaspischen Meer und im Süden durch den Persischen Golf begrenzt. Im Westen grenzt Iran an den Irak, im Nordwesten an die Türkei, Armenien und Aserbaidschan. Im Nordosten grenzt er an Turkmenistan, im Osten an Afghanistan und Pakistan.",
+        "description": "Modernes Iran, einschließlich der Pahlavi-Dynastie (1925–1979) und der Islamischen Republik Iran (seit 1979).",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Iran.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Iran.svg",
         "territory_type": "ruler_based"
@@ -4552,14 +4552,14 @@
     "status": "validated",
     "contexts": [
       {
-        "label": "Anglo-Saxon England",
+        "label": "Angelsächsisches England",
         "start": 871,
         "end": 1066,
         "wikidataId": "Q784963",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_English_monarchs",
         "wikipedia": "https://en.wikipedia.org/wiki/Anglo-Saxon_England",
         "status": "validated",
-        "description": "Das angelsächsische England umfasst die Zeit der frühmittelalterlichen Geschichte Englands von der Ankunft der Angelsachsen im 5. Jahrhundert bis zur normannischen Eroberung 1066. Aus mehreren angelsächsischen Königreichen (Heptarchie) entstand schrittweise ein einheitliches Königreich England.",
+        "description": "Die angelsächsische Periode umfasst die Geschichte des frühmittelalterlichen Englands nach dem Untergang des römischen Britannien bis zur normannischen Eroberung 1066. Das Königreich England wurde 927 unter Æthelstan vereint, wobei Alfred der Große von Wessex mit seinem Widerstand gegen die Dänen die Grundlagen schuf.",
         "flag": null,
         "coatOfArms": null
       },
@@ -4571,19 +4571,19 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_English_monarchs",
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_England",
         "status": "validated",
-        "description": "Das Königreich England bestand vom Zusammenbruch der Heptarchie im Frühmittelalter bis zum Jahr 1707. Sein Nachfolger wurde das durch den Zusammenschluss der Königreiche von England und Schottland entstandene Königreich Großbritannien.",
+        "description": "Das Königreich England entwickelte sich nach der normannischen Eroberung 1066 von einer feudalen Monarchie über die Plantagenets, die Rosenkriege sowie die Tudor- und Stuart-Dynastien bis hin zu den Acts of Union mit Schottland 1707.",
         "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_England.svg",
         "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Arms_of_England_%281154-1189%29.svg"
       },
       {
-        "label": "Vereinigtes Königreich",
+        "label": "Großbritannien / Vereinigtes Königreich",
         "start": 1707,
         "end": 2030,
         "wikidataId": "Q145",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_British_monarchs",
         "wikipedia": "https://en.wikipedia.org/wiki/United_Kingdom",
         "status": "validated",
-        "description": "Das Vereinigte Königreich Großbritannien und Nordirland, kurz Vereinigtes Königreich, ist ein auf den Britischen Inseln vor der Nordwestküste Kontinentaleuropas gelegener Staat, der den größten Inselstaat Europas bildet.",
+        "description": "Das Königreich Großbritannien wurde 1707 durch die Vereinigung Englands und Schottlands gebildet. 1801 vereinigte es sich mit Irland zum Vereinigten Königreich Großbritannien und Irland, ab 1922 zum Vereinigten Königreich Großbritannien und Nordirland.",
         "flag": null,
         "coatOfArms": null
       }
@@ -5079,14 +5079,14 @@
     },
     "contexts": [
       {
-        "label": "Dänemark",
+        "label": "Königreich Dänemark",
         "start": 800,
         "end": 1849,
         "wikidataId": "Q35",
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Denmark",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Danish_monarchs",
         "status": "validated",
-        "description": "Dänemark ist ein Land im nördlichen Europa und mit Grönland und den Färöern eines der drei Länder des Königreiches Dänemark. Das zwischen der Skandinavischen Halbinsel und Mitteleuropa gelegene Landesgebiet umfasst eine Fläche von 43.094 km², wovon 23.872 km² auf die Halbinsel Jütland und der Rest auf Inseln entfallen. Dänemark hatte am 1. Mai 2025 6.001.008 Einwohner."
+        "description": "Das Dänische Reich, offiziell das Königreich Dänemark oder schlicht Dänemark, ist ein souveräner Staat aus mehreren Reichsteilen, die durch das Reichsgesetz miteinander verbunden sind und für die dieses gleichermaßen gilt. Es besteht aus dem europäischen Dänemark — dem Reichsgebiet auf dem europäischen Kontinent und den umliegenden Inseln — sowie den beiden autonomen Regionen des Reiches: den Färöern im Nordatlantik und Grönland in Nordamerika."
       },
       {
         "label": "Dänemark",
@@ -5096,7 +5096,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Denmark",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Danish_monarchs",
         "status": "validated",
-        "description": "Dänemark ist ein Land im nördlichen Europa und mit Grönland und den Färöern eines der drei Länder des Königreiches Dänemark. Das zwischen der Skandinavischen Halbinsel und Mitteleuropa gelegene Landesgebiet umfasst eine Fläche von 43.094 km², wovon 23.872 km² auf die Halbinsel Jütland und der Rest auf Inseln entfallen. Dänemark hatte am 1. Mai 2025 6.001.008 Einwohner."
+        "description": "Dänemark ist ein nordisches Land in Nordeuropa. Es ist das europäische Kernland und der bevölkerungsreichste Reichsteil des Königreichs Dänemark, auch Dänisches Reich genannt — ein verfassungsrechtlich einheitlicher Staat, der die autonomen Gebiete der Färöer und Grönlands im Nordatlantik einschließt. Das europäische Dänemark besteht aus dem nördlichen Teil der Halbinsel Jütland und einem Archipel von 406 Inseln. Es ist das südlichste skandinavische Land und liegt südwestlich von Schweden, südlich von Norwegen und nördlich von Deutschland. Dänemark selbst liegt zwischen der Nordsee im Westen und der Ostsee im Osten."
       }
     ]
   },
@@ -5135,7 +5135,7 @@
     },
     "contexts": [
       {
-        "label": "Norwegen",
+        "label": "Königreich Norwegen",
         "start": 800,
         "end": 1380,
         "wikidataId": "Q20",
@@ -5143,7 +5143,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Norwegian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Norwegen, amtlich Königreich Norwegen bzw. Kongeriket Norge/Noreg, ist ein Staat in Nordeuropa. Das in Skandinavien liegende Königreich Norwegen umfasst neben dem Hauptland die Inselgruppe Spitzbergen sowie die Insel Jan Mayen. Hauptstadt und bevölkerungsreichste Stadt ist Oslo. Das Land liegt im Westen der Skandinavischen Halbinsel und grenzt im Osten an Schweden sowie im Nordosten an Finnland und Russland. Norwegen ist eines der flächengrößeren Länder Europas (8.), aber mit nur 5.627.400 Einwohnern dünn besiedelt. Der Großteil der Bevölkerung lebt im Süden des Landes."
+        "description": "Das Alte Königreich Norwegen erreichte seinen Höhepunkt im 13. Jahrhundert nach einer langen Phase des Bürgerkriegs vor 1240. Das Reich war eine lose vereinigte Nation, die das Gebiet des heutigen Norwegens sowie die überseeischen Besitzungen Norwegens umfasste, die jahrhundertelang von norwegischen Seefahrern besiedelt worden waren, bevor sie ins Reich eingegliedert wurden. Norwegen, dessen Expansion mit der Reichsgründung 872 begann, erreichte seinen Höhepunkt zwischen 1240 und 1319."
       },
       {
         "label": "Norwegen",
@@ -5153,7 +5153,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Norway",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Norwegian_monarchs",
         "status": "validated",
-        "description": "Norwegen, amtlich Königreich Norwegen bzw. Kongeriket Norge/Noreg, ist ein Staat in Nordeuropa. Das in Skandinavien liegende Königreich Norwegen umfasst neben dem Hauptland die Inselgruppe Spitzbergen sowie die Insel Jan Mayen. Hauptstadt und bevölkerungsreichste Stadt ist Oslo. Das Land liegt im Westen der Skandinavischen Halbinsel und grenzt im Osten an Schweden sowie im Nordosten an Finnland und Russland. Norwegen ist eines der flächengrößeren Länder Europas (8.), aber mit nur 5.627.400 Einwohnern dünn besiedelt. Der Großteil der Bevölkerung lebt im Süden des Landes."
+        "description": "Norwegen, offiziell das Königreich Norwegen, ist ein nordisches Land, das die westlichen und nördlichsten Teile der Skandinavischen Halbinsel in Nordeuropa, die abgelegene arktische Insel Jan Mayen sowie das Archipel Spitzbergen umfasst. Norwegen hat etwa 5,6 Millionen Einwohner und eine Gesamtfläche von 385.207 Quadratkilometern. Hauptstadt und größte Stadt ist Oslo. Das Land teilt eine lange Ostgrenze mit Schweden und grenzt im Nordosten an Finnland und Russland. Norwegen besitzt eine ausgedehnte Küste am Skagerrak, an Nordsee, Norwegischer See und Barentssee."
       }
     ]
   },
@@ -5201,7 +5201,7 @@
     },
     "contexts": [
       {
-        "label": "Schweden",
+        "label": "Königreich Schweden",
         "start": 900,
         "end": 1523,
         "wikidataId": "Q34",
@@ -5209,7 +5209,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Swedish_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Das Königreich Schweden ist eine parlamentarische Monarchie in Skandinavien. Das Staatsgebiet umfasst den östlichen Teil der Skandinavischen Halbinsel und die Inseln Gotland und Öland. Schweden ist Mitglied des Nordischen Rates, seit 1995 der Europäischen Union und seit 2024 der NATO. Hauptstadt sowie bevölkerungsreichste schwedische Stadt ist Stockholm."
+        "description": "Schweden, offiziell das Königreich Schweden, ist ein nordisches Land auf der Skandinavischen Halbinsel in Nordeuropa. Es grenzt im Westen und Norden an Norwegen und im Osten an Finnland und teilt im Süden eine Seegrenze mit Dänemark. Mit 450.295 Quadratkilometern ist Schweden das nach Fläche und Einwohnerzahl größte nordische Land und das fünftgrößte Land Europas. Hauptstadt und größte Stadt ist Stockholm."
       },
       {
         "label": "Schweden",
@@ -5219,7 +5219,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Sweden",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Swedish_monarchs",
         "status": "validated",
-        "description": "Das Königreich Schweden ist eine parlamentarische Monarchie in Skandinavien. Das Staatsgebiet umfasst den östlichen Teil der Skandinavischen Halbinsel und die Inseln Gotland und Öland. Schweden ist Mitglied des Nordischen Rates, seit 1995 der Europäischen Union und seit 2024 der NATO. Hauptstadt sowie bevölkerungsreichste schwedische Stadt ist Stockholm."
+        "description": "Schweden, offiziell das Königreich Schweden, ist ein nordisches Land auf der Skandinavischen Halbinsel in Nordeuropa. Es grenzt im Westen und Norden an Norwegen und im Osten an Finnland und teilt im Süden eine Seegrenze mit Dänemark. Mit 450.295 Quadratkilometern ist Schweden das nach Fläche und Einwohnerzahl größte nordische Land und das fünftgrößte Land Europas. Hauptstadt und größte Stadt ist Stockholm. Schweden hat 10,6 Millionen Einwohner und eine niedrige Bevölkerungsdichte von 25,5 Einwohnern pro Quadratkilometer; 88 % der Schweden leben in städtischen Gebieten."
       }
     ]
   },
@@ -5255,7 +5255,7 @@
     },
     "contexts": [
       {
-        "label": "Großfürstentum Serbien",
+        "label": "Serbien (mittelalterlich)",
         "start": 830,
         "end": 1400,
         "wikidataId": "Q1311990",
@@ -5263,7 +5263,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Serbian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Das Fürstentum Raszien war ein im Zentralbalkan gelegener mittelalterlicher serbischer Staat. Es existierte ab dem 8. Jahrhundert bis 1217, als Stefan Nemanjić das Königreich Raszien proklamierte, das später (1345) zum Serbischen Königreich wurde."
+        "description": "Das Mittelalter in der Geschichte Serbiens begann im 6. Jahrhundert mit den slawischen Wanderungen auf den Balkan und endete mit der osmanischen Eroberung der serbischen Länder in der zweiten Hälfte des 15. Jahrhunderts. Zu den mittelalterlichen serbischen Staaten zählten das Fürstentum Serbien, das Großfürstentum Serbien, das Königreich Serbien und das Serbische Reich, das auf seinem Höhepunkt unter Stefan Dušan den größten Teil des Balkans umfasste."
       },
       {
         "label": "Serbien",
@@ -5273,7 +5273,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Serbia",
         "rulers_url": null,
         "status": "validated",
-        "description": "Serbien ist ein Binnenstaat in Südost- und Mitteleuropa. Serbien liegt im Zentrum der Balkanhalbinsel und grenzt im Norden an Ungarn, im Osten an Rumänien und Bulgarien, im Süden an Nordmazedonien und Albanien bzw. Kosovo, im Südwesten an Montenegro und im Westen an Bosnien und Herzegowina und Kroatien."
+        "description": "Serbien, offiziell die Republik Serbien, ist ein Binnenstaat in Südost- und Mitteleuropa. Es grenzt im Norden an Ungarn, im Osten an Rumänien und Bulgarien, im Süden an Nordmazedonien und den Kosovo sowie im Westen an Kroatien, Bosnien und Herzegowina und Montenegro. Hauptstadt und größte Stadt ist Belgrad."
       }
     ]
   },
@@ -5305,7 +5305,7 @@
     },
     "contexts": [
       {
-        "label": "Kroatien im Mittelalter",
+        "label": "Königreich Kroatien",
         "start": 800,
         "end": 1102,
         "wikidataId": "Q858841",
@@ -5313,7 +5313,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Croatia",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Das mittelalterliche Königreich Kroatien war ein Königreich in Südosteuropa, das von etwa 925 bis 1102 als unabhängiger Staat bestand und danach in Personalunion mit dem Königreich Ungarn verbunden war. Sein erster König Tomislav vereinte das pannonische und das dalmatinische Kroatien."
+        "description": "Das Königreich Kroatien war ein mittelalterliches Königreich in Südeuropa, das den größten Teil des heutigen Kroatiens sowie weite Teile des heutigen Bosnien und Herzegowina umfasste. Das kroatische Königreich bestand fast zwei Jahrhunderte als souveräner Staat und war geprägt von Konflikten und Bündnissen mit Bulgaren, Byzantinern und Ungarn sowie von der Konkurrenz mit Venedig um die Vorherrschaft an der östlichen Adriaküste. Seinen Höhepunkt erreichte es unter den Königen Peter Krešimir IV. (1058–1074) und Demetrius Zvonimir (1075–1089), bevor es 1102 in Personalunion mit Ungarn überging."
       },
       {
         "label": "Kroatien",
@@ -5323,7 +5323,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Croatia",
         "rulers_url": null,
         "status": "validated",
-        "description": "Kroatien ist ein demokratischer Verfassungsstaat in der Übergangszone von Mittel- bzw. Ostmitteleuropa und Südosteuropa."
+        "description": "Kroatien, offiziell die Republik Kroatien, ist ein Land in Mittel- und Südosteuropa an der Adriaküste. Es grenzt im Nordwesten an Slowenien, im Nordosten an Ungarn, im Osten an Serbien, im Südosten an Bosnien und Herzegowina sowie Montenegro und teilt im Westen eine Seegrenze mit Italien. Hauptstadt, größte Stadt und kulturelles wie wirtschaftliches Zentrum ist Zagreb. Das kroatische Archipel umfasst über 1.000 Inseln und Inselchen — die größte überseeische Inselwelt der Adria."
       }
     ]
   },
@@ -5549,7 +5549,7 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Georgian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Das Königreich Georgien war ein mittelalterlicher Staat im heutigen Georgien und darüber hinaus, der von 978 n. Chr. bis etwa 1403 n. Chr. existierte."
+        "description": "Das Königreich Georgien, auch als Georgisches Reich bekannt, war eine mittelalterliche eurasische Monarchie, die um 1008 n. Chr. gegründet wurde. Sein Goldenes Zeitalter erreichte es während der Herrschaft von König David IV. und Königin Tamar der Großen vom 11. bis ins 13. Jahrhundert und wurde zu einer der führenden Nationen des christlichen Ostens, mit einem panakaukasischen Reich, das sich von Osteuropa über Anatolien bis an die nördlichen Grenzen Irans erstreckte."
       },
       {
         "label": "Georgien",
@@ -5559,7 +5559,7 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Georgia_(country)",
         "rulers_url": null,
         "status": "validated",
-        "description": "Georgien ist ein eurasischer Staat im Südkaukasus, östlich des Schwarzen Meeres und südlich des Großen Kaukasus gelegen. Im Norden wird er von Russland, im Süden von der Türkei und Armenien, im Osten von Aserbaidschan begrenzt. Die Landesteile Abchasien und Südossetien sind von russischen Streitkräften besetzt und nicht unter Kontrolle der georgischen Regierung. Mit rund 3,7 Millionen Einwohnern (2020) auf einer Fläche von 57.215 km² ist Georgien dünn besiedelt. Etwa ein Drittel der Bevölkerung lebt in der Hauptstadtregion um Tiflis, weitere große Städte sind Batumi, Kutaissi und Rustawi."
+        "description": "Georgien ist ein Land in der Kaukasusregion an der Küste des Schwarzen Meeres. Es liegt am Schnittpunkt von Osteuropa und Westasien und grenzt im Norden und Nordosten an Russland, im Westen an das Schwarze Meer, im Süden an die Türkei und Armenien sowie im Südosten an Aserbaidschan. Georgien hat eine Fläche von 69.700 Quadratkilometern. Hauptstadt und größte Stadt ist Tiflis."
       }
     ]
   },
