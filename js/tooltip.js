@@ -1333,13 +1333,18 @@ function _mSheetOpenTerritory(event, props, color) {
       const territory = territories[mapping.wikidataId];
       if (!territory) { _mSheetSaveState(); return; }
 
-      let activeDesc = territory.description || '';
+      // Use the i18n helpers (getTerrDesc / getCtxDesc) so the mobile sheet
+      // picks up translated descriptions from territories_de.json when the
+      // user is on DE. Flag / coat-of-arms come from the EN entry — those
+      // are URLs, not language-specific.
+      let activeDesc = getTerrDesc(territory);
       let activeFlag = territory.flag || null;
       let activeCoat = territory.coatOfArms || null;
       if (territory.territory_type === 'multi_context' && territory.contexts) {
         const ac = territory.contexts.find(c => currentYear >= c.start && currentYear <= c.end);
         if (ac) {
-          if (ac.description) activeDesc = ac.description;
+          const ctxDesc = getCtxDesc(ac, territory);
+          if (ctxDesc) activeDesc = ctxDesc;
           if (ac.flag) activeFlag = ac.flag;
           if (ac.coatOfArms) activeCoat = ac.coatOfArms;
         }

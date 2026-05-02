@@ -154,6 +154,20 @@ function getCtxDesc(ctx, territory) {
   return ctx.description || '';
 }
 
+// Returns translated label for a multi_context sub-context (falls back to EN).
+// Looked up by (start,end) so re-labelled contexts still match.
+function getCtxLabel(ctx, terrEntry) {
+  const lang = typeof getLang === 'function' ? getLang() : 'en';
+  if (lang !== 'en' && territoriesDataDe && terrEntry) {
+    const de = territoriesDataDe[terrEntry.wikidataId || terrEntry.id];
+    if (de && de.contexts) {
+      const deCtx = de.contexts.find(c => c.start === ctx.start && c.end === ctx.end);
+      if (deCtx && deCtx.label) return deCtx.label;
+    }
+  }
+  return ctx.label || '';
+}
+
 function getCapitalForYear(capitals, year) {
   if (!capitals || capitals.length === 0) return null;
   // Finde Hauptstadt die zum Jahr passt
@@ -178,8 +192,12 @@ async function loadWikidataKnowledge(mapping, currentYear) {
       ctx => currentYear >= ctx.start && currentYear <= ctx.end
     );
     if (activeCtx) {
-      const ctxLabel  = activeCtx.label || mapping.label;
-      const ctxWikiId = activeCtx.wikidataId || mapping.wikidataId;
+      // EN label is the source of truth for slug/URL construction (per the
+      // EN-Wikipedia-as-single-source rule); the localized label is used
+      // only for display.
+      const ctxLabelEn = activeCtx.label || mapping.label;
+      const ctxLabel   = getCtxLabel(activeCtx, terrEntry) || ctxLabelEn;
+      const ctxWikiId  = activeCtx.wikidataId || mapping.wikidataId;
 
       // Single Source of Truth: Verhalten aus rulers.json ableiten.
       // Hat der Kontext Herrscher → ruler_based. Hat er keine → context_only.
@@ -223,7 +241,7 @@ async function loadWikidataKnowledge(mapping, currentYear) {
         rulersUrl:         activeCtx.rulers_url || terrEntry.rulers_url || null,
         rulerDataQuality:  terrEntry.ruler_data_quality || null,
         capital:           null,
-        wikipedia:         'https://en.wikipedia.org/wiki/' + encodeURIComponent(ctxLabel.replace(/ /g, '_')),
+        wikipedia:         'https://en.wikipedia.org/wiki/' + encodeURIComponent(ctxLabelEn.replace(/ /g, '_')),
         coatOfArms:        null,
         loaded:            true,
         loading:           false,

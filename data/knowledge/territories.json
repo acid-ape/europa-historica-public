@@ -899,7 +899,7 @@
         "label": "French Revolution & First Empire",
         "start": 1792,
         "end": 1815,
-        "wikidataId": "Q484048",
+        "wikidataId": "Q71084",
         "wikipedia": "https://en.wikipedia.org/wiki/First_French_Empire",
         "status": "validated",
         "description": "In the history of France , the First Republic ( French : Première République ), sometimes referred to in historiography as Revolutionary France , and officially the French Republic (French: République française ), was founded on 21 September 1792 during the French Revolution . The First Republic lasted until the declaration of the First Empire on 18 May 1804 under Napoléon Bonaparte , although the form of government changed several times."
@@ -908,7 +908,7 @@
         "label": "Restoration & Second Empire",
         "start": 1815,
         "end": 1870,
-        "wikidataId": "Q474716",
+        "wikidataId": "Q71092",
         "wikipedia": "https://en.wikipedia.org/wiki/Second_French_Empire",
         "status": "validated",
         "description": "The Second French Empire , officially the French Empire , was the government of France from 1852 to 1870. It was established on 2 December 1852 by Louis-Napoléon Bonaparte , president of France under the French Second Republic , who proclaimed himself Emperor of the French as Napoleon III. The period was one of significant achievements in infrastructure and economy, while France reasserted itself as a dominant power in Europe ."
@@ -1312,7 +1312,7 @@
     "contexts": [
       {
         "label": "Kingdom of Poland",
-        "wikidataId": "Q72499",
+        "wikidataId": "Q171348",
         "start": 966,
         "end": 1569,
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Poland",
@@ -1321,7 +1321,7 @@
       },
       {
         "label": "Polish-Lithuanian Commonwealth",
-        "wikidataId": "Q25448",
+        "wikidataId": "Q172107",
         "start": 1569,
         "end": 1795,
         "wikipedia": "https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth",
@@ -1569,7 +1569,7 @@
         "label": "Duchy of Prussia",
         "start": 1525,
         "end": 1701,
-        "wikidataId": "Q153423",
+        "wikidataId": "Q153091",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_monarchs_of_Prussia",
         "wikipedia": "https://en.wikipedia.org/wiki/Duchy_of_Prussia",
         "status": "validated",
