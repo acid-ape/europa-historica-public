@@ -332,7 +332,7 @@ function createEventPanel(mouseEvent, ev) {
     <div class="tt-sub"></div>
     <div class="tt-float-ctx" style="display:none">
       <div class="tt-section-label">${t('tt_context')}</div>
-      <img class="ep-thumb" style="display:none;width:calc(100% + 32px);margin:4px -16px 6px;height:130px;object-fit:cover;object-position:center top;border-top:1px solid var(--border);border-bottom:1px solid var(--border);" alt="">
+      <img class="ep-thumb" style="display:none;width:calc(100% + 32px);margin:4px -16px 6px;height:200px;object-fit:contain;object-position:center;background:rgba(0,0,0,0.55);border-top:1px solid var(--border);border-bottom:1px solid var(--border);" alt="">
       <div class="tp-desc ep-desc" style="display:none"></div>
     </div>
     <div class="tt-div"></div>
@@ -452,14 +452,24 @@ function selectEventCluster(event, evs) {
   _createEventClusterPanel(event, evs);
 }
 
-function _createEventClusterPanel(event, evs) {
-  // Reuse the multi-panel pattern from territories
+function _createEventClusterPanel(triggerEvent, evs) {
+  // Reuse the multi-panel pattern from territories.
   const id = 'evcl-' + Date.now();
   const panel = document.createElement('div');
   panel.className = 'terr-panel event-cluster-panel';
   panel.id = id;
-  panel.style.left = (event.clientX + 20) + 'px';
-  panel.style.top  = Math.min(event.clientY - 20, window.innerHeight - 360) + 'px';
+  // Clamp position into viewport: prevent the panel from landing off-screen
+  // when the cluster sits near the right or top edge.
+  const baseX = (typeof _safePanelX === 'function')
+    ? _safePanelX(triggerEvent.clientX + 20)
+    : Math.min(triggerEvent.clientX + 20, window.innerWidth - 320);
+  const baseY = Math.max(8,
+    Math.min(triggerEvent.clientY - 20, window.innerHeight - 360));
+  panel.style.left = baseX + 'px';
+  panel.style.top  = baseY + 'px';
+  if (typeof _tpZBase !== 'undefined') {
+    panel.style.zIndex = String(++_tpZBase);
+  }
 
   const sorted = [...evs].sort((a, b) => a.year - b.year);
   const items = sorted.map((ev, i) => `
@@ -474,7 +484,7 @@ function _createEventClusterPanel(event, evs) {
         <span class="tp-type-icon">✦</span>
         <span class="tp-name">${evs.length} ${t('ev_cluster_label')}</span>
       </span>
-      <span class="tp-btn" title="Close" onclick="document.getElementById('${id}').remove()">✕</span>
+      <span class="tp-btn evcl-close" title="Close">✕</span>
     </div>
     <div class="evcl-body">
       <ul class="evcl-list">${items}</ul>
@@ -482,15 +492,26 @@ function _createEventClusterPanel(event, evs) {
 
   document.body.appendChild(panel);
   panel.classList.add('active-panel');
-  // Wire up click handlers for each list item
+
+  // Close button — wired up via JS instead of inline onclick so it always
+  // closes this specific panel.
+  panel.querySelector('.evcl-close').addEventListener('click', e => {
+    e.stopPropagation();
+    panel.remove();
+  });
+
+  // Each list item closes the cluster list and opens the individual event
+  // panel where the user clicked.
   panel.querySelectorAll('.evcl-item').forEach(li => {
     li.addEventListener('click', e => {
+      e.stopPropagation();
       const i = +li.dataset.i;
       const ev = sorted[i];
-      // Synthesize a click event near the original cluster click
-      selectEvent(event, ev);
+      panel.remove();
+      selectEvent(e, ev);
     });
   });
+
   if (typeof makeDraggable === 'function') {
     makeDraggable(panel, panel.querySelector('.tp-handle'));
   }

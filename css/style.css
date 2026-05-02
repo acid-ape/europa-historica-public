@@ -178,6 +178,8 @@ body.era-active #era-select-row{display:none !important;}
   border-color:#c97043;color:#e08056;background:rgba(201,112,67,0.10);
 }
 #top-right-bar #close-all-btn[hidden]{display:none;}
+/* Divider after close-all hides together with the button. */
+#top-right-bar #close-all-btn[hidden] + .close-all-divider{display:none;}
 /* Language control inside the bar uses the existing .lang-btn-sm style. */
 #top-right-bar #lang-ctrl{display:flex;align-items:center;gap:1px;}
 /* When the bottom controls are collapsed the #min-hud takes the top-right
@@ -491,7 +493,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.022;b
 #legend.collapsed #legend-resize{display:none;}
 
 /* ── Herrscher-Bild im Panel ── */
-.rp-img{width:100%;flex:1;min-height:120px;object-fit:cover;object-position:top;display:block;}
+.rp-img{width:100%;flex:1;min-height:200px;object-fit:contain;object-position:center;background:rgba(0,0,0,0.55);display:block;}
 
 /* ── Tooltip Header ── */
 #tt-header{display:flex;align-items:center;gap:6px;margin-bottom:4px;}
@@ -507,7 +509,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.022;b
 .tt-float.snapped{width:auto;min-width:120px;max-width:260px;border-color:#4a3a1a;}
 .tt-float.snapped .tt-float-hdr{cursor:default;}
 #tt-flag{height:22px;width:auto;max-width:36px;object-fit:contain;border:1px solid rgba(255,255,255,0.12);border-radius:2px;flex-shrink:0;}
-#tt-event-img{display:none;width:calc(100% + 32px);margin:6px -16px 0;height:130px;object-fit:cover;object-position:center top;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+#tt-event-img{display:none;width:calc(100% + 32px);margin:6px -16px 0;height:200px;object-fit:contain;object-position:center;background:rgba(0,0,0,0.55);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
 
 /* ── Territory Beschreibung ── */
 #tt-desc{font-size:12px;color:#9a8a62;line-height:1.5;margin:6px 0;padding:6px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-style:italic;}

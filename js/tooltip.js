@@ -1537,7 +1537,7 @@ function _mSheetOpenEvent(ev) {
   // Local-first: description and image come from events.json (+ events_de.json
   // via i18n suffix). No live Wikipedia fetch.
   const imgHtml = ev.image
-    ? `<img alt="${ev.title}" src="${ev.image}" style="width:100%;max-height:160px;object-fit:cover;border-radius:4px;margin-bottom:8px">`
+    ? `<img alt="${ev.title}" src="${ev.image}" style="width:100%;height:200px;object-fit:contain;background:rgba(0,0,0,0.55);border-radius:4px;margin-bottom:8px">`
     : '';
   const descHtml = ev.description
     ? `<div class="ms-ctx-row">${ev.description}</div>`

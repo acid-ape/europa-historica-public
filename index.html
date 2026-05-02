@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R21">
+  <link rel="stylesheet" href="css/style.css?v=R22">
 </head>
 <body>
 <div id="loading">
@@ -120,10 +120,14 @@
   <span class="bar-divider bar-divider-sm"></span>
   <!-- Close-all-panels button: visible only when ≥2 click-panels are open
        (multi-panels, ruler-panels, pinned tooltip, trail-panel, mobile sheet).
-       ESC does the same thing globally. -->
+       ESC does the same thing globally. The divider that follows it is
+       hidden together via CSS (#close-all-btn[hidden] + .close-all-divider). -->
   <button id="close-all-btn" onclick="closeAllPanels()" data-i18n-title="ctrl_close_all" title="Close all panels (ESC)" hidden>⊠</button>
-  <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
+  <span class="bar-divider bar-divider-sm close-all-divider"></span>
   <button id="map-reset-btn" onclick="resetMapView()" data-i18n-title="ctrl_reset_view" title="Reset view">⌂</button>
+  <!-- Legend lives at the rightmost edge on mobile. -->
+  <span class="bar-divider bar-divider-sm mobile-only"></span>
+  <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
 </div>
 
 <div id="map-container">
@@ -450,10 +454,10 @@
 <script src="js/territory_render.js?v=R4"></script>
 <!-- View / interaction layer -->
 <script src="js/map.js?v=R5"></script>
-<script src="js/tooltip.js?v=R8"></script>
+<script src="js/tooltip.js?v=R9"></script>
 <script src="js/timeline.js?v=R15"></script>
 <script src="js/cities.js?v=R6"></script>
-<script src="js/events.js?v=R6"></script>
+<script src="js/events.js?v=R7"></script>
 <script src="js/app.js?v=R14"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
