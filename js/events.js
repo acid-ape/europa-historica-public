@@ -140,43 +140,59 @@ function renderEvents(year) {
       .attr('transform', `translate(${cx},${cy}) scale(${1/k})`)
       .style('cursor', 'pointer');
 
+    // Hit-area ring first (transparent, large target — captures clicks
+    // even when pointer-events of the visible shapes don't pick up).
+    g.append('circle').attr('r', 14).attr('fill', 'transparent');
+
     if (isCluster) {
+      // Cluster: large filled bubble with the count centered. Looks
+      // visibly different from a single-event star so users don't
+      // mistake it for one of the regular markers.
+      const r = 9 + Math.min(cl.events.length, 10);  // 11–19 px depending on count
+      g.append('circle')
+        .attr('r', r + 2)
+        .attr('fill', 'rgba(220,88,40,0.18)')
+        .attr('stroke', 'none')
+        .style('pointer-events', 'none');
+      g.append('circle')
+        .attr('r', r)
+        .attr('fill', '#e05828')
+        .attr('fill-opacity', 0.92)
+        .attr('stroke', 'rgba(255,200,160,0.7)')
+        .attr('stroke-width', 1)
+        .style('filter', 'url(#city-glow)')
+        .style('pointer-events', 'none');
+      g.append('text')
+        .attr('class', 'event-cluster-count')
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'central')
+        .text(cl.events.length);
+
       g.on('mouseenter', e => { if (!tooltipPinned) showEventClusterTT(e, cl.events); })
        .on('mousemove',  e => { if (!tooltipPinned) moveTooltip(e); })
        .on('mouseleave', () => { if (!tooltipPinned) hideTooltip(); })
        .on('click',     e => { e.stopPropagation(); selectEventCluster(e, cl.events); });
     } else {
+      // Single event: original star marker
+      g.append('circle')
+        .attr('r', 7.5)
+        .attr('fill', 'rgba(220,88,40,0.1)')
+        .attr('stroke', 'rgba(220,88,40,0.4)')
+        .attr('stroke-width', 0.9)
+        .style('pointer-events', 'none');
+      g.append('path')
+        .attr('d', _evStarPath(4.8))
+        .attr('fill', '#e05828')
+        .attr('fill-opacity', 0.92)
+        .attr('stroke', 'rgba(255,160,80,0.45)')
+        .attr('stroke-width', 0.5)
+        .style('filter', 'url(#city-glow)')
+        .style('pointer-events', 'none');
+
       g.on('mouseenter', e => { if (!tooltipPinned) showEventTT(e, ev0); })
        .on('mousemove',  e => { if (!tooltipPinned) moveTooltip(e); })
        .on('mouseleave', () => { if (!tooltipPinned) hideTooltip(); })
        .on('click',     e => { e.stopPropagation(); selectEvent(e, ev0); });
-    }
-
-    // Hit-area ring (transparent, large target)
-    g.append('circle').attr('r', 12).attr('fill', 'transparent');
-
-    // Outer halo (slightly larger for clusters)
-    g.append('circle')
-      .attr('r', isCluster ? 9 : 7.5)
-      .attr('fill', 'rgba(220,88,40,0.1)')
-      .attr('stroke', 'rgba(220,88,40,0.4)')
-      .attr('stroke-width', isCluster ? 1.2 : 0.9);
-
-    // Inner star
-    g.append('path')
-      .attr('d', _evStarPath(isCluster ? 5.6 : 4.8))
-      .attr('fill', '#e05828')
-      .attr('fill-opacity', 0.92)
-      .attr('stroke', 'rgba(255,160,80,0.45)')
-      .attr('stroke-width', 0.5)
-      .style('filter', 'url(#city-glow)');
-
-    // Cluster count badge
-    if (isCluster) {
-      g.append('text')
-        .attr('x', 7).attr('y', -7)
-        .attr('class', 'event-cluster-count')
-        .text(cl.events.length);
     }
   });
 }
@@ -460,9 +476,11 @@ function _createEventClusterPanel(triggerEvent, evs) {
   panel.id = id;
   // Clamp position into viewport: prevent the panel from landing off-screen
   // when the cluster sits near the right or top edge.
-  const baseX = (typeof _safePanelX === 'function')
+  const PANEL_W = 320;
+  let baseX = (typeof _safePanelX === 'function')
     ? _safePanelX(triggerEvent.clientX + 20)
-    : Math.min(triggerEvent.clientX + 20, window.innerWidth - 320);
+    : (triggerEvent.clientX + 20);
+  baseX = Math.max(8, Math.min(baseX, window.innerWidth - PANEL_W - 8));
   const baseY = Math.max(8,
     Math.min(triggerEvent.clientY - 20, window.innerHeight - 360));
   panel.style.left = baseX + 'px';

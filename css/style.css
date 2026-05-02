@@ -114,11 +114,12 @@ body.era-active #era-select-row{display:none !important;}
 .btn.tristate.on .btn-state{opacity:0.85;}
 .btn.tristate.on-all .btn-state{opacity:1;}
 .event-marker{pointer-events:all;}
-/* C4.3: Cluster count badge — small gold number above-right of the star. */
+/* C4.3: Cluster count — centered inside the cluster bubble. */
 .event-cluster-count{
-  font-family:'Inter','Helvetica',sans-serif;font-size:8px;font-weight:600;
-  fill:#fff5c0;stroke:rgba(0,0,0,0.6);stroke-width:0.3;paint-order:stroke;
-  pointer-events:none;
+  font-family:'Inter','Helvetica',sans-serif;
+  font-size:11px;font-weight:700;
+  fill:#fff5d8;stroke:rgba(0,0,0,0.55);stroke-width:0.4;paint-order:stroke;
+  pointer-events:none;user-select:none;
 }
 /* Cluster panel: list of events at the same location, opened on cluster click. */
 .event-cluster-panel{width:300px;}
