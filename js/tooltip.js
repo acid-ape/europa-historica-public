@@ -1530,6 +1530,41 @@ function _mSheetOpenPleiades(city) {
   _mSheetOpen(html, city.name, false);
 }
 
+// C4.3 mobile: list panel for an event cluster. Each item drills into
+// the regular event detail; back-button returns to the cluster list.
+function _mSheetOpenEventCluster(evs) {
+  function fmtY(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
+  const sorted = [...evs].sort((a, b) => a.year - b.year);
+  const label  = evs.length + ' ' + t('ev_cluster_label');
+
+  const items = sorted.map((ev, i) => `
+    <div class="ms-evcl-item" data-i="${i}">
+      <span class="ms-evcl-year">${fmtY(ev.year)}</span>
+      <span class="ms-evcl-title">${ev.title}</span>
+    </div>`).join('');
+  const html = `<div class="ms-evcl-list">${items}</div>`;
+
+  _mSheetCurrentTerrHTML  = null;
+  _mSheetCurrentTerrLabel = null;
+  _mSheetOpen(html, label, false);
+
+  // Wire item taps. Each item snapshots the cluster state into the
+  // back-stack so _mSheetBack returns here, then drills into the event.
+  document.querySelectorAll('#m-sheet-scroll .ms-evcl-item').forEach(el => {
+    el.onclick = () => {
+      const i  = +el.dataset.i;
+      const ev = sorted[i];
+      _mSheetOpenEvent(ev);
+      // _mSheetOpenEvent clears terr-state — restore it so back returns
+      // to the cluster list (the back-button will be enabled below).
+      _mSheetCurrentTerrHTML  = html;
+      _mSheetCurrentTerrLabel = label;
+      const back = document.getElementById('m-sheet-back');
+      if (back) back.style.display = 'block';
+    };
+  });
+}
+
 function _mSheetOpenEvent(ev) {
   function fmtY(y) { return y < 0 ? Math.abs(y) + ' BC' : y + ' AD'; }
   const wikiName = encodeURIComponent(ev.wiki.replace(/ /g, '_'));
