@@ -69,6 +69,27 @@ let _tooltipSerial = 0;
 // scheduled rAF re-add tt-visible after the tooltip was already hidden.
 let _showToken = 0;
 
+// ── C3.4: Hover vs. Click separation ──
+// Hover gets a 600 ms delay before the preview tooltip appears, so casual
+// mouse-overs while panning don't flash UI. Click goes through normally.
+const HOVER_DELAY_MS = 600;
+let _hoverTimer = null;
+
+function hoverShowTooltip(event, props, color) {
+  if (_hoverTimer) clearTimeout(_hoverTimer);
+  _hoverTimer = setTimeout(() => {
+    _hoverTimer = null;
+    if (tooltipPinned) return;
+    document.getElementById('tooltip').classList.add('hover-mode');
+    showTooltip(event, props, color);
+  }, HOVER_DELAY_MS);
+}
+
+function cancelHoverShow() {
+  if (_hoverTimer) { clearTimeout(_hoverTimer); _hoverTimer = null; }
+  document.getElementById('tooltip').classList.remove('hover-mode');
+}
+
 function _showTooltipEl() {
   const el = document.getElementById('tooltip');
   const token = ++_showToken;
@@ -245,6 +266,51 @@ function snapPanel(id) {
   _reflowSnapped();
   const btn = panel.querySelector('.tp-snap, .rp-snap');
   if (btn) { btn.title = 'Unsnap'; btn.textContent = '⊞'; btn.onclick = () => unSnapPanel(id); }
+  // Once the user actually snaps a panel, the hint becomes redundant.
+  try { localStorage.setItem('eh_snap_hint_seen', '1'); } catch (e) {}
+  _dismissSnapHint();
+}
+
+// C3.3: One-time hint that points at the snap (⊟) button. Triggered when
+// the user opens their first multi-panel — easy to miss otherwise.
+function _maybeShowSnapHint(panel) {
+  if (typeof isMobile === 'function' && isMobile()) return;
+  try { if (localStorage.getItem('eh_snap_hint_seen')) return; } catch (e) {}
+  if (document.getElementById('snap-hint')) return;
+  const snapBtn = panel.querySelector('.tp-snap, .rp-snap');
+  if (!snapBtn) return;
+
+  const hint = document.createElement('div');
+  hint.id = 'snap-hint';
+  hint.textContent = t('snap_hint');
+  document.body.appendChild(hint);
+
+  // Position below the snap button. Recompute on next frame so layout is settled.
+  requestAnimationFrame(() => {
+    const r = snapBtn.getBoundingClientRect();
+    hint.style.top  = (r.bottom + 6) + 'px';
+    // anchor right edge under the snap button so the arrow points at it
+    const w = hint.offsetWidth;
+    hint.style.left = Math.max(8, r.right - w) + 'px';
+    hint.classList.add('visible');
+  });
+
+  // Auto-dismiss after 6 s, or on any click
+  const dismiss = () => {
+    try { localStorage.setItem('eh_snap_hint_seen', '1'); } catch (e) {}
+    _dismissSnapHint();
+    document.removeEventListener('click', dismiss, true);
+    clearTimeout(t1);
+  };
+  const t1 = setTimeout(dismiss, 6000);
+  // Defer the click listener so the *opening* click on the territory
+  // doesn't dismiss the hint immediately.
+  setTimeout(() => document.addEventListener('click', dismiss, true), 50);
+}
+
+function _dismissSnapHint() {
+  const h = document.getElementById('snap-hint');
+  if (h) h.remove();
 }
 
 function unSnapPanel(id) {
@@ -361,6 +427,7 @@ function createTerritoryPanel(event, props, color) {
   document.querySelectorAll('.terr-panel,.ruler-panel-float').forEach(p => { if (p !== panel) p.classList.remove('active-panel'); });
   makeDraggable(panel, panel.querySelector('.tp-handle'));
   makePanelResizable(panel, panel.querySelector('.tp-resize'));
+  _maybeShowSnapHint(panel);
 
   // Async: rulers + context label + description + flag
   if (mapping) {
@@ -938,6 +1005,7 @@ function openRulerDetail(ruler, sourcePanel) {
   document.querySelectorAll('.terr-panel,.ruler-panel-float').forEach(p => { if (p !== panel) p.classList.remove('active-panel'); });
   makeDraggable(panel, panel.querySelector('.rp-drag-handle'));
   makeResizable(panel);
+  _maybeShowSnapHint(panel);
 }
 
 function makeDraggable(el, handle) {

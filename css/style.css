@@ -147,6 +147,13 @@ body.era-active #era-select-row{display:none !important;}
 }
 /* The reset-view button is the same style as siblings — no special rules. */
 #top-right-bar #map-reset-btn{font-size:18px;}
+/* Close-all button: appears only when ≥2 click-panels are open. Slightly
+   warmer hover tint to signal a destructive-ish action. */
+#top-right-bar #close-all-btn{font-size:16px;}
+#top-right-bar #close-all-btn:hover{
+  border-color:#c97043;color:#e08056;background:rgba(201,112,67,0.10);
+}
+#top-right-bar #close-all-btn[hidden]{display:none;}
 /* Language control inside the bar uses the existing .lang-btn-sm style. */
 #top-right-bar #lang-ctrl{display:flex;align-items:center;gap:1px;}
 /* When the bottom controls are collapsed the #min-hud takes the top-right
@@ -289,6 +296,23 @@ body.logo-menu-open #logo-menu{display:flex;}
 #tooltip{position:fixed;background:var(--panel);border:1px solid #2a2010;border-radius:2px;padding:14px 16px 13px;width:280px;z-index:300;display:none;opacity:0;transform:translateY(5px);transition:opacity 140ms ease-out,transform 140ms ease-out;backdrop-filter:blur(12px);box-shadow:0 8px 30px rgba(0,0,0,0.65);pointer-events:none;}
 #tooltip.tt-visible{opacity:1;transform:translateY(0);}
 #tooltip.pinned{border-color:var(--gold);box-shadow:0 8px 30px rgba(0,0,0,0.65),0 0 0 1px rgba(212,168,67,0.25);pointer-events:all;}
+/* C3.4: Hover-mode tooltip (preview-only) — smaller, more transparent,
+   hides action buttons. The full panel only appears on click. */
+#tooltip.hover-mode:not(.pinned){
+  width:220px;padding:9px 12px 10px;
+  background:rgba(15,12,7,0.78);border-color:rgba(120,90,40,0.45);
+  box-shadow:0 4px 14px rgba(0,0,0,0.45);
+}
+#tooltip.hover-mode:not(.pinned) h3{font-size:14px;}
+#tooltip.hover-mode:not(.pinned) .tp-btn,
+#tooltip.hover-mode:not(.pinned) #tt-snap,
+#tooltip.hover-mode:not(.pinned) #tt-minimize,
+#tooltip.hover-mode:not(.pinned) #tt-close,
+#tooltip.hover-mode:not(.pinned) #tt-event-img,
+#tooltip.hover-mode:not(.pinned) #tt-ai-note,
+#tooltip.hover-mode:not(.pinned) .tt-mode-btns,
+#tooltip.hover-mode:not(.pinned) .tt-resize,
+#tooltip.hover-mode:not(.pinned) #tt-links{display:none !important;}
 #tt-snap,#tt-minimize,#tt-close{display:none;}
 #tooltip.pinned #tt-snap,#tooltip.pinned #tt-minimize,#tooltip.pinned #tt-close{display:block;}
 #tooltip.minimized > *:not(#tt-header){display:none !important;}
@@ -373,6 +397,31 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;opacity:.022;b
 .tp-name{font-family:'Cinzel',serif;font-size:15px;color:var(--gold2);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .tp-btn{color:#5a4a2a;cursor:pointer;font-size:13px;line-height:1;padding:0 3px;flex-shrink:0;}
 .tp-btn:hover{color:var(--gold);}
+/* C3.3: snap-button gets a stronger hover affordance so its function is
+   discoverable the first time. */
+.tp-btn.tp-snap:hover, .rp-btn.rp-snap:hover{
+  color:var(--gold2);text-shadow:0 0 8px rgba(212,168,67,0.6);
+  transform:translateY(-1px);transition:transform .15s,color .15s,text-shadow .15s;
+}
+/* First-time snap-to-top hint. Floats below the snap button, auto-dismiss
+   after 6 s or on next click. */
+#snap-hint{
+  position:fixed;z-index:1100;
+  background:rgba(20,16,8,0.96);border:1px solid var(--gold2);border-radius:3px;
+  padding:6px 10px;
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.4px;
+  color:var(--gold2);max-width:240px;line-height:1.4;
+  box-shadow:0 4px 14px rgba(0,0,0,0.5),0 0 0 1px rgba(212,168,67,0.15);
+  opacity:0;transform:translateY(-4px);
+  transition:opacity .25s,transform .25s;
+  pointer-events:none;
+}
+#snap-hint.visible{opacity:1;transform:translateY(0);}
+#snap-hint::before{
+  content:'';position:absolute;top:-5px;right:14px;
+  border-left:5px solid transparent;border-right:5px solid transparent;
+  border-bottom:5px solid var(--gold2);
+}
 .tp-body{padding:10px 14px 12px;overflow-y:auto;max-height:calc(100vh - 200px);}
 .tp-sub{font-size:13px;font-style:italic;color:#9a8a62;margin-bottom:8px;}
 .tp-desc{font-size:12px;color:#9a8a62;line-height:1.5;margin:6px 0;padding:6px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-style:italic;display:none;}

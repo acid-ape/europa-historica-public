@@ -128,8 +128,10 @@ async function renderEpoch(idx) {
   const gB = d3.select('#g-bord');
   const gL = d3.select('#g-labels');
 
-  // C8/C11: true crossfade — clone old layers, render new behind, fade simultaneously
-  const DUR = 260;
+  // C8/C11: true crossfade — clone old layers, render new behind, fade simultaneously.
+  // C3.2: during slider drag the fade lag feels sluggish — fall back to 0 ms so the
+  // user sees instant feedback. After release, normal 260 ms is restored.
+  const DUR = (typeof _sliderDragging !== 'undefined' && _sliderDragging) ? 0 : 260;
 
   // Remove any leftover clone from a rapid previous transition
   document.querySelectorAll('#g-terr-old,#g-labels-old').forEach(el => el.remove());
@@ -175,9 +177,9 @@ async function renderEpoch(idx) {
 
     if (name) {
       path
-        .on('mouseenter', function(event) { if (!tooltipPinned) showTooltip(event,props,color); })
+        .on('mouseenter', function(event) { if (!tooltipPinned) hoverShowTooltip(event,props,color); })
         .on('mousemove',  function(event) { if (!tooltipPinned) moveTooltip(event); })
-        .on('mouseleave', function()      { if (!tooltipPinned) hideTooltip(); })
+        .on('mouseleave', function()      { if (!tooltipPinned) { cancelHoverShow(); hideTooltip(); } })
         .on('click touchend', function(event) {
           event.stopPropagation();
           if (event.type === 'touchend') {
@@ -188,6 +190,7 @@ async function renderEpoch(idx) {
             const s  = _touchStartTransform;
             if (Math.hypot(t.x - s.x, t.y - s.y) > 3 || Math.abs(t.k - s.k) > 0.01) return;
           }
+          cancelHoverShow();
           selectTerritory(this, event.touches ? event.changedTouches[0] : event, props, color);
         });
     }

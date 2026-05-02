@@ -153,6 +153,25 @@ document.getElementById('tl-input').addEventListener('input', function() {
   if (idx !== state.currentEpochIdx) renderEpoch(idx);
 });
 
+// C3.2: Track slider-drag so renderEpoch can skip the 260 ms crossfade
+// during active dragging — feels sluggish when scrubbing through epochs.
+// Read by map.js renderEpoch as `_sliderDragging`.
+let _sliderDragging = false;
+(function () {
+  const tl = document.getElementById('tl-input');
+  if (!tl) return;
+  // pointerdown on the slider OR anywhere on its visual track triggers drag mode
+  const start = () => { _sliderDragging = true; };
+  const end   = () => { _sliderDragging = false; };
+  tl.addEventListener('pointerdown', start);
+  document.addEventListener('pointerup',     end);
+  document.addEventListener('pointercancel', end);
+  // Touch fallback for browsers that don't fire pointer events on range inputs
+  tl.addEventListener('touchstart', start, { passive: true });
+  document.addEventListener('touchend',    end);
+  document.addEventListener('touchcancel', end);
+})();
+
 function togglePlay() {
   state.playing = !state.playing;
   const btn = document.getElementById('play-btn');

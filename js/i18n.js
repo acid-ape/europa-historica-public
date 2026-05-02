@@ -111,6 +111,9 @@ const I18N = {
     ctrl_search_title: 'Search (Ctrl+K)',
     ctrl_legend_title: 'Legend',
     ctrl_logo_menu_title: 'Menu',
+    ctrl_close_all: 'Close all panels (ESC)',
+    // First-time snap-to-top hint (shown once per browser via localStorage)
+    snap_hint: 'Tip: ⊟ docks the panel to the top edge.',
     // Layer-Toggle states (tri-state cycle)
     state_off:    'off',
     state_window: 'recent',     // events: ±150yr; pleiades: curated tier
@@ -242,6 +245,8 @@ const I18N = {
     ctrl_search_title: 'Suchen (Strg+K)',
     ctrl_legend_title: 'Legende',
     ctrl_logo_menu_title: 'Menü',
+    ctrl_close_all: 'Alle Panels schließen (ESC)',
+    snap_hint: 'Tipp: ⊟ dockt das Panel oben an.',
     // Tutorial step controls
     tour_step_of:    'Schritt {n} von {total}',
     tour_end:        'Tutorial beenden',

@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R19">
+  <link rel="stylesheet" href="css/style.css?v=R20">
 </head>
 <body>
 <div id="loading">
@@ -118,6 +118,10 @@
     <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
   </div>
   <span class="bar-divider bar-divider-sm"></span>
+  <!-- Close-all-panels button: visible only when ≥2 click-panels are open
+       (multi-panels, ruler-panels, pinned tooltip, trail-panel, mobile sheet).
+       ESC does the same thing globally. -->
+  <button id="close-all-btn" onclick="closeAllPanels()" data-i18n-title="ctrl_close_all" title="Close all panels (ESC)" hidden>⊠</button>
   <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
   <button id="map-reset-btn" onclick="resetMapView()" data-i18n-title="ctrl_reset_view" title="Reset view">⌂</button>
 </div>
@@ -433,7 +437,7 @@
 </div>
 
 <!-- i18n: must load first (provides t() used by every other module) -->
-<script src="js/i18n.js?v=R13"></script>
+<script src="js/i18n.js?v=R14"></script>
 <!-- config: split from a 2027-line monolith into 5 focused modules.
      Order: leaf modules (epochs, cities) → territories → context → loader.
      All declarations live on the global scope (classic <script>). -->
@@ -445,12 +449,12 @@
 <!-- Render module: uses t() and EH.territoryRender namespace -->
 <script src="js/territory_render.js?v=R4"></script>
 <!-- View / interaction layer -->
-<script src="js/map.js?v=R4"></script>
-<script src="js/tooltip.js?v=R7"></script>
-<script src="js/timeline.js?v=R14"></script>
+<script src="js/map.js?v=R5"></script>
+<script src="js/tooltip.js?v=R8"></script>
+<script src="js/timeline.js?v=R15"></script>
 <script src="js/cities.js?v=R6"></script>
 <script src="js/events.js?v=R5"></script>
-<script src="js/app.js?v=R13"></script>
+<script src="js/app.js?v=R14"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
 <script src="js/search.js?v=R4"></script>

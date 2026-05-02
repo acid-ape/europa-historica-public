@@ -220,3 +220,102 @@ init().catch(err => {
   const l = document.getElementById('loading');
   if (l) l.style.display = 'none';
 });
+
+// ── C3.1 Close-all panels + global ESC ─────────────────────────────
+// Counts "click-panels" (the ones a user opens by exploring) and toggles
+// the close-all button visibility when ≥2 are open. ESC behaves like a
+// global escape: closes overlays first, then panels, in priority order.
+
+function _countOpenPanels() {
+  let n = 0;
+  const tt = document.getElementById('tooltip');
+  if (tt && tt.classList.contains('pinned')) n++;
+  n += document.querySelectorAll('.terr-panel').length;
+  n += document.querySelectorAll('.ruler-panel-float').length;
+  const trail = document.getElementById('trail-panel');
+  if (trail && trail.style.display && trail.style.display !== 'none') n++;
+  const sheet = document.getElementById('m-sheet');
+  if (sheet && sheet.classList.contains('open')) n++;
+  return n;
+}
+
+function _updateCloseAllBtn() {
+  const btn = document.getElementById('close-all-btn');
+  if (!btn) return;
+  btn.hidden = _countOpenPanels() < 2;
+}
+
+// Close every click-panel. Used by the toolbar button and ESC-on-panels.
+function closeAllPanels() {
+  // Multi-panels (territory + ruler floats)
+  document.querySelectorAll('.terr-panel, .ruler-panel-float').forEach(p => p.remove());
+  // Trail panel
+  const tp = document.getElementById('trail-panel');
+  if (tp && tp.style.display !== 'none' && typeof endTrail === 'function') endTrail();
+  // Mobile sheet
+  const sheet = document.getElementById('m-sheet');
+  if (sheet && sheet.classList.contains('open') && typeof _mSheetClose === 'function') _mSheetClose();
+  // Pinned tooltip
+  const tt = document.getElementById('tooltip');
+  if (tt && tt.classList.contains('pinned') && typeof unpinTooltip === 'function') unpinTooltip();
+  _updateCloseAllBtn();
+}
+
+// MutationObserver keeps the close-all button in sync without having to
+// hook every show/close call site. Debounced via rAF.
+(function () {
+  let scheduled = false;
+  function tick() {
+    scheduled = false;
+    _updateCloseAllBtn();
+  }
+  function schedule() {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(tick);
+  }
+  const start = () => {
+    new MutationObserver(schedule).observe(document.body, {
+      childList: true, subtree: true,
+      attributes: true, attributeFilter: ['class', 'style'],
+    });
+    _updateCloseAllBtn();
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();
+
+// Global ESC. Priority: tour → search → intro → terr-overview → panels.
+// Legend modal + logo-menu are still closed by the existing handler in
+// timeline.js — that fires earlier and clears those before we get here.
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  // Tour: skip via its own handler if running
+  if (typeof _tourTt !== 'undefined' && _tourTt) {
+    if (typeof _tourSkip === 'function') _tourSkip();
+    return;
+  }
+  // Overlays one at a time: search > terr-overview > intro
+  const search = document.getElementById('search-overlay');
+  if (search && search.classList.contains('visible') && typeof closeSearch === 'function') {
+    closeSearch();
+    return;
+  }
+  const terrOv = document.getElementById('terr-overlay');
+  if (terrOv && terrOv.classList.contains('visible') && typeof closeTerrOverview === 'function') {
+    closeTerrOverview();
+    return;
+  }
+  const introOv = document.getElementById('intro-overlay');
+  if (introOv && introOv.style.display !== 'none' &&
+      getComputedStyle(introOv).display !== 'none' &&
+      typeof closeIntro === 'function') {
+    closeIntro();
+    return;
+  }
+  // Then any open click-panels
+  if (_countOpenPanels() > 0) closeAllPanels();
+});
