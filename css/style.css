@@ -52,6 +52,28 @@ body{background:var(--bg);color:var(--txt);font-family:'Crimson Text',serif;heig
   display:block;
 }
 #epoch-row{position:relative;height:46px;margin-bottom:3px;}
+/* Era-range chip: replaces the era-select-row in the same slot when an
+   era is active (body.era-active toggles which is shown). Centered pill
+   with era name + endpoints + ✕ to clear. */
+#era-chip{
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  margin:0 auto;padding:3px 4px 3px 12px;
+  background:rgba(212,168,67,0.12);border:1px solid rgba(212,168,67,0.45);
+  border-radius:3px;
+  font-family:'Cinzel',serif;font-size:11px;letter-spacing:0.5px;
+  color:var(--gold2);
+  width:fit-content;max-width:100%;
+}
+#era-chip[hidden]{display:none;}
+#era-chip-close{
+  background:transparent;border:none;color:var(--gold2);
+  cursor:pointer;font-size:13px;line-height:1;
+  padding:2px 7px;border-radius:2px;
+  transition:background 0.15s,color 0.15s;
+}
+#era-chip-close:hover{background:rgba(212,168,67,0.25);color:#f0d060;}
+/* When an era is active, hide the era-button row — chip takes its slot. */
+body.era-active #era-select-row{display:none !important;}
 .epoch-mk{position:absolute;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;opacity:0.75;transition:opacity 0.2s;transform:translateX(-50%);}
 .epoch-mk:hover{opacity:1;}
 .epoch-mk.active{opacity:1;}
@@ -80,6 +102,17 @@ body{background:var(--bg);color:var(--txt);font-family:'Crimson Text',serif;heig
 .btn.on-all{background:rgba(212,168,67,0.38);border-color:#f0d060;color:#f0d060;}
 .btn-pleiades{letter-spacing:1.5px;font-size:11px;}
 .btn-events{letter-spacing:1.5px;font-size:11px;}
+/* Tristate-Toggle: layer name + state suffix.
+   The state span shows current cycle position (off / recent / all). */
+.btn.tristate{display:inline-flex;align-items:baseline;gap:6px;}
+.btn.tristate .btn-state{
+  font-family:'Inter','Helvetica',sans-serif;
+  font-size:9.5px;letter-spacing:0.4px;font-weight:500;
+  opacity:0.65;text-transform:lowercase;
+  border-left:1px solid currentColor;padding-left:6px;margin-left:-1px;
+}
+.btn.tristate.on .btn-state{opacity:0.85;}
+.btn.tristate.on-all .btn-state{opacity:1;}
 .event-marker{pointer-events:all;}
 .btn-play{padding:5px 18px;font-size:14px;border-color:#4a3a1a;color:#8a7040;}
 .btn-play:hover{border-color:var(--gold2);color:var(--gold2);}
@@ -948,7 +981,7 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
     text-shadow: 0 0 10px rgba(212,168,67,0.35);
   }
   #s-2h, #s-1h, #sh, #s1, #s2, #s3 { display: none; }
-  #era-select-row { display: none; }
+  #era-select-row, #era-chip { display: none; }
   #ctrl-toggle { display: none; }
 
   /* m-year: tappable year display. Bigger touch target than before. */
@@ -1001,6 +1034,12 @@ body:has(#controls.collapsed) #map-container { bottom: 0 !important; }
   /* Compact era buttons on mobile — fit two rows without dominating the screen. */
   #controls.m-open #era-select-row .era-sel-btn {
     padding: 4px 6px; font-size: 9.5px; letter-spacing: 0.5px; min-height: 26px;
+  }
+  /* Era-chip in the drawer: occupies the era-select-row slot when active. */
+  body.era-active #controls.m-open #era-chip {
+    display: flex; margin: 0 0 4px 0;
+    border: 1px solid rgba(212,168,67,0.45); border-radius: 3px;
+    padding: 4px 6px 4px 12px; min-height: 28px;
   }
   #controls.m-open #btn-row { flex-wrap: wrap; justify-content: center; gap: 4px; }
   /* Bar dividers within column-flex groups become horizontal strips and look

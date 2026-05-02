@@ -67,6 +67,7 @@ async function togglePleiades() {
 
   if (pleiadesMode === 0) {
     if (btn) { btn.classList.remove('on', 'on-all'); btn.title = 'Ancient settlements — off'; btn.blur(); }
+    _setBtnState(btn, 'state_off');
     if (legEntry) legEntry.style.display = 'none';
     d3.select('#g-pleiades').selectAll('*').remove();
     _lastTier = -1;
@@ -78,8 +79,10 @@ async function togglePleiades() {
 
   if (pleiadesMode === 1) {
     if (btn) { btn.classList.add('on'); btn.classList.remove('on-all'); btn.title = 'Ancient settlements — curated (click for all)'; }
+    _setBtnState(btn, 'state_window');
   } else {
     if (btn) { btn.classList.add('on', 'on-all'); btn.title = 'Ancient settlements — all shown (click to turn off)'; }
+    _setBtnState(btn, 'state_all');
   }
   if (legEntry) legEntry.style.display = 'flex';
 

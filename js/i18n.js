@@ -111,6 +111,13 @@ const I18N = {
     ctrl_search_title: 'Search (Ctrl+K)',
     ctrl_legend_title: 'Legend',
     ctrl_logo_menu_title: 'Menu',
+    // Layer-Toggle states (tri-state cycle)
+    state_off:    'off',
+    state_window: 'recent',     // events: ±150yr; pleiades: curated tier
+    state_all:    'all',
+    // Era-range chip
+    era_chip_close: 'Show all eras',
+    era_chip_arrow: '–',         // visual separator between range start and end
     // Tutorial step controls
     tour_step_of:    'Step {n} of {total}',
     tour_end:        'End Tour',
@@ -225,6 +232,13 @@ const I18N = {
     ctrl_tutorial_btn_title: 'Tutorial neu starten',
     ctrl_info_title: 'Über dieses Projekt',
     ctrl_terr_list_title: 'Territoriums-Übersicht',
+    // Layer-Toggle states
+    state_off:    'aus',
+    state_window: 'aktuell',
+    state_all:    'alle',
+    // Era-range chip
+    era_chip_close: 'Alle Epochen anzeigen',
+    era_chip_arrow: '–',
     ctrl_search_title: 'Suchen (Strg+K)',
     ctrl_legend_title: 'Legende',
     ctrl_logo_menu_title: 'Menü',
@@ -251,6 +265,16 @@ function getLang() { return _lang; }
 
 function getDataSuffix() {
   return _lang === 'en' ? '' : '_' + _lang;
+}
+
+// Update the .btn-state suffix on a tristate-toggle button. The span keeps
+// its data-i18n attribute in sync so applyI18n picks it up after langchange.
+function _setBtnState(btn, key) {
+  if (!btn) return;
+  const span = btn.querySelector('.btn-state');
+  if (!span) return;
+  span.dataset.i18n = key;
+  span.textContent = t(key);
 }
 
 function setLang(lang) {

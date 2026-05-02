@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R18">
+  <link rel="stylesheet" href="css/style.css?v=R19">
 </head>
 <body>
 <div id="loading">
@@ -256,7 +256,8 @@
   <button id="ctrl-toggle" onclick="toggleControls()" title="Toggle controls">▼</button>
 
   <div id="ctrl-body">
-    <!-- Zeitstrahl-Bereich-Auswahl -->
+    <!-- Zeitstrahl-Bereich-Auswahl. Wenn eine Era aktiv ist, ersetzt der
+         #era-chip diese Reihe (gleicher Slot, kein Layout-Shift). -->
     <div id="era-select-row">
       <button class="btn era-sel-btn" onclick="toggleTimeRange('prehistoric', this)" data-i18n="era_prehistoric">Prehistory</button>
       <button class="btn era-sel-btn" onclick="toggleTimeRange('bronze_age', this)" data-i18n="era_bronze_age">Bronze Age</button>
@@ -264,6 +265,10 @@
       <button class="btn era-sel-btn" onclick="toggleTimeRange('medieval', this)" data-i18n="era_medieval">Middle Ages</button>
       <button class="btn era-sel-btn" onclick="toggleTimeRange('early_modern', this)" data-i18n="era_early_modern">Early Modern</button>
       <button class="btn era-sel-btn" onclick="toggleTimeRange('modern', this)" data-i18n="era_modern">Modern</button>
+    </div>
+    <div id="era-chip" hidden>
+      <span id="era-chip-label"></span>
+      <button id="era-chip-close" onclick="clearTimeRange()" data-i18n-title="era_chip_close" title="Show all eras">✕</button>
     </div>
 
     <div id="epoch-row"></div>
@@ -301,8 +306,8 @@
       <div class="btn-group-right">
         <div id="layer-btns">
           <button class="btn btn-trails"  id="trails-btn"  onclick="openTrailMenu()" title="Guided trails" data-i18n="ctrl_trails">Trails</button>
-          <button class="btn btn-events"   id="events-btn"  onclick="toggleEvents()"  title="Historical events — off" data-i18n="ctrl_events">Events</button>
-          <button class="btn btn-pleiades" id="pleiades-btn" onclick="togglePleiades()" title="Ancient settlements — off" data-i18n="ctrl_pleiades">Pleiades</button>
+          <button class="btn btn-events tristate"   id="events-btn"   onclick="toggleEvents()"   title="Historical events — off"><span class="btn-label" data-i18n="ctrl_events">Events</span><span class="btn-state" data-i18n="state_off">off</span></button>
+          <button class="btn btn-pleiades tristate" id="pleiades-btn" onclick="togglePleiades()" title="Ancient settlements — off"><span class="btn-label" data-i18n="ctrl_pleiades">Pleiades</span><span class="btn-state" data-i18n="state_off">off</span></button>
         </div>
         <span class="bar-divider bar-divider-sm"></span>
         <div id="play-btns">
@@ -428,7 +433,7 @@
 </div>
 
 <!-- i18n: must load first (provides t() used by every other module) -->
-<script src="js/i18n.js?v=R12"></script>
+<script src="js/i18n.js?v=R13"></script>
 <!-- config: split from a 2027-line monolith into 5 focused modules.
      Order: leaf modules (epochs, cities) → territories → context → loader.
      All declarations live on the global scope (classic <script>). -->
@@ -442,9 +447,9 @@
 <!-- View / interaction layer -->
 <script src="js/map.js?v=R4"></script>
 <script src="js/tooltip.js?v=R7"></script>
-<script src="js/timeline.js?v=R13"></script>
-<script src="js/cities.js?v=R5"></script>
-<script src="js/events.js?v=R4"></script>
+<script src="js/timeline.js?v=R14"></script>
+<script src="js/cities.js?v=R6"></script>
+<script src="js/events.js?v=R5"></script>
 <script src="js/app.js?v=R13"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>

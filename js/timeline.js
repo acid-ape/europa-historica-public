@@ -252,15 +252,16 @@ function toggleControls() {
 
 // ── Zeitstrahl-Bereich ──
 const TIME_RANGES = {
-  all:          { label: "All",          from: -8000, to: 2010  },
-  prehistoric:  { label: "Prehistory",   from: -8000, to: -3000 },
-  bronze_age:   { label: "Bronze Age",   from: -3000, to: -800  },
-  antiquity:    { label: "Antiquity",    from:  -800, to:  500  },
-  medieval:     { label: "Middle Ages",  from:   500, to: 1500  },
-  early_modern: { label: "Early Modern", from:  1500, to: 1800  },
-  modern:       { label: "Modern",       from:  1800, to: 2010  },
+  all:          { label: "All",          from: -8000, to: 2010, i18n: null              },
+  prehistoric:  { label: "Prehistory",   from: -8000, to: -3000, i18n: 'era_prehistoric' },
+  bronze_age:   { label: "Bronze Age",   from: -3000, to: -800,  i18n: 'era_bronze_age'  },
+  antiquity:    { label: "Antiquity",    from:  -800, to:  500,  i18n: 'era_antiquity'   },
+  medieval:     { label: "Middle Ages",  from:   500, to: 1500,  i18n: 'era_medieval'    },
+  early_modern: { label: "Early Modern", from:  1500, to: 1800,  i18n: 'era_early_modern'},
+  modern:       { label: "Modern",       from:  1800, to: 2010,  i18n: 'era_modern'      },
 };
 let currentRange = TIME_RANGES.all;
+let currentRangeKey = 'all';
 
 // Konvertiert globales pct (0–100 über alle Zeit) → Range-relatives pct (0–100 innerhalb currentRange)
 function globalToRangePct(globalPct) {
@@ -279,6 +280,7 @@ function rangeToGlobalPct(rangePct) {
 
 function setTimeRange(key, btn) {
   currentRange = TIME_RANGES[key] || TIME_RANGES.all;
+  currentRangeKey = TIME_RANGES[key] ? key : 'all';
   // Update active button
   document.querySelectorAll('.era-sel-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
@@ -290,7 +292,35 @@ function setTimeRange(key, btn) {
   buildEpochMarkers();
   updateUI(state.pct);
   _updateRangeLabels();
+  _updateEraChip();
 }
+
+// Clear the era selection (called by the chip's ✕ button).
+function clearTimeRange() {
+  setTimeRange('all', null);
+}
+
+// Show/hide the era-range chip. The chip replaces the era-select-row
+// in the same slot whenever an era is active — body.era-active swaps
+// visibility (CSS). Click on ✕ resets to all.
+function _updateEraChip() {
+  const chip = document.getElementById('era-chip');
+  const lbl  = document.getElementById('era-chip-label');
+  if (!chip || !lbl) return;
+  if (currentRangeKey === 'all') {
+    chip.hidden = true;
+    document.body.classList.remove('era-active');
+    return;
+  }
+  const r = currentRange;
+  const eraName = r.i18n ? t(r.i18n) : r.label;
+  lbl.textContent = `${eraName}  ${yearLabel(r.from)} ${t('era_chip_arrow')} ${yearLabel(r.to)}`;
+  chip.hidden = false;
+  document.body.classList.add('era-active');
+}
+
+// Re-render chip text on language change.
+window.addEventListener('langchange', _updateEraChip);
 
 function _updateRangeLabels() {
   const s = document.getElementById('tl-start-lbl');

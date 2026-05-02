@@ -47,6 +47,7 @@ async function toggleEvents() {
 
   if (eventsMode === 0) {
     if (btn) { btn.classList.remove('on', 'on-all'); btn.title = 'Historical events — off'; btn.blur(); }
+    _setBtnState(btn, 'state_off');
     if (legEntry) legEntry.style.display = 'none';
     d3.select('#g-events').selectAll('*').remove();
     return;
@@ -56,8 +57,10 @@ async function toggleEvents() {
 
   if (eventsMode === 1) {
     if (btn) { btn.classList.add('on'); btn.classList.remove('on-all'); btn.title = 'Historical events — recent window (click for all)'; }
+    _setBtnState(btn, 'state_window');
   } else {
     if (btn) { btn.classList.add('on', 'on-all'); btn.title = 'Historical events — all shown (click to turn off)'; }
+    _setBtnState(btn, 'state_all');
   }
   if (legEntry) legEntry.style.display = 'flex';
 
