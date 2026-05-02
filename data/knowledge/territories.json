@@ -348,7 +348,7 @@
     "label": "Rome (Diocletianus)",
     "type": "historical",
     "wikipedia": "https://en.wikipedia.org/wiki/Tetrarchy",
-    "wikidataId": null,
+    "wikidataId": "Q1415",
     "description": "The Tetrarchy was the system instituted by Roman emperor Diocletian to govern the ancient Roman Empire by dividing it between two emperors, the augusti , and their junior colleagues and designated successors, the caesares . It was kept in place between AD 293 and 324.",
     "capitals": [],
     "flag": null,
@@ -369,7 +369,7 @@
     "label": "Rome (Maximian)",
     "type": "historical",
     "wikipedia": "https://en.wikipedia.org/wiki/Tetrarchy",
-    "wikidataId": null,
+    "wikidataId": "Q181503",
     "description": "The Tetrarchy was the system instituted by Roman emperor Diocletian to govern the ancient Roman Empire by dividing it between two emperors, the augusti , and their junior colleagues and designated successors, the caesares . It was kept in place between AD 293 and 324.",
     "capitals": [],
     "flag": null,
@@ -390,7 +390,7 @@
     "label": "Rome (Constantinus)",
     "type": "historical",
     "wikipedia": "https://en.wikipedia.org/wiki/Tetrarchy",
-    "wikidataId": null,
+    "wikidataId": "Q9431",
     "description": "The Tetrarchy was the system instituted by Roman emperor Diocletian to govern the ancient Roman Empire by dividing it between two emperors, the augusti , and their junior colleagues and designated successors, the caesares . It was kept in place between AD 293 and 324.",
     "capitals": [],
     "flag": null,
@@ -411,7 +411,7 @@
     "label": "Rome (Galerius)",
     "type": "historical",
     "wikipedia": "https://en.wikipedia.org/wiki/Tetrarchy",
-    "wikidataId": null,
+    "wikidataId": "Q177463",
     "description": "The Tetrarchy was the system instituted by Roman emperor Diocletian to govern the ancient Roman Empire by dividing it between two emperors, the augusti , and their junior colleagues and designated successors, the caesares . It was kept in place between AD 293 and 324.",
     "capitals": [],
     "flag": null,
@@ -902,7 +902,8 @@
         "wikidataId": "Q71084",
         "wikipedia": "https://en.wikipedia.org/wiki/First_French_Empire",
         "status": "validated",
-        "description": "In the history of France , the First Republic ( French : Première République ), sometimes referred to in historiography as Revolutionary France , and officially the French Republic (French: République française ), was founded on 21 September 1792 during the French Revolution . The First Republic lasted until the declaration of the First Empire on 18 May 1804 under Napoléon Bonaparte , although the form of government changed several times."
+        "description": "In the history of France , the First Republic ( French : Première République ), sometimes referred to in historiography as Revolutionary France , and officially the French Republic (French: République française ), was founded on 21 September 1792 during the French Revolution . The First Republic lasted until the declaration of the First Empire on 18 May 1804 under Napoléon Bonaparte , although the form of government changed several times.",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Coat_of_Arms_of_France_%281804-1815%29.svg"
       },
       {
         "label": "Restoration & Second Empire",
@@ -911,7 +912,8 @@
         "wikidataId": "Q71092",
         "wikipedia": "https://en.wikipedia.org/wiki/Second_French_Empire",
         "status": "validated",
-        "description": "The Second French Empire , officially the French Empire , was the government of France from 1852 to 1870. It was established on 2 December 1852 by Louis-Napoléon Bonaparte , president of France under the French Second Republic , who proclaimed himself Emperor of the French as Napoleon III. The period was one of significant achievements in infrastructure and economy, while France reasserted itself as a dominant power in Europe ."
+        "description": "The Second French Empire , officially the French Empire , was the government of France from 1852 to 1870. It was established on 2 December 1852 by Louis-Napoléon Bonaparte , president of France under the French Second Republic , who proclaimed himself Emperor of the French as Napoleon III. The period was one of significant achievements in infrastructure and economy, while France reasserted itself as a dominant power in Europe .",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_Second_French_Empire_%281852%E2%80%931870%29-2.svg"
       },
       {
         "label": "Modern France",
@@ -1317,7 +1319,9 @@
         "end": 1569,
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Poland",
         "status": "validated",
-        "description": "The Kingdom of Poland ( Polish : Królestwo Polskie ; Latin : Regnum Poloniae ) was a state in Central Europe during the medieval and early modern periods from 1025 until 1795."
+        "description": "The Kingdom of Poland ( Polish : Królestwo Polskie ; Latin : Regnum Poloniae ) was a state in Central Europe during the medieval and early modern periods from 1025 until 1795.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Banner_of_Sigismund_III_Vasa.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Crown_of_the_Kingdom_of_Poland_%28Sigismund_III_Vasa%29.svg"
       },
       {
         "label": "Polish-Lithuanian Commonwealth",
@@ -1326,7 +1330,9 @@
         "end": 1795,
         "wikipedia": "https://en.wikipedia.org/wiki/Polish%E2%80%93Lithuanian_Commonwealth",
         "status": "validated",
-        "description": "The Polish–Lithuanian Commonwealth , also referred to as Poland–Lithuania or the First Polish Republic ( Polish : I Rzeczpospolita ), was a federative real union between the Kingdom of Poland and the Grand Duchy of Lithuania , existing from 1569 to 1795. This state was among the largest, most populated countries of 16th- to 18th-century Europe. At its peak in the early 17th century, the Commonwealth spanned approximately 1,000,000 km 2 (390,000 sq mi) and supported a multi-ethnic population of around 12 million as of 1618. The official languages of the Commonwealth were Polish and Latin , with Catholicism as the state religion ."
+        "description": "The Polish–Lithuanian Commonwealth , also referred to as Poland–Lithuania or the First Polish Republic ( Polish : I Rzeczpospolita ), was a federative real union between the Kingdom of Poland and the Grand Duchy of Lithuania , existing from 1569 to 1795. This state was among the largest, most populated countries of 16th- to 18th-century Europe. At its peak in the early 17th century, the Commonwealth spanned approximately 1,000,000 km 2 (390,000 sq mi) and supported a multi-ethnic population of around 12 million as of 1618. The official languages of the Commonwealth were Polish and Latin , with Catholicism as the state religion .",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flaga_Rzeczypospolitej_Obojga_Narodow_ogolna.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Polish-Lithuanian_Commonwealth.svg"
       },
       {
         "label": "Modern Poland",
@@ -1335,7 +1341,9 @@
         "end": 2030,
         "wikipedia": "https://en.wikipedia.org/wiki/Poland",
         "status": "validated",
-        "description": "Poland , officially the Republic of Poland , is a country in Central Europe . It extends from the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south, and borders Lithuania and Russia to the northeast; Belarus and Ukraine to the east; Slovakia and the Czech Republic to the south; and Germany to the west. The territory has a varied landscape, diverse ecosystems, and a temperate climate . Poland is composed of sixteen voivodeships and is the fifth most populous member state of the European Union (EU), with over 38 million people, and the fifth largest EU country by land area, covering 312,696 km 2 (120,733 sq mi). The capital and largest city is Warsaw ; other major cities include Kraków , Wrocław , Łódź , Poznań , and Gdańsk ."
+        "description": "Poland , officially the Republic of Poland , is a country in Central Europe . It extends from the Baltic Sea in the north to the Sudetes and Carpathian Mountains in the south, and borders Lithuania and Russia to the northeast; Belarus and Ukraine to the east; Slovakia and the Czech Republic to the south; and Germany to the west. The territory has a varied landscape, diverse ecosystems, and a temperate climate . Poland is composed of sixteen voivodeships and is the fifth most populous member state of the European Union (EU), with over 38 million people, and the fifth largest EU country by land area, covering 312,696 km 2 (120,733 sq mi). The capital and largest city is Warsaw ; other major cities include Kraków , Wrocław , Łódź , Poznań , and Gdańsk .",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Poland.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg"
       }
     ]
   },
@@ -1574,8 +1582,8 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Duchy_of_Prussia",
         "status": "validated",
         "description": "The Duchy of Prussia or Ducal Prussia was a duchy in the region of Prussia established as a result of secularization of the Monastic Prussia, the territory that remained under the control of the State of the Teutonic Order until the Protestant Reformation in 1525.",
-        "flag": null,
-        "coatOfArms": null,
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ducal_Prussia.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/POL_Prusy_ksi%C4%85%C5%BC%C4%99ce_COA.svg",
         "territory_type": "ruler_based"
       },
       {
@@ -3452,7 +3460,7 @@
     "territory_type": "context_only",
     "wikipedia": "https://en.wikipedia.org/wiki/Finno-Ugric_peoples",
     "rulers_url": null,
-    "wikidataId": null,
+    "wikidataId": "Q79890",
     "description": "Hunter-gatherer and semi-nomadic peoples of the boreal forest (taiga) zone speaking Finno-Ugric languages. They inhabited vast stretches of northern Europe and northwestern Siberia, subsisting on hunting, fishing, and gathering from the Late Stone Age onward. They are ancestral to modern Finns, Estonians, Sami, and other Uralic-speaking groups.",
     "capitals": [],
     "flag": null,
@@ -3522,7 +3530,7 @@
     "territory_type": "context_only",
     "wikipedia": "https://en.wikipedia.org/wiki/Iranian_peoples",
     "rulers_url": null,
-    "wikidataId": null,
+    "wikidataId": "Q1672477",
     "description": "Nomadic and semi-nomadic pastoralist peoples speaking Iranian languages, who ranged across the Eurasian steppe and Iranian plateau during the Bronze and Iron Ages. These groups included ancestors of the Scythians, Sarmatians, and Medes, and played a major role in Bronze and Iron Age Eurasian history.",
     "capitals": [],
     "flag": null,
@@ -4631,7 +4639,8 @@
       ],
       "firstEpoch": "world_1100",
       "lastEpoch": "world_2010"
-    }
+    },
+    "wikidataId": "Q28"
   },
   "Q68962": {
     "id": "Q68962",
@@ -4825,7 +4834,7 @@
     "description": "Pomerania is a historical region on the southern shore of the Baltic Sea. In the medieval period it was inhabited by Slavic Pomeranian tribes before gradual incorporation into the Holy Roman Empire and Piast-ruled Poland.",
     "capitals": [],
     "flag": null,
-    "coatOfArms": null,
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen_Pommern.svg",
     "status": "validated",
     "territory_type": "context_only",
     "geodata": {
@@ -4845,7 +4854,7 @@
     "wikidataId": "Q106416",
     "description": "The Frisians were a Germanic people indigenous to the coastal regions of the North Sea between the Rhine and Elbe rivers. In the early medieval period they were independent seafarers and traders before being subjugated by the Frankish empire.",
     "capitals": [],
-    "flag": null,
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Frisia.svg",
     "coatOfArms": null,
     "status": "validated",
     "territory_type": "context_only",
@@ -5086,7 +5095,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Denmark",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Danish_monarchs",
         "status": "validated",
-        "description": "The Danish Realm, officially the Kingdom of Denmark, or simply Denmark, is a sovereign state consisting of a collection of constituent territories united by the Constitutional Act, which applies to the entire territory. It consists of metropolitan Denmark—the kingdom's territory in continental Europe and its proximate islands—and the realm's two autonomous regions: the Faroe Islands in the North Atlantic and Greenland in North America."
+        "description": "The Danish Realm, officially the Kingdom of Denmark, or simply Denmark, is a sovereign state consisting of a collection of constituent territories united by the Constitutional Act, which applies to the entire territory. It consists of metropolitan Denmark—the kingdom's territory in continental Europe and its proximate islands—and the realm's two autonomous regions: the Faroe Islands in the North Atlantic and Greenland in North America.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Denmark.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Coat_of_arms_of_Denmark_no_crown.svg"
       },
       {
         "label": "Denmark",
@@ -5096,7 +5107,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Denmark",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Danish_monarchs",
         "status": "validated",
-        "description": "Denmark is a Nordic country in Northern Europe. It is the metropole and most populous constituent of the Kingdom of Denmark, also known as the Danish Realm, a constitutionally unitary state that includes the autonomous territories of the Faroe Islands and Greenland in the north Atlantic Ocean. Metropolitan Denmark consists of the northern Jutland peninsula and an archipelago of 406 islands. It is the southernmost of the Scandinavian countries, lying southwest of Sweden, south of Norway, and north of Germany. Denmark proper is situated between the North Sea to the west and the Baltic Sea to the east."
+        "description": "Denmark is a Nordic country in Northern Europe. It is the metropole and most populous constituent of the Kingdom of Denmark, also known as the Danish Realm, a constitutionally unitary state that includes the autonomous territories of the Faroe Islands and Greenland in the north Atlantic Ocean. Metropolitan Denmark consists of the northern Jutland peninsula and an archipelago of 406 islands. It is the southernmost of the Scandinavian countries, lying southwest of Sweden, south of Norway, and north of Germany. Denmark proper is situated between the North Sea to the west and the Baltic Sea to the east.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Denmark.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Coat_of_arms_of_Denmark_no_crown.svg"
       }
     ]
   },
@@ -5143,7 +5156,9 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Norwegian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "The Old Kingdom of Norway reached the peak of its power in the 13th century after a long period of civil war before 1240. The kingdom was a loosely unified nation including the territory of modern-day Norway as well as Norway's overseas possessions which had been settled by Norwegian seafarers for centuries before being annexed into the kingdom. Norway, whose expansionism starts from the very foundation of the Kingdom in 872, reached the peak of its power in the years between 1240 and 1319."
+        "description": "The Old Kingdom of Norway reached the peak of its power in the 13th century after a long period of civil war before 1240. The kingdom was a loosely unified nation including the territory of modern-day Norway as well as Norway's overseas possessions which had been settled by Norwegian seafarers for centuries before being annexed into the kingdom. Norway, whose expansionism starts from the very foundation of the Kingdom in 872, reached the peak of its power in the years between 1240 and 1319.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Norway.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Norway.svg"
       },
       {
         "label": "Norway",
@@ -5153,7 +5168,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Norway",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Norwegian_monarchs",
         "status": "validated",
-        "description": "Norway, officially the Kingdom of Norway, is a Nordic country comprising the western and northernmost parts of the Scandinavian Peninsula in Northern Europe, the remote Arctic island Jan Mayen and the archipelago Svalbard. Norway has a population of approximately 5.6 million, and a total area of 385,207 square kilometres (148,729 sq mi). Its capital and largest city is Oslo. The country shares a long eastern border with Sweden, and is bordered by Finland and Russia to the northeast. Norway has an extensive coastline facing the Skagerrak strait, the North Sea, the Norwegian Sea, and the Barents Sea."
+        "description": "Norway, officially the Kingdom of Norway, is a Nordic country comprising the western and northernmost parts of the Scandinavian Peninsula in Northern Europe, the remote Arctic island Jan Mayen and the archipelago Svalbard. Norway has a population of approximately 5.6 million, and a total area of 385,207 square kilometres (148,729 sq mi). Its capital and largest city is Oslo. The country shares a long eastern border with Sweden, and is bordered by Finland and Russia to the northeast. Norway has an extensive coastline facing the Skagerrak strait, the North Sea, the Norwegian Sea, and the Barents Sea.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Norway.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Norway.svg"
       }
     ]
   },
@@ -5209,7 +5226,9 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Swedish_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. It borders Norway to the west and north, and Finland to the east, and shares a maritime border with Denmark to the south. At 450,295 square kilometres (173,860 sq mi), Sweden is the largest Nordic country by both area and population, and is the fifth-largest country in Europe. Its capital and largest city is Stockholm."
+        "description": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. It borders Norway to the west and north, and Finland to the east, and shares a maritime border with Denmark to the south. At 450,295 square kilometres (173,860 sq mi), Sweden is the largest Nordic country by both area and population, and is the fifth-largest country in Europe. Its capital and largest city is Stockholm.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Sweden.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Sweden.svg"
       },
       {
         "label": "Sweden",
@@ -5219,7 +5238,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Sweden",
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Swedish_monarchs",
         "status": "validated",
-        "description": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. It borders Norway to the west and north, and Finland to the east, and shares a maritime border with Denmark to the south. At 450,295 square kilometres (173,860 sq mi), Sweden is the largest Nordic country by both area and population, and is the fifth-largest country in Europe. Its capital and largest city is Stockholm. Sweden has a population of 10.6 million, and a low population density of 25.5 inhabitants per square kilometre; 88% of Swedes reside in urban areas."
+        "description": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. It borders Norway to the west and north, and Finland to the east, and shares a maritime border with Denmark to the south. At 450,295 square kilometres (173,860 sq mi), Sweden is the largest Nordic country by both area and population, and is the fifth-largest country in Europe. Its capital and largest city is Stockholm. Sweden has a population of 10.6 million, and a low population density of 25.5 inhabitants per square kilometre; 88% of Swedes reside in urban areas.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Sweden.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Sweden.svg"
       }
     ]
   },
@@ -5263,7 +5284,8 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Serbian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "The medieval period in the history of Serbia began in the 6th century with the Slavic migrations to the Balkans, and lasted until the Ottoman conquest of Serbian lands in the second half of the 15th century. Medieval Serbian states included the Principality of Serbia, the Grand Principality of Serbia, the Kingdom of Serbia, and the Serbian Empire, which at its peak under Stefan Dušan encompassed most of the Balkans."
+        "description": "The medieval period in the history of Serbia began in the 6th century with the Slavic migrations to the Balkans, and lasted until the Ottoman conquest of Serbian lands in the second half of the 15th century. Medieval Serbian states included the Principality of Serbia, the Grand Principality of Serbia, the Kingdom of Serbia, and the Serbian Empire, which at its peak under Stefan Dušan encompassed most of the Balkans.",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_Stefan_Nemanja.svg"
       },
       {
         "label": "Serbia",
@@ -5273,7 +5295,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Serbia",
         "rulers_url": null,
         "status": "validated",
-        "description": "Serbia, officially the Republic of Serbia, is a landlocked country in Southeast and Central Europe. It borders Hungary to the north, Romania and Bulgaria to the east, North Macedonia and Kosovo to the south, and Croatia, Bosnia and Herzegovina, and Montenegro to the west. Its capital and largest city is Belgrade."
+        "description": "Serbia, officially the Republic of Serbia, is a landlocked country in Southeast and Central Europe. It borders Hungary to the north, Romania and Bulgaria to the east, North Macedonia and Kosovo to the south, and Croatia, Bosnia and Herzegovina, and Montenegro to the west. Its capital and largest city is Belgrade.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Serbia.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg"
       }
     ]
   },
@@ -5313,7 +5337,8 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_rulers_of_Croatia",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "The Kingdom of Croatia was a medieval kingdom in Southern Europe comprising most of what is today Croatia, as well as most of modern-day Bosnia and Herzegovina. The Croatian Kingdom existed as a sovereign state for nearly two centuries, characterized by conflicts and alliances with the Bulgarians, Byzantines, Hungarians, and competition with Venice for control over the eastern Adriatic coast. It reached its peak under kings Peter Krešimir IV (1058–1074) and Demetrius Zvonimir (1075–1089) before entering into a personal union with Hungary in 1102."
+        "description": "The Kingdom of Croatia was a medieval kingdom in Southern Europe comprising most of what is today Croatia, as well as most of modern-day Bosnia and Herzegovina. The Croatian Kingdom existed as a sovereign state for nearly two centuries, characterized by conflicts and alliances with the Bulgarians, Byzantines, Hungarians, and competition with Venice for control over the eastern Adriatic coast. It reached its peak under kings Peter Krešimir IV (1058–1074) and Demetrius Zvonimir (1075–1089) before entering into a personal union with Hungary in 1102.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Croatian_Chequy_Flag.svg"
       },
       {
         "label": "Croatia",
@@ -5323,7 +5348,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Croatia",
         "rulers_url": null,
         "status": "validated",
-        "description": "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of the Adriatic Sea. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina and Montenegro to the southeast, and shares a maritime border with Italy to the west. Its capital, largest city and main cultural and economic centre is Zagreb. The Croatian archipelago contains over 1,000 islands and islets, the largest overseas territory on the Adriatic Sea."
+        "description": "Croatia, officially the Republic of Croatia, is a country in Central and Southeast Europe, on the coast of the Adriatic Sea. It borders Slovenia to the northwest, Hungary to the northeast, Serbia to the east, Bosnia and Herzegovina and Montenegro to the southeast, and shares a maritime border with Italy to the west. Its capital, largest city and main cultural and economic centre is Zagreb. The Croatian archipelago contains over 1,000 islands and islets, the largest overseas territory on the Adriatic Sea.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Croatia.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Croatia.svg"
       }
     ]
   },
@@ -5336,8 +5363,8 @@
     "wikidataId": "Q4948",
     "description": "The Republic of Venice was a sovereign maritime state in northeastern Italy, founded in the late 7th century and lasting over 1100 years until 1797. Governed by elected Doges, it was one of the wealthiest and most powerful city-states of medieval and Renaissance Europe.",
     "capitals": [],
-    "flag": null,
-    "coatOfArms": null,
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Republic_of_Venice_%281659-1675%29.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_the_Republic_of_Venice.svg",
     "status": "validated",
     "territory_type": "ruler_based",
     "geodata": {
@@ -5549,7 +5576,9 @@
         "rulers_url": "https://en.wikipedia.org/wiki/List_of_Georgian_monarchs",
         "status": "validated",
         "territory_type": "ruler_based",
-        "description": "The Kingdom of Georgia, also known as the Georgian Empire, was a medieval Eurasian monarchy founded in c. 1008 AD. It reached its Golden Age during the reign of King David IV and Queen Tamar the Great from the 11th to 13th centuries, becoming one of the pre-eminent nations of the Christian East with a pan-Caucasian empire stretching from Eastern Europe to Anatolia and the northern frontiers of Iran."
+        "description": "The Kingdom of Georgia, also known as the Georgian Empire, was a medieval Eurasian monarchy founded in c. 1008 AD. It reached its Golden Age during the reign of King David IV and Queen Tamar the Great from the 11th to 13th centuries, becoming one of the pre-eminent nations of the Christian East with a pan-Caucasian empire stretching from Eastern Europe to Anatolia and the northern frontiers of Iran.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_Kingdom_of_Georgia.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Kingdom_of_Georgia.svg"
       },
       {
         "label": "Georgia",
@@ -5559,7 +5588,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Georgia_(country)",
         "rulers_url": null,
         "status": "validated",
-        "description": "Georgia is a country in the Caucasus region on the coast of the Black Sea. It is located at the intersection of Eastern Europe and West Asia, and is bordered to the north and northeast by Russia, to the west by the Black Sea, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. Georgia covers an area of 69,700 square kilometres (26,900 sq mi). Its capital and largest city is Tbilisi."
+        "description": "Georgia is a country in the Caucasus region on the coast of the Black Sea. It is located at the intersection of Eastern Europe and West Asia, and is bordered to the north and northeast by Russia, to the west by the Black Sea, to the south by Turkey and Armenia, and to the southeast by Azerbaijan. Georgia covers an area of 69,700 square kilometres (26,900 sq mi). Its capital and largest city is Tbilisi.",
+        "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Georgia.svg",
+        "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_Georgia.svg"
       }
     ]
   },
@@ -5569,7 +5600,9 @@
     "wikidataId": "Q403",
     "territory_type": "context_only",
     "status": "validated",
-    "wikipedia": "https://en.wikipedia.org/wiki/Serbia"
+    "wikipedia": "https://en.wikipedia.org/wiki/Serbia",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Serbia.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg"
   },
   "Q224": {
     "id": "Q224",
@@ -5577,7 +5610,9 @@
     "wikidataId": "Q224",
     "territory_type": "context_only",
     "status": "validated",
-    "wikipedia": "https://en.wikipedia.org/wiki/Croatia"
+    "wikipedia": "https://en.wikipedia.org/wiki/Croatia",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Croatia.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Croatia.svg"
   },
   "Q230": {
     "id": "Q230",
@@ -5585,7 +5620,9 @@
     "wikidataId": "Q230",
     "territory_type": "context_only",
     "status": "validated",
-    "wikipedia": "https://en.wikipedia.org/wiki/Georgia_(country)"
+    "wikipedia": "https://en.wikipedia.org/wiki/Georgia_(country)",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Georgia.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_Georgia.svg"
   },
   "Q13415387": {
     "id": "Q13415387",
@@ -5621,7 +5658,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Dumnonia",
-    "description": "Dumnonia, a Latinised name, was a Brythonic kingdom that existed in Sub-Roman Britain between the 6th century CE and the 7th century CE in the more westerly parts of present-day South West England."
+    "description": "Dumnonia, a Latinised name, was a Brythonic kingdom that existed in Sub-Roman Britain between the 6th century CE and the 7th century CE in the more westerly parts of present-day South West England.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Cornwall.svg"
   },
   "Q1449447": {
     "id": "Q1449447",
@@ -5657,7 +5695,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Oman",
-    "description": "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia. It shares land borders with Saudi Arabia, the United Arab Emirates, and Yemen. Oman's coastline faces the Arabian Sea to the southeast and the Gulf of Oman on the northeast. The exclaves of Madha and Musandam are surrounded by the United Arab Emirates on their land borders, while Musandam's coastal boundaries are formed by the Strait of Hormuz and the Gulf of Oman."
+    "description": "Oman, officially the Sultanate of Oman, is a country in the southeastern Arabian Peninsula in West Asia. It shares land borders with Saudi Arabia, the United Arab Emirates, and Yemen. Oman's coastline faces the Arabian Sea to the southeast and the Gulf of Oman on the northeast. The exclaves of Madha and Musandam are surrounded by the United Arab Emirates on their land borders, while Musandam's coastal boundaries are formed by the Strait of Hormuz and the Gulf of Oman.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Oman_%281970%E2%80%931995%29.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Oman.svg"
   },
   "Q48287": {
     "id": "Q48287",
@@ -5711,7 +5751,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Moravia",
-    "description": "Moravia is a historical region in the east of the Czech Republic and one of three historical Czech lands, with Bohemia and Czech Silesia."
+    "description": "Moravia is a historical region in the east of the Czech Republic and one of three historical Czech lands, with Bohemia and Czech Silesia.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Historical_flag_of_Moravia.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Znak_Moravy.svg"
   },
   "Q19083": {
     "id": "Q19083",
@@ -5720,7 +5762,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Iberia",
-    "description": "In Greco-Roman geography, Iberia was an exonym for the Georgian kingdom of Kartli, known after its core province. The kingdom existed during Classical Antiquity and the Early Middle Ages, either as an independent state or as a dependent of larger empires, notably the Sassanid and Roman empires. Iberia, centered on present-day eastern Georgia, was bordered by Colchis in the west, Caucasian Albania in the east and Armenia in the south."
+    "description": "In Greco-Roman geography, Iberia was an exonym for the Georgian kingdom of Kartli, known after its core province. The kingdom existed during Classical Antiquity and the Early Middle Ages, either as an independent state or as a dependent of larger empires, notably the Sassanid and Roman empires. Iberia, centered on present-day eastern Georgia, was bordered by Colchis in the west, Caucasian Albania in the east and Armenia in the south.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Kartli_-_drosha_jvari.svg"
   },
   "Q370957": {
     "id": "Q370957",
@@ -5792,7 +5835,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Vepsians",
-    "description": "The Veps, or Vepsians, are a Baltic Finnic people who speak the Veps language, which belongs to the Finnic branch of the Uralic languages."
+    "description": "The Veps, or Vepsians, are a Baltic Finnic people who speak the Veps language, which belongs to the Finnic branch of the Uralic languages.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Vepse_people.svg"
   },
   "Q213470": {
     "id": "Q213470",
@@ -5801,7 +5845,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Karelians",
-    "description": "Karelians are a Baltic Finnic ethnic group who are indigenous to the historical region of Karelia, which is today split between Finland and Russia. Karelians living in Russian Karelia are considered a distinct ethnic group closely related to Finnish Karelians, who are considered a subset of Finns. This distinction historically arose from Karelia having been fought over and eventually split between Sweden and Novgorod, resulting in Karelians being under different cultural spheres."
+    "description": "Karelians are a Baltic Finnic ethnic group who are indigenous to the historical region of Karelia, which is today split between Finland and Russia. Karelians living in Russian Karelia are considered a distinct ethnic group closely related to Finnish Karelians, who are considered a subset of Finns. This distinction historically arose from Karelia having been fought over and eventually split between Sweden and Novgorod, resulting in Karelians being under different cultural spheres.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Karel.svg"
   },
   "Q170284": {
     "id": "Q170284",
@@ -5810,7 +5855,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Finns",
-    "description": "Finns or Finnish people are a Baltic Finnic ethnic group native to Finland. Finns are traditionally divided into smaller regional groups that span several countries adjacent to Finland, both those who are native to these countries as well as those who have resettled. Some of these may be classified as separate ethnic groups, rather than subgroups of Finns. These include the Kvens and Forest Finns in Norway, the Tornedalians in Sweden, and the Ingrian Finns in Russia."
+    "description": "Finns or Finnish people are a Baltic Finnic ethnic group native to Finland. Finns are traditionally divided into smaller regional groups that span several countries adjacent to Finland, both those who are native to these countries as well as those who have resettled. Some of these may be classified as separate ethnic groups, rather than subgroups of Finns. These include the Kvens and Forest Finns in Norway, the Tornedalians in Sweden, and the Ingrian Finns in Russia.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Finland.svg"
   },
   "Q173302": {
     "id": "Q173302",
@@ -5819,7 +5865,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Estonians",
-    "description": "Estonians or Estonian people are a Finnic ethnic group native to the Baltic Sea region in Northern Europe, primarily their nation state of Estonia."
+    "description": "Estonians or Estonian people are a Finnic ethnic group native to the Baltic Sea region in Northern Europe, primarily their nation state of Estonia.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Estonia.svg"
   },
   "Q1618896": {
     "id": "Q1618896",
@@ -5855,7 +5902,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Bashkirs",
-    "description": "The Bashkirs or Bashkorts are a Turkic ethnic group indigenous to Russia. They are concentrated in Bashkortostan, a republic of the Russian Federation and in the broader historical region of Badzhgard, which spans both sides of the Ural Mountains, where Eastern Europe meets North Asia."
+    "description": "The Bashkirs or Bashkorts are a Turkic ethnic group indigenous to Russia. They are concentrated in Bashkortostan, a republic of the Russian Federation and in the broader historical region of Badzhgard, which spans both sides of the Ural Mountains, where Eastern Europe meets North Asia.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Bashkortostan.svg"
   },
   "Q33543": {
     "id": "Q33543",
@@ -5873,7 +5921,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Cyprus",
-    "description": "Cyprus, officially the Republic of Cyprus, is an island country in the eastern Mediterranean Sea, located off the coast of the Levant mainland in West Asia. Its capital Nicosia, and largest city is Limassol The northeast portion of the island is occupied by Turkey, and the United Nations Buffer Zone separates it from the area controlled by the Republic of Cyprus. In the south of the island are the British sovereign military bases of Akrotiri and Dhekelia."
+    "description": "Cyprus, officially the Republic of Cyprus, is an island country in the eastern Mediterranean Sea, located off the coast of the Levant mainland in West Asia. Its capital Nicosia, and largest city is Limassol The northeast portion of the island is occupied by Turkey, and the United Nations Buffer Zone separates it from the area controlled by the Republic of Cyprus. In the south of the island are the British sovereign military bases of Akrotiri and Dhekelia.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Cyprus.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cyprus_%282006%29.svg"
   },
   "Q58843": {
     "id": "Q58843",
@@ -5882,7 +5932,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Tuareg_people",
-    "description": "The Tuareg people are a large Berber ethnic group, traditionally nomadic pastoralists, who principally inhabit the Sahara in a vast area stretching from far southwestern Libya to southern Algeria, Niger, Mali, Burkina Faso, and as far as northern Nigeria, with smaller communities in Ghana, Chad, and Sudan known as the Kinnin."
+    "description": "The Tuareg people are a large Berber ethnic group, traditionally nomadic pastoralists, who principally inhabit the Sahara in a vast area stretching from far southwestern Libya to southern Algeria, Niger, Mali, Burkina Faso, and as far as northern Nigeria, with smaller communities in Ghana, Chad, and Sudan known as the Kinnin.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Touareg_People_Flag.svg"
   },
   "Q62389": {
     "id": "Q62389",
@@ -5891,7 +5942,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Icelandic_Commonwealth",
-    "description": "The Icelandic Commonwealth, also known as the Icelandic Free State, was the political unit existing in Iceland between the establishment of the Althing in 930 and the pledge of fealty to the Norwegian king with the Old Covenant in 1262. With the probable exception of hermitic Irish monks known as Papar, Iceland was an uninhabited island until around 874."
+    "description": "The Icelandic Commonwealth, also known as the Icelandic Free State, was the political unit existing in Iceland between the establishment of the Althing in 930 and the pledge of fealty to the Norwegian king with the Old Covenant in 1262. With the probable exception of hermitic Irish monks known as Papar, Iceland was an uninhabited island until around 874.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_The_Icelandic_Commonwealth.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Icelandic_Commonwealth.svg"
   },
   "Q109073": {
     "id": "Q109073",
@@ -5918,7 +5971,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Shirvanshah",
-    "description": "The Shirvanshahs were the rulers of Shirvan from 861 to 1538. Their realm was referred to as the Kingdom of Shirvan in writings completed during or shortly after its existence. The first ruling line were the Yazidids, an originally Arab and later Persianized dynasty, who became known as the Kasranids. The second ruling line were the Darbandids, distant relatives of the Yazidids/Kasranids."
+    "description": "The Shirvanshahs were the rulers of Shirvan from 861 to 1538. Their realm was referred to as the Kingdom of Shirvan in writings completed during or shortly after its existence. The first ruling line were the Yazidids, an originally Arab and later Persianized dynasty, who became known as the Kasranids. The second ruling line were the Darbandids, distant relatives of the Yazidids/Kasranids.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Banner_of_Shirvan.svg"
   },
   "Q742313": {
     "id": "Q742313",
@@ -6115,7 +6169,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Artsakh",
-    "description": "The Kingdom of Artsakh was a medieval dependent Armenian kingdom on the territory of Syunik and Artsakh provinces, Gardman canton of Utik province, Mazaz and Varazhnunik canton of Ayrarat province. Contemporary sources referred to it as the Khachen."
+    "description": "The Kingdom of Artsakh was a medieval dependent Armenian kingdom on the territory of Syunik and Artsakh provinces, Gardman canton of Utik province, Mazaz and Varazhnunik canton of Ayrarat province. Contemporary sources referred to it as the Khachen.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Standard_of_the_Principality_of_Khachen_%281214-1261%29.svg"
   },
   "Q177076": {
     "id": "Q177076",
@@ -6133,7 +6188,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Muscat",
-    "description": "Muscat is the capital and most populous city of Oman. It is the seat of the Governorate of Muscat. According to the National Centre for Statistics and Information (NCSI), the population of the Muscat Governorate in 2022 was 1.72 million. The metropolitan area includes six provinces, called wilayat, and spans approximately 6,500 km2 (2,500 sq mi)."
+    "description": "Muscat is the capital and most populous city of Oman. It is the seat of the Governorate of Muscat. According to the National Centre for Statistics and Information (NCSI), the population of the Muscat Governorate in 2022 was 1.72 million. The metropolitan area includes six provinces, called wilayat, and spans approximately 6,500 km2 (2,500 sq mi).",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Muscat.svg"
   },
   "Q26962106": {
     "id": "Q26962106",
@@ -6196,7 +6252,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Duchy_of_Benevento",
-    "description": "The Duchy of Benevento was the southernmost Lombard duchy in the Italian Peninsula that was centered in Benevento, a city in Southern Italy. Lombard dukes ruled Benevento from 571 to 774, when the Kingdom of the Lombards was conquered by the Kingdom of the Franks. Being cut off from the rest of the Lombard possessions by the papal Duchy of Rome, Benevento always had held some degree of independence."
+    "description": "The Duchy of Benevento was the southernmost Lombard duchy in the Italian Peninsula that was centered in Benevento, a city in Southern Italy. Lombard dukes ruled Benevento from 571 to 774, when the Kingdom of the Lombards was conquered by the Kingdom of the Franks. Being cut off from the rest of the Lombard possessions by the papal Duchy of Rome, Benevento always had held some degree of independence.",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Lombard_Calvary_cross_potent_%28transparent%29.png"
   },
   "Q530670": {
     "id": "Q530670",
@@ -6205,7 +6262,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Burgundy",
-    "description": "Kingdom of Burgundy named after the Germanic tribe of Burgundians, was a name given to various successive kingdoms centered in the historical region of Burgundy during the Middle Ages. The heartland of historical Burgundy correlates with the border area between France and Switzerland, and includes the major modern cities of Geneva and Lyon."
+    "description": "Kingdom of Burgundy named after the Germanic tribe of Burgundians, was a name given to various successive kingdoms centered in the historical region of Burgundy during the Middle Ages. The heartland of historical Burgundy correlates with the border area between France and Switzerland, and includes the major modern cities of Geneva and Lyon.",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Blason_Bourgogne-comt%C3%A9_ancien%28aigle%29.svg"
   },
   "Q2342282": {
     "id": "Q2342282",
@@ -6214,7 +6272,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Imamate_of_Oman",
-    "description": "The Imamate of Oman, officially the Imamate State of Oman, was several succession of states within the Oman proper in the Hajar Mountains, part of the present-day Sultanate of Oman. The capital of the Imamate alternated historically between Rustaq and Nizwa. The Imamate's territory extended north to Ibri and south to the Alsharqiyah region and the Sharqiya Sands. The Imamate was bounded in the east by the Hajar Mountains and in the west by the Rub' al Khali desert."
+    "description": "The Imamate of Oman, officially the Imamate State of Oman, was several succession of states within the Oman proper in the Hajar Mountains, part of the present-day Sultanate of Oman. The capital of the Imamate alternated historically between Rustaq and Nizwa. The Imamate's territory extended north to Ibri and south to the Alsharqiyah region and the Sharqiya Sands. The Imamate was bounded in the east by the Hajar Mountains and in the west by the Rub' al Khali desert.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_The_Imamate_of_Oman.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Oman.svg"
   },
   "Q538677": {
     "id": "Q538677",
@@ -6223,7 +6283,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Angevin_Empire",
-    "description": "The Angevin Empire was the collection of territories held by the House of Plantagenet during the 12th and 13th centuries, when they ruled over an area covering roughly all of present-day England, half of France, and parts of Ireland and Wales, and claiming overlordship and some influence over the remaining parts of Wales, Scotland and Ireland. It may be described as an early example of a composite monarchy."
+    "description": "The Angevin Empire was the collection of territories held by the House of Plantagenet during the 12th and 13th centuries, when they ruled over an area covering roughly all of present-day England, half of France, and parts of Ireland and Wales, and claiming overlordship and some influence over the remaining parts of Wales, Scotland and Ireland. It may be described as an early example of a composite monarchy.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Banner_of_England.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/England_COA.svg"
   },
   "Q151536": {
     "id": "Q151536",
@@ -6259,7 +6321,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Galicia-Volhynia",
-    "description": "The Principality or, from 1253, Kingdom of Galicia–Volhynia, also known as the Kingdom of Ruthenia or Kingdom of Rus', was a medieval state in Eastern Europe which existed from 1199 to 1349. Its territory was predominantly located in modern-day Ukraine, with parts in Belarus, Poland, Romania, Moldova, and Lithuania. Along with Novgorod and Vladimir-Suzdal, it was one of the three most important powers to emerge from the collapse of Kievan Rus'."
+    "description": "The Principality or, from 1253, Kingdom of Galicia–Volhynia, also known as the Kingdom of Ruthenia or Kingdom of Rus', was a medieval state in Eastern Europe which existed from 1199 to 1349. Its territory was predominantly located in modern-day Ukraine, with parts in Belarus, Poland, Romania, Moldova, and Lithuania. Along with Novgorod and Vladimir-Suzdal, it was one of the three most important powers to emerge from the collapse of Kievan Rus'.",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuri_I_of_Galicia_arms.png"
   },
   "Q13403037": {
     "id": "Q13403037",
@@ -6277,7 +6340,8 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Grand_Principality_of_Moscow",
-    "description": "The Grand Principality of Moscow, before 1389 the Principality of Moscow, also known by the exonym Muscovy, was a late medieval Russian monarchy. Its capital was the city of Moscow. Originally established as an appanage principality in the 13th century, Moscow became the leading Russian principality and was transformed into a centralized Russian state in the late 15th century."
+    "description": "The Grand Principality of Moscow, before 1389 the Principality of Moscow, also known by the exonym Muscovy, was a late medieval Russian monarchy. Its capital was the city of Moscow. Originally established as an appanage principality in the 13th century, Moscow became the leading Russian principality and was transformed into a centralized Russian state in the late 15th century.",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_Ivan_3_%28reverse%29.svg"
   },
   "Q2980623": {
     "id": "Q2980623",
@@ -6286,7 +6350,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Kingdom_of_Bosnia",
-    "description": "The Kingdom of Bosnia, or Bosnian Kingdom, was a medieval kingdom that lasted for nearly a century, from 1377 to 1463, and evolved out of the Banate of Bosnia, which itself lasted from at least 1154."
+    "description": "The Kingdom of Bosnia, or Bosnian Kingdom, was a medieval kingdom that lasted for nearly a century, from 1377 to 1463, and evolved out of the Banate of Bosnia, which itself lasted from at least 1154.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Kraljevina_Bosna_steg.png",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kingdom_of_Bosnia.svg"
   },
   "Q10957559": {
     "id": "Q10957559",
@@ -6295,7 +6361,9 @@
     "territory_type": "context_only",
     "status": "validated",
     "wikipedia": "https://en.wikipedia.org/wiki/Moldavia",
-    "description": "Moldavia is a historical region and former principality in Eastern Europe, corresponding to the territory between the Eastern Carpathians and the Dniester River. An initially independent and later autonomous state under Ottoman overlordship, it existed from the 14th century to 1859, when it united with Wallachia as the basis of the modern Romanian state; at various times, Moldavia included the regions of Bessarabia, all of Bukovina and Hertsa."
+    "description": "Moldavia is a historical region and former principality in Eastern Europe, corresponding to the territory between the Eastern Carpathians and the Dniester River. An initially independent and later autonomous state under Ottoman overlordship, it existed from the 14th century to 1859, when it united with Wallachia as the basis of the modern Romanian state; at various times, Moldavia included the regions of Bessarabia, all of Bukovina and Hertsa.",
+    "flag": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Moldavia.svg",
+    "coatOfArms": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Moldavia.svg"
   },
   "Q171393": {
     "id": "Q171393",

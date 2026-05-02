@@ -1,0 +1,859 @@
+[
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 11,
+    "ruler_name": "Aderaz",
+    "ruler_start": 620,
+    "ruler_end": 623,
+    "wiki_link": null,
+    "candidates": [
+      {
+        "qid": "Q346660",
+        "label": "adaeratio",
+        "description": "",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q986008"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q45111467",
+        "label": "Aderazid for the treatment of neurogenic tinnitus and deafness",
+        "description": "scientific article published in December 1969",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q13442814"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 13,
+    "ruler_name": "Zeray I",
+    "ruler_start": 623,
+    "ruler_end": 633,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 14,
+    "ruler_name": "Germa Asfare II Germay",
+    "ruler_start": 633,
+    "ruler_end": 648,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 15,
+    "ruler_name": "Zeray II",
+    "ruler_start": 648,
+    "ruler_end": 656,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 16,
+    "ruler_name": "Zirgaz II",
+    "ruler_start": 656,
+    "ruler_end": 677,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 17,
+    "ruler_name": "Ekle",
+    "ruler_start": 677,
+    "ruler_end": 696,
+    "wiki_link": null,
+    "candidates": [
+      {
+        "qid": "Q26842442",
+        "label": "Eklem hastaliklari ve cerrahisi = Joint diseases & related surgery",
+        "description": "journal",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5633421"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q6496362",
+        "label": "Ekleptostylis",
+        "description": "genus of crustaceans",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q16521"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q113141523",
+        "label": "Eklektos 1 (Pauly-Wissowa)",
+        "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q13433827"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q108332836",
+        "label": "Eklektos 2 (Pauly-Wissowa)",
+        "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q13433827"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q37542470",
+        "label": "Ekle",
+        "description": "family name",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q101352"
+        ],
+        "score": -3,
+        "reasons": [
+          "fiction/disambig hint in desc"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 18,
+    "ruler_name": "Hizba Sion",
+    "ruler_start": 696,
+    "ruler_end": 720,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 19,
+    "ruler_name": "Asguamgum",
+    "ruler_start": 720,
+    "ruler_end": 725,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 20,
+    "ruler_name": "Letem",
+    "ruler_start": 725,
+    "ruler_end": 741,
+    "wiki_link": null,
+    "candidates": [
+      {
+        "qid": "Q16361577",
+        "label": "Letëm",
+        "description": "village in Elbasan County, Albania",
+        "sitelink_en": "Letëm",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q532"
+        ],
+        "score": 0.5,
+        "reasons": [
+          "has enwiki sitelink"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q3236886",
+        "label": "Lendamboi",
+        "description": "language",
+        "sitelink_en": "Lendamboi language",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q34770",
+          "Q1288568"
+        ],
+        "score": 0.5,
+        "reasons": [
+          "has enwiki sitelink"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q24444952",
+        "label": "Letmasa",
+        "description": "village in Southwest Maluku Regency, Maluku, Indonesia",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q26211545"
+        ],
+        "score": 0,
+        "reasons": [],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q79615672",
+        "label": "Letemendia",
+        "description": "family name",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q101352"
+        ],
+        "score": -3,
+        "reasons": [
+          "fiction/disambig hint in desc"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q83293735",
+        "label": "Letemple",
+        "description": "family name",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q101352"
+        ],
+        "score": -3,
+        "reasons": [
+          "fiction/disambig hint in desc"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 21,
+    "ruler_name": "Talatem",
+    "ruler_start": 741,
+    "ruler_end": 762,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 22,
+    "ruler_name": "Oda Gosh",
+    "ruler_start": 762,
+    "ruler_end": 775,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 25,
+    "ruler_name": "Udedem",
+    "ruler_start": 780,
+    "ruler_end": 790,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 29,
+    "ruler_name": "Dagajan",
+    "ruler_start": 845,
+    "ruler_end": 845,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q139377",
+    "territory_label": "Axum",
+    "ruler_index": 31,
+    "ruler_name": "Dagnajan",
+    "ruler_start": 885,
+    "ruler_end": 905,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q5406",
+    "territory_label": "Hittites",
+    "ruler_index": 0,
+    "ruler_name": "Ḫuzziya (I)",
+    "ruler_start": -1700,
+    "ruler_end": -1680,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q1311990",
+    "territory_label": "Serbia",
+    "ruler_index": 31,
+    "ruler_name": "Princess Desislava",
+    "ruler_start": 1186,
+    "ruler_end": 1189,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q1250763",
+    "territory_label": "Emirate of Sicily",
+    "ruler_index": 9,
+    "ruler_name": "Ja'far al-Kalbi II",
+    "ruler_start": 998,
+    "ruler_end": 1019,
+    "wiki_link": null,
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q49683",
+    "territory_label": "Lithuania",
+    "ruler_index": 2,
+    "ruler_name": "Shvarnas",
+    "ruler_start": 1267,
+    "ruler_end": 1269,
+    "wiki_link": "/wiki/Shvarnas",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q178084",
+    "territory_label": "Ilkhanate",
+    "ruler_index": 11,
+    "ruler_name": "Muhammad Khan",
+    "ruler_start": 1336,
+    "ruler_end": 1338,
+    "wiki_link": "/wiki/Muhammad_Khan_(Ilkhanate)",
+    "candidates": [
+      {
+        "qid": "Q101462260",
+        "label": "Muhammad Khan",
+        "description": "researcher ORCID 0000-0001-9618-7276",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q102799960",
+        "label": "Muhammad Khan",
+        "description": "Ph.D. University of Calgary 2017",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q109335565",
+        "label": "Muhammad Khan",
+        "description": "",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q104693172",
+        "label": "Muhammad Khan",
+        "description": "researcher ORCID 0000-0001-6883-1394",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q106252067",
+        "label": "Muhammad Khan",
+        "description": "Indonesian actor",
+        "sitelink_en": "Kaan Lativan",
+        "birth": 1991,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=655)"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q48189",
+    "territory_label": "Teutonic Knights",
+    "ruler_index": 9,
+    "ruler_name": "Conrad von Feuchtwangen",
+    "ruler_start": 1290,
+    "ruler_end": 1297,
+    "wiki_link": "/wiki/Conrad_von_Feuchtwangen",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q48189",
+    "territory_label": "Teutonic Knights",
+    "ruler_index": 26,
+    "ruler_name": "Conrad von Erlichshausen",
+    "ruler_start": 1441,
+    "ruler_end": 1449,
+    "wiki_link": "/wiki/Conrad_von_Erlichshausen",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q48189",
+    "territory_label": "Teutonic Knights",
+    "ruler_index": 31,
+    "ruler_name": "Friedrich of Saxony",
+    "ruler_start": 1498,
+    "ruler_end": 1510,
+    "wiki_link": "/wiki/Friedrich_of_Saxony_(Grand_Master)",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 1,
+    "ruler_name": "Uthman I",
+    "ruler_start": 1217,
+    "ruler_end": 1240,
+    "wiki_link": "/wiki/Uthman_I,_Marinid",
+    "candidates": [
+      {
+        "qid": "Q5686263",
+        "label": "Uthman ibn Ali",
+        "description": "Son of ʿAlī ibn Abī Ṭālib (died 680)",
+        "sitelink_en": "Uthman ibn Ali",
+        "birth": 647,
+        "death": 680,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)",
+          "enwiki title matches",
+          "year-far (Δ=537)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q7902730",
+        "label": "Uthman ibn Abi al-As",
+        "description": "Companion of the Islamic prophet Muhammad",
+        "sitelink_en": "Uthman ibn Abi al-As",
+        "birth": null,
+        "death": 671,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)",
+          "enwiki title matches",
+          "year-far (Δ=546)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q1607512",
+        "label": "Uthman ibn Maz'un",
+        "description": "Companion of Muhammad",
+        "sitelink_en": "Uthman ibn Maz'un",
+        "birth": null,
+        "death": 624,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)",
+          "enwiki title matches",
+          "year-far (Δ=593)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q111305172",
+        "label": "Uthman ibn Husayn al-Warraq",
+        "description": "Iranian calligrapher and illuminator working under the patronage of Ghaznavids",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q37731",
+        "label": "Uthman ibn Affan",
+        "description": "Caliph of the Rashidun Caliphate from 644 to 656",
+        "sitelink_en": "Uthman",
+        "birth": 574,
+        "death": 656,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=561)"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 8,
+    "ruler_name": "Abu Rabia Sulayman",
+    "ruler_start": 1308,
+    "ruler_end": 1310,
+    "wiki_link": "/wiki/Abu_Rabia_Sulayman",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 12,
+    "ruler_name": "Muhammad ibn Yaqub",
+    "ruler_start": 1358,
+    "ruler_end": 1359,
+    "wiki_link": "/wiki/Muhammad_ibn_Yaqub_(Marinid)",
+    "candidates": [
+      {
+        "qid": "Q715749",
+        "label": "Muhammad al-Nasir",
+        "description": "Caliph of the Almohads from 1199 to 1213",
+        "sitelink_en": "Muhammad al-Nasir",
+        "birth": 1181,
+        "death": 1213,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q4115262",
+        "label": "Firuzabadi",
+        "description": "lexicographer",
+        "sitelink_en": "Firuzabadi",
+        "birth": 1329,
+        "death": 1415,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q60541482",
+        "label": "Muhammad ibn Yaʿqub al-Janadi",
+        "description": "",
+        "sitelink_en": "",
+        "birth": null,
+        "death": 1332,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q131748573",
+        "label": "Muḥammad ibn Yaʻqūb Qinawī",
+        "description": "scribe of Princeton, University Library, Islamic Manuscripts Garrett no. 720H",
+        "sitelink_en": "",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q2973730",
+        "label": "Muhammad ibn Ya'qub al-Kulayni",
+        "description": "Persian Shia hadith collector (864–941 CE)",
+        "sitelink_en": "Muhammad ibn Ya'qub al-Kulayni",
+        "birth": 864,
+        "death": 941,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=417)"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 13,
+    "ruler_name": "Abu Salim Ibrahim II",
+    "ruler_start": 1359,
+    "ruler_end": 1361,
+    "wiki_link": "/wiki/Abu_Salim_Ibrahim_II",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 14,
+    "ruler_name": "Abu Umar Tashufin",
+    "ruler_start": 1361,
+    "ruler_end": 1361,
+    "wiki_link": "/wiki/Abu_Umar_Tashufin",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 15,
+    "ruler_name": "Abd al-Halim",
+    "ruler_start": 1361,
+    "ruler_end": 1362,
+    "wiki_link": "/wiki/Abd_al-Halim_(Marinid)",
+    "candidates": [
+      {
+        "qid": "Q16526088",
+        "label": "Abdal Halim Hasan",
+        "description": "Egyptian footballer",
+        "sitelink_en": "Abdel Halim Hassan",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q307231",
+        "label": "Abd Al-Halim Abu-Ghazala",
+        "description": "Prime Minister of Egypt (1930-2008)",
+        "sitelink_en": "Abd Al-Halim Abu-Ghazala",
+        "birth": 1930,
+        "death": 2008,
+        "p31": [
+          "Q5"
+        ],
+        "score": 1,
+        "reasons": [
+          "P31:Q5 (human)",
+          "enwiki title matches",
+          "year-far (Δ=647)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q6812692",
+        "label": "Abd-al-Halim Nuwayra",
+        "description": "Egyptian musician",
+        "sitelink_en": "Abdel-Halim Nowera",
+        "birth": 1916,
+        "death": 1985,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=624)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q307237",
+        "label": "Abd al-Halim Khaddam",
+        "description": "Syrian politician (1932–2020)",
+        "sitelink_en": "Abdul Halim Khaddam",
+        "birth": 1932,
+        "death": 2020,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=659)"
+        ],
+        "confidence": "low"
+      },
+      {
+        "qid": "Q4665382",
+        "label": "Abdul Halim",
+        "description": "male given name",
+        "sitelink_en": "Abd al-Halim",
+        "birth": null,
+        "death": null,
+        "p31": [
+          "Q12308941"
+        ],
+        "score": -1,
+        "reasons": [
+          "enwiki title matches",
+          "fiction/disambig hint in desc"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 17,
+    "ruler_name": "Abu al-Faras Abd al-Aziz II",
+    "ruler_start": 1366,
+    "ruler_end": 1372,
+    "wiki_link": "/wiki/Abu_al-Faras_Abd_al-Aziz_II",
+    "candidates": []
+  },
+  {
+    "territory_qid": "Q582861",
+    "territory_label": "Merinides",
+    "ruler_index": 21,
+    "ruler_name": "Abd al-Aziz III",
+    "ruler_start": 1393,
+    "ruler_end": 1398,
+    "wiki_link": "/wiki/Abd_al-Aziz_III_(Marinid)",
+    "candidates": [
+      {
+        "qid": "Q151509",
+        "label": "Ibn Saud",
+        "description": "founder and first king of Saudi Arabia (r. 1932–1953)",
+        "sitelink_en": "Ibn Saud",
+        "birth": 1876,
+        "death": 1953,
+        "p31": [
+          "Q5"
+        ],
+        "score": -0.5,
+        "reasons": [
+          "P31:Q5 (human)",
+          "has enwiki sitelink",
+          "year-far (Δ=560)"
+        ],
+        "confidence": "low"
+      }
+    ]
+  },
+  {
+    "territory_qid": "Q20737645",
+    "territory_label": "Timurid Emirates",
+    "ruler_index": 5,
+    "ruler_name": "Abu Said Mirza",
+    "ruler_start": 1451,
+    "ruler_end": 1469,
+    "wiki_link": "/wiki/Abu_Said_Mirza",
+    "candidates": []
+  }
+]
