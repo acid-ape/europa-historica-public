@@ -68,7 +68,7 @@
 .lang-btn-sm:hover,.lang-btn-sm.active{background:rgba(212,168,67,0.15);border-color:var(--gold);color:var(--gold2);}
 .lang-sep{font-size:9px;color:#3a2e18;user-select:none;}
 </style>
-  <link rel="stylesheet" href="css/style.css?v=R20">
+  <link rel="stylesheet" href="css/style.css?v=R21">
 </head>
 <body>
 <div id="loading">
@@ -205,7 +205,7 @@
 
   <!-- Modus-Buttons -->
   <div class="tt-mode-btns">
-    <div class="tt-mode-btn" id="tt-btn-resize" onclick="toggleTooltipMode('resize')" title="Größe ändern">⤢</div>
+    <div class="tt-mode-btn" id="tt-btn-resize" onclick="toggleTooltipMode('resize')" data-i18n-title="tt_resize_mode" title="Resize">⤢</div>
   </div>
   <div class="tt-resize" id="tt-resize-handle"></div>
 
@@ -437,7 +437,7 @@
 </div>
 
 <!-- i18n: must load first (provides t() used by every other module) -->
-<script src="js/i18n.js?v=R14"></script>
+<script src="js/i18n.js?v=R15"></script>
 <!-- config: split from a 2027-line monolith into 5 focused modules.
      Order: leaf modules (epochs, cities) → territories → context → loader.
      All declarations live on the global scope (classic <script>). -->
@@ -453,13 +453,13 @@
 <script src="js/tooltip.js?v=R8"></script>
 <script src="js/timeline.js?v=R15"></script>
 <script src="js/cities.js?v=R6"></script>
-<script src="js/events.js?v=R5"></script>
+<script src="js/events.js?v=R6"></script>
 <script src="js/app.js?v=R14"></script>
 <script src="js/intro.js?v=R8"></script>
 <script src="js/terr_overview.js?v=R4"></script>
 <script src="js/search.js?v=R4"></script>
 <script src="js/tour.js?v=R13"></script>
-<script src="js/trails.js?v=R4"></script>
+<script src="js/trails.js?v=R5"></script>
 <script>
   // Apply saved language on page load (before first render)
   window.addEventListener('load', () => applyI18n());

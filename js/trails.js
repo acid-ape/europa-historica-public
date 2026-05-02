@@ -315,9 +315,40 @@ function _renderTrailPanel(step, idx, total) {
   img.style.display = 'none'; img.src = '';
 
   panel.style.display = 'flex';
+  _positionTrailPanel(panel);
 
   if (step.image) {
     img.src = step.image;
     img.style.display = 'block';
   }
 }
+
+// C4.2: Smart-Position. The map pans the step into viewport-center, so
+// a bottom-left panel covers the focus on narrow / medium viewports.
+// Switch to top-right (below the toolbar) when there isn't enough room
+// to the right of a bottom-left panel for the step to remain visible.
+function _positionTrailPanel(panel) {
+  if (typeof isMobile === 'function' && isMobile()) {
+    // Mobile keeps its bottom-sheet style positioning via CSS — no inline override.
+    panel.classList.remove('trail-panel-pos-tr');
+    panel.style.left = panel.style.right = panel.style.top = panel.style.bottom = '';
+    return;
+  }
+  const W_THRESHOLD = 1280;
+  const w = window.innerWidth;
+  if (w < W_THRESHOLD) {
+    // Narrow / medium viewport: park top-right under the toolbar
+    panel.classList.add('trail-panel-pos-tr');
+  } else {
+    // Wide viewport: bottom-left has enough space
+    panel.classList.remove('trail-panel-pos-tr');
+  }
+}
+
+// Reposition on viewport resize while a trail is active.
+window.addEventListener('resize', () => {
+  const panel = document.getElementById('trail-panel');
+  if (panel && panel.style.display !== 'none' && panel.style.display !== '') {
+    _positionTrailPanel(panel);
+  }
+});

@@ -114,6 +114,8 @@ const I18N = {
     ctrl_close_all: 'Close all panels (ESC)',
     // First-time snap-to-top hint (shown once per browser via localStorage)
     snap_hint: 'Tip: ⊟ docks the panel to the top edge.',
+    ev_cluster_label: 'events at this location',
+    tt_resize_mode: 'Resize',
     // Layer-Toggle states (tri-state cycle)
     state_off:    'off',
     state_window: 'recent',     // events: ±150yr; pleiades: curated tier
@@ -247,6 +249,8 @@ const I18N = {
     ctrl_logo_menu_title: 'Menü',
     ctrl_close_all: 'Alle Panels schließen (ESC)',
     snap_hint: 'Tipp: ⊟ dockt das Panel oben an.',
+    ev_cluster_label: 'Ereignisse an dieser Stelle',
+    tt_resize_mode: 'Größe ändern',
     // Tutorial step controls
     tour_step_of:    'Schritt {n} von {total}',
     tour_end:        'Tutorial beenden',

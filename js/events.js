@@ -97,12 +97,30 @@ function renderEvents(year) {
     if (d) _occupied.push({x: d.cx, y: d.cy});
   });
 
-  visible.forEach(ev => {
+  // C4.3: Project all visible events first, then group near-coincident
+  // ones into clusters (e.g. multiple events in Rome). Render a single
+  // marker with a +N badge per cluster.
+  const _clusterRadius = 14 / k;
+  const _projected = visible.map(ev => {
     const pt = proj([ev.lon, ev.lat]);
-    if (!pt || isNaN(pt[0]) || isNaN(pt[1])) return;
-    let [cx, cy] = pt;
+    if (!pt || isNaN(pt[0]) || isNaN(pt[1])) return null;
+    return { ev, x: pt[0], y: pt[1] };
+  }).filter(p => p);
 
-    // Radial offset if overlapping an existing marker
+  const _clusters = [];
+  _projected.forEach(p => {
+    const c = _clusters.find(c => {
+      const dx = c.x - p.x, dy = c.y - p.y;
+      return dx*dx + dy*dy < _clusterRadius*_clusterRadius;
+    });
+    if (c) { c.events.push(p.ev); }
+    else   { _clusters.push({ x: p.x, y: p.y, events: [p.ev] }); }
+  });
+
+  _clusters.forEach(cl => {
+    let cx = cl.x, cy = cl.y;
+
+    // Radial offset if overlapping an existing city/pleiades marker
     if (_occupied.some(m => { const dx=m.x-cx, dy=m.y-cy; return dx*dx+dy*dy < _oThresh*_oThresh; })) {
       const _angles = [0, Math.PI/4, Math.PI/2, 3*Math.PI/4, Math.PI, 5*Math.PI/4, 3*Math.PI/2, 7*Math.PI/4];
       for (const a of _angles) {
@@ -114,37 +132,52 @@ function renderEvents(year) {
     }
     _occupied.push({x: cx, y: cy});
 
+    const isCluster = cl.events.length > 1;
+    const ev0       = cl.events[0];
     const g = gE.append('g')
-      .attr('class', 'event-marker')
+      .attr('class', isCluster ? 'event-marker event-cluster' : 'event-marker')
       .datum({ cx, cy })
       .attr('transform', `translate(${cx},${cy}) scale(${1/k})`)
-      .style('cursor', 'pointer')
-      .on('mouseenter', e => { if (!tooltipPinned) showEventTT(e, ev); })
-      .on('mousemove',  e => { if (!tooltipPinned) moveTooltip(e); })
-      .on('mouseleave', () => { if (!tooltipPinned) hideTooltip(); })
-      .on('click', e => {
-        e.stopPropagation();
-        selectEvent(e, ev);
-      });
+      .style('cursor', 'pointer');
+
+    if (isCluster) {
+      g.on('mouseenter', e => { if (!tooltipPinned) showEventClusterTT(e, cl.events); })
+       .on('mousemove',  e => { if (!tooltipPinned) moveTooltip(e); })
+       .on('mouseleave', () => { if (!tooltipPinned) hideTooltip(); })
+       .on('click',     e => { e.stopPropagation(); selectEventCluster(e, cl.events); });
+    } else {
+      g.on('mouseenter', e => { if (!tooltipPinned) showEventTT(e, ev0); })
+       .on('mousemove',  e => { if (!tooltipPinned) moveTooltip(e); })
+       .on('mouseleave', () => { if (!tooltipPinned) hideTooltip(); })
+       .on('click',     e => { e.stopPropagation(); selectEvent(e, ev0); });
+    }
 
     // Hit-area ring (transparent, large target)
     g.append('circle').attr('r', 12).attr('fill', 'transparent');
 
-    // Outer halo
+    // Outer halo (slightly larger for clusters)
     g.append('circle')
-      .attr('r', 7.5)
+      .attr('r', isCluster ? 9 : 7.5)
       .attr('fill', 'rgba(220,88,40,0.1)')
       .attr('stroke', 'rgba(220,88,40,0.4)')
-      .attr('stroke-width', 0.9);
+      .attr('stroke-width', isCluster ? 1.2 : 0.9);
 
     // Inner star
     g.append('path')
-      .attr('d', _evStarPath(4.8))
+      .attr('d', _evStarPath(isCluster ? 5.6 : 4.8))
       .attr('fill', '#e05828')
       .attr('fill-opacity', 0.92)
       .attr('stroke', 'rgba(255,160,80,0.45)')
       .attr('stroke-width', 0.5)
       .style('filter', 'url(#city-glow)');
+
+    // Cluster count badge
+    if (isCluster) {
+      g.append('text')
+        .attr('x', 7).attr('y', -7)
+        .attr('class', 'event-cluster-count')
+        .text(cl.events.length);
+    }
   });
 }
 
@@ -355,4 +388,110 @@ function selectEvent(event, ev) {
   if (eventsMode === 0) toggleEvents();
   _currentEventYear = ev.year;
   createEventPanel(event, ev);
+}
+
+// C4.3: Hover tooltip for a cluster (multiple events at same spot).
+// Shows the count + an inline list of titles.
+function showEventClusterTT(event, evs) {
+  const typeIconEl = document.getElementById('tt-type-icon');
+  if (typeIconEl) typeIconEl.textContent = '✦';
+  document.getElementById('tt-name').textContent =
+    evs.length + ' ' + t('ev_cluster_label');
+  document.getElementById('tt-sub').textContent = '';
+  const flagEl = document.getElementById('tt-flag');
+  if (flagEl) flagEl.style.display = 'none';
+  const evImgEl = document.getElementById('tt-event-img');
+  if (evImgEl) { evImgEl.style.display = 'none'; evImgEl.src = ''; }
+  const capRow = document.getElementById('tt-capital-row');
+  if (capRow) capRow.style.display = 'none';
+  const aiNoteEl = document.getElementById('tt-ai-note');
+  if (aiNoteEl) aiNoteEl.style.display = 'none';
+  const descEl = document.getElementById('tt-desc');
+  if (descEl) { descEl.style.display = 'none'; descEl.textContent = ''; }
+  const precRow = document.getElementById('tt-prec-row');
+  if (precRow) precRow.style.display = 'none';
+
+  const ctxEl = document.getElementById('tt-context');
+  // Up to 6 titles; +N if more
+  const sorted = [...evs].sort((a, b) => a.year - b.year);
+  const top = sorted.slice(0, 6);
+  let html = top.map(e =>
+    `<li style="padding-left:0">${_fmtEvYear(e.year)} · ${e.title}</li>`
+  ).join('');
+  if (sorted.length > 6) {
+    html += `<li style="padding-left:0;color:#5a4a2a;font-style:italic">+${sorted.length - 6}…</li>`;
+  }
+  ctxEl.innerHTML = html;
+  const ctxSection = document.getElementById('tt-context-section');
+  if (ctxSection) ctxSection.style.display = 'block';
+
+  const rulerSec = document.getElementById('tt-ruler-area');
+  if (rulerSec) rulerSec.innerHTML = '';
+  const rulerLab = document.getElementById('tt-ruler-label');
+  if (rulerLab) rulerLab.style.display = 'none';
+  const rulerDiv = document.getElementById('tt-ruler-div');
+  if (rulerDiv) rulerDiv.style.display = 'none';
+
+  // Hide wiki/links/goto in hover tooltip
+  const links = document.getElementById('tt-links');
+  if (links) links.style.display = 'none';
+
+  moveTooltip(event);
+  _showTooltipEl();
+}
+
+// C4.3: Click on a cluster opens a side-panel listing all its events;
+// each list item is its own click-target opening the regular event panel.
+function selectEventCluster(event, evs) {
+  if (eventsMode === 0) toggleEvents();
+  if (typeof isMobile === 'function' && isMobile() &&
+      typeof _mSheetOpenEventCluster === 'function') {
+    _mSheetOpenEventCluster(evs);
+    return;
+  }
+  _createEventClusterPanel(event, evs);
+}
+
+function _createEventClusterPanel(event, evs) {
+  // Reuse the multi-panel pattern from territories
+  const id = 'evcl-' + Date.now();
+  const panel = document.createElement('div');
+  panel.className = 'terr-panel event-cluster-panel';
+  panel.id = id;
+  panel.style.left = (event.clientX + 20) + 'px';
+  panel.style.top  = Math.min(event.clientY - 20, window.innerHeight - 360) + 'px';
+
+  const sorted = [...evs].sort((a, b) => a.year - b.year);
+  const items = sorted.map((ev, i) => `
+    <li class="evcl-item" data-i="${i}">
+      <span class="evcl-year">${_fmtEvYear(ev.year)}</span>
+      <span class="evcl-title">${ev.title}</span>
+    </li>`).join('');
+
+  panel.innerHTML = `
+    <div class="tp-handle">
+      <span class="tp-title-group">
+        <span class="tp-type-icon">✦</span>
+        <span class="tp-name">${evs.length} ${t('ev_cluster_label')}</span>
+      </span>
+      <span class="tp-btn" title="Close" onclick="document.getElementById('${id}').remove()">✕</span>
+    </div>
+    <div class="evcl-body">
+      <ul class="evcl-list">${items}</ul>
+    </div>`;
+
+  document.body.appendChild(panel);
+  panel.classList.add('active-panel');
+  // Wire up click handlers for each list item
+  panel.querySelectorAll('.evcl-item').forEach(li => {
+    li.addEventListener('click', e => {
+      const i = +li.dataset.i;
+      const ev = sorted[i];
+      // Synthesize a click event near the original cluster click
+      selectEvent(event, ev);
+    });
+  });
+  if (typeof makeDraggable === 'function') {
+    makeDraggable(panel, panel.querySelector('.tp-handle'));
+  }
 }
