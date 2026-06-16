@@ -1,0 +1,78 @@
+[
+    {
+        "title": "Das historische Europa",
+        "text": "Diese interaktive Karte zeigt, wie die Welt zu verschiedenen Zeitpunkten der Geschichte aussah – von 8000 v. Chr. bis 2010 n. Chr. Klick auf ein Gebiet, um mehr über seine Herrscher und seine Geschichte zu erfahren."
+    },
+    {
+        "target": "#tl-wrap",
+        "pos": "above",
+        "title": "Die Zeitleiste",
+        "text": "Zieh den Schieberegler oder klick an einer beliebigen Stelle auf der Zeitleiste, um durch die Geschichte zu navigieren. Das Jahr ändert sich in Echtzeit, während du dich bewegst."
+    },
+    {
+        "target": "#era-select-row",
+        "pos": "above",
+        "title": "Zeiträume",
+        "text": "Spring schnell zu einer bestimmten Epoche – Urgeschichte, Antike, Mittelalter und mehr. Tippe erneut, um die Auswahl aufzuheben und zur vollständigen Zeitleiste zurückzukehren."
+    },
+    {
+        "target": ".btn-group-left",
+        "target_mobile": "#m-year",
+        "pos": "above",
+        "pos_mobile": "above",
+        "title": "Navigation",
+        "text": "Spring über das Eingabefeld direkt zu einem beliebigen Jahr oder blätter mit den ±-Schaltflächen vor und zurück durch die Zeit.",
+        "text_mobile": "Tippe auf die Jahresanzeige, um direkt eine Jahreszahl einzugeben – Enter springt sofort dorthin. Für grobe Sprünge nimmst du oben die Zeitleiste, für präzise das Jahr-Eingabefeld."
+    },
+    {
+        "target": "#top-right-bar",
+        "target_mobile": "#logo-menu-btn",
+        "pos": "below",
+        "pos_mobile": "below",
+        "title": "Werkzeuge & Einstellungen",
+        "text": "Oben rechts findest du alles, was nicht mit der Zeit zu tun hat:\n◉  Startet das Tutorial erneut\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf und macht sie durchsuchbar\n⌕  Sucht nach Herrschern, Orten und Ereignissen\nEN/DE  Sprachwechsel\n⌂  Setzt die Karten-Ansicht zurück",
+        "text_mobile": "Tippe oben links auf das Logo, um das Menü zu öffnen:\n⌕  Suche nach Herrschern, Orten und Ereignissen\n◉  Startet das Tutorial erneut\n(i)  Öffnet das Infofenster erneut\n☰  Listet alle Gebiete auf\nEN/DE  Sprachwechsel\n\nOben rechts bleiben ▤ Legende und ⌂ Karten-Reset."
+    },
+    {
+        "target": "#play-btns",
+        "pos": "above",
+        "title": "Wiedergabe",
+        "text": "Mit ▶ läuft die Geschichte vorwärts, mit ◀ und ◀◀ geht es zurück. Die Geschwindigkeit stellst du über die Geschwindigkeits-Schaltflächen ein – von ½× bis 3×."
+    },
+    {
+        "target": "#pleiades-btn",
+        "pos": "above",
+        "title": "Antike Siedlungen",
+        "text": "Einmal klicken: zeigt antike Siedlungen rund um das aktuelle Jahr. Noch einmal klicken: zeigt alle Siedlungen bis zu diesem Zeitpunkt."
+    },
+    {
+        "target": "#events-btn",
+        "pos": "above",
+        "title": "Historische Ereignisse",
+        "text": "Einmal klicken: zeigt Ereignisse innerhalb eines 150-Jahre-Fensters. Noch einmal klicken: zeigt alle Ereignisse bis zum aktuellen Jahr. Klick auf eine ✦-Markierung auf der Karte für Details."
+    },
+    {
+        "target": "#trails-btn",
+        "pos": "above",
+        "title": "Geschichtspfade",
+        "text": "Begib dich mit einem geführten Pfad auf eine Reise durch die Geschichte. Jeder Pfad führt dich chronologisch durch wichtige Epochen – mit Hintergrundinfos, Bildern und Verknüpfungen, die die Zusammenhänge zwischen den Ereignissen sichtbar machen."
+    },
+    {
+        "target": "#legend",
+        "target_mobile": "#legend-btn",
+        "pos": "right",
+        "pos_mobile": "below",
+        "title": "Legende",
+        "text": "Jedes Gebiet ist nach seiner kulturellen Gruppe farblich gekennzeichnet – germanisch, römisch, osmanisch und weitere. Hier siehst du, welche Gruppen in der aktuellen Epoche aktiv sind und was die verschiedenen Grenzstile bedeuten. Klick auf einen Eintrag zeigt eine kurze Erklärung."
+    },
+    {
+        "title": "Das war's!",
+        "text": "Probier eine dieser drei Sachen:",
+        "finish": true,
+        "actions": [
+            { "label": "▣  Spring nach Rom auf dem Höhepunkt (117 n. Chr.)", "action": "jumpToYear",    "args": [117] },
+            { "label": "✦  Einen Pfad öffnen",                              "action": "openTrailMenu" },
+            { "label": "△  Antike Siedlungen zeigen",                       "action": "showAncientSettlements" }
+        ]
+    }
+]

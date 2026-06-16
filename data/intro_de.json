@@ -1,0 +1,75 @@
+{
+    "body": [
+        "Im Laufe der Jahrtausende haben sich Grenzen verschoben, Reiche sind entstanden und vergangen, Namen tauchten auf der Karte auf und verschwanden wieder. Europa Historica lädt dich ein, diese Veränderungen zu erkunden – Territorien zu verfolgen, Herrschern nachzugehen und zuzusehen, wie sich Geschichte über Raum und Zeit entfaltet.",
+        "Das Projekt entsteht Schritt für Schritt durch einen einzelnen Entwickler, mit Unterstützung durch künstliche Intelligenz – und es steht auf den Schultern offenen Wissens. Vieles von dem, was du hier siehst, wird erst möglich durch die Arbeit von:"
+    ],
+    "credits": [
+        {
+            "text": "Historical Basemaps",
+            "url": "https://github.com/aourednik/historical-basemaps"
+        },
+        {
+            "text": "Wikipedia",
+            "url": "https://www.wikipedia.org/"
+        },
+        {
+            "text": "Wikidata",
+            "url": "https://www.wikidata.org/"
+        },
+        {
+            "text": "Pleiades – Verzeichnis antiker Orte",
+            "url": "https://pleiades.stoa.org/"
+        }
+    ],
+    "body2": [
+        "Ohne offenes Wissen und die Menschen, die es zugänglich machen, gäbe es dieses Projekt nicht.",
+        "Wenn du gerne stöberst, etwas entdeckst oder eine Idee hast, wie sich die Karte verbessern lässt – melde dich auf <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>. Über Feedback freue ich mich immer.",
+        "Danke fürs Vorbeischauen – und bleib neugierig. Es gibt immer etwas Neues zu entdecken."
+    ],
+    "about": {
+        "title": "Über dieses Projekt",
+        "paragraphs": [
+            "Europa Historica verbindet historische Kartendaten mit strukturiertem Wissen, um politische Veränderungen über die Zeit hinweg sichtbar zu machen.",
+            "Die territorialen Umrisse stammen aus den Datensätzen von Historical Basemaps. Sie werden mit Informationen aus Wikipedia und Wikidata kombiniert, um Orte, Staaten und Herrscher epochenübergreifend miteinander zu verknüpfen. Die antiken Siedlungen kommen aus dem Pleiades-Gazetteer.",
+            "Daraus folgt:"
+        ],
+        "list": [
+            "Grenzen sind Annäherungen, basierend auf den verfügbaren historischen Quellen.",
+            "Namen und Kontexte können sich je nach Zeitraum und Interpretation ändern.",
+            "Das Projekt entwickelt sich laufend weiter, je mehr Daten ergänzt und überprüft werden."
+        ],
+        "paragraphs2": [
+            "Die Karte umfasst aktuell über 295 Territorien von 8000 v. Chr. bis 1500 n. Chr. – mit Herrschern, Flaggen und historischem Kontext für viele davon. Es gibt ein interaktives Tutorial, thematische Pfade, eine Ebene für historische Ereignisse, antike Siedlungen und eine globale Suche. Auf dem Smartphone funktioniert das Ganze ebenfalls. Die Oberfläche und alle Inhalte sind auf Deutsch und Englisch verfügbar – umschalten kannst du jederzeit über das Sprach-Kürzel rechts unten.",
+            "Alle Inhalte werden lokal ausgeliefert: Beschreibungen, Bilder und Ereignisdaten sind Teil der Anwendung. Die Karte funktioniert damit auch ohne ständige Verbindung zu Wikipedia oder Wikidata.",
+            "Europa Historica wird Schritt für Schritt als unabhängiges Projekt entwickelt – mit der Idee, Geschichte interaktiv erfahrbar zu machen statt sie nur zu lesen.",
+            "Der Anstoß war ein einfacher Gedanke: Geschichte, die wir lesen, lässt sich selten so leicht einordnen wie Geschichte, die wir sehen. Allzu oft wird sie isoliert betrachtet – losgelöst von der Welt und der Zeit, in der sie sich abspielte.",
+            "Wenn du Fehler entdeckst oder eine Idee hast, melde dich gerne auf <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>."
+        ]
+    },
+    "updates": {
+        "title": "Updates",
+        "date": "April 2026",
+        "intro": "Europa Historica wird aktiv weiterentwickelt. Die Karte umfasst derzeit <strong>8000 v. Chr. bis 2010 n. Chr.</strong> mit über <strong>295 Territorien</strong> und <strong>mehr als 3.000 Herrschern</strong>. Alle Epochen von der Vorgeschichte bis 1500 n. Chr. sind nun vollständig mit Territorien, Beschreibungen und – soweit verfügbar – Herrscherlisten erfasst.",
+        "recently_label": "Zuletzt hinzugefügt:",
+        "recently": [
+            "<strong>Neuer Pfad: Von Mekka nach Wien</strong> – 622 bis 1683, von der Hidschra bis zum Entsatz Wiens, in zehn Schritten quer durch die lange Begegnung von Islam und Europa.",
+            "<strong>Neuer Pfad: Der Weg nach Deutschland</strong> – 1806 bis 1990, vom Ende des Heiligen Römischen Reiches bis zur Wiedervereinigung, in neun Schritten.",
+            "<strong>Stadt-Tooltips mit Wikipedia-Einleitungen</strong> – Pleiades-Siedlungen zeigen jetzt längere Beschreibungen in DE und EN, mit Hinweis wenn der Artikel den heutigen Ort am gleichen Standort beschreibt.",
+            "<strong>Deutsche Sprachversion</strong> – die Oberfläche und alle Inhalte (Tooltipps, Tutorial, Pfade, Ereignisse, Suche) sind jetzt vollständig auf Deutsch verfügbar. Sprachumschalter rechts unten.",
+            "<strong>Komplett offline-fähig</strong> – alle Beschreibungen, Herrscherbilder und Ereignis-Inhalte werden lokal ausgeliefert. Keine Live-Anfragen an Wikipedia mehr zur Laufzeit.",
+            "1100–1500 n. Chr. komplett – Mamluken-Sultanat, Ilchanat, Deutscher Orden, Litauen, Timuridenreich, Mariniden-Dynastie, Sultanat von Rum und weitere",
+            "Almohaden-Kalifat, Almoraviden-Dynastie, Choresm-Schah, Hafsiden-Kalifat, Kaiserreich Trapezunt – vollständige Herrscherlisten",
+            "Zeitraum 500–1000 n. Chr.: rund 40 neue Territorien (Balten, Rus-Khaganat, isländischer Freistaat und weitere)",
+            "Ebene „Historische Ereignisse\" – 39 Schlüsselereignisse aus allen Epochen, mit Beschreibungen und Links",
+            "Zwei thematische Pfade – das Byzantinische Reich und die Geschichte der Schrift",
+            "Territorien mit mehreren Kontexten: Dänemark, Norwegen, Schweden, Serbien, Kroatien, Georgien, Frankreich, Deutschland, Österreich, Preußen, Persien"
+        ],
+        "coming_label": "Als Nächstes:",
+        "coming": [
+            "Weitere Herrscherporträts und Flaggen",
+            "Großfürstentum Moskau → Zarenreich → Kaiserreich – als Multi-Kontext-Territorium",
+            "Schlachten als eigener Ereignistyp"
+        ],
+        "feedback": "Feedback und Korrekturen sind jederzeit willkommen – auf <a href=\"https://www.instagram.com/europa_historica/\" target=\"_blank\">Instagram</a>."
+    }
+}

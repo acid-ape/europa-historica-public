@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Europa Historica — Interactive Historical Map of Europe</title>
+<meta name="description" content="Interactive historical map of Europe from 8000 BC to modern times — 296 territories, rulers, events, ancient cities and guided history trails. Free and open.">
+<link rel="canonical" href="https://europa-historica.com/">
+<link rel="icon" href="data/images/EH-Symbol.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://europa-historica.com/">
+<meta property="og:title" content="Europa Historica — Interactive Historical Map of Europe">
+<meta property="og:description" content="Explore 10,000 years of European history: 296 territories, rulers, events, ancient cities and guided history trails on one interactive map.">
+<meta property="og:image" content="https://europa-historica.com/data/images/EH-Name.png">
+<meta name="twitter:card" content="summary_large_image">
+<script src="js/vendor/d3.min.js"></script>
+<link rel="stylesheet" href="css/fonts/fonts.css?v=R1">
+<!-- Alle Styles leben in css/style.css — der frühere Inline-Block war eine
+     Altlast mit teils widersprüchlichen Werten und wurde 2026-06 entfernt. -->
+  <link rel="stylesheet" href="css/style.css?v=R27">
+</head>
+<body>
+<noscript>
+  <div style="max-width:600px;margin:60px auto;padding:0 24px;font-family:serif;color:#c8b98a;background:#070c12;">
+    <h1>Europa Historica</h1>
+    <p>An interactive historical map of Europe from 8000 BC to modern times — 296 territories,
+    their rulers, key events, ancient cities and guided history trails. This application requires
+    JavaScript.</p>
+    <p>Eine interaktive historische Karte Europas von 8000 v. Chr. bis in die Moderne — 296
+    Territorien, ihre Herrscher, Schlüsselereignisse, antike Städte und geführte Geschichtspfade.
+    Diese Anwendung benötigt JavaScript.</p>
+    <p><a href="impressum.html" style="color:#6a9aba">Impressum</a> ·
+    <a href="datenschutz.html" style="color:#6a9aba">Datenschutz</a></p>
+  </div>
+</noscript>
+<div id="loading">
+  <h2>EUROPA HISTORICA</h2>
+  <div id="lb-wrap"><div id="lb"></div></div>
+  <p id="loading-msg" data-i18n="loading_init">Initializing…</p>
+</div>
+
+
+
+<!-- Top-left logo button (mobile only): opens a dropdown with the
+     less-frequently-used actions (tutorial / info / list / language).
+     Frees space in the top-right toolbar for the everyday tools. -->
+<button id="logo-menu-btn" class="mobile-only" onclick="toggleLogoMenu()"
+        data-i18n-title="ctrl_logo_menu_title" title="Menu">
+  <img src="data/images/EH-Symbol.png" alt="EH">
+</button>
+
+<!-- Logo-burger dropdown (mobile only). -->
+<div id="logo-menu" class="mobile-only">
+  <button onclick="toggleLogoMenu(); openSearch()" data-i18n="ctrl_search_title">Search (Ctrl+K)</button>
+  <button onclick="toggleLogoMenu(); startTour()" data-i18n="ctrl_tutorial_btn_title">Restart tutorial</button>
+  <button onclick="toggleLogoMenu(); openIntro()" data-i18n="ctrl_info_title">About this project</button>
+  <button onclick="toggleLogoMenu(); openTerrOverview()" data-i18n="ctrl_terr_list_title">Territories overview</button>
+  <div id="lang-ctrl-menu">
+    <button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
+  </div>
+</div>
+
+<!-- Top-right toolbar.
+     Desktop: full set of meta + tools + map controls.
+     Mobile : compact strip with the everyday tools only (search, legend,
+     reset). Tutorial / info / territory list / language live in the
+     logo-burger above. -->
+<div id="top-right-bar">
+  <button id="tour-btn"      class="desktop-only" onclick="startTour()"      data-i18n-title="ctrl_tutorial_btn_title" title="Restart tutorial">◉</button>
+  <button id="info-btn"      class="desktop-only" onclick="openIntro()"      data-i18n-title="ctrl_info_title"         title="About this project">i</button>
+  <span class="bar-divider bar-divider-sm desktop-only"></span>
+  <button id="terr-list-btn" class="desktop-only" onclick="openTerrOverview()" data-i18n-title="ctrl_terr_list_title" title="Territories overview">☰</button>
+  <button id="search-btn"      class="desktop-only" onclick="openSearch()"   data-i18n-title="ctrl_search_title"       title="Search (Ctrl+K)">⌕</button>
+  <span class="bar-divider bar-divider-sm desktop-only"></span>
+  <div id="lang-ctrl" class="desktop-only">
+    <button class="lang-btn-sm" data-lang="en" onclick="setLang('en')">EN</button>
+    <span class="lang-sep">|</span>
+    <button class="lang-btn-sm" data-lang="de" onclick="setLang('de')">DE</button>
+  </div>
+  <span class="bar-divider bar-divider-sm"></span>
+  <!-- Close-all-panels button: visible only when ≥2 click-panels are open
+       (multi-panels, ruler-panels, pinned tooltip, trail-panel, mobile sheet).
+       ESC does the same thing globally. The divider that follows it is
+       hidden together via CSS (#close-all-btn[hidden] + .close-all-divider). -->
+  <button id="close-all-btn" onclick="closeAllPanels()" data-i18n-title="ctrl_close_all" title="Close all panels (ESC)" hidden>⊠</button>
+  <span class="bar-divider bar-divider-sm close-all-divider"></span>
+  <button id="map-reset-btn" onclick="resetMapView()" data-i18n-title="ctrl_reset_view" title="Reset view">⌂</button>
+  <!-- Legend lives at the rightmost edge on mobile. -->
+  <span class="bar-divider bar-divider-sm mobile-only"></span>
+  <button id="legend-btn" class="mobile-only" onclick="toggleLegendModal()" data-i18n-title="ctrl_legend_title" title="Legend">▤</button>
+</div>
+
+<div id="map-container">
+  <svg id="map-svg">
+    <defs>
+      <filter id="city-glow">
+        <feGaussianBlur stdDeviation="2" result="b"/>
+        <feComposite in="SourceGraphic" in2="b" operator="over"/>
+      </filter>
+    </defs>
+    <rect id="ocean-bg" width="100%" height="100%" fill="#091a28"/>
+    <g id="g-land"></g>
+    <g id="g-terr"></g>
+    <g id="g-bord"></g>
+    <g id="g-rivers"></g>
+    <g id="g-labels"></g>
+    <g id="g-cities"></g>
+    <g id="g-pleiades"></g>
+    <g id="g-events"></g>
+  </svg>
+</div>
+
+<div id="legend">
+  <div id="legend-header">
+    <span id="legend-title" data-i18n="legend_title">Legend</span>
+    <button id="legend-toggle" onclick="toggleLegend()" title="Toggle legend">−</button>
+  </div>
+  <div id="legend-resize" title="Resize">⤢</div>
+  <div id="legend-inner">
+    <div id="leg-items"></div>
+    <div class="leg-div"></div>
+    <h4 style="margin-bottom:0.4em" data-i18n="legend_types">Types</h4>
+    <div class="leg-sym" data-info-key="legend_info_territory"><span class="leg-type-icon">▣</span> <span data-i18n="legend_territory">Territory</span></div>
+    <div class="leg-sym" data-info-key="legend_info_ruler"><span class="leg-type-icon">♛</span> <span data-i18n="legend_ruler">Ruler</span></div>
+    <div class="leg-sym" data-info-key="legend_info_capital_city"><span class="leg-type-icon">◎</span> <span data-i18n="legend_capital_city">Capital city</span></div>
+    <div class="leg-sym" data-info-key="legend_info_notable_city"><span class="leg-type-icon">⊙</span> <span data-i18n="legend_notable_city">Notable city</span></div>
+    <div class="leg-sym" id="leg-pleiades" data-info-key="legend_info_settlement" style="display:none"><span class="leg-type-icon">△</span> <span data-i18n="legend_settlement">Ancient settlement</span></div>
+    <div class="leg-sym" id="leg-events"   data-info-key="legend_info_event" style="display:none"><span class="leg-type-icon" style="color:#e05828">✦</span> <span data-i18n="legend_event">Historical event</span></div>
+    <div class="leg-div"></div>
+    <h4 style="margin-bottom:0.4em" data-i18n="legend_precision">Border Precision</h4>
+    <div class="leg-prec" data-info-key="legend_info_established"><div class="pl" style="background:rgba(200,185,138,0.7)"></div><span data-i18n="legend_established">Established</span></div>
+    <div class="leg-prec" data-info-key="legend_info_moderate"><div class="pl" style="background:rgba(200,185,138,0.35);border-top:1px dashed rgba(200,185,138,0.5)"></div><span data-i18n="legend_moderate">Moderate</span></div>
+    <div class="leg-prec" data-info-key="legend_info_approximate"><div class="pl" style="background:rgba(200,185,138,0.15);border-top:1px dashed rgba(200,185,138,0.2)"></div><span data-i18n="legend_approximate">Approximate</span></div>
+  </div>
+</div>
+
+<div id="tooltip">
+  <!-- Header: Flag + Icon + Name + Close -->
+  <div id="tt-header">
+    <img id="tt-flag" alt="" style="display:none">
+    <span id="tt-type-icon"></span>
+    <h3 id="tt-name"></h3>
+    <span class="tp-btn tp-snap" id="tt-snap" onclick="snapPanel('tooltip')" title="Snap to top">⊟</span>
+    <span class="tp-btn" id="tt-minimize" onclick="toggleMinimizeTooltip()" title="Minimize">−</span>
+    <span class="tp-btn" id="tt-close"    onclick="unpinTooltip()"          title="Close">✕</span>
+  </div>
+  <div class="tt-sub" id="tt-sub"></div>
+  <img id="tt-event-img" alt="">
+
+  <!-- Kontext + Beschreibung (in einer Section) -->
+  <div id="tt-context-section" style="display:none">
+    <div class="tt-section-label" data-i18n="tt_context">Context</div>
+    <div id="tt-desc" style="display:none"></div>
+    <ul class="tt-context-list" id="tt-context"></ul>
+    <div id="tt-ai-note" class="tp-ai-note" style="display:none">This context is simplified · full Wikipedia context coming soon</div>
+  </div>
+
+  <!-- Herrscher (async) -->
+  <div class="tt-div" id="tt-ruler-div" style="display:none"></div>
+  <div class="tt-section-label" id="tt-ruler-label" style="display:none" data-i18n="tt_rulers">Rulers</div>
+  <div id="tt-ruler-area"></div>
+
+  <!-- Details -->
+  <div class="tt-div"></div>
+  <div class="tt-row" id="tt-capital-row" style="display:none">
+    <span data-i18n="tt_capital">Capital</span><span id="tt-capital"></span>
+  </div>
+  <div class="tt-row" id="tt-prec-row"><span data-i18n="tt_precision">Border precision</span><span id="tt-prec"></span></div>
+
+  <!-- Modus-Buttons -->
+  <div class="tt-mode-btns">
+    <div class="tt-mode-btn" id="tt-btn-resize" onclick="toggleTooltipMode('resize')" data-i18n-title="tt_resize_mode" title="Resize">⤢</div>
+  </div>
+  <div class="tt-resize" id="tt-resize-handle"></div>
+
+  <!-- Links -->
+  <div class="tt-links" id="tt-links">
+    <div class="tt-wiki" id="tt-wiki-wp">
+      <div class="wiki-i">W</div>
+      <span id="tt-wiki-txt">Wikipedia →</span>
+    </div>
+    <div class="tt-wiki" id="tt-wiki-wd" style="display:none">
+      <div class="wiki-i" style="background:#1a2a4a;color:#8ab0da">Q</div>
+      <span id="tt-wd-txt">Wikidata →</span>
+    </div>
+    <button id="tt-goto-year" style="display:none" onclick="_jumpToEventYear()">⏱ Go to this year</button>
+  </div>
+</div>
+
+<!-- ── Trail Panel ── -->
+<div id="trail-panel" style="display:none">
+  <div id="trail-panel-hdr">
+    <span id="trail-panel-name"></span>
+    <span id="trail-panel-counter"></span>
+    <span class="tp-btn" onclick="endTrail()" title="Trail beenden">✕</span>
+  </div>
+  <img id="trail-panel-img" alt="">
+  <div id="trail-panel-body">
+    <div id="trail-step-title"></div>
+    <div id="trail-progress"></div>
+    <div id="trail-step-desc"></div>
+  </div>
+  <div id="trail-related" style="display:none">
+    <div id="trail-rel-terr" style="display:none"></div>
+    <div id="trail-rel-ev"   style="display:none"></div>
+  </div>
+  <div id="trail-panel-footer">
+    <button id="trail-btn-prev" onclick="prevTrailStep()" data-i18n="trail_back">← Back</button>
+    <div id="trail-wiki-btn" class="tt-wiki" style="display:none">
+      <div class="wiki-i">W</div><span>Wikipedia →</span>
+    </div>
+    <div id="trail-wiki2-btn" class="tt-wiki" style="display:none">
+      <div class="wiki-i">W</div><span>Wikipedia →</span>
+    </div>
+    <button id="trail-btn-next" onclick="nextTrailStep()">Weiter →</button>
+  </div>
+</div>
+
+<!-- ── Trail selection menu ── -->
+<div id="trail-menu"></div>
+
+<div id="controls">
+  <!-- Einklapp-Button -->
+  <button id="ctrl-toggle" onclick="toggleControls()" title="Toggle controls">▼</button>
+
+  <div id="ctrl-body">
+    <!-- Zeitstrahl-Bereich-Auswahl. Wenn eine Era aktiv ist, ersetzt der
+         #era-chip diese Reihe (gleicher Slot, kein Layout-Shift). -->
+    <div id="era-select-row">
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('prehistoric', this)" data-i18n="era_prehistoric">Prehistory</button>
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('bronze_age', this)" data-i18n="era_bronze_age">Bronze Age</button>
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('antiquity', this)" data-i18n="era_antiquity">Antiquity</button>
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('medieval', this)" data-i18n="era_medieval">Middle Ages</button>
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('early_modern', this)" data-i18n="era_early_modern">Early Modern</button>
+      <button class="btn era-sel-btn" onclick="toggleTimeRange('modern', this)" data-i18n="era_modern">Modern</button>
+    </div>
+    <div id="era-chip" hidden>
+      <span id="era-chip-label"></span>
+      <button id="era-chip-close" onclick="clearTimeRange()" data-i18n-title="era_chip_close" title="Show all eras">✕</button>
+    </div>
+
+    <div id="epoch-row"></div>
+    <div id="tl-wrap">
+      <span id="tl-start-lbl"></span>
+      <span id="tl-end-lbl"></span>
+      <div id="tl-track"></div>
+      <div id="tl-fill" style="width:0%"></div>
+      <div id="tl-thumb" style="left:0%"></div>
+      <input type="range" id="tl-input" min="0" max="100" value="0" step="0.05">
+      <div id="thumb-year">8,000 BC</div>
+    </div>
+
+    <div id="btn-row">
+      <span id="m-year">8,000 BC</span>
+      <!-- TIME cluster: stepper + year input.
+           On mobile the wrapper switches to display:contents so the input
+           can stay reachable while the stepper buttons are hidden. -->
+      <div class="btn-group-left">
+        <button id="s-100b" class="btn btn-step" onclick="stepYear(-100)">−100</button>
+        <button id="s-10b"  class="btn btn-step" onclick="stepYear(-10)">−10</button>
+        <button id="s-1b"   class="btn btn-step" onclick="stepYear(-1)">−1</button>
+        <input type="number" id="year-input" placeholder="Year..." onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
+        <button id="s-1f"   class="btn btn-step" onclick="stepYear(1)">+1</button>
+        <button id="s-10f"  class="btn btn-step" onclick="stepYear(10)">+10</button>
+        <button id="s-100f" class="btn btn-step" onclick="stepYear(100)">+100</button>
+      </div>
+      <!-- BRANDING: full word-mark on desktop only, absolute-centered.
+           On mobile the EH-Symbol moved to the top-left as the logo-menu
+           button — keeps the bottom strip lean. -->
+      <div class="btn-group-center">
+        <img id="ctrl-logo" class="desktop-only" src="data/images/EH-Name.png" alt="Europa Historica">
+      </div>
+      <!-- LAYERS + PLAYBACK cluster -->
+      <div class="btn-group-right">
+        <div id="layer-btns">
+          <button class="btn btn-trails"  id="trails-btn"  onclick="openTrailMenu()" title="Guided trails" data-i18n="ctrl_trails">Trails</button>
+          <button class="btn btn-events tristate"   id="events-btn"   onclick="toggleEvents()"   title="Historical events — off"><span class="btn-label" data-i18n="ctrl_events">Events</span><span class="btn-state" data-i18n="state_off">off</span></button>
+          <button class="btn btn-pleiades tristate" id="pleiades-btn" onclick="togglePleiades()" title="Ancient settlements — off"><span class="btn-label" data-i18n="ctrl_pleiades">Pleiades</span><span class="btn-state" data-i18n="state_off">off</span></button>
+        </div>
+        <span class="bar-divider bar-divider-sm"></span>
+        <div id="play-btns">
+          <button class="btn" id="s-2h" onclick="setSpd(-2)" title="Backward 2×">◀◀</button>
+          <button class="btn" id="s-1h" onclick="setSpd(-1)" title="Backward 1×">◀</button>
+          <button class="btn btn-play" id="play-btn" onclick="togglePlay()">▶</button>
+          <button class="btn" id="sh"   onclick="setSpd(0.5)">½×</button>
+          <button class="btn" id="s1"   onclick="setSpd(1)">1×</button>
+          <button class="btn" id="s2"   onclick="setSpd(2)">2×</button>
+          <button class="btn" id="s3"   onclick="setSpd(3)">3×</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button id="m-more" class="btn" onclick="toggleMobileDrawer()" title="More controls">▲</button>
+</div>
+
+<!-- ── Minimized HUD (visible only when controls collapsed) ── -->
+<div id="min-hud">
+  <img id="min-logo" src="data/images/EH-Symbol.png" alt="EH">
+  <span id="min-year"></span>
+  <input type="number" id="min-year-input" placeholder="Year…"
+         onkeydown="if(event.key==='Enter')jumpToYear(this.value)">
+</div>
+
+<!-- ── Territories Overview Panel ── -->
+<div id="terr-overlay" onclick="if(event.target===this)closeTerrOverview()">
+  <div id="terr-panel">
+    <button id="terr-close" onclick="closeTerrOverview()" title="Close">✕</button>
+
+    <div id="terr-header">
+      <h2 data-i18n="terr_title">Historical Territories</h2>
+      <p data-i18n="terr_subtitle">A simplified overview of all territories currently included in the system.</p>
+    </div>
+
+    <div id="terr-search-row">
+      <input id="terr-search" type="text" placeholder="Search territories…"
+             data-i18n-placeholder="terr_search"
+             oninput="_terrSearch(this.value)" autocomplete="off" spellcheck="false">
+      <span id="terr-count-lbl"></span>
+    </div>
+
+    <div id="terr-table-wrap">
+      <table class="terr-table">
+        <thead>
+          <tr>
+            <th data-i18n="terr_col_name">Territory</th>
+            <th data-i18n="terr_col_qid">Wikidata ID</th>
+            <th data-i18n="terr_col_type">Type</th>
+            <th class="to-num" data-i18n="terr_col_rulers">Rulers</th>
+            <th class="to-num" data-i18n="terr_col_period">Period</th>
+          </tr>
+        </thead>
+        <tbody id="terr-tbody">
+          <tr><td colspan="5" style="text-align:center;color:#3a3020;padding:24px">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── Search Overlay (B1) ── -->
+<div id="search-overlay" onclick="if(event.target===this)closeSearch()">
+  <div id="search-box">
+    <div id="search-input-row">
+      <span id="search-icon">⌕</span>
+      <input id="search-input" type="text" placeholder="Search territories or rulers…"
+             data-i18n-placeholder="search_placeholder"
+             oninput="_doSearch(this.value)" autocomplete="off" spellcheck="false">
+      <span id="search-meta"></span>
+      <button id="search-close" onclick="closeSearch()" title="Close">✕</button>
+    </div>
+    <div id="search-results"></div>
+    <div id="search-hint" data-i18n="search_hint">Ctrl+K to open · ↑↓ navigate · Enter to select</div>
+  </div>
+</div>
+
+<!-- ── Intro / Info Panel ── -->
+<div id="intro-overlay" onclick="if(event.target===this)hideIntro()">
+  <div id="intro-panel">
+    <button id="intro-close" onclick="hideIntro()" title="Close">✕</button>
+
+    <img id="intro-logo" src="data/images/EH-Name.png" alt="Europa Historica">
+
+    <div id="intro-lang">
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
+
+    <div id="intro-body"></div>
+
+    <div id="intro-expand-row">
+      <div id="intro-more-toggle" onclick="toggleMoreAbout()">About this project ↓</div>
+      <div id="intro-updates-toggle" onclick="toggleUpdates()">Updates ↓</div>
+    </div>
+
+
+    <div id="intro-more-content">
+      <div id="intro-more-inner"></div>
+    </div>
+
+    <div id="intro-updates-content">
+      <div id="intro-updates-inner"></div>
+    </div>
+
+    <div id="intro-actions">
+      <button id="intro-tour"    onclick="startTour()" data-i18n="intro_tour_btn">Start Tutorial ↓</button>
+      <button id="intro-explore" onclick="hideIntro()" data-i18n="intro_explore_btn">Explore the map →</button>
+    </div>
+
+    <div id="intro-legal">
+      <a href="impressum.html" data-i18n="legal_imprint">Legal Notice</a>
+      <span>·</span>
+      <a href="datenschutz.html" data-i18n="legal_privacy">Privacy Policy</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Mobile Bottom Sheet ── -->
+<div id="m-sheet">
+  <div id="m-sheet-handle"></div>
+  <div id="m-sheet-nav">
+    <button id="m-sheet-back" onclick="_mSheetBack()">←</button>
+    <span id="m-sheet-nav-label"></span>
+    <button id="m-sheet-close" onclick="_mSheetClose()">✕</button>
+  </div>
+  <div id="m-sheet-scroll"></div>
+</div>
+
+<!-- i18n: must load first (provides t() used by every other module) -->
+<script src="js/i18n.js?v=R17"></script>
+<!-- config: split from a 2027-line monolith into 5 focused modules.
+     Order: leaf modules (epochs, cities) → territories → context → loader.
+     All declarations live on the global scope (classic <script>). -->
+<script src="js/config_epochs.js?v=R4"></script>
+<script src="js/config_cities.js?v=R4"></script>
+<script src="js/config_territories.js?v=R6"></script>
+<script src="js/config_context.js?v=R4"></script>
+<script src="js/knowledge_loader.js?v=R6"></script>
+<!-- Render module: uses t() and EH.territoryRender namespace -->
+<script src="js/territory_render.js?v=R5"></script>
+<!-- View / interaction layer -->
+<script src="js/map.js?v=R7"></script>
+<script src="js/tooltip.js?v=R13"></script>
+<script src="js/timeline.js?v=R16"></script>
+<script src="js/cities.js?v=R8"></script>
+<script src="js/events.js?v=R11"></script>
+<script src="js/app.js?v=R15"></script>
+<script src="js/intro.js?v=R8"></script>
+<script src="js/terr_overview.js?v=R5"></script>
+<script src="js/search.js?v=R6"></script>
+<script src="js/tour.js?v=R14"></script>
+<script src="js/trails.js?v=R7"></script>
+<script>
+  // Apply saved language on page load (before first render)
+  window.addEventListener('load', () => applyI18n());
+</script>
+<script data-goatcounter="https://europa-historica.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

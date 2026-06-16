@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# Ruler portraits: 1900+ images, not useful as search results
+Disallow: /data/images/rulers/
+
+Sitemap: https://europa-historica.com/sitemap.xml

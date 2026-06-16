@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Europa Historica",
+    "text": "This interactive map shows how the world looked at different points in history — from 8000 BC to 2010 AD. Click any territory to explore its rulers and history."
+  },
+  {
+    "target": "#tl-wrap",
+    "pos": "above",
+    "title": "The Timeline",
+    "text": "Drag the slider or click anywhere on the track to travel through history. The year updates in real time as you move."
+  },
+  {
+    "target": "#era-select-row",
+    "pos": "above",
+    "title": "Time Periods",
+    "text": "Quickly jump to a specific era — Prehistory, Antiquity, Middle Ages, and more. Tap again to deselect and return to the full timeline."
+  },
+  {
+    "target": ".btn-group-left",
+    "target_mobile": "#m-year",
+    "pos": "above",
+    "pos_mobile": "above",
+    "title": "Navigation Controls",
+    "text": "Jump directly to any year using the input field, or step forward and backward through time with the ± buttons.",
+    "text_mobile": "Tap the year display to type any year directly — Enter jumps right to it. Use the timeline above for sweeping moves; the year input for precise ones."
+  },
+  {
+    "target": "#top-right-bar",
+    "target_mobile": "#logo-menu-btn",
+    "pos": "below",
+    "pos_mobile": "below",
+    "title": "Tools & Settings",
+    "text": "The top-right toolbar holds everything not tied to time:\n◉  restarts this tutorial\n(i)  reopens the info panel\n☰  lists and browses all territories\n⌕  searches rulers, places, events\nEN/DE  language toggle\n⌂  resets the map to its default view",
+    "text_mobile": "Tap the logo (top-left) for the menu:\n⌕  search rulers, places, events\n◉  restart this tutorial\n(i)  reopen the info panel\n☰  list all territories\nEN/DE  language toggle\n\nIn the top-right corner you'll find ▤ legend and ⌂ reset view."
+  },
+  {
+    "target": "#play-btns",
+    "pos": "above",
+    "title": "Playback",
+    "text": "Use ▶ to animate history forward, or ◀ and ◀◀ to travel backwards through time. Adjust the pace with the speed buttons — from ½× to 3×."
+  },
+  {
+    "target": "#pleiades-btn",
+    "pos": "above",
+    "title": "Ancient Settlements",
+    "text": "Click once to show ancient settlements near the current year. Click again to show all settlements up to this point in time."
+  },
+  {
+    "target": "#events-btn",
+    "pos": "above",
+    "title": "Historical Events",
+    "text": "Click once to show events in a 150-year window. Click again to show all events up to the current year. Click a ✦ marker on the map for details."
+  },
+  {
+    "target": "#trails-btn",
+    "pos": "above",
+    "title": "Historical Trails",
+    "text": "Follow the path of history with guided trails. Each trail takes you through key moments in chronological order — with context, images, and links that connect the dots between events."
+  },
+  {
+    "target": "#legend",
+    "target_mobile": "#legend-btn",
+    "pos": "right",
+    "pos_mobile": "below",
+    "title": "Legend",
+    "text": "Each territory is colored by its cultural group — Germanic, Roman, Ottoman, and more. Here you can see which groups are active in the current epoch and what the different border styles mean. Click any entry to expand a quick explanation."
+  },
+  {
+    "title": "You're all set!",
+    "text": "Try one of these to get going:",
+    "finish": true,
+    "actions": [
+      { "label": "▣  Jump to Rome at its peak (117 AD)", "action": "jumpToYear",    "args": [117] },
+      { "label": "✦  Open a guided trail",              "action": "openTrailMenu" },
+      { "label": "△  Show ancient settlements",         "action": "showAncientSettlements" }
+    ]
+  }
+]
