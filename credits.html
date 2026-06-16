@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Bildnachweise — Europa Historica</title>
+<link rel="icon" href="data/images/EH-Symbol.png">
+<link rel="stylesheet" href="css/fonts/fonts.css?v=R1">
+<style>
+  :root { --bg:#070c12; --gold:#d4a843; --gold2:#f0c96a; --border:#1e1608; --txt:#c8b98a; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--txt); font-family:'Crimson Text',serif; font-size:16px; line-height:1.6; }
+  main { max-width:860px; margin:0 auto; padding:48px 24px 80px; }
+  h1 { font-family:'Cinzel',serif; font-size:26px; color:var(--gold2); margin-bottom:6px; }
+  h2 { font-family:'Cinzel',serif; font-size:14px; letter-spacing:1px; color:var(--gold); margin:30px 0 10px; text-transform:uppercase; }
+  p { margin-bottom:10px; }
+  a { color:#6a9aba; text-decoration:none; }
+  a:hover { color:var(--gold2); }
+  .back { display:inline-block; font-family:'Cinzel',serif; font-size:12px; letter-spacing:1px; margin-bottom:36px; padding:6px 14px; border:1px solid var(--border); border-radius:2px; }
+  .intro { font-size:15px; color:#9a8a62; margin-bottom:8px; }
+  .lic-src { margin:18px 0; padding:14px 16px; border-left:2px solid var(--border); background:rgba(255,255,255,0.015); }
+  .lic-src h3 { font-family:'Cinzel',serif; font-size:13px; color:var(--gold); margin-bottom:4px; }
+  #cr-search { width:100%; margin:8px 0 4px; background:rgba(255,255,255,0.03); border:1px solid #2a2010;
+               border-radius:2px; padding:8px 12px; color:var(--txt); font-family:'Crimson Text',serif; font-size:15px; outline:none; }
+  #cr-search:focus { border-color:#4a3a1a; }
+  #cr-count { font-size:12px; color:#5a4a2a; margin-bottom:14px; }
+  .cr-row { padding:7px 0; border-bottom:1px solid rgba(30,22,8,0.5); font-size:14px; display:flex; flex-wrap:wrap; gap:4px 10px; align-items:baseline; }
+  .cr-subj { color:#b0a070; flex:1; min-width:180px; }
+  .cr-auth { color:#8a7a52; font-size:13px; }
+  .cr-lic  { font-size:11px; font-family:'Cinzel',serif; letter-spacing:.3px; padding:1px 6px; border-radius:2px; background:rgba(80,100,150,0.18); color:#7a9acd; white-space:nowrap; }
+  .cr-src  { font-size:12px; }
+  .loading { color:#5a4a2a; font-style:italic; padding:20px 0; }
+  footer { max-width:860px; margin:0 auto; padding:0 24px 40px; font-size:14px; color:#5a4a2a; }
+  footer a { color:#8a7a52; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="./">← Zurück zur Karte</a>
+  <h1>Bildnachweise</h1>
+  <p class="intro">Die auf dieser Website gezeigten Herrscherporträts, Flaggen und Wappen stammen aus
+  <a href="https://commons.wikimedia.org" rel="noopener">Wikimedia Commons</a> sowie vereinzelt aus
+  der Wikipedia. Viele stehen unter Creative-Commons-Lizenzen, die eine Namensnennung verlangen;
+  nachfolgend sind Urheber, Lizenz und Quelle je Datei aufgeführt. Bilder ohne nennbaren Urheber sind
+  gemeinfrei (Public Domain).</p>
+
+  <div class="lic-src">
+    <h3>Textquellen</h3>
+    <p>Beschreibungstexte basieren auf <a href="https://www.wikipedia.org" rel="noopener">Wikipedia</a>
+    (Auszüge, teils gekürzt/übersetzt) unter
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" rel="noopener">CC BY-SA 4.0</a>;
+    die Quellartikel sind jeweils direkt verlinkt. Strukturdaten:
+    <a href="https://www.wikidata.org" rel="noopener">Wikidata</a> (CC0). Antike Ortsdaten:
+    <a href="https://pleiades.stoa.org" rel="noopener">Pleiades</a> (CC BY). Historische
+    Grenzverläufe: <a href="https://github.com/aourednik/historical-basemaps" rel="noopener">historical-basemaps</a>
+    (A. Ourednik). Basiskarte: <a href="https://www.naturalearthdata.com" rel="noopener">Natural Earth</a> (Public Domain).</p>
+  </div>
+
+  <h2>Bilder im Einzelnen</h2>
+  <input id="cr-search" type="search" placeholder="Nach Person, Territorium oder Urheber filtern…" autocomplete="off">
+  <div id="cr-count"></div>
+  <div id="cr-list"><p class="loading">Lade Bildnachweise…</p></div>
+
+  <p class="meta" style="font-size:14px;color:#8a7a52;font-style:italic;margin-top:30px">Stand: Juni 2026 ·
+  Sollte trotz sorgfältiger Recherche ein Nachweis fehlen oder fehlerhaft sein, genügt ein kurzer
+  Hinweis an die im <a href="impressum.html">Impressum</a> genannte Adresse.</p>
+</main>
+<footer>
+  <a href="./">Europa Historica</a> · <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutzerklärung</a>
+</footer>
+
+<script>
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+Promise.all([
+  fetch('data/knowledge/image_credits.json').then(r=>r.json()),
+  fetch('data/knowledge/rulers.json').then(r=>r.json()).catch(()=>({})),
+  fetch('data/knowledge/territories.json').then(r=>r.json()).catch(()=>({})),
+]).then(([credits, rulers, terr]) => {
+  // Namens-Map: ruler:QID -> Name, flag:QID/coat:QID -> Territoriumslabel
+  const nameOf = {};
+  for (const e of Object.values(rulers)) {
+    for (const r of (e.rulers||[])) {
+      const q = r.wikidataId || r.wikidata_id;
+      if (q) nameOf['ruler:'+q] = r.name;
+    }
+  }
+  const terrLabel = {};
+  for (const [q,t] of Object.entries(terr)) {
+    if (t.label) terrLabel[q] = t.label;
+    for (const c of (t.contexts||[])) {
+      const cq = c.wikidataId || q;
+      terrLabel[cq] = c.label || t.label;
+    }
+  }
+  function keyLabel(key){
+    if (key.startsWith('ruler:')) return nameOf[key] || key.slice(6);
+    if (key.startsWith('flag:'))  return (terrLabel[key.slice(5)]||key.slice(5))+' (Flagge)';
+    if (key.startsWith('coat:'))  return (terrLabel[key.slice(5)]||key.slice(5))+' (Wappen)';
+    if (key.startsWith('ruler-name:')) return key.slice(11);
+    return key;
+  }
+
+  const byFile = credits._by_file || {};
+  const usage  = credits._usage  || {};
+  // Eine Zeile je Datei; Subject = lesbare Nutzung(en)
+  const rows = Object.keys(byFile).map(fn => {
+    const v = byFile[fn];
+    const subjects = (usage[fn]||[]).map(keyLabel);
+    const subj = subjects.length ? [...new Set(subjects)].join(', ') : fn.replace(/_/g,' ');
+    return { subj, artist: v.artist||'Unbekannt', license: v.license||'', src: v.source||'', _s:(subj+' '+(v.artist||'')).toLowerCase() };
+  }).sort((a,b)=>a.subj.localeCompare(b.subj,'de'));
+
+  const listEl = document.getElementById('cr-list');
+  const countEl = document.getElementById('cr-count');
+
+  function render(filter){
+    const f = (filter||'').toLowerCase().trim();
+    const shown = f ? rows.filter(r=>r._s.includes(f)) : rows;
+    countEl.textContent = shown.length + ' von ' + rows.length + ' Bildern';
+    // In Chunks bauen (Performance bei 2000+)
+    listEl.innerHTML = shown.map(r =>
+      '<div class="cr-row">'
+      + '<span class="cr-subj">'+esc(r.subj)+'</span>'
+      + '<span class="cr-auth">'+esc(r.artist)+'</span>'
+      + (r.license?'<span class="cr-lic">'+esc(r.license)+'</span>':'')
+      + (r.src?'<a class="cr-src" href="'+esc(r.src)+'" target="_blank" rel="noopener">Quelle ↗</a>':'')
+      + '</div>'
+    ).join('');
+  }
+  render('');
+
+  let t=null;
+  document.getElementById('cr-search').addEventListener('input', e => {
+    clearTimeout(t); t=setTimeout(()=>render(e.target.value), 120);
+  });
+}).catch(e => {
+  document.getElementById('cr-list').innerHTML = '<p class="loading">Bildnachweise konnten nicht geladen werden.</p>';
+  console.error(e);
+});
+</script>
+</body>
+</html>

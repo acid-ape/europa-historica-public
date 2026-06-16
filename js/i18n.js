@@ -100,6 +100,7 @@ const I18N = {
     intro_explore_btn: 'Explore the map →',
     legal_imprint:     'Legal Notice',
     legal_privacy:     'Privacy Policy',
+    legal_credits:     'Credits',
     // Controls
     ctrl_trails:   'Trails',
     ctrl_events:   'Events',
@@ -229,6 +230,7 @@ const I18N = {
     intro_explore_btn: 'Karte erkunden →',
     legal_imprint:     'Impressum',
     legal_privacy:     'Datenschutz',
+    legal_credits:     'Bildnachweise',
     // Controls
     ctrl_trails:   'Trails',
     ctrl_events:   'Ereignisse',

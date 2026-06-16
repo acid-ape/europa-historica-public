@@ -23112,9 +23112,7 @@
         "end": 1461,
         "wiki_link": "/wiki/David_of_Trebizond",
         "wikidataId": "Q503069",
-        "qid_source": "backfill_high",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/99/David_of_Trebizond_from_2013_icon.jpg",
-        "image": "data/images/rulers/Q503069.jpg"
+        "qid_source": "backfill_high"
       },
       {
         "name": "Alexios V Megas Komnenos",
@@ -23122,9 +23120,7 @@
         "end": 1460,
         "wiki_link": "/wiki/Alexios_V_of_Trebizond",
         "wikidataId": "Q2834670",
-        "qid_source": "backfill_high",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Alexios_V_of_Trebizond_from_2013_icon.jpg",
-        "image": "data/images/rulers/Q2834670.jpg"
+        "qid_source": "backfill_high"
       }
     ],
     "status": "draft",
@@ -25155,9 +25151,7 @@
         "end": 1460,
         "wiki_link": "/wiki/Alexios_V_of_Trebizond",
         "wikidataId": "Q2834670",
-        "qid_source": "backfill_high",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Alexios_V_of_Trebizond_from_2013_icon.jpg",
-        "image": "data/images/rulers/Q2834670.jpg"
+        "qid_source": "backfill_high"
       },
       {
         "name": "David II of Trebizond",
@@ -25165,9 +25159,7 @@
         "end": 1461,
         "wiki_link": "/wiki/David_of_Trebizond",
         "wikidataId": "Q503069",
-        "qid_source": "backfill_high",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/99/David_of_Trebizond_from_2013_icon.jpg",
-        "image": "data/images/rulers/Q503069.jpg"
+        "qid_source": "backfill_high"
       }
     ],
     "status": "validated",
